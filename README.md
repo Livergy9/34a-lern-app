@@ -16,7 +16,7 @@ Projekt holen und starten (Eingabeaufforderung / PowerShell):
 git clone https://github.com/Livergy9/34a-lern-app
 cd 34a-lern-app
 npm install
-npx expo install react react-native react-dom react-native-web react-native-safe-area-context expo-status-bar @expo/metro-runtime
+npx expo install react react-native react-dom react-native-web react-native-safe-area-context expo-status-bar @expo/metro-runtime @expo/vector-icons
 npx expo start
 ```
 
