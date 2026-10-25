@@ -32,10 +32,11 @@ Alle Pakete stehen in `package.json`. Neue Pakete immer dort eintragen (auf GitH
 | --- | --- |
 | `src/data/fragen/` | Prüfungsfragen, eine Datei pro Sachgebiet |
 | `src/data/kapitel.ts` | Lernkapitel (kurze Texte pro Sachgebiet) |
+| `src/data/uebersetzungen/` | Übersetzung von Frage und Erklärung (EN/RO), eine Datei pro Sachgebiet |
 | `src/data/glossar.ts` | Schwierige Fachbegriffe (antippbar), mit Übersetzung EN/RO |
 | `src/data/lernbegriffe.ts` | Weitere Lernwörter, nur für Karteikarten |
 | `src/data/sachgebiete.ts` | Sachgebiete und Verteilung in der Prüfung |
-| `src/premium.ts` | Was gratis ist und was Premium ist, Preise |
+| `src/premium.ts` | Was gratis ist (30 % pro Sachgebiet) und was Premium ist, Preise |
 | `src/lernstand.ts` | Tagesziel, Lernserie, Statistik |
 | `src/state.tsx` | Gespeicherter Fortschritt (AsyncStorage), Punktebewertung |
 | `src/screens/` | Bildschirme |

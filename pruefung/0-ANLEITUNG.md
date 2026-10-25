@@ -1,6 +1,11 @@
 # So prüfst du die Fragen
 
-Es gibt 8 Prüflisten: 7 Sachgebiete + die Lernkapitel. Am besten eine Liste nach der anderen.
+Es gibt zwei Arten von Prüflisten:
+
+- **Inhalt** (Ordner `pruefung`): `1-…` bis `7-…` pro Sachgebiet + `8-kapitel.md`. Prüft, ob Fragen und Antworten fachlich stimmen.
+- **Übersetzung** (Ordner `pruefung/uebersetzung`): `U1-…` bis `U7-…` pro Sachgebiet + `U8-fachbegriffe.md`. Prüft, ob Englisch und Rumänisch richtig und einfach sind.
+
+Reihenfolge: erst den **Inhalt** eines Sachgebiets prüfen, dann die **Übersetzung** desselben Sachgebiets. So musst du die Übersetzung nicht zweimal prüfen, falls sich am Inhalt etwas ändert.
 
 ## Schritt 1: ChatGPT als erster Filter
 
@@ -40,5 +45,33 @@ Antworte NUR mit einer Tabelle der Fragen, bei denen du ein Problem siehst:
 Fragen ohne Problem lässt du weg. Wenn du dir selbst nicht sicher bist, schreibe „unsicher“ in die Spalte Problem.
 Am Ende: Anzahl geprüfter Fragen und Anzahl Probleme.
 ```
+
+---
+
+## Text für ChatGPT – Übersetzungen prüfen (kopieren)
+
+Gleiches Vorgehen: **eine** Datei aus `pruefung/uebersetzung` hochladen (z. B. `U4-strafrecht.md`), dann diesen Text schicken.
+
+```
+Du bist Übersetzer für Englisch und Rumänisch mit Erfahrung im deutschen Recht.
+Im Anhang sind Fragen und Erklärungen einer Lern-App für die Sachkundeprüfung nach § 34a GewO.
+Zu jedem deutschen Text gibt es eine englische (EN) und eine rumänische (RO) Übersetzung.
+Die Nutzer sind angehende Sicherheitskräfte mit wenig Deutsch. Die Übersetzung soll ihnen helfen, den deutschen Text zu verstehen.
+
+Prüfe JEDE Übersetzung:
+1. Stimmt der Sinn genau mit dem Deutschen überein (nichts weggelassen, nichts dazuerfunden)?
+2. Sind Fachbegriffe richtig übersetzt (z. B. Notwehr, Besitz/Eigentum, Ordnungswidrigkeit)? Bleibt ein deutscher Fachbegriff in Klammern stehen, ist das gewollt.
+3. Ist sie einfach und verständlich (kurze Sätze, keine unnötig schweren Wörter)?
+4. Rumänisch: richtige Grammatik und Sonderzeichen (ă, â, î, ș, ț)?
+
+Antworte NUR mit einer Tabelle der Stellen, bei denen du ein Problem siehst:
+| ID | Sprache (EN/RO) | Frage oder Erklärung | Problem | Verbesserte Übersetzung |
+
+Stellen ohne Problem lässt du weg. Am Ende: Anzahl geprüfter Fragen und Anzahl Probleme.
+```
+
+Für Rumänisch ist ein Muttersprachler noch besser als ChatGPT. Wenn du jemanden kennst: lieber ihm die Datei geben.
+
+---
 
 Hinweis: Auch ChatGPT kann sich irren. Eine Frage gilt erst als geprüft, wenn du (oder ein Dozent) sie bestätigt hast.

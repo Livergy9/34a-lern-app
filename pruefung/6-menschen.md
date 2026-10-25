@@ -713,7 +713,7 @@
 - ❌ D) Ein Begriff aus dem Waffenrecht
 - ❌ E) Gleichgültigkeit
 
-**Erklärung:** Empathie hilft, Menschen zu verstehen und Konflikte zu entschärfen. Sie bedeutet nicht, alles zu erlauben.
+**Erklärung:** Empathie heißt, sich in andere hineinzuversetzen und ihre Gefühle zu verstehen. Sie hilft, Konflikte zu entschärfen. Sie bedeutet nicht, alles zu erlauben.
 
 ## 72. [um-072] Welche Haltung hilft am Einlass gegenüber Gästen?
 
