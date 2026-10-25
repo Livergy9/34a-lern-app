@@ -35,10 +35,15 @@ export function AntwortListe({
         const gewaehlt = auswahl.includes(i);
         const gedimmt = voll && !gewaehlt;
         const richtig = frage.richtig.includes(i);
-        let border = C.border, bg = C.card, kreisBg = C.bg, kreisFarbe = C.text, icon: 'checkmark-circle' | 'close-circle' | null = null;
+        // Nach dem Prüfen vier Zustände: gewählt+richtig, richtig+übersehen, gewählt+falsch, nicht gewählt+falsch
+        const uebersehen = aufgedeckt && richtig && !gewaehlt;
+        let border = C.border, bg = C.card, kreisBg = C.bg, kreisFarbe = C.text, kreisRand = 'transparent', gestrichelt = false, opacity = gedimmt ? 0.5 : 1;
+        let icon: 'checkmark-circle' | 'checkmark-circle-outline' | 'close-circle' | null = null;
         if (!aufgedeckt && gewaehlt) { border = C.primary; bg = C.primarySoft; kreisBg = C.primary; kreisFarbe = '#fff'; }
-        if (aufgedeckt && richtig) { border = C.success; bg = gewaehlt ? C.successSoft : C.card; kreisBg = C.success; kreisFarbe = '#fff'; icon = 'checkmark-circle'; }
+        if (aufgedeckt && richtig && gewaehlt) { border = C.success; bg = C.successSoft; kreisBg = C.success; kreisFarbe = '#fff'; icon = 'checkmark-circle'; }
+        if (uebersehen) { border = C.success; gestrichelt = true; kreisBg = C.card; kreisRand = C.success; kreisFarbe = C.success; icon = 'checkmark-circle-outline'; }
         if (aufgedeckt && gewaehlt && !richtig) { border = C.danger; bg = C.dangerSoft; kreisBg = C.danger; kreisFarbe = '#fff'; icon = 'close-circle'; }
+        if (aufgedeckt && !gewaehlt && !richtig) opacity = 0.55;
         return (
           <Pressable
             key={i}
@@ -46,16 +51,26 @@ export function AntwortListe({
             onPress={() => onWaehle(i)}
             accessibilityRole={frage.typ === 'multi' ? 'checkbox' : 'radio'}
             accessibilityState={{ checked: gewaehlt }}
-            style={{ flexDirection: 'row', alignItems: 'center', borderWidth: 1.5, borderColor: border, backgroundColor: bg, borderRadius: 16, padding: 14, opacity: gedimmt ? 0.5 : 1 }}
+            accessibilityHint={uebersehen ? 'Richtige Antwort, nicht gewählt' : undefined}
+            style={{
+              flexDirection: 'row', alignItems: 'center', borderWidth: 1.5, borderColor: border, borderStyle: gestrichelt ? 'dashed' : 'solid',
+              backgroundColor: bg, borderRadius: 16, padding: 14, opacity,
+            }}
           >
             <View style={{
               width: 34, height: 34, borderRadius: frage.typ === 'multi' ? 9 : 17, backgroundColor: kreisBg,
+              borderWidth: 1.5, borderColor: kreisRand,
               alignItems: 'center', justifyContent: 'center', marginRight: 12,
             }}>
               <Text style={{ fontWeight: '700', color: kreisFarbe }}>{BUCHSTABEN[i]}</Text>
             </View>
-            <TermText text={a} interaktiv={interaktiv && aufgedeckt} style={[s.body, { flex: 1 }]} />
-            {icon ? <Ionicons name={icon} size={22} color={icon === 'checkmark-circle' ? C.success : C.danger} style={{ marginLeft: 8 }} /> : null}
+            <View style={{ flex: 1 }}>
+              <TermText text={a} interaktiv={interaktiv && aufgedeckt} style={s.body} />
+              {uebersehen ? (
+                <Text style={{ marginTop: 4, fontSize: 13, fontWeight: '600', color: C.success }}>Richtige Antwort – nicht gewählt</Text>
+              ) : null}
+            </View>
+            {icon ? <Ionicons name={icon} size={22} color={icon === 'close-circle' ? C.danger : C.success} style={{ marginLeft: 8 }} /> : null}
           </Pressable>
         );
       })}

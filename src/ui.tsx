@@ -274,7 +274,8 @@ export const s = StyleSheet.create({
   btn: { minHeight: 54, borderRadius: 14, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 18 },
   btnText: { fontSize: 17, fontWeight: '600' },
   chip: { flexDirection: 'row', alignItems: 'center', alignSelf: 'flex-start', paddingHorizontal: 10, paddingVertical: 6, borderRadius: 10 },
-  term: { color: C.primary, textDecorationLine: 'underline', textDecorationStyle: 'dotted' },
+  // Durchgehend und hell: gepunktet wirkt auf iOS unruhig und kollidiert mit Unterlängen (g, p, y)
+  term: { color: C.primary, textDecorationLine: 'underline', textDecorationStyle: 'solid', textDecorationColor: C.primary + '59' },
   backdrop: { flex: 1, backgroundColor: 'rgba(15,23,42,0.35)' },
   sheet: { backgroundColor: C.card, borderTopLeftRadius: 24, borderTopRightRadius: 24, padding: 20, paddingBottom: 40 },
   grabber: { alignSelf: 'center', width: 40, height: 5, borderRadius: 3, backgroundColor: C.border, marginBottom: 14 },
