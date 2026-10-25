@@ -43,13 +43,16 @@ export function berechneSerie(zielTage: string[]): number {
   return n;
 }
 
-export function quote(liste: Frage[], stand: Record<string, FrageStand>) {
-  let p = 0, m = 0;
+// Prozent richtig erst ab so vielen beantworteten Fragen zeigen (sonst z. B. „100 %“ nach einer einzigen Frage)
+export const MIN_FUER_QUOTE = 5;
+
+export function quote(liste: Frage[], stand: Record<string, FrageStand>, minBeantwortet = MIN_FUER_QUOTE) {
+  let p = 0, m = 0, n = 0;
   for (const f of liste) {
     const s = stand[f.id];
-    if (s) { p += s.punkte; m += s.max; }
+    if (s) { p += s.punkte; m += s.max; n++; }
   }
-  return m ? p / m : null;
+  return m && n >= minBeantwortet ? p / m : null;
 }
 
 // Auswahl für „Heute lernen“: erst offene Fehler, dann neue Fragen, dann lange nicht gesehene

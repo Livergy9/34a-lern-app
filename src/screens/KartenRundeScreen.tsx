@@ -9,6 +9,7 @@ import { ALLE_KARTEN, mischen, NEUE_KARTEN_PRO_RUNDE } from '../lernstand';
 import { useNav } from '../nav';
 import { karteFrei } from '../premium';
 import { useApp } from '../state';
+import { vibriere } from '../feedback';
 import { Button, C, Card, Chip, ProgressBar, s, ScreenHeader, SPRACHEN } from '../ui';
 
 export default function KartenRundeScreen({ sachgebiet }: { sachgebiet?: SachgebietId }) {
@@ -41,6 +42,7 @@ export default function KartenRundeScreen({ sachgebiet }: { sachgebiet?: Sachgeb
   };
 
   const bewerten = (gewusst: boolean) => {
+    vibriere('karte', app.vibration);
     app.bewerteKarte(karte.id, gewusst);
     setZaehler((z) => (gewusst ? { ...z, gewusst: z.gewusst + 1 } : { ...z, nochmal: z.nochmal + 1 }));
     if (!gewusst) setStapel((st) => [...st, karte]); // kommt in dieser Runde nochmal

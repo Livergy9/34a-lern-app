@@ -36,7 +36,7 @@ export default function StatistikScreen() {
       <ScreenHeader title="Statistik" onClose={nav.zurueck} />
       <ScrollView contentContainerStyle={[s.seite, { paddingTop: 4 }]}>
         <View style={{ flexDirection: 'row', gap: 10 }}>
-          <Kachel icon="calendar-outline" farbe={C.primary} zahl={String(ls.serie)} text={ls.serie === 1 ? 'Tag Serie' : 'Tage Serie'} />
+          <Kachel icon="flame" farbe={C.warn} zahl={String(ls.serie)} text={ls.serie === 1 ? 'Tag Serie' : 'Tage Serie'} />
           <Kachel icon="checkmark-done" farbe={C.success} zahl={gesamtQuote === null ? '–' : `${Math.round(gesamtQuote * 100)} %`} text="richtig" />
           <Kachel icon="help-circle" farbe={C.primary} zahl={`${bearbeitet}`} text={`von ${FRAGEN.length} Fragen`} />
         </View>

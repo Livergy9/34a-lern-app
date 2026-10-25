@@ -2,6 +2,7 @@ import React, { createContext, useContext, useEffect, useMemo, useRef, useState 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Frage, HilfeSprache } from './data/types';
 import { heute, plusTage } from './datum';
+import { vibriere } from './feedback';
 
 export type Ergebnis = { punkte: number; max: number };
 
@@ -45,6 +46,7 @@ type Daten = {
   premium: boolean; // Testmodus: in der Entwicklung frei umschaltbar, später echter Kauf
   pruefungen: PruefungEintrag[];
   gelesen: string[]; // Kapitel-IDs
+  vibration: boolean; // kurze Vibration bei richtig/falsch und beim Tagesziel (in „Mehr“ abschaltbar)
 };
 
 const START: Daten = {
@@ -62,6 +64,7 @@ const START: Daten = {
   premium: true,
   pruefungen: [],
   gelesen: [],
+  vibration: true,
 };
 
 const SPEICHER_KEY = '34a-easy:v1';
@@ -84,11 +87,14 @@ type AppState = Daten & {
   beendeOnboarding: () => void;
   zeigeEinfuehrung: () => void;
   setPremium: (p: boolean) => void;
+  setVibration: (an: boolean) => void;
   speicherePruefung: (p: PruefungEintrag) => void;
   markiereGelesen: (kapitelId: string) => void;
   zuruecksetzen: () => void;
   glossarOffen: string | null;
   zeigeGlossar: (id: string | null) => void;
+  zielMoment: boolean; // kurz true, wenn heute gerade das Tagesziel erreicht wurde (nicht gespeichert)
+  schliesseZielMoment: () => void;
 };
 
 const Ctx = createContext<AppState | null>(null);
@@ -113,6 +119,8 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   const [geladen, setGeladen] = useState(false);
   const [glossarOffen, zeigeGlossar] = useState<string | null>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [zielMoment, setZielMoment] = useState(false);
+  const zielGemeldet = useRef<string | null | undefined>(undefined); // Tag, für den der Moment schon kam
 
   // Laden beim Start
   useEffect(() => {
@@ -138,6 +146,22 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     }, 300);
   }, [daten, geladen]);
 
+  // Tagesziel gerade erreicht → kurzer Moment (Banner + Vibration). Nicht beim Laden auslösen.
+  useEffect(() => {
+    if (!geladen) return;
+    const tag = heute();
+    const erreicht = daten.zielTage.includes(tag);
+    if (zielGemeldet.current === undefined) {
+      zielGemeldet.current = erreicht ? tag : null; // Stand beim Laden merken, nichts anzeigen
+      return;
+    }
+    if (erreicht && zielGemeldet.current !== tag) {
+      zielGemeldet.current = tag;
+      setZielMoment(true);
+      setTimeout(() => vibriere('ziel', daten.vibration), 450); // nach der Vibration für die Antwort
+    }
+  }, [daten.zielTage, daten.vibration, geladen]);
+
   const value = useMemo<AppState>(() => {
     const aendere = (f: (d: Daten) => Daten) => setDaten(f);
     return {
@@ -145,6 +169,8 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
       geladen,
       glossarOffen,
       zeigeGlossar,
+      zielMoment,
+      schliesseZielMoment: () => setZielMoment(false),
       setHilfeSprache: (s) => aendere((d) => ({ ...d, hilfeSprache: s })),
       setUebersetzungAn: (an) => aendere((d) => ({ ...d, uebersetzungAn: an })),
       beantworte: (frage, e) =>
@@ -181,11 +207,12 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
       beendeOnboarding: () => aendere((d) => ({ ...d, onboardingFertig: true })),
       zeigeEinfuehrung: () => aendere((d) => ({ ...d, onboardingFertig: false })),
       setPremium: (p) => aendere((d) => ({ ...d, premium: p })),
+      setVibration: (an) => aendere((d) => ({ ...d, vibration: an })),
       speicherePruefung: (p) => aendere((d) => ({ ...d, pruefungen: [p, ...d.pruefungen].slice(0, 30) })),
       markiereGelesen: (id) => aendere((d) => (d.gelesen.includes(id) ? d : { ...d, gelesen: [...d.gelesen, id] })),
-      zuruecksetzen: () => aendere((d) => ({ ...START, hilfeSprache: d.hilfeSprache, premium: d.premium, tagesziel: d.tagesziel, onboardingFertig: true })),
+      zuruecksetzen: () => aendere((d) => ({ ...START, hilfeSprache: d.hilfeSprache, premium: d.premium, tagesziel: d.tagesziel, vibration: d.vibration, onboardingFertig: true })),
     };
-  }, [daten, geladen, glossarOffen]);
+  }, [daten, geladen, glossarOffen, zielMoment]);
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }

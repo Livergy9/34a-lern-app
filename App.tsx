@@ -22,6 +22,7 @@ import PremiumScreen from './src/screens/PremiumScreen';
 import LernplanScreen from './src/screens/LernplanScreen';
 import DurchsichtScreen from './src/screens/DurchsichtScreen';
 import OnboardingScreen from './src/screens/OnboardingScreen';
+import ZielMoment from './src/components/ZielMoment';
 
 const TABS: { id: Tab; label: string; icon: IconName; iconAktiv: IconName }[] = [
   { id: 'start', label: 'Start', icon: 'home-outline', iconAktiv: 'home' },
@@ -134,6 +135,7 @@ export default function App() {
       <AppStateProvider>
         <StatusBar style="dark" />
         <Hauptbereich />
+        <ZielMoment />
         <GlossarSheet />
       </AppStateProvider>
     </SafeAreaProvider>

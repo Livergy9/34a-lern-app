@@ -8,18 +8,15 @@ import { quote } from '../lernstand';
 import { useNav } from '../nav';
 import { frageFrei } from '../premium';
 import { useApp } from '../state';
-import { C, Card, Chip, IconBox, ProgressBar, s } from '../ui';
+import { C, Card, Chip, IconBox, ProgressBar, s, SeitenTitel } from '../ui';
 
 export default function LernenScreen() {
   const app = useApp();
   const nav = useNav();
   return (
     <ScrollView contentContainerStyle={s.seite}>
-      <Text style={s.h1}>Lernen</Text>
-      <Text style={[s.muted, { marginTop: 6, marginBottom: 18 }]}>
-        Wähle ein Sachgebiet. Lies zuerst die Kapitel, dann übe die Fragen.
-      </Text>
-      <View style={{ gap: 12 }}>
+      <SeitenTitel titel="Lernen" info="Wähle ein Sachgebiet. Lies zuerst die Kapitel, dann übe die Fragen." />
+      <View style={{ gap: 12, marginTop: 18 }}>
         {SACHGEBIETE.map((sg) => {
           const liste = fragenFuer(sg.id);
           const b = liste.filter((f) => app.fragen[f.id]).length;
@@ -34,7 +31,7 @@ export default function LernenScreen() {
                   <View style={{ flex: 1, marginLeft: 12 }}>
                     <Text style={s.h3}>{sg.name}</Text>
                     <Text style={[s.muted, { fontSize: 13, marginTop: 2 }]}>
-                      {kap.length ? `${kap.length} Kapitel · ` : ''}{liste.length} Fragen{!app.premium ? ` (${freiAnzahl} gratis)` : ''} · in der Prüfung {sg.fragenInPruefung} Fragen
+                      {kap.length ? `${kap.length} Kapitel · ` : ''}{liste.length} Fragen{!app.premium ? ` (${freiAnzahl} gratis)` : ''}
                     </Text>
                   </View>
                   <Ionicons name="chevron-forward" size={20} color={C.faint} />
@@ -50,6 +47,10 @@ export default function LernenScreen() {
                       color={q >= 0.5 ? C.success : C.danger}
                       bg={q >= 0.5 ? C.successSoft : C.dangerSoft}
                     />
+                  </View>
+                ) : b > 0 ? (
+                  <View style={{ marginTop: 8 }}>
+                    <Chip label="Noch zu wenig beantwortet" color={C.muted} bg={C.border} />
                   </View>
                 ) : null}
               </Card>

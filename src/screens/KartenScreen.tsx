@@ -6,7 +6,7 @@ import { ALLE_KARTEN, NEUE_KARTEN_PRO_RUNDE, useLernstand } from '../lernstand';
 import { useNav } from '../nav';
 import { karteFrei } from '../premium';
 import { useApp } from '../state';
-import { Abschnitt, Button, C, Card, ProgressBar, s, Zeile } from '../ui';
+import { Abschnitt, Button, C, Card, ProgressBar, s, SeitenTitel, Zeile } from '../ui';
 
 export default function KartenScreen() {
   const app = useApp();
@@ -17,10 +17,10 @@ export default function KartenScreen() {
 
   return (
     <ScrollView contentContainerStyle={s.seite}>
-      <Text style={s.h1}>Karteikarten</Text>
-      <Text style={[s.muted, { marginTop: 6 }]}>
-        Vorne steht der Begriff, hinten die Erklärung. Was du weißt, kommt erst in ein paar Tagen wieder. Was du nicht weißt, übst du öfter.
-      </Text>
+      <SeitenTitel
+        titel="Karteikarten"
+        info="Vorne steht der Begriff, hinten die Erklärung. Was du weißt, kommt erst in ein paar Tagen wieder. Was du nicht weißt, übst du öfter."
+      />
 
       <Card style={{ marginTop: 18 }}>
         <View style={{ flexDirection: 'row' }}>

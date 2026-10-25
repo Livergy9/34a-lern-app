@@ -3,7 +3,7 @@ import { Pressable, ScrollView, Text, TextInput, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { GLOSSAR } from '../data/glossar';
 import { useApp } from '../state';
-import { C, Card, s } from '../ui';
+import { C, Card, s, SeitenTitel } from '../ui';
 
 export default function GlossarScreen() {
   const { zeigeGlossar, hilfeSprache } = useApp();
@@ -17,23 +17,11 @@ export default function GlossarScreen() {
 
   return (
     <ScrollView contentContainerStyle={s.seite} keyboardShouldPersistTaps="handled">
-      <Text style={s.h1}>Glossar</Text>
-      <Card style={{ marginTop: 14, marginBottom: 14, backgroundColor: C.primarySoft }}>
-        <View style={{ flexDirection: 'row' }}>
-          <Ionicons name="information-circle-outline" size={22} color={C.primary} />
-          <View style={{ flex: 1, marginLeft: 10 }}>
-            <Text style={s.body}>
-              Hier findest du {GLOSSAR.length} schwierige Fachbegriffe aus der Prüfung, vor allem aus dem Recht – jeweils mit einfacher Erklärung.
-            </Text>
-            <Text style={[s.body, { marginTop: 6 }]}>
-              Tippe auf einen Begriff, um die Erklärung zu sehen. Die Suche findet Begriffe auch auf Englisch oder Rumänisch. Die Sprache stellst du unter „Mehr“ ein.
-            </Text>
-            <Text style={[s.muted, { marginTop: 6 }]}>
-              Tipp: Unterstrichene Wörter in Fragen und Kapiteln kannst du direkt antippen.
-            </Text>
-          </View>
-        </View>
-      </Card>
+      <SeitenTitel
+        titel="Glossar"
+        info={`${GLOSSAR.length} schwierige Fachbegriffe mit einfacher Erklärung. Die Suche findet auch englische und rumänische Wörter. Unterstrichene Wörter in Fragen und Kapiteln kannst du direkt antippen.`}
+      />
+      <View style={{ height: 14 }} />
       <View style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: C.card, borderRadius: 14, paddingHorizontal: 14, height: 48, borderWidth: 1, borderColor: C.border, marginBottom: 14 }}>
         <Ionicons name="search" size={18} color={C.faint} />
         <TextInput value={suche} onChangeText={setSuche} placeholder="Begriff suchen (DE, EN, RO)" placeholderTextColor={C.faint} style={{ flex: 1, marginLeft: 8, fontSize: 16, color: C.text }} />

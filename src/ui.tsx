@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Modal, Pressable, StyleProp, StyleSheet, Text, TextStyle, View, ViewStyle } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { findeGlossar } from './data/glossar';
@@ -80,6 +80,30 @@ export function IconBox({ icon, farbe = C.primary, groesse = 46 }: { icon: IconN
   return (
     <View style={{ width: groesse, height: groesse, borderRadius: groesse * 0.28, backgroundColor: farbe + '1A', alignItems: 'center', justifyContent: 'center' }}>
       <Ionicons name={icon} size={groesse * 0.5} color={farbe} />
+    </View>
+  );
+}
+
+// Seitentitel mit optionalem (i): Erklärtext erst beim Antippen zeigen statt dauerhaft
+export function SeitenTitel({ titel, info }: { titel: string; info?: string }) {
+  const [offen, setOffen] = useState(false);
+  return (
+    <View>
+      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <Text style={[s.h1, { flex: 1 }]}>{titel}</Text>
+        {info ? (
+          <Pressable
+            onPress={() => setOffen(!offen)}
+            hitSlop={12}
+            accessibilityRole="button"
+            accessibilityLabel={offen ? 'Erklärung ausblenden' : 'Erklärung anzeigen'}
+            style={{ width: 36, height: 36, borderRadius: 18, alignItems: 'center', justifyContent: 'center', backgroundColor: offen ? C.primarySoft : 'transparent' }}
+          >
+            <Ionicons name={offen ? 'information-circle' : 'information-circle-outline'} size={26} color={offen ? C.primary : C.faint} />
+          </Pressable>
+        ) : null}
+      </View>
+      {info && offen ? <Text style={[s.muted, { marginTop: 6, lineHeight: 20 }]}>{info}</Text> : null}
     </View>
   );
 }

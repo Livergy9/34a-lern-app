@@ -29,14 +29,16 @@ export default function StartScreen() {
           <Text style={[s.h1, { fontSize: 28 }]}>34a Easy</Text>
           <Text style={[s.muted, { marginTop: 1 }]}>Sachkundeprüfung nach § 34a GewO</Text>
         </View>
-        {/* Lernserie: schlichtes Kalender-Symbol mit Zahl (kein Flammen-Emoji) */}
+        {/* Lernserie: Flamme + „X Tage“, damit es nicht wie ein Termin aussieht */}
         <Pressable
           onPress={() => nav.push({ name: 'statistik' })}
-          accessibilityLabel={`Lernserie ${ls.serie} Tage`}
-          style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: ls.serie > 0 ? C.primarySoft : C.border, borderRadius: 12, paddingHorizontal: 10, paddingVertical: 7, marginLeft: 8 }}
+          accessibilityLabel={`Lernserie ${ls.serie} ${ls.serie === 1 ? 'Tag' : 'Tage'}`}
+          style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: ls.serie > 0 ? C.warnSoft : C.border, borderRadius: 12, paddingHorizontal: 10, paddingVertical: 7, marginLeft: 8 }}
         >
-          <Ionicons name="calendar-outline" size={18} color={ls.serie > 0 ? C.primary : C.faint} />
-          <Text style={{ fontWeight: '700', color: ls.serie > 0 ? C.primary : C.faint, fontSize: 15, marginLeft: 6 }}>{ls.serie}</Text>
+          <Ionicons name={ls.serie > 0 ? 'flame' : 'flame-outline'} size={18} color={ls.serie > 0 ? C.warn : C.faint} />
+          <Text style={{ fontWeight: '700', color: ls.serie > 0 ? C.warn : C.faint, fontSize: 15, marginLeft: 5 }}>
+            {ls.serie} {ls.serie === 1 ? 'Tag' : 'Tage'}
+          </Text>
         </Pressable>
       </View>
 
@@ -56,10 +58,15 @@ export default function StartScreen() {
             Noch {ls.tageBis} {ls.tageBis === 1 ? 'Tag' : 'Tage'}
           </Text>
         ) : null}
-        <Text style={{ color: '#fff', fontSize: 17, fontWeight: '600', marginTop: ls.tageBis ? 4 : 10 }}>
-          {zielErreicht ? 'Tagesziel geschafft!' : `Heute: ${ls.heuteErledigt} von ${ls.ziel} Aufgaben`}
-        </Text>
-        <View style={{ marginTop: 10 }}>
+        <View style={{ flexDirection: 'row', alignItems: 'baseline', marginTop: ls.tageBis ? 4 : 10 }}>
+          <Text style={{ color: '#fff', fontSize: 17, fontWeight: '600', flex: 1 }}>
+            {zielErreicht ? 'Tagesziel geschafft!' : 'Heute erledigt'}
+          </Text>
+          <Text style={{ color: '#fff', fontSize: 17, fontWeight: '700' }} accessibilityLabel={`${ls.heuteErledigt} von ${ls.ziel} Aufgaben`}>
+            {ls.heuteErledigt}/{ls.ziel}
+          </Text>
+        </View>
+        <View style={{ marginTop: 8 }}>
           <ProgressBar value={anteil} color="#fff" bg="rgba(255,255,255,0.3)" height={10} />
         </View>
         <Button
@@ -69,9 +76,11 @@ export default function StartScreen() {
           onPress={heuteLernen}
           style={{ marginTop: 16 }}
         />
-        <Text style={{ color: '#fff', opacity: 0.85, fontSize: 13, marginTop: 10 }}>
-          {ls.fehler.length ? `Mit ${Math.min(ls.fehler.length, 10)} Fehlern zum Wiederholen. ` : ''}Schaffst du dein Tagesziel, wächst deine Lernserie.
-        </Text>
+        {ls.fehler.length ? (
+          <Text style={{ color: '#fff', opacity: 0.85, fontSize: 13, marginTop: 10 }}>
+            Mit {Math.min(ls.fehler.length, 10)} {ls.fehler.length === 1 ? 'Fehler' : 'Fehlern'} zum Wiederholen.
+          </Text>
+        ) : null}
       </Card>
 
       {/* Schnellzugriff */}
