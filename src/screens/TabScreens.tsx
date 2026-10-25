@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Pressable, ScrollView, Text, TextInput, View } from 'react-native';
+import { Image, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { FRAGEN, fragenFuer } from '../data/fragen';
 import { GLOSSAR } from '../data/glossar';
@@ -33,9 +33,13 @@ export function StartScreen({ nav }: { nav: Nav }) {
 
   return (
     <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
-      <Text style={[s.muted, { fontSize: 18 }]}>Hallo 👋</Text>
-      <Text style={[s.h1, { marginTop: 2 }]}>Bereit für die 34a?</Text>
-      <Text style={[s.muted, { fontSize: 16, marginTop: 6 }]}>Ein bisschen heute, ein großer Schritt zur Prüfung.</Text>
+      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <Image source={require('../../assets/logo.png')} style={{ width: 56, height: 56, borderRadius: 14 }} />
+        <View style={{ marginLeft: 12 }}>
+          <Text style={s.h1}>34a Easy</Text>
+          <Text style={[s.muted, { marginTop: 2 }]}>Sachkundeprüfung nach § 34a GewO</Text>
+        </View>
+      </View>
 
       <Card style={{ marginTop: 22 }}>
         <Pressable onPress={() => nav.starteQuiz(sgFragen)} style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -149,7 +153,22 @@ export function GlossarScreen() {
   return (
     <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }} keyboardShouldPersistTaps="handled">
       <Text style={s.h1}>Glossar</Text>
-      <Text style={[s.muted, { marginTop: 6, marginBottom: 14 }]}>{GLOSSAR.length} Fachbegriffe mit Übersetzung und einfacher Erklärung.</Text>
+      <Card style={{ marginTop: 14, marginBottom: 14, backgroundColor: C.primarySoft }}>
+        <View style={{ flexDirection: 'row' }}>
+          <Ionicons name="information-circle-outline" size={22} color={C.primary} />
+          <View style={{ flex: 1, marginLeft: 10 }}>
+            <Text style={s.body}>
+              Hier findest du {GLOSSAR.length} wichtige Fachbegriffe aus der Prüfung, jeweils mit einfacher Erklärung.
+            </Text>
+            <Text style={[s.body, { marginTop: 6 }]}>
+              Tippe auf einen Begriff, um die Erklärung zu sehen. Mit der Suche findest du Begriffe auch auf Englisch oder Rumänisch. Die Übersetzungssprache stellst du unter „Mehr“ ein.
+            </Text>
+            <Text style={[s.muted, { marginTop: 6 }]}>
+              Tipp: Unterstrichene Wörter in den Fragen kannst du direkt antippen.
+            </Text>
+          </View>
+        </View>
+      </Card>
       <View style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: C.card, borderRadius: 14, paddingHorizontal: 14, height: 48, borderWidth: 1, borderColor: C.border, marginBottom: 14 }}>
         <Ionicons name="search" size={18} color={C.faint} />
         <TextInput value={suche} onChangeText={setSuche} placeholder="Begriff suchen (DE, EN, RO)" placeholderTextColor={C.faint} style={{ flex: 1, marginLeft: 8, fontSize: 16, color: C.text }} />

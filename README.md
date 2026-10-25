@@ -1,4 +1,4 @@
-# 34a Lern-App
+# 34a Easy
 
 Lern-App für die Sachkundeprüfung nach § 34a GewO – auf Deutsch lernen, Fachbegriffe in der eigenen Sprache (Englisch, Rumänisch) nachschlagen.
 

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "34a Sachkunde",
+    "name": "34a Easy",
     "slug": "34a-lern-app",
     "version": "0.1.0",
     "orientation": "portrait",
@@ -9,6 +9,7 @@
       "supportsTablet": false
     },
     "android": {},
-    "web": {}
+    "web": {},
+    "icon": "./assets/icon.png"
   }
 }

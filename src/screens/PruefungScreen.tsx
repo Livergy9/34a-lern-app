@@ -146,7 +146,7 @@ export default function PruefungScreen({ onClose }: { onClose: () => void }) {
         <ProgressBar value={(index + 1) / fragen.length} />
       </View>
       <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
-        <FrageKopf frage={frage} interaktiv={false} />
+        <FrageKopf frage={frage} interaktiv={false} zeigeSchwierigkeit={false} />
         <AntwortListe
           frage={frage} auswahl={auswahl} aufgedeckt={false} interaktiv={false}
           onWaehle={(i) => setAntworten({ ...antworten, [frage.id]: waehle(frage, auswahl, i) })}
@@ -155,9 +155,9 @@ export default function PruefungScreen({ onClose }: { onClose: () => void }) {
       <View style={{ flexDirection: 'row', gap: 12, padding: 16, borderTopWidth: 1, borderTopColor: C.border, backgroundColor: C.card }}>
         <Button title="Zurück" variant="secondary" onPress={() => setIndex(index - 1)} disabled={index === 0} style={{ flex: 1 }} />
         {letzte ? (
-          <Button title="Abgeben" icon="checkmark" onPress={abgeben} style={{ flex: 2 }} />
+          <Button title="Abgeben" icon="checkmark" onPress={abgeben} disabled={!auswahl.length} style={{ flex: 2 }} />
         ) : (
-          <Button title="Weiter" icon="arrow-forward" onPress={() => setIndex(index + 1)} style={{ flex: 2 }} />
+          <Button title="Weiter" icon="arrow-forward" onPress={() => setIndex(index + 1)} disabled={!auswahl.length} style={{ flex: 2 }} />
         )}
       </View>
     </SafeAreaView>

@@ -54,13 +54,13 @@ export function AntwortListe({
   );
 }
 
-export function FrageKopf({ frage, interaktiv }: { frage: Frage; interaktiv: boolean }) {
+export function FrageKopf({ frage, interaktiv, zeigeSchwierigkeit = true }: { frage: Frage; interaktiv: boolean; zeigeSchwierigkeit?: boolean }) {
   const sg = sachgebietById(frage.sachgebiet);
   return (
     <View>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 14 }}>
         <Chip label={sg.kurz} icon={sg.icon as any} />
-        <Chip label={SCHWIERIGKEIT[frage.schwierigkeit]} color={C.warn} bg={C.warnSoft} />
+        {zeigeSchwierigkeit ? <Chip label={SCHWIERIGKEIT[frage.schwierigkeit]} color={C.warn} bg={C.warnSoft} /> : null}
       </View>
       <TermText text={frage.text} interaktiv={interaktiv} style={{ fontSize: 21, lineHeight: 29, fontWeight: '700', color: C.text }} />
       <Text style={[s.muted, { marginTop: 8, marginBottom: 16 }]}>
