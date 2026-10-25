@@ -2,35 +2,38 @@
 
 50 Fragen. ✅ = als richtig markierte Antwort. ⚠️ = Claude ist unsicher, bitte besonders genau prüfen.
 
-## 1. [bgb-001] Ein Kunde leiht sich ein Fahrrad. Was hat er während der Leihe?
+## 1. [bgb-001] (Mehrfachauswahl) Ein Kunde leiht sich ein Fahrrad. Was gilt während der Leihe?
 
-- ❌ A) Er ist Eigentümer des Fahrrads.
-- ✅ B) Er hat den Besitz am Fahrrad, der Verleiher bleibt Eigentümer.
+- ✅ A) Er hat den Besitz am Fahrrad.
+- ❌ B) Er ist Eigentümer des Fahrrads.
 - ❌ C) Er hat weder Besitz noch Eigentum.
 - ❌ D) Er wird nach drei Tagen automatisch Eigentümer.
 - ❌ E) Besitz und Eigentum gehen beide auf ihn über.
+- ✅ F) Der Verleiher bleibt Eigentümer.
 
 **Erklärung:** Besitzer ist, wer die tatsächliche Gewalt über eine Sache hat. Eigentümer ist, wem sie rechtlich gehört. Beim Leihen bekommt man nur den Besitz.
 
 **Rechtsgrundlage:** § 854 BGB (Besitz), § 903 BGB (Eigentum)
 
-## 2. [bgb-002] Woher hat eine Sicherheitskraft in einem Kaufhaus das Hausrecht?
+## 2. [bgb-002] (Mehrfachauswahl) Was gilt für das Hausrecht einer Sicherheitskraft in einem Kaufhaus?
 
-- ❌ A) Sie hat es automatisch durch ihre Sachkundeprüfung.
-- ✅ B) Es wurde ihr vom Hausrechtsinhaber (z. B. Eigentümer oder Mieter) übertragen.
-- ❌ C) Vom Ordnungsamt
-- ❌ D) Aus dem Strafgesetzbuch
-- ❌ E) Jede Sicherheitskraft hat überall Hausrecht.
+- ❌ A) Jede Sicherheitskraft hat überall Hausrecht.
+- ✅ B) Der Eigentümer oder Mieter hat es ihr übertragen.
+- ❌ C) Aus dem Strafgesetzbuch
+- ✅ D) Sie übt es im Auftrag des Hausrechtsinhabers aus.
+- ❌ E) Sie hat es automatisch durch ihre Sachkundeprüfung.
+- ❌ F) Vom Ordnungsamt
 
 **Erklärung:** Das Hausrecht hat der Eigentümer oder berechtigte Besitzer (z. B. Mieter). Er kann es auf eine Sicherheitskraft übertragen, die es dann in seinem Auftrag ausübt.
 
-## 3. [bgb-003] Wann ist Selbsthilfe nach § 229 BGB erlaubt?
+## 3. [bgb-003] (Mehrfachauswahl) Welche Voraussetzungen gelten für die Selbsthilfe nach § 229 BGB?
 
-- ✅ A) Wenn obrigkeitliche Hilfe nicht rechtzeitig zu erreichen ist und sonst die Durchsetzung des Anspruchs vereitelt oder wesentlich erschwert würde
+- ❌ A) Immer, wenn man einen Anspruch hat
 - ❌ B) Nur mit schriftlicher Erlaubnis des Arbeitgebers
-- ❌ C) Nur wenn der Schaden über 1.000 Euro liegt
-- ❌ D) Immer, wenn man einen Anspruch hat
+- ✅ C) Ohne sofortiges Handeln wäre der Anspruch verloren oder viel schwerer durchzusetzen.
+- ❌ D) Nur wenn der Schaden über 1.000 Euro liegt
 - ❌ E) Nur zwischen Familienangehörigen
+- ✅ F) Polizei oder Gericht können nicht rechtzeitig helfen.
 
 **Erklärung:** Selbsthilfe ist nur eine Ausnahme: Die Polizei oder ein Gericht kann nicht rechtzeitig helfen, und ohne sofortiges Handeln wäre der Anspruch verloren oder schwer durchsetzbar.
 
@@ -72,49 +75,53 @@
 
 **Rechtsgrundlage:** § 854 BGB
 
-## 7. [bgb-007] Ein Dieb stiehlt ein Handy. Wer ist danach Eigentümer des Handys?
+## 7. [bgb-007] (Mehrfachauswahl) Ein Dieb stiehlt ein Handy. Was gilt danach?
 
-- ❌ A) Der Dieb
-- ✅ B) Weiterhin die bestohlene Person
-- ❌ C) Die Polizei
-- ❌ D) Der Staat
-- ❌ E) Niemand
+- ❌ A) Die Polizei wird Eigentümerin.
+- ❌ B) Der Dieb wird Eigentümer.
+- ✅ C) Die bestohlene Person bleibt Eigentümerin.
+- ❌ D) Niemand ist mehr Eigentümer.
+- ❌ E) Der Staat wird Eigentümer.
+- ✅ F) Der Dieb wird nur Besitzer.
 
 **Erklärung:** Durch einen Diebstahl verliert der Eigentümer sein Eigentum nicht. Der Dieb wird nur Besitzer, nicht Eigentümer.
 
 **Rechtsgrundlage:** §§ 903, 935 BGB
 
-## 8. [bgb-008] Welche Stellung hat eine Wachperson gegenüber den Sachen, die sie für ihren Auftraggeber bewacht?
+## 8. [bgb-008] (Mehrfachauswahl) Was gilt für eine Wachperson gegenüber den Sachen, die sie für ihren Auftraggeber bewacht?
 
-- ❌ A) Sie ist Eigentümer.
-- ❌ B) Sie ist Mitbesitzer mit eigenen Rechten.
-- ✅ C) Sie ist Besitzdiener, Besitzer bleibt der Auftraggeber.
-- ❌ D) Sie ist Pächter.
-- ❌ E) Sie hat gar keine Beziehung zu den Sachen.
+- ❌ A) Sie hat gar keine Beziehung zu den Sachen.
+- ✅ B) Besitzer bleibt der Auftraggeber.
+- ✅ C) Sie ist Besitzdiener.
+- ❌ D) Sie ist Mitbesitzer mit eigenen Rechten.
+- ❌ E) Sie ist Eigentümer.
+- ❌ F) Sie ist Pächter.
 
 **Erklärung:** Wer die tatsächliche Gewalt für einen anderen ausübt und dessen Weisungen folgen muss, ist Besitzdiener. Besitzer ist der Auftraggeber.
 
 **Rechtsgrundlage:** § 855 BGB
 
-## 9. [bgb-009] Was ist „verbotene Eigenmacht“?
+## 9. [bgb-009] (Mehrfachauswahl) Was ist „verbotene Eigenmacht“?
 
-- ❌ A) Jede Handlung des Eigentümers
-- ❌ B) Eine Festnahme durch die Polizei
-- ✅ C) Wenn jemand dem Besitzer ohne dessen Willen den Besitz entzieht oder ihn darin stört, ohne dass das Gesetz es erlaubt
-- ❌ D) Eine Pfändung durch den Gerichtsvollzieher
-- ❌ E) Wenn jemand eine Sache findet
+- ✅ A) Jemand nimmt dem Besitzer ohne dessen Willen den Besitz weg.
+- ✅ B) Jemand stört den Besitzer ohne dessen Willen im Besitz, ohne dass das Gesetz es erlaubt.
+- ❌ C) Wenn jemand eine Sache findet
+- ❌ D) Eine Festnahme durch die Polizei
+- ❌ E) Eine Pfändung durch den Gerichtsvollzieher
+- ❌ F) Jede Handlung des Eigentümers
 
 **Erklärung:** Verbotene Eigenmacht ist die Entziehung oder Störung des Besitzes ohne den Willen des Besitzers und ohne gesetzliche Erlaubnis.
 
 **Rechtsgrundlage:** § 858 BGB
 
-## 10. [bgb-010] Was erlaubt die Besitzwehr nach § 859 Abs. 1 BGB?
+## 10. [bgb-010] (Mehrfachauswahl) Was gilt für die Besitzwehr nach § 859 Abs. 1 BGB?
 
-- ❌ A) Eine gestohlene Sache noch nach Wochen beim Täter abzuholen
-- ❌ B) Den Täter zu bestrafen
-- ✅ C) Sich gegen verbotene Eigenmacht mit Gewalt zu wehren
-- ❌ D) Die Wohnung des Täters zu durchsuchen
-- ❌ E) Ein Bußgeld zu verlangen
+- ❌ A) Ein Bußgeld zu verlangen
+- ❌ B) Eine gestohlene Sache noch nach Wochen beim Täter abzuholen
+- ✅ C) Gewalt nur so weit einzusetzen, wie sie zur Abwehr nötig ist
+- ❌ D) Den Täter zu bestrafen
+- ✅ E) Sich gegen verbotene Eigenmacht mit Gewalt zu wehren
+- ❌ F) Die Wohnung des Täters zu durchsuchen
 
 **Erklärung:** Der Besitzer darf sich gegen verbotene Eigenmacht mit Gewalt wehren (Besitzwehr). Die Gewalt muss verhältnismäßig sein.
 
@@ -133,37 +140,40 @@
 
 **Rechtsgrundlage:** § 859 Abs. 2 BGB
 
-## 12. [bgb-012] Darf eine Wachperson als Besitzdiener die Besitzwehr und Besitzkehr für den Auftraggeber ausüben?
+## 12. [bgb-012] (Mehrfachauswahl) Darf eine Wachperson als Besitzdiener die Besitzwehr und Besitzkehr für den Auftraggeber ausüben?
 
 - ❌ A) Nein, nur der Besitzer selbst darf das.
-- ❌ B) Nur mit schriftlicher Erlaubnis der Polizei.
-- ❌ C) Nur, wenn der Auftraggeber anwesend ist.
-- ✅ D) Ja, der Besitzdiener darf diese Rechte für den Besitzer ausüben.
-- ❌ E) Nur, wenn die Wachperson die Sachkundeprüfung hat.
+- ✅ B) Ja, der Besitzdiener darf diese Rechte für den Besitzer ausüben.
+- ❌ C) Nur mit schriftlicher Erlaubnis der Polizei.
+- ❌ D) Nur, wenn die Wachperson die Sachkundeprüfung hat.
+- ✅ E) Ja, auch wenn der Auftraggeber nicht anwesend ist.
+- ❌ F) Nur, wenn der Auftraggeber anwesend ist.
 
 **Erklärung:** Auch der Besitzdiener darf die Rechte aus § 859 BGB für den Besitzer ausüben.
 
 **Rechtsgrundlage:** § 860 BGB
 
-## 13. [bgb-013] Was ist Notwehr nach § 227 BGB?
+## 13. [bgb-013] (Mehrfachauswahl) Was ist richtig über die Notwehr nach § 227 BGB?
 
-- ❌ A) Das Recht des Staates, Steuern zu erheben
-- ❌ B) Jede Handlung, die man aus Wut begeht
-- ❌ C) Die Bestrafung eines Täters nach der Tat
-- ❌ D) Das Recht, fremde Sachen zu benutzen
-- ✅ E) Die Verteidigung, die erforderlich ist, um einen gegenwärtigen rechtswidrigen Angriff von sich oder einem anderen abzuwenden
+- ✅ A) Die Verteidigung gegen einen gegenwärtigen rechtswidrigen Angriff
+- ❌ B) Die Bestrafung eines Täters nach der Tat
+- ❌ C) Das Recht, fremde Sachen zu benutzen
+- ❌ D) Das Recht des Staates, Steuern zu erheben
+- ✅ E) Die erforderliche Abwehr auch zugunsten eines anderen (Nothilfe)
+- ❌ F) Jede Handlung, die man aus Wut begeht
 
 **Erklärung:** Notwehr ist die erforderliche Verteidigung gegen einen gegenwärtigen, rechtswidrigen Angriff. Wer in Notwehr handelt, handelt nicht widerrechtlich.
 
 **Rechtsgrundlage:** § 227 BGB
 
-## 14. [bgb-014] Sie verletzen einen Angreifer in Notwehr. Müssen Sie ihm Schadensersatz zahlen?
+## 14. [bgb-014] (Mehrfachauswahl) Sie verletzen einen Angreifer in Notwehr. Müssen Sie ihm Schadensersatz zahlen?
 
-- ❌ A) Ja, immer
+- ✅ A) Nein, der Angreifer hat keinen Anspruch auf Schadensersatz.
 - ❌ B) Ja, aber nur die Hälfte
-- ✅ C) Nein, eine durch Notwehr gebotene Handlung ist nicht widerrechtlich.
-- ❌ D) Nur, wenn der Angreifer verletzt wurde
-- ❌ E) Das entscheidet der Arbeitgeber
+- ❌ C) Nur, wenn der Angreifer verletzt wurde
+- ✅ D) Nein, eine durch Notwehr gebotene Handlung ist nicht widerrechtlich.
+- ❌ E) Ja, immer
+- ❌ F) Das entscheidet der Arbeitgeber
 
 **Erklärung:** Wer in Notwehr handelt, handelt nicht widerrechtlich. Deshalb besteht kein Anspruch auf Schadensersatz.
 
@@ -171,12 +181,12 @@
 
 ## 15. [bgb-015] (Mehrfachauswahl) Welche Voraussetzungen gelten für den defensiven Notstand nach § 228 BGB?
 
-- ✅ A) Die Gefahr droht von der Sache, die beschädigt wird.
-- ❌ B) Der Eigentümer muss vorher zustimmen.
-- ✅ C) Die Beschädigung ist zur Abwendung der Gefahr erforderlich.
-- ✅ D) Der Schaden steht nicht außer Verhältnis zur Gefahr.
-- ❌ E) Nur die Polizei darf so handeln.
-- ❌ F) Die Sache muss wertlos sein.
+- ❌ A) Die Sache muss wertlos sein.
+- ✅ B) Die Beschädigung ist zur Abwendung der Gefahr erforderlich.
+- ❌ C) Nur die Polizei darf so handeln.
+- ✅ D) Die Gefahr droht von der Sache, die beschädigt wird.
+- ❌ E) Der Eigentümer muss vorher zustimmen.
+- ❌ F) Der Schaden darf beliebig groß sein.
 
 **Erklärung:** Beim defensiven Notstand geht die Gefahr von der Sache aus, z. B. einem angreifenden Hund. Man darf sie beschädigen, wenn das erforderlich ist und der Schaden nicht außer Verhältnis zur Gefahr steht.
 
@@ -194,13 +204,14 @@
 
 **Rechtsgrundlage:** § 904 BGB
 
-## 17. [bgb-017] Was kann der Eigentümer beim aggressiven Notstand nach § 904 BGB verlangen?
+## 17. [bgb-017] (Mehrfachauswahl) Was gilt für den Eigentümer beim aggressiven Notstand nach § 904 BGB?
 
-- ❌ A) Dass der Helfer bestraft wird
-- ✅ B) Ersatz des entstandenen Schadens
-- ❌ C) Nichts
-- ❌ D) Dass die Polizei die Sache bewacht
-- ❌ E) Eine Entschuldigung vor Gericht
+- ✅ A) Er kann Ersatz des entstandenen Schadens verlangen.
+- ✅ B) Er muss den Eingriff dulden.
+- ❌ C) Dass die Polizei die Sache bewacht
+- ❌ D) Dass der Helfer bestraft wird
+- ❌ E) Nichts
+- ❌ F) Eine Entschuldigung vor Gericht
 
 **Erklärung:** Der Eigentümer muss den Eingriff dulden, kann aber Ersatz des Schadens verlangen.
 
@@ -208,80 +219,84 @@
 
 ## 18. [bgb-018] (Mehrfachauswahl) Was darf man im Rahmen der Selbsthilfe nach § 229 BGB tun, wenn die Voraussetzungen vorliegen?
 
-- ✅ A) Eine Sache wegnehmen
-- ❌ B) Den Schuldner schlagen, damit er zahlt
-- ✅ C) Einen fluchtverdächtigen Schuldner festnehmen
-- ❌ D) Die Wohnung des Schuldners durchsuchen
-- ✅ E) Den Widerstand des Schuldners gegen eine Handlung, die er dulden muss, beseitigen
-- ❌ F) Den Schuldner einsperren, bis er zahlt
+- ❌ A) Den Schuldner schlagen, damit er zahlt
+- ✅ B) Einen fluchtverdächtigen Schuldner festnehmen
+- ❌ C) Die Wohnung des Schuldners durchsuchen
+- ❌ D) Den Schuldner bestrafen
+- ❌ E) Den Schuldner einsperren, bis er zahlt
+- ✅ F) Eine Sache wegnehmen
 
 **Erklärung:** Selbsthilfe erlaubt Wegnehmen, Zerstören oder Beschädigen einer Sache, die Festnahme eines fluchtverdächtigen Verpflichteten und das Beseitigen von Widerstand. Strafen oder Einsperren ist nicht erlaubt.
 
 **Rechtsgrundlage:** § 229 BGB
 
-## 19. [bgb-019] Was muss nach einer Festnahme im Rahmen der Selbsthilfe geschehen?
+## 19. [bgb-019] (Mehrfachauswahl) Was muss nach einer Festnahme im Rahmen der Selbsthilfe geschehen?
 
 - ❌ A) Der Festgenommene darf bis zum nächsten Tag festgehalten werden.
-- ✅ B) Er muss unverzüglich dem Amtsgericht vorgeführt werden – in der Praxis wird sofort die Polizei gerufen.
-- ❌ C) Gar nichts, er kann wieder gehen.
+- ❌ B) Gar nichts, er kann wieder gehen.
+- ✅ C) Er muss unverzüglich dem Amtsgericht vorgeführt werden.
 - ❌ D) Der Festgenommene muss eine Erklärung unterschreiben.
 - ❌ E) Er muss beim Arbeitgeber abgegeben werden.
+- ✅ F) In der Praxis wird sofort die Polizei gerufen.
 
 **Erklärung:** Wer im Wege der Selbsthilfe festgenommen wurde, muss unverzüglich dem Amtsgericht vorgeführt werden. Praktisch heißt das: sofort die Polizei rufen.
 
 **Rechtsgrundlage:** § 230 Abs. 3 BGB
 
-## 20. [bgb-020] Jemand nimmt irrtümlich an, die Voraussetzungen der Selbsthilfe lägen vor. Was folgt daraus?
+## 20. [bgb-020] (Mehrfachauswahl) Jemand nimmt irrtümlich an, die Voraussetzungen der Selbsthilfe lägen vor. Was folgt daraus?
 
 - ❌ A) Er wird belohnt.
-- ❌ B) Es hat keine Folgen.
-- ❌ C) Nur der Auftraggeber haftet.
-- ✅ D) Er muss den Schaden ersetzen, auch wenn der Irrtum nicht auf Fahrlässigkeit beruht.
-- ❌ E) Er bekommt eine Verwarnung von der IHK.
+- ✅ B) Die Ersatzpflicht gilt auch, wenn er den Irrtum nicht verschuldet hat.
+- ✅ C) Er muss den Schaden ersetzen.
+- ❌ D) Nur der Auftraggeber haftet.
+- ❌ E) Es hat keine Folgen.
+- ❌ F) Er bekommt eine Verwarnung von der IHK.
 
 **Erklärung:** Wer irrtümlich Selbsthilfe übt, muss dem anderen den Schaden ersetzen – auch ohne Verschulden.
 
 **Rechtsgrundlage:** § 231 BGB
 
-## 21. [bgb-021] (Mehrfachauswahl) Wer kann das Hausrecht haben oder ausüben?
+## 21. [bgb-021] (Mehrfachauswahl) Wer hat das Hausrecht?
 
-- ✅ A) Der Eigentümer eines Gebäudes
-- ❌ B) Jeder Kunde in einem Geschäft
-- ✅ C) Der Mieter einer Wohnung
-- ✅ D) Eine Person, die vom Hausrechtsinhaber beauftragt wurde
+- ✅ A) Der Mieter einer Wohnung
+- ✅ B) Der Eigentümer eines Gebäudes
+- ❌ C) Jeder Lieferant, der das Gebäude betritt
+- ❌ D) Jeder Kunde in einem Geschäft
 - ❌ E) Jeder Passant auf der Straße
 - ❌ F) Die IHK
 
-**Erklärung:** Das Hausrecht hat der Eigentümer oder Besitzer, z. B. der Mieter. Er kann eine andere Person, z. B. eine Sicherheitskraft, mit der Ausübung beauftragen.
+**Erklärung:** Das Hausrecht hat der Eigentümer oder Besitzer, z. B. der Mieter. Er kann eine andere Person, z. B. eine Sicherheitskraft, mit der Ausübung beauftragen. Kunden, Lieferanten oder Passanten haben kein Hausrecht.
 
-## 22. [bgb-022] Wer hat in einer vermieteten Wohnung das Hausrecht?
+## 22. [bgb-022] (Mehrfachauswahl) Was gilt in einer vermieteten Wohnung für das Hausrecht?
 
-- ❌ A) Der Vermieter
+- ❌ A) Die Nachbarn
 - ❌ B) Die Polizei
-- ❌ C) Der Hausmeister
-- ❌ D) Die Nachbarn
-- ✅ E) Der Mieter
+- ❌ C) Der Vermieter
+- ❌ D) Der Hausmeister
+- ✅ E) Der Vermieter darf die Wohnung nicht ohne Erlaubnis des Mieters betreten.
+- ✅ F) Der Mieter
 
 **Erklärung:** In einer vermieteten Wohnung hat der Mieter das Hausrecht. Der Vermieter darf die Wohnung nicht ohne Erlaubnis betreten.
 
-## 23. [bgb-023] Wer darf in einem Kaufhaus ein Hausverbot aussprechen?
+## 23. [bgb-023] (Mehrfachauswahl) Wer darf in einem Kaufhaus ein Hausverbot aussprechen?
 
-- ❌ A) Jeder Mitarbeiter eines anderen Geschäfts
-- ❌ B) Jeder Kunde
-- ❌ C) Nur die IHK
-- ❌ D) Nur ein Richter
-- ✅ E) Der Inhaber des Hausrechts oder eine von ihm beauftragte Person, z. B. die Sicherheitskraft
+- ❌ A) Nur die IHK
+- ❌ B) Jeder Mitarbeiter eines anderen Geschäfts
+- ✅ C) Der Inhaber des Hausrechts
+- ✅ D) Eine vom Hausrechtsinhaber beauftragte Person, z. B. die Sicherheitskraft
+- ❌ E) Jeder Kunde
+- ❌ F) Nur ein Richter
 
 **Erklärung:** Das Hausverbot folgt aus dem Hausrecht. Aussprechen darf es der Hausrechtsinhaber oder eine Person, die er damit beauftragt hat.
 
 ## 24. [bgb-024] (Mehrfachauswahl) Welche Rechtsgüter schützt § 823 Abs. 1 BGB ausdrücklich?
 
-- ✅ A) Leben
-- ❌ B) Die Hoffnung auf eine Beförderung
-- ✅ C) Körper und Gesundheit
-- ❌ D) Die Erwartung, im Lotto zu gewinnen
-- ✅ E) Eigentum
-- ❌ F) Den Lieblingsplatz in der Kantine
+- ❌ A) Die Erwartung einer Gehaltserhöhung
+- ❌ B) Die Erwartung, im Lotto zu gewinnen
+- ✅ C) Leben
+- ❌ D) Den Lieblingsplatz in der Kantine
+- ❌ E) Die Hoffnung auf eine Beförderung
+- ✅ F) Eigentum
 
 **Erklärung:** Nach § 823 Abs. 1 BGB muss Schadensersatz leisten, wer vorsätzlich oder fahrlässig Leben, Körper, Gesundheit, Freiheit, Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt.
 
@@ -299,37 +314,40 @@
 
 **Rechtsgrundlage:** § 823 Abs. 1, § 276 BGB
 
-## 26. [bgb-026] Eine Wachperson beschädigt beim Rangieren fahrlässig das Auto eines Kunden. Was gilt?
+## 26. [bgb-026] (Mehrfachauswahl) Eine Wachperson beschädigt beim Rangieren fahrlässig das Auto eines Kunden. Was gilt?
 
-- ❌ A) Niemand muss zahlen, es war ja keine Absicht.
-- ✅ B) Es besteht ein Anspruch auf Schadensersatz – gegen die Wachperson und meist auch gegen den Arbeitgeber.
-- ❌ C) Nur die Versicherung des Kunden zahlt.
+- ✅ A) Meist haftet auch der Arbeitgeber.
+- ❌ B) Niemand muss zahlen, es war ja keine Absicht.
+- ❌ C) Nur die Polizei entscheidet, wer zahlt.
 - ❌ D) Der Kunde muss den Schaden selbst tragen.
-- ❌ E) Nur die Polizei entscheidet, wer zahlt.
+- ✅ E) Die Wachperson muss Schadensersatz leisten.
+- ❌ F) Nur die Versicherung des Kunden zahlt.
 
 **Erklärung:** Wer fahrlässig fremdes Eigentum beschädigt, muss Schadensersatz leisten. Der Arbeitgeber haftet häufig mit, z. B. für seine Verrichtungsgehilfen.
 
 **Rechtsgrundlage:** §§ 823, 831 BGB
 
-## 27. [bgb-027] Wofür haftet ein Arbeitgeber nach § 831 BGB?
+## 27. [bgb-027] (Mehrfachauswahl) Was gilt für die Haftung eines Arbeitgebers nach § 831 BGB?
 
-- ❌ A) Für alle Schäden auf der Welt
-- ❌ B) Nur für eigene Fehler im Büro
-- ✅ C) Für Schäden, die seine Mitarbeiter (Verrichtungsgehilfen) bei der Arbeit widerrechtlich verursachen – außer er hat sie sorgfältig ausgewählt und überwacht
-- ❌ D) Für private Schäden seiner Mitarbeiter in der Freizeit
-- ❌ E) Für Schäden, die Kunden untereinander verursachen
+- ✅ A) Für Schäden, die seine Verrichtungsgehilfen bei der Arbeit widerrechtlich verursachen
+- ❌ B) Für Schäden, die Kunden untereinander verursachen
+- ❌ C) Nur für eigene Fehler im Büro
+- ❌ D) Für alle Schäden auf der Welt
+- ❌ E) Für private Schäden seiner Mitarbeiter in der Freizeit
+- ✅ F) Er kann sich entlasten, wenn er die Mitarbeiter sorgfältig ausgewählt und überwacht hat.
 
 **Erklärung:** Der Geschäftsherr haftet für Verrichtungsgehilfen. Er kann sich entlasten, wenn er sie sorgfältig ausgewählt und überwacht hat.
 
 **Rechtsgrundlage:** § 831 BGB
 
-## 28. [bgb-028] Wann kann man Schmerzensgeld verlangen?
+## 28. [bgb-028] (Mehrfachauswahl) In welchen Fällen kann man Schmerzensgeld verlangen?
 
-- ❌ A) Bei jeder Beleidigung im Internet automatisch
-- ❌ B) Nur bei Schäden an Sachen
-- ❌ C) Nie, Schmerzensgeld gibt es in Deutschland nicht
+- ❌ A) Nur bei Schäden an Sachen
+- ❌ B) Bei jeder Beleidigung im Internet automatisch
+- ✅ C) Bei Verletzung der Gesundheit
 - ❌ D) Nur, wenn der Täter verurteilt wurde
-- ✅ E) Bei Verletzung von Körper, Gesundheit, Freiheit oder sexueller Selbstbestimmung
+- ❌ E) Nie, Schmerzensgeld gibt es in Deutschland nicht
+- ✅ F) Bei Verletzung des Körpers
 
 **Erklärung:** Schmerzensgeld ist Geld für einen Schaden, der kein Vermögensschaden ist. Es kann bei Verletzung von Körper, Gesundheit, Freiheit oder sexueller Selbstbestimmung verlangt werden.
 
@@ -383,25 +401,27 @@
 
 **Rechtsgrundlage:** § 1 BGB
 
-## 33. [bgb-033] Ein 6-jähriges Kind wirft beim Spielen eine Scheibe ein. Ist das Kind für den Schaden verantwortlich?
+## 33. [bgb-033] (Mehrfachauswahl) Ein 6-jähriges Kind wirft beim Spielen eine Scheibe ein. Was gilt?
 
-- ❌ A) Ja, voll wie ein Erwachsener
-- ❌ B) Ja, aber nur zur Hälfte
-- ❌ C) Ja, wenn es weint
-- ✅ D) Nein, Kinder unter 7 Jahren sind für Schäden nicht verantwortlich.
-- ❌ E) Ja, wenn die Scheibe teuer war
+- ✅ A) Nein, Kinder unter 7 Jahren sind für Schäden nicht verantwortlich.
+- ❌ B) Ja, voll wie ein Erwachsener
+- ✅ C) Unter Umständen haften die Aufsichtspflichtigen, z. B. die Eltern.
+- ❌ D) Ja, aber nur zur Hälfte
+- ❌ E) Ja, wenn es weint
+- ❌ F) Ja, wenn die Scheibe teuer war
 
 **Erklärung:** Wer noch nicht 7 Jahre alt ist, ist für einen Schaden nicht verantwortlich (deliktsunfähig). Unter Umständen haften aber die Aufsichtspflichtigen.
 
 **Rechtsgrundlage:** § 828 Abs. 1, § 832 BGB
 
-## 34. [bgb-034] Wie kommt ein Vertrag zustande?
+## 34. [bgb-034] (Mehrfachauswahl) Was ist richtig über das Zustandekommen eines Vertrags?
 
-- ❌ A) Durch Bezahlung allein
-- ✅ B) Durch zwei übereinstimmende Willenserklärungen: Angebot und Annahme
-- ❌ C) Nur durch eine Unterschrift beim Notar
+- ✅ A) Durch zwei übereinstimmende Willenserklärungen: Angebot und Annahme
+- ✅ B) Viele Verträge können auch mündlich geschlossen werden.
+- ❌ C) Durch Bezahlung allein
 - ❌ D) Nur durch einen schriftlichen Vertrag
-- ❌ E) Durch eine Anzeige bei der Polizei
+- ❌ E) Nur durch eine Unterschrift beim Notar
+- ❌ F) Durch eine Anzeige bei der Polizei
 
 **Erklärung:** Ein Vertrag entsteht durch Angebot und Annahme. Viele Verträge können auch mündlich oder durch schlüssiges Verhalten geschlossen werden.
 
@@ -419,13 +439,14 @@
 
 **Rechtsgrundlage:** § 611 BGB
 
-## 36. [bgb-036] Sie finden bei einem Kontrollgang auf einem öffentlichen Weg eine Geldbörse. Was müssen Sie tun?
+## 36. [bgb-036] (Mehrfachauswahl) Sie finden bei einem Kontrollgang auf einem öffentlichen Weg eine Geldbörse. Was müssen Sie tun?
 
-- ❌ A) Sie behalten sie, weil Sie der Finder sind.
-- ✅ B) Sie zeigen den Fund dem Verlierer, Eigentümer oder der zuständigen Behörde (Fundbüro) an.
-- ❌ C) Sie nehmen das Geld heraus und werfen die Börse weg.
+- ✅ A) Sie zeigen den Fund der zuständigen Behörde (Fundbüro) an.
+- ✅ B) Sie zeigen den Fund unverzüglich dem Verlierer oder Eigentümer an, wenn Sie ihn kennen.
+- ❌ C) Sie behalten sie, weil Sie der Finder sind.
 - ❌ D) Sie lassen sie liegen und sagen niemandem etwas.
-- ❌ E) Sie verkaufen sie und spenden das Geld.
+- ❌ E) Sie nehmen das Geld heraus und werfen die Börse weg.
+- ❌ F) Sie verkaufen sie und spenden das Geld.
 
 **Erklärung:** Der Finder muss den Fund unverzüglich dem Verlierer, Eigentümer oder der zuständigen Behörde anzeigen. Wer die Sache behält, kann sich wegen Unterschlagung strafbar machen.
 
@@ -477,13 +498,14 @@
 
 **Rechtsgrundlage:** § 90a BGB
 
-## 41. [bgb-041] Personen besetzen ein leerstehendes Gebäude. Wann darf der Besitzer sie selbst wieder entfernen (Besitzkehr bei Grundstücken)?
+## 41. [bgb-041] (Mehrfachauswahl) Personen besetzen ein leerstehendes Gebäude. Was gilt für die Besitzkehr bei Grundstücken?
 
-- ❌ A) Jederzeit, auch Monate später
-- ❌ B) Nur mit einem Urteil
-- ❌ C) Nie, das darf nur die Polizei
-- ❌ D) Nur, wenn die Besetzer einverstanden sind
+- ✅ A) Später muss er den Rechtsweg gehen oder die Polizei einschalten.
+- ❌ B) Nie, das darf nur die Polizei
+- ❌ C) Nur mit einem Urteil
+- ❌ D) Jederzeit, auch Monate später
 - ✅ E) Sofort nach der Besitzentziehung
+- ❌ F) Nur, wenn die Besetzer einverstanden sind
 
 **Erklärung:** Bei Grundstücken und Gebäuden darf der Besitzer sich den Besitz sofort nach der Entziehung durch Entsetzung des Täters wieder verschaffen. Später muss er den Rechtsweg gehen.
 
@@ -501,25 +523,27 @@
 
 **Rechtsgrundlage:** § 228 BGB
 
-## 43. [bgb-043] Ein Angreifer schlägt Sie und läuft dann weg. Sie holen ihn ein und schlagen zurück. Ist das Notwehr?
+## 43. [bgb-043] (Mehrfachauswahl) Ein Angreifer schlägt Sie und läuft dann weg. Sie holen ihn ein und schlagen zurück. Ist das Notwehr?
 
-- ✅ A) Nein, der Angriff war schon beendet – es fehlt ein gegenwärtiger Angriff.
+- ❌ A) Ja, wenn Zeugen dabei waren.
 - ❌ B) Ja, wenn der Angreifer zuerst geschlagen hat.
 - ❌ C) Ja, wenn er schneller war.
-- ❌ D) Ja, wenn Zeugen dabei waren.
+- ✅ D) Nein, der Angriff war schon beendet.
 - ❌ E) Ja, man darf sich immer rächen.
+- ✅ F) Nein, ein Gegenschlag nach dem Angriff ist Rache.
 
 **Erklärung:** Notwehr setzt einen gegenwärtigen Angriff voraus. Ist der Angriff vorbei, ist ein Gegenschlag Rache und keine Notwehr.
 
 **Rechtsgrundlage:** § 227 BGB, § 32 StGB
 
-## 44. [bgb-044] Ein Gast will ein Restaurant ohne Bezahlung verlassen und sich nicht ausweisen. Was darf die Sicherheitskraft des Restaurants?
+## 44. [bgb-044] (Mehrfachauswahl) Ein Gast will ein Restaurant ohne Bezahlung verlassen und sich nicht ausweisen. Was darf die Sicherheitskraft des Restaurants?
 
-- ❌ A) Ihm das Handy abnehmen und behalten
+- ❌ A) Ihn schlagen
 - ✅ B) Ihn festhalten, bis die Polizei kommt
-- ❌ C) Ihn schlagen
-- ❌ D) Ihn im Keller einschließen
-- ❌ E) Seine Wohnung aufsuchen und Geld holen
+- ❌ C) Ihm das Handy abnehmen und behalten
+- ✅ D) Die Polizei rufen, damit sie die Identität feststellt
+- ❌ E) Ihn im Keller einschließen
+- ❌ F) Seine Wohnung aufsuchen und Geld holen
 
 **Erklärung:** Wer die Zeche prellen will und unbekannt ist, darf festgehalten werden, bis die Polizei die Identität feststellt (Selbsthilfe nach § 229 BGB, außerdem § 127 StPO bei einer Straftat). Mehr Gewalt als nötig ist nicht erlaubt.
 
@@ -561,13 +585,14 @@
 
 **Rechtsgrundlage:** § 278 BGB
 
-## 48. [bgb-048] Was bedeutet „Leihe“ im Gegensatz zur „Miete“?
+## 48. [bgb-048] (Mehrfachauswahl) Was bedeutet „Leihe“ im Gegensatz zur „Miete“?
 
-- ❌ A) Bei der Leihe muss man immer Zinsen zahlen.
+- ❌ A) Es gibt keinen Unterschied.
 - ❌ B) Bei der Leihe wird die Sache verkauft.
-- ❌ C) Bei der Miete wird man Eigentümer.
-- ❌ D) Es gibt keinen Unterschied.
-- ✅ E) Bei der Leihe wird eine Sache unentgeltlich überlassen, bei der Miete gegen Bezahlung.
+- ✅ C) Bei der Leihe wird eine Sache unentgeltlich überlassen.
+- ✅ D) Bei der Miete wird für die Überlassung bezahlt.
+- ❌ E) Bei der Miete wird man Eigentümer.
+- ❌ F) Bei der Leihe muss man immer Zinsen zahlen.
 
 **Erklärung:** Leihe ist die kostenlose Überlassung einer Sache zum Gebrauch. Bei der Miete wird dafür bezahlt. In beiden Fällen wird man Besitzer, nicht Eigentümer.
 
@@ -587,12 +612,12 @@
 
 ## 50. [bgb-050] (Mehrfachauswahl) Welche Aussagen über Kinder und Jugendliche im BGB sind richtig?
 
-- ✅ A) Kinder unter 7 Jahren sind geschäftsunfähig.
-- ❌ B) Mit 16 Jahren ist man voll geschäftsfähig.
+- ❌ A) Mit 16 Jahren ist man voll geschäftsfähig.
+- ❌ B) Mit 21 Jahren tritt die Volljährigkeit ein.
 - ✅ C) Jugendliche zwischen 7 und 18 Jahren sind beschränkt geschäftsfähig.
 - ❌ D) Kinder unter 7 Jahren haften für jeden Schaden voll.
-- ✅ E) Mit 18 Jahren tritt die Volljährigkeit ein.
-- ❌ F) Minderjährige dürfen nie etwas kaufen.
+- ❌ E) Minderjährige dürfen nie etwas kaufen.
+- ✅ F) Kinder unter 7 Jahren sind geschäftsunfähig.
 
 **Erklärung:** Unter 7: geschäftsunfähig. Von 7 bis 17: beschränkt geschäftsfähig (Ausnahme z. B. Taschengeld). Ab 18: volljährig und voll geschäftsfähig.
 

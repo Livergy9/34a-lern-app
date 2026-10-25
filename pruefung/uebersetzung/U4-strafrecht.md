@@ -4,10 +4,10 @@
 
 ## 1. [st-001]
 
-**Frage DE:** Was ist Notwehr nach § 32 StGB?
+**Frage DE:** Was ist richtig über die Notwehr nach § 32 StGB?
 
-- EN: What is self-defence (Notwehr) under § 32 StGB?
-- RO: Ce este legitima apărare (Notwehr) conform § 32 StGB?
+- EN: What is true about self-defence under section 32 of the Criminal Code?
+- RO: Ce este adevărat despre legitima apărare conform § 32 StGB?
 
 **Erklärung DE:** Notwehr setzt einen gegenwärtigen (gerade stattfindenden) und rechtswidrigen Angriff voraus. Die Verteidigung muss erforderlich sein – Rache oder Strafe nach dem Angriff ist keine Notwehr.
 
@@ -28,10 +28,10 @@
 
 ## 3. [st-003]
 
-**Frage DE:** Was ist ein Diebstahl nach § 242 StGB?
+**Frage DE:** Was gehört zu einem Diebstahl nach § 242 StGB?
 
-- EN: What is theft under § 242 StGB?
-- RO: Ce este furtul conform § 242 StGB?
+- EN: What is part of theft under section 242 of the Criminal Code?
+- RO: Ce face parte din furt conform § 242 StGB?
 
 **Erklärung DE:** Diebstahl bedeutet: Wegnahme einer fremden beweglichen Sache mit Zueignungsabsicht – der Täter will die Sache wie ein Eigentümer behalten oder nutzen.
 
@@ -52,10 +52,10 @@
 
 ## 5. [st-005]
 
-**Frage DE:** Wer leitet die Strafverfolgung in Deutschland?
+**Frage DE:** Wer ist in Deutschland für die Strafverfolgung zuständig?
 
-- EN: Who leads criminal prosecution in Germany?
-- RO: Cine conduce urmărirea penală în Germania?
+- EN: Who is responsible for criminal prosecution in Germany?
+- RO: Cine este responsabil de urmărirea penală în Germania?
 
 **Erklärung DE:** Die Staatsanwaltschaft leitet das Ermittlungsverfahren. Die Polizei ermittelt in ihrem Auftrag. Sicherheitskräfte haben dabei keine eigenen Befugnisse.
 
@@ -76,10 +76,10 @@
 
 ## 7. [st-007]
 
-**Frage DE:** Welche Stufen werden bei der Prüfung einer Straftat unterschieden?
+**Frage DE:** Welche gehören zu den Stufen bei der Prüfung einer Straftat?
 
-- EN: Which levels are distinguished when examining a criminal offence?
-- RO: Ce niveluri se deosebesc la analiza unei infracțiuni?
+- EN: Which of these are stages when examining a criminal offence?
+- RO: Care dintre acestea sunt etape în analiza unei infracțiuni?
 
 **Erklärung DE:** Eine Straftat liegt vor, wenn der Tatbestand erfüllt ist, die Tat rechtswidrig war (kein Rechtfertigungsgrund wie Notwehr) und der Täter schuldhaft gehandelt hat.
 
@@ -88,10 +88,10 @@
 
 ## 8. [st-008]
 
-**Frage DE:** Was bedeutet Vorsatz?
+**Frage DE:** Was ist richtig über den Vorsatz?
 
-- EN: What does intent (Vorsatz) mean?
-- RO: Ce înseamnă intenția (Vorsatz)?
+- EN: What is true about intent?
+- RO: Ce este adevărat despre intenție?
 
 **Erklärung DE:** Vorsatz bedeutet Wissen und Wollen der Tat. Es reicht auch, wenn der Täter den Erfolg für möglich hält und billigend in Kauf nimmt.
 
@@ -196,10 +196,10 @@
 
 ## 17. [st-017]
 
-**Frage DE:** Was bedeutet „Mittäterschaft“?
+**Frage DE:** Was ist richtig über die Mittäterschaft?
 
-- EN: What does „joint perpetration“ (Mittäterschaft) mean?
-- RO: Ce înseamnă „coautoratul“ (Mittäterschaft)?
+- EN: What is true about joint perpetration?
+- RO: Ce este adevărat despre coautorat?
 
 **Erklärung DE:** Begehen mehrere die Tat gemeinschaftlich nach einem gemeinsamen Plan, wird jeder als Täter bestraft.
 
@@ -208,10 +208,10 @@
 
 ## 18. [st-018]
 
-**Frage DE:** Was ist Beihilfe?
+**Frage DE:** Was ist Beihilfe zu einer Straftat?
 
-- EN: What is aiding (Beihilfe)?
-- RO: Ce este complicitatea (Beihilfe)?
+- EN: What is aiding and abetting a criminal offence?
+- RO: Ce este complicitatea la o infracțiune?
 
 **Erklärung DE:** Beihilfe leistet, wer einem anderen bei dessen vorsätzlicher Tat hilft, z. B. Schmiere steht. Wer einen anderen zur Tat bestimmt, ist Anstifter.
 
@@ -249,10 +249,10 @@
 - EN: A thief tries to snatch a visitor's handbag. May the security guard use self-defence?
 - RO: Un hoț încearcă să smulgă poșeta unei vizitatoare. Are voie agentul de pază să folosească legitima apărare?
 
-**Erklärung DE:** Notwehr ist gegen Angriffe auf jedes Rechtsgut erlaubt, auch auf Eigentum. Die Verteidigung muss aber erforderlich sein.
+**Erklärung DE:** Notwehr ist gegen Angriffe auf jedes Rechtsgut erlaubt, auch auf Eigentum. Man darf sie auch für andere ausüben (Nothilfe). Die Verteidigung muss aber erforderlich sein.
 
-- EN: Self-defence is allowed against attacks on any legal interest, including property. But the defence must be necessary.
-- RO: Legitima apărare este permisă împotriva atacurilor asupra oricărui bun juridic, inclusiv asupra proprietății. Dar apărarea trebuie să fie necesară.
+- EN: Self-defence is allowed against attacks on any legal interest, including property. You may also use it for others (defence of others). But the defence must be necessary.
+- RO: Legitima apărare este permisă împotriva atacurilor asupra oricărui bun juridic, inclusiv proprietatea. Poate fi exercitată și pentru alții (apărarea altuia). Dar apărarea trebuie să fie necesară.
 
 ## 22. [st-022]
 
@@ -268,10 +268,10 @@
 
 ## 23. [st-023]
 
-**Frage DE:** Was ist ein Notwehrexzess nach § 33 StGB?
+**Frage DE:** Was ist richtig über den Notwehrexzess nach § 33 StGB?
 
-- EN: What is excessive self-defence (Notwehrexzess) under § 33 StGB?
-- RO: Ce este depășirea limitelor legitimei apărări (Notwehrexzess) conform § 33 StGB?
+- EN: What is true about excessive self-defence under section 33 of the Criminal Code?
+- RO: Ce este adevărat despre depășirea limitelor legitimei apărări conform § 33 StGB?
 
 **Erklärung DE:** Wer die Grenzen der Notwehr aus Verwirrung, Furcht oder Schrecken überschreitet, wird nicht bestraft. Aus Wut oder Rache gilt das nicht.
 
@@ -280,10 +280,10 @@
 
 ## 24. [st-024]
 
-**Frage DE:** Um ein Kind aus einem brennenden Haus zu retten, tritt eine Sicherheitskraft die Haustür ein. Was rechtfertigt die Sachbeschädigung?
+**Frage DE:** Um ein Kind aus einem brennenden Haus zu retten, tritt eine Sicherheitskraft die Haustür ein. Was ist richtig?
 
-- EN: To rescue a child from a burning house, a security guard kicks in the front door. What justifies the damage to property?
-- RO: Pentru a salva un copil dintr-o casă în flăcări, un agent de pază sparge ușa cu piciorul. Ce justifică distrugerea?
+- EN: To rescue a child from a burning house, a security officer kicks in the front door. What is correct?
+- RO: Pentru a salva un copil dintr-o casă în flăcări, un agent de securitate sparge ușa de la intrare. Ce este corect?
 
 **Erklärung DE:** Wer eine Gefahr für Leben oder Gesundheit nur abwenden kann, indem er ein anderes Rechtsgut verletzt, handelt nicht rechtswidrig – wenn das geschützte Interesse deutlich überwiegt.
 
@@ -328,10 +328,10 @@
 
 ## 28. [st-028]
 
-**Frage DE:** Eine Sicherheitskraft lässt aus Unachtsamkeit eine schwere Tür zufallen. Ein Besucher wird an der Hand verletzt. Welche Straftat kommt in Betracht?
+**Frage DE:** Eine Sicherheitskraft lässt aus Unachtsamkeit eine schwere Tür zufallen. Ein Besucher wird an der Hand verletzt. Was ist richtig?
 
-- EN: Through carelessness, a security guard lets a heavy door slam shut. A visitor's hand is injured. Which criminal offence may apply?
-- RO: Din neatenție, un agent de pază lasă o ușă grea să se închidă brusc. Un vizitator este rănit la mână. Ce infracțiune poate fi?
+- EN: Through carelessness, a security officer lets a heavy door slam shut. A visitor's hand is injured. What is correct?
+- RO: Din neatenție, un agent de securitate lasă o ușă grea să se închidă. Un vizitator este rănit la mână. Ce este corect?
 
 **Erklärung DE:** Wer durch Fahrlässigkeit die Körperverletzung einer anderen Person verursacht, kann wegen fahrlässiger Körperverletzung bestraft werden.
 
@@ -352,15 +352,15 @@
 
 ## 30. [st-030]
 
-**Frage DE:** Ein Ladendetektiv sperrt einen Kunden ohne Verdacht einer Straftat für zwei Stunden in einen Raum. Welche Straftat kommt in Betracht?
+**Frage DE:** Ein Ladendetektiv sperrt einen Kunden ohne Verdacht einer Straftat für zwei Stunden in einen Raum. Was ist richtig?
 
-- EN: A store detective locks a customer in a room for two hours without suspicion of a criminal offence. Which criminal offence may apply?
-- RO: Un detectiv de magazin închide un client într-o cameră timp de două ore fără suspiciunea unei infracțiuni. Ce infracțiune poate fi?
+- EN: A store detective locks a customer in a room for two hours without suspicion of a crime. What is correct?
+- RO: Un detectiv de magazin închide un client într-o cameră timp de două ore, fără suspiciunea unei infracțiuni. Ce este corect?
 
-**Erklärung DE:** Wer einen Menschen einsperrt oder auf andere Weise der Freiheit beraubt, ohne dass ein Recht dazu besteht, macht sich wegen Freiheitsberaubung strafbar.
+**Erklärung DE:** Wer einen Menschen einsperrt oder auf andere Weise der Freiheit beraubt, ohne dass ein Recht dazu besteht, macht sich wegen Freiheitsberaubung strafbar. Das Festnahmerecht nach § 127 StPO setzt eine Straftat voraus – ohne Verdacht gibt es kein Recht zum Festhalten.
 
-- EN: Anyone who locks a person up or deprives them of their freedom in another way without having the right to do so commits false imprisonment (Freiheitsberaubung).
-- RO: Cine închide un om sau îl lipsește în alt mod de libertate fără să aibă dreptul comite infracțiunea de lipsire de libertate (Freiheitsberaubung).
+- EN: Anyone who locks up a person or otherwise deprives them of their liberty without having a right to do so commits false imprisonment. The right of arrest under section 127 of the Code of Criminal Procedure requires a criminal offence – without suspicion there is no right to hold someone.
+- RO: Cine închide o persoană sau o privează în alt mod de libertate fără a avea acest drept comite lipsire de libertate. Dreptul de reținere conform § 127 StPO presupune o infracțiune – fără suspiciune nu există dreptul de a reține pe cineva.
 
 ## 31. [st-031]
 
@@ -376,10 +376,10 @@
 
 ## 32. [st-032]
 
-**Frage DE:** Was ist der Unterschied zwischen übler Nachrede und Verleumdung?
+**Frage DE:** Was ist richtig über üble Nachrede und Verleumdung?
 
-- EN: What is the difference between defamation (üble Nachrede) and slander (Verleumdung)?
-- RO: Care este diferența dintre defăimare (üble Nachrede) și calomnie (Verleumdung)?
+- EN: What is true about defamation and slander?
+- RO: Ce este adevărat despre defăimare și calomnie?
 
 **Erklärung DE:** Üble Nachrede: Behauptung einer ehrenrührigen Tatsache, die nicht erweislich wahr ist. Verleumdung: Der Täter weiß, dass die Behauptung unwahr ist.
 
@@ -448,10 +448,10 @@
 
 ## 38. [st-038]
 
-**Frage DE:** Ein Täter bricht nachts in ein Bürogebäude ein und stiehlt Laptops. Wie wird das im Gesetz eingeordnet?
+**Frage DE:** Ein Täter bricht nachts in ein Bürogebäude ein und stiehlt Laptops. Was ist richtig?
 
-- EN: An offender breaks into an office building at night and steals laptops. How is this classified in the law?
-- RO: Un făptaș pătrunde noaptea prin efracție într-o clădire de birouri și fură laptopuri. Cum este încadrată fapta în lege?
+- EN: At night, an offender breaks into an office building and steals laptops. What is correct?
+- RO: Noaptea, un făptaș pătrunde prin efracție într-o clădire de birouri și fură laptopuri. Ce este corect?
 
 **Erklärung DE:** Wer zur Ausführung der Tat in ein Gebäude einbricht, begeht in der Regel einen besonders schweren Fall des Diebstahls. Daneben können Sachbeschädigung und Hausfriedensbruch vorliegen.
 
@@ -520,10 +520,10 @@
 
 ## 44. [st-044]
 
-**Frage DE:** Eine Wachperson sagt zu einem Besucher: „Ich bin von der Polizei, zeigen Sie mir Ihren Ausweis!“ Welche Straftat kommt in Betracht?
+**Frage DE:** Eine Wachperson sagt zu einem Besucher: „Ich bin von der Polizei, zeigen Sie mir Ihren Ausweis!“ Was ist richtig?
 
-- EN: A guard says to a visitor: „I'm from the police, show me your ID!“ Which criminal offence may apply?
-- RO: Un agent de pază îi spune unui vizitator: „Sunt de la poliție, arătați-mi actul de identitate!“ Ce infracțiune poate fi?
+- EN: A security guard says to a visitor: "I'm from the police, show me your ID!" What is correct?
+- RO: Un agent de pază îi spune unui vizitator: „Sunt de la poliție, arătați-mi actul de identitate!” Ce este corect?
 
 **Erklärung DE:** Wer sich unbefugt als Amtsträger ausgibt oder eine Handlung vornimmt, die nur ein Amtsträger vornehmen darf, begeht Amtsanmaßung.
 
@@ -544,10 +544,10 @@
 
 ## 46. [st-046]
 
-**Frage DE:** Was bedeutet das Legalitätsprinzip im Strafverfahren?
+**Frage DE:** Was ist richtig über das Legalitätsprinzip?
 
-- EN: What does the principle of legality mean in criminal proceedings?
-- RO: Ce înseamnă principiul legalității în procesul penal?
+- EN: What is true about the principle of mandatory prosecution?
+- RO: Ce este adevărat despre principiul legalității urmăririi penale?
 
 **Erklärung DE:** Nach dem Legalitätsprinzip ist die Staatsanwaltschaft verpflichtet, bei einem Anfangsverdacht einzuschreiten. Bei Ordnungswidrigkeiten gilt dagegen das Opportunitätsprinzip.
 
@@ -628,10 +628,10 @@
 
 ## 53. [st-053]
 
-**Frage DE:** Welches Recht hat ein Beschuldigter im Strafverfahren?
+**Frage DE:** Welche Rechte hat ein Beschuldigter im Strafverfahren?
 
-- EN: Which right does an accused person have in criminal proceedings?
-- RO: Ce drept are un învinuit în procesul penal?
+- EN: Which rights does an accused person have in criminal proceedings?
+- RO: Ce drepturi are un învinuit în procesul penal?
 
 **Erklärung DE:** Niemand muss sich selbst belasten. Ein Beschuldigter darf zur Sache schweigen und jederzeit einen Verteidiger befragen.
 
@@ -640,10 +640,10 @@
 
 ## 54. [st-054]
 
-**Frage DE:** Wer ordnet die Untersuchungshaft an?
+**Frage DE:** Was gilt für die Anordnung der Untersuchungshaft?
 
-- EN: Who orders pre-trial detention?
-- RO: Cine dispune arestul preventiv?
+- EN: What applies to ordering pre-trial detention?
+- RO: Ce se aplică pentru dispunerea arestului preventiv?
 
 **Erklärung DE:** Untersuchungshaft wird durch einen schriftlichen Haftbefehl des Richters angeordnet. Das gilt auch für jede andere Freiheitsentziehung über die vorläufige Festnahme hinaus.
 
@@ -688,10 +688,10 @@
 
 ## 58. [st-058]
 
-**Frage DE:** Wofür braucht man einen Waffenschein?
+**Frage DE:** Was gilt für den Waffenschein?
 
-- EN: What do you need a firearms carry licence (Waffenschein) for?
-- RO: Pentru ce aveți nevoie de un permis de port armă (Waffenschein)?
+- EN: What applies to the firearms carry permit?
+- RO: Ce se aplică pentru permisul de port-armă?
 
 **Erklärung DE:** Die Waffenbesitzkarte erlaubt Erwerb und Besitz. Für das Führen einer Schusswaffe in der Öffentlichkeit braucht man zusätzlich einen Waffenschein.
 

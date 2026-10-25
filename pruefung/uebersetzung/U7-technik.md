@@ -28,10 +28,10 @@
 
 ## 3. [te-003]
 
-**Frage DE:** Was ist die Hauptaufgabe mechanischer Sicherungen (z. B. Gitter, Schlösser, einbruchhemmende Türen)?
+**Frage DE:** Was leisten mechanische Sicherungen (z. B. Gitter, Schlösser, einbruchhemmende Türen)?
 
-- EN: What is the main task of mechanical protection (e.g. bars, locks, burglar-resistant doors)?
-- RO: Care este sarcina principală a protecției mecanice (de ex. gratii, încuietori, uși antiefracție)?
+- EN: What do mechanical safeguards (e.g. bars, locks, burglar-resistant doors) achieve?
+- RO: Ce realizează protecțiile mecanice (de ex. grilaje, încuietori, uși antiefracție)?
 
 **Erklärung DE:** Mechanische Sicherungen leisten Widerstand und kosten den Täter Zeit. Elektronische Anlagen melden den Angriff. Beides zusammen wirkt am besten.
 
@@ -52,10 +52,10 @@
 
 ## 5. [te-005]
 
-**Frage DE:** Wozu dient eine Überfallmeldeanlage (ÜMA) mit stillem Alarm?
+**Frage DE:** Was ist richtig über eine Überfallmeldeanlage (ÜMA) mit stillem Alarm?
 
-- EN: What is a hold-up alarm system (ÜMA) with silent alarm for?
-- RO: La ce servește un sistem de alarmă la atac (ÜMA) cu alarmă silențioasă?
+- EN: What is true about a hold-up alarm system with silent alarm?
+- RO: Ce este adevărat despre un sistem de alarmă la atac cu alarmă silențioasă?
 
 **Erklärung DE:** Ein stiller Alarm soll Hilfe holen, ohne den Täter zu provozieren. So werden Menschen im Raum nicht zusätzlich gefährdet.
 
@@ -100,10 +100,10 @@
 
 ## 9. [te-009]
 
-**Frage DE:** Wofür wird ein Körperschallmelder (Erschütterungsmelder) zum Beispiel eingesetzt?
+**Frage DE:** Wofür wird ein Körperschallmelder (Erschütterungsmelder) eingesetzt?
 
-- EN: What is a structure-borne sound detector (vibration detector) used for, for example?
-- RO: Pentru ce se folosește, de exemplu, un detector de zgomot structural (detector de vibrații)?
+- EN: What is a structure-borne sound detector (vibration detector) used for?
+- RO: Pentru ce se folosește un detector de zgomot structural (detector de vibrații)?
 
 **Erklärung DE:** Körperschallmelder erkennen Schwingungen im Material, wie sie beim Bohren, Fräsen oder Schlagen entstehen. Typisch an Tresoren und Wertbehältnissen.
 
@@ -160,10 +160,10 @@
 
 ## 14. [te-014]
 
-**Frage DE:** Was ist eine Notruf- und Serviceleitstelle (NSL)?
+**Frage DE:** Was ist richtig über eine Notruf- und Serviceleitstelle (NSL)?
 
-- EN: What is an alarm receiving and service centre (NSL)?
-- RO: Ce este un dispecerat de alarmă și servicii (NSL)?
+- EN: What is true about an emergency and service control centre (NSL)?
+- RO: Ce este adevărat despre un dispecerat de urgență și service (NSL)?
 
 **Erklärung DE:** In der NSL laufen Alarme aus vielen Objekten ein. Die Mitarbeiter bewerten sie und schicken z. B. einen Interventionsdienst oder alarmieren Polizei und Feuerwehr.
 
@@ -225,10 +225,10 @@
 - EN: You have lost a master key for the site. What do you do?
 - RO: Ați pierdut o cheie generală a obiectivului. Ce faceți?
 
-**Erklärung DE:** Ein verlorener Generalschlüssel ist ein großes Sicherheitsrisiko. Der Verlust muss sofort gemeldet werden, damit z. B. Schlösser getauscht werden können.
+**Erklärung DE:** Ein verlorener Generalschlüssel ist ein großes Sicherheitsrisiko. Der Verlust muss sofort gemeldet werden – an den Vorgesetzten und weiter an den Kunden –, damit z. B. Schlösser getauscht werden können.
 
-- EN: A lost master key is a big security risk. The loss must be reported immediately so that, for example, locks can be changed.
-- RO: O cheie generală pierdută este un risc mare de securitate. Pierderea trebuie raportată imediat, ca de ex. încuietorile să poată fi schimbate.
+- EN: A lost master key is a big security risk. The loss must be reported immediately – to the supervisor and on to the client – so that, for example, locks can be changed.
+- RO: O cheie generală pierdută este un mare risc de securitate. Pierderea trebuie raportată imediat – superiorului și mai departe clientului – ca să se poată schimba, de exemplu, încuietorile.
 
 ## 20. [te-020]
 
@@ -268,10 +268,10 @@
 
 ## 23. [te-023]
 
-**Frage DE:** Was versteht man unter Perimeterschutz?
+**Frage DE:** Was gehört zum Perimeterschutz?
 
-- EN: What is meant by perimeter protection?
-- RO: Ce se înțelege prin protecția perimetrală?
+- EN: What is part of perimeter protection?
+- RO: Ce face parte din protecția perimetrală?
 
 **Erklärung DE:** Perimeterschutz sichert das Gelände bereits an der Grenze. So werden Täter früh erkannt, bevor sie das Gebäude erreichen.
 

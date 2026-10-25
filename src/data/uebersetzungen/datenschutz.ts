@@ -52,15 +52,15 @@ export const UE: Record<string, UeEintrag> = {
   ],
   'ds-009': [
     "When must personal data be deleted?",
-    "Data that is no longer needed for its purpose must be deleted – unless a law requires it to be kept.",
+    "Data must be deleted when it is no longer needed for its purpose, or when the person withdraws their consent and there is no other legal basis. Exception: a law requires it to be kept.",
     "Când trebuie șterse datele cu caracter personal?",
-    "Datele care nu mai sunt necesare pentru scopul lor trebuie șterse – cu excepția cazului în care o lege cere păstrarea lor.",
+    "Datele trebuie șterse când nu mai sunt necesare pentru scopul lor sau când persoana își retrage consimțământul și nu există alt temei legal. Excepție: o lege cere păstrarea lor.",
   ],
   'ds-010': [
     "A shop monitors its sales area with cameras. What is required?",
-    "With video surveillance of publicly accessible areas, the surveillance and the person responsible must be visible early, usually with a sign.",
-    "Un magazin supraveghează spațiul de vânzare cu camere. Ce este obligatoriu?",
-    "La supravegherea video a spațiilor accesibile publicului, supravegherea și persoana responsabilă trebuie să fie vizibile din timp, de obicei printr-un panou.",
+    "With video surveillance of publicly accessible areas, the surveillance and the person responsible must be recognisable early, usually by a sign. Recordings are deleted as soon as they are no longer needed.",
+    "Un magazin își supraveghează spațiul de vânzare cu camere. Ce este obligatoriu?",
+    "La supravegherea video a spațiilor accesibile publicului, supravegherea și responsabilul trebuie să fie recunoscute din timp, de obicei printr-un panou. Înregistrările se șterg imediat ce nu mai sunt necesare.",
   ],
   'ds-011': [
     "How long may video surveillance recordings be stored?",
@@ -69,9 +69,9 @@ export const UE: Record<string, UeEintrag> = {
     "Înregistrările video trebuie șterse imediat ce nu mai sunt necesare pentru scop. Dacă are loc un incident, înregistrările respective pot fi păstrate pentru clarificare.",
   ],
   'ds-012': [
-    "You keep a visitor list at reception. Which data should you record?",
+    "You keep a visitor list at reception. Which details are needed for it?",
     "According to the principle of data minimisation, only the data that is really necessary for the purpose is recorded.",
-    "Țineți o listă de vizitatori la recepție. Ce date ar trebui să înregistrați?",
+    "Țineți o listă de vizitatori la recepție. Ce date sunt necesare pentru ea?",
     "Conform principiului minimizării datelor, se înregistrează doar datele care sunt cu adevărat necesare pentru scop.",
   ],
   'ds-013': [
@@ -82,9 +82,9 @@ export const UE: Record<string, UeEintrag> = {
   ],
   'ds-014': [
     "You lose a USB stick with visitor data. What do you do?",
-    "Losing personal data is a data breach. It must be reported immediately so that the company can react and meet its reporting duties.",
+    "Losing personal data is a data breach. It must be reported immediately so that the company can react and meet its reporting obligations. Exact details (when, where) help to clear it up.",
     "Pierdeți un stick USB cu date ale vizitatorilor. Ce faceți?",
-    "Pierderea datelor cu caracter personal este o încălcare a securității datelor. Trebuie raportată imediat, ca firma să poată reacționa și să-și îndeplinească obligațiile de notificare.",
+    "Pierderea datelor cu caracter personal este o încălcare a securității datelor. Trebuie raportată imediat, ca firma să poată reacționa și să-și îndeplinească obligațiile de notificare. Detaliile exacte (când, unde) ajută la clarificare.",
   ],
   'ds-015': [
     "Within what time must a company report a reportable data breach to the supervisory authority?",
@@ -105,9 +105,9 @@ export const UE: Record<string, UeEintrag> = {
     "Fotografiile cu persoane sunt date cu caracter personal. Înregistrările private și transmiterea lor către prieteni nu sunt permise și pot duce la amenzi și pedepse.",
   ],
   'ds-018': [
-    "What is the task of a company data protection officer?",
+    "What are the tasks of a company data protection officer?",
     "The data protection officer advises the company and its employees and monitors compliance with data protection. He is the contact person for questions.",
-    "Ce sarcină are responsabilul cu protecția datelor din firmă?",
+    "Care sunt sarcinile responsabilului cu protecția datelor dintr-o firmă?",
     "Responsabilul cu protecția datelor consiliază firma și angajații și supraveghează respectarea protecției datelor. El este persoana de contact pentru întrebări.",
   ],
 };

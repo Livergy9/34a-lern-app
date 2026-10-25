@@ -198,8 +198,8 @@
 
 **Frage DE:** Welche Rechte hat eine private Sicherheitskraft? (Jedermannrechte)
 
-- EN: Which rights does a private security guard have? (rights of every citizen)
-- RO: Ce drepturi are un agent de pază privat? (drepturile oricărui cetățean)
+- EN: Which rights does a private security officer have? (everyone's rights)
+- RO: Ce drepturi are un agent de securitate privat? (drepturile oricărei persoane)
 
 **Erklärung DE:** Private Sicherheitskräfte haben nur Jedermannrechte: Notwehr, Notstand, Selbsthilfe und vorläufige Festnahme. Durchsuchen, Bußgelder oder Blutproben sind Aufgaben des Staates.
 
@@ -208,10 +208,10 @@
 
 ## 18. [oe-018]
 
-**Frage DE:** Aus welchen Teilen besteht die Verhältnismäßigkeit einer Maßnahme?
+**Frage DE:** Was gehört zur Verhältnismäßigkeit einer Maßnahme?
 
-- EN: Which parts make up the proportionality of a measure?
-- RO: Din ce părți este alcătuită proporționalitatea unei măsuri?
+- EN: What is part of the proportionality of a measure?
+- RO: Ce face parte din proporționalitatea unei măsuri?
 
 **Erklärung DE:** Verhältnismäßig ist eine Maßnahme, wenn sie geeignet (sie hilft), erforderlich (es gibt kein milderes Mittel) und angemessen (Schaden und Nutzen stehen im richtigen Verhältnis) ist.
 
@@ -280,15 +280,15 @@
 
 ## 24. [oe-024]
 
-**Frage DE:** Wie wird eine Ordnungswidrigkeit geahndet?
+**Frage DE:** Wie kann eine Ordnungswidrigkeit geahndet werden?
 
-- EN: How is an administrative offence (Ordnungswidrigkeit) punished?
-- RO: Cum se sancționează o contravenție (Ordnungswidrigkeit)?
+- EN: How can an administrative offence be punished?
+- RO: Cum poate fi sancționată o contravenție?
 
-**Erklärung DE:** Eine Ordnungswidrigkeit ist ein leichter Verstoß. Sie wird mit einer Geldbuße geahndet, nicht mit einer Strafe.
+**Erklärung DE:** Eine Ordnungswidrigkeit ist ein leichter Verstoß. Sie wird mit einer Geldbuße geahndet, bei geringfügigen Verstößen auch mit einem Verwarnungsgeld – nicht mit einer Strafe.
 
-- EN: An administrative offence is a minor violation. It is punished with a fine, not with a criminal penalty.
-- RO: O contravenție este o încălcare ușoară. Se sancționează cu amendă, nu cu o pedeapsă penală.
+- EN: An administrative offence is a minor violation. It is punished with a fine, for minor violations also with a warning fine – not with a criminal penalty.
+- RO: O contravenție este o încălcare ușoară. Se sancționează cu amendă, la încălcări minore și cu un avertisment cu amendă – nu cu o pedeapsă penală.
 
 ## 25. [oe-025]
 
@@ -304,10 +304,10 @@
 
 ## 26. [oe-026]
 
-**Frage DE:** Was ist ein Verwaltungsakt?
+**Frage DE:** Was ist richtig über einen Verwaltungsakt?
 
-- EN: What is an administrative act (Verwaltungsakt)?
-- RO: Ce este un act administrativ (Verwaltungsakt)?
+- EN: What is true about an administrative act?
+- RO: Ce este adevărat despre un act administrativ?
 
 **Erklärung DE:** Ein Verwaltungsakt ist eine Regelung einer Behörde in einem einzelnen Fall, z. B. die Erteilung oder der Widerruf einer Erlaubnis.
 
@@ -340,10 +340,10 @@
 
 ## 29. [oe-029]
 
-**Frage DE:** Welche drei Gewalten gibt es nach dem Prinzip der Gewaltenteilung?
+**Frage DE:** Welche gehören zu den drei Gewalten nach dem Prinzip der Gewaltenteilung?
 
-- EN: Which three powers exist according to the principle of separation of powers?
-- RO: Care sunt cele trei puteri conform principiului separației puterilor?
+- EN: Which of these belong to the three powers under the separation of powers?
+- RO: Care dintre acestea fac parte din cele trei puteri conform principiului separării puterilor?
 
 **Erklärung DE:** Die Staatsgewalt ist auf drei Gewalten verteilt: Gesetzgebung (Parlamente), vollziehende Gewalt (Regierung, Verwaltung, Polizei) und Rechtsprechung (Gerichte).
 
@@ -405,10 +405,10 @@
 - EN: What can the authority do if a business owner becomes unreliable after the licence has been granted?
 - RO: Ce poate face autoritatea dacă un antreprenor devine nedemn de încredere după acordarea autorizației?
 
-**Erklärung DE:** Werden der Behörde nachträglich Tatsachen bekannt, die die Unzuverlässigkeit begründen, kann sie die Erlaubnis widerrufen.
+**Erklärung DE:** Werden der Behörde nachträglich Tatsachen bekannt, die die Unzuverlässigkeit begründen, kann sie die Erlaubnis widerrufen. Wer danach ohne Erlaubnis weitermacht, dem kann die Behörde den Betrieb untersagen.
 
-- EN: If the authority later learns of facts that show unreliability, it can revoke the licence.
-- RO: Dacă autoritatea află ulterior fapte care arată că persoana nu este de încredere, poate retrage autorizația.
+- EN: If the authority later learns of facts that show unreliability, it can revoke the licence. If the business continues without a licence, the authority can stop it.
+- RO: Dacă autoritatea află ulterior fapte care arată lipsa de încredere, poate revoca autorizația. Dacă activitatea continuă fără autorizație, autoritatea o poate interzice.
 
 ## 35. [oe-035]
 
@@ -424,10 +424,10 @@
 
 ## 36. [oe-036]
 
-**Frage DE:** Wer muss der Wachperson eine Dienstanweisung erteilen?
+**Frage DE:** Was ist richtig über die Dienstanweisung für eine Wachperson?
 
-- EN: Who must give the guard written service instructions (Dienstanweisung)?
-- RO: Cine trebuie să-i dea agentului de pază instrucțiunile de serviciu (Dienstanweisung)?
+- EN: What is true about the service instructions for a security guard?
+- RO: Ce este adevărat despre instrucțiunile de serviciu pentru un agent de pază?
 
 **Erklärung DE:** Der Gewerbetreibende muss der Wachperson eine Dienstanweisung geben. Darin stehen u. a. ihre Aufgaben und dass sie keine Befugnisse wie die Polizei hat.
 
@@ -448,10 +448,10 @@
 
 ## 38. [oe-038]
 
-**Frage DE:** Unter welcher Bedingung darf eine Wachperson im Dienst eine Schusswaffe führen?
+**Frage DE:** Was gilt, wenn eine Wachperson im Dienst eine Schusswaffe führen soll?
 
-- EN: Under what condition may a guard carry a firearm on duty?
-- RO: În ce condiție are voie un agent de pază să poarte o armă de foc în serviciu?
+- EN: What applies if a security guard is to carry a firearm on duty?
+- RO: Ce se aplică dacă un agent de pază urmează să poarte o armă de foc în serviciu?
 
 **Erklärung DE:** Schusswaffen im Dienst sind nur ausnahmsweise erlaubt: Die Behörde muss zustimmen, und es müssen die waffenrechtlichen Erlaubnisse vorliegen. Die Sachkundeprüfung allein reicht nicht.
 
@@ -472,10 +472,10 @@
 
 ## 40. [oe-040]
 
-**Frage DE:** Was ist der Unterschied zwischen einem Platzverweis und einem Hausverbot?
+**Frage DE:** Was ist richtig über Platzverweis und Hausverbot?
 
-- EN: What is the difference between an order to leave a place (Platzverweis) and a ban from the premises (Hausverbot)?
-- RO: Care este diferența dintre o somație de părăsire a locului (Platzverweis) și o interdicție de acces (Hausverbot)?
+- EN: What is true about an order to leave a place and a ban from the premises?
+- RO: Ce este adevărat despre ordinul de părăsire a locului și interdicția de acces?
 
 **Erklärung DE:** Der Platzverweis ist eine hoheitliche Maßnahme der Polizei. Eine Sicherheitskraft kann im Auftrag des Hausrechtsinhabers ein Hausverbot aussprechen.
 
@@ -508,10 +508,10 @@
 
 ## 43. [oe-043]
 
-**Frage DE:** Welcher Bereich gehört zum öffentlichen Verkehrsraum?
+**Frage DE:** Welche Bereiche gehören zum öffentlichen Verkehrsraum?
 
-- EN: Which area is part of public space (öffentlicher Verkehrsraum)?
-- RO: Ce zonă face parte din spațiul public (öffentlicher Verkehrsraum)?
+- EN: Which areas are part of public traffic space?
+- RO: Ce zone fac parte din spațiul public de circulație?
 
 **Erklärung DE:** Öffentlicher Verkehrsraum sind Flächen, die von jedermann benutzt werden dürfen, z. B. öffentliche Straßen, Wege und Plätze.
 

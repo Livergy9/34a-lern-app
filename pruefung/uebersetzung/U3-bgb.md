@@ -4,10 +4,10 @@
 
 ## 1. [bgb-001]
 
-**Frage DE:** Ein Kunde leiht sich ein Fahrrad. Was hat er während der Leihe?
+**Frage DE:** Ein Kunde leiht sich ein Fahrrad. Was gilt während der Leihe?
 
-- EN: A customer borrows a bicycle. What does he have during the loan?
-- RO: Un client împrumută o bicicletă. Ce are el în timpul împrumutului?
+- EN: A customer borrows a bicycle. What applies during the loan?
+- RO: Un client împrumută o bicicletă. Ce se aplică pe durata împrumutului?
 
 **Erklärung DE:** Besitzer ist, wer die tatsächliche Gewalt über eine Sache hat. Eigentümer ist, wem sie rechtlich gehört. Beim Leihen bekommt man nur den Besitz.
 
@@ -16,10 +16,10 @@
 
 ## 2. [bgb-002]
 
-**Frage DE:** Woher hat eine Sicherheitskraft in einem Kaufhaus das Hausrecht?
+**Frage DE:** Was gilt für das Hausrecht einer Sicherheitskraft in einem Kaufhaus?
 
-- EN: Where does a security guard in a department store get the domestic authority (Hausrecht) from?
-- RO: De unde are un agent de pază dintr-un magazin universal dreptul asupra spațiului (Hausrecht)?
+- EN: What applies to the house right of a security officer in a department store?
+- RO: Ce se aplică pentru dreptul de acces (dreptul casei) al unui agent de securitate într-un magazin universal?
 
 **Erklärung DE:** Das Hausrecht hat der Eigentümer oder berechtigte Besitzer (z. B. Mieter). Er kann es auf eine Sicherheitskraft übertragen, die es dann in seinem Auftrag ausübt.
 
@@ -28,10 +28,10 @@
 
 ## 3. [bgb-003]
 
-**Frage DE:** Wann ist Selbsthilfe nach § 229 BGB erlaubt?
+**Frage DE:** Welche Voraussetzungen gelten für die Selbsthilfe nach § 229 BGB?
 
-- EN: When is self-help (Selbsthilfe) under § 229 BGB allowed?
-- RO: Când este permisă autoapărarea drepturilor (Selbsthilfe) conform § 229 BGB?
+- EN: Which conditions apply to self-help under section 229 of the Civil Code?
+- RO: Ce condiții se aplică pentru autoapărarea dreptului (§ 229 BGB)?
 
 **Erklärung DE:** Selbsthilfe ist nur eine Ausnahme: Die Polizei oder ein Gericht kann nicht rechtzeitig helfen, und ohne sofortiges Handeln wäre der Anspruch verloren oder schwer durchsetzbar.
 
@@ -76,10 +76,10 @@
 
 ## 7. [bgb-007]
 
-**Frage DE:** Ein Dieb stiehlt ein Handy. Wer ist danach Eigentümer des Handys?
+**Frage DE:** Ein Dieb stiehlt ein Handy. Was gilt danach?
 
-- EN: A thief steals a mobile phone. Who is the owner of the phone afterwards?
-- RO: Un hoț fură un telefon mobil. Cine este după aceea proprietarul telefonului?
+- EN: A thief steals a mobile phone. What applies afterwards?
+- RO: Un hoț fură un telefon. Ce se aplică după aceea?
 
 **Erklärung DE:** Durch einen Diebstahl verliert der Eigentümer sein Eigentum nicht. Der Dieb wird nur Besitzer, nicht Eigentümer.
 
@@ -88,10 +88,10 @@
 
 ## 8. [bgb-008]
 
-**Frage DE:** Welche Stellung hat eine Wachperson gegenüber den Sachen, die sie für ihren Auftraggeber bewacht?
+**Frage DE:** Was gilt für eine Wachperson gegenüber den Sachen, die sie für ihren Auftraggeber bewacht?
 
-- EN: What is a guard's position regarding the things he guards for his client?
-- RO: Ce poziție are un agent de pază față de lucrurile pe care le păzește pentru client?
+- EN: What applies to a security guard regarding the things they guard for their client?
+- RO: Ce se aplică pentru un agent de pază în legătură cu bunurile pe care le păzește pentru client?
 
 **Erklärung DE:** Wer die tatsächliche Gewalt für einen anderen ausübt und dessen Weisungen folgen muss, ist Besitzdiener. Besitzer ist der Auftraggeber.
 
@@ -112,10 +112,10 @@
 
 ## 10. [bgb-010]
 
-**Frage DE:** Was erlaubt die Besitzwehr nach § 859 Abs. 1 BGB?
+**Frage DE:** Was gilt für die Besitzwehr nach § 859 Abs. 1 BGB?
 
-- EN: What does defence of possession (Besitzwehr) under § 859 (1) BGB allow?
-- RO: Ce permite apărarea posesiei (Besitzwehr) conform § 859 alin. 1 BGB?
+- EN: What applies to defence of possession under section 859 (1) of the Civil Code?
+- RO: Ce se aplică pentru apărarea posesiei conform § 859 alin. 1 BGB?
 
 **Erklärung DE:** Der Besitzer darf sich gegen verbotene Eigenmacht mit Gewalt wehren (Besitzwehr). Die Gewalt muss verhältnismäßig sein.
 
@@ -148,10 +148,10 @@
 
 ## 13. [bgb-013]
 
-**Frage DE:** Was ist Notwehr nach § 227 BGB?
+**Frage DE:** Was ist richtig über die Notwehr nach § 227 BGB?
 
-- EN: What is self-defence (Notwehr) under § 227 BGB?
-- RO: Ce este legitima apărare (Notwehr) conform § 227 BGB?
+- EN: What is true about self-defence under section 227 of the Civil Code?
+- RO: Ce este adevărat despre legitima apărare conform § 227 BGB?
 
 **Erklärung DE:** Notwehr ist die erforderliche Verteidigung gegen einen gegenwärtigen, rechtswidrigen Angriff. Wer in Notwehr handelt, handelt nicht widerrechtlich.
 
@@ -196,10 +196,10 @@
 
 ## 17. [bgb-017]
 
-**Frage DE:** Was kann der Eigentümer beim aggressiven Notstand nach § 904 BGB verlangen?
+**Frage DE:** Was gilt für den Eigentümer beim aggressiven Notstand nach § 904 BGB?
 
-- EN: What can the owner demand in the case of aggressive necessity under § 904 BGB?
-- RO: Ce poate cere proprietarul în cazul stării de necesitate agresive conform § 904 BGB?
+- EN: What applies to the owner in an aggressive emergency under section 904 of the Civil Code?
+- RO: Ce se aplică pentru proprietar în starea de necesitate agresivă conform § 904 BGB?
 
 **Erklärung DE:** Der Eigentümer muss den Eingriff dulden, kann aber Ersatz des Schadens verlangen.
 
@@ -244,22 +244,22 @@
 
 ## 21. [bgb-021]
 
-**Frage DE:** Wer kann das Hausrecht haben oder ausüben?
+**Frage DE:** Wer hat das Hausrecht?
 
-- EN: Who can have or exercise the domestic authority (Hausrecht)?
-- RO: Cine poate avea sau exercita dreptul asupra spațiului (Hausrecht)?
+- EN: Who has the right to exclude people from the premises (house right)?
+- RO: Cine are dreptul de proprietar asupra spațiului (dreptul de a decide accesul)?
 
-**Erklärung DE:** Das Hausrecht hat der Eigentümer oder Besitzer, z. B. der Mieter. Er kann eine andere Person, z. B. eine Sicherheitskraft, mit der Ausübung beauftragen.
+**Erklärung DE:** Das Hausrecht hat der Eigentümer oder Besitzer, z. B. der Mieter. Er kann eine andere Person, z. B. eine Sicherheitskraft, mit der Ausübung beauftragen. Kunden, Lieferanten oder Passanten haben kein Hausrecht.
 
-- EN: The domestic authority belongs to the owner or possessor, e.g. the tenant. He can instruct another person, e.g. a security guard, to exercise it.
-- RO: Dreptul asupra spațiului îl are proprietarul sau posesorul, de ex. chiriașul. El poate însărcina o altă persoană, de ex. un agent de pază, să-l exercite.
+- EN: The owner or possessor, e.g. the tenant, has the house right. They can authorise another person, e.g. a security officer, to exercise it. Customers, suppliers or passers-by have no house right.
+- RO: Proprietarul sau posesorul, de ex. chiriașul, are acest drept. El poate împuternici o altă persoană, de ex. un agent de securitate, să îl exercite. Clienții, furnizorii sau trecătorii nu au acest drept.
 
 ## 22. [bgb-022]
 
-**Frage DE:** Wer hat in einer vermieteten Wohnung das Hausrecht?
+**Frage DE:** Was gilt in einer vermieteten Wohnung für das Hausrecht?
 
-- EN: Who has the domestic authority in a rented flat?
-- RO: Cine are dreptul asupra spațiului într-o locuință închiriată?
+- EN: What applies to the house right in a rented flat?
+- RO: Ce se aplică pentru dreptul casei într-o locuință închiriată?
 
 **Erklärung DE:** In einer vermieteten Wohnung hat der Mieter das Hausrecht. Der Vermieter darf die Wohnung nicht ohne Erlaubnis betreten.
 
@@ -316,10 +316,10 @@
 
 ## 27. [bgb-027]
 
-**Frage DE:** Wofür haftet ein Arbeitgeber nach § 831 BGB?
+**Frage DE:** Was gilt für die Haftung eines Arbeitgebers nach § 831 BGB?
 
-- EN: What is an employer liable for under § 831 BGB?
-- RO: Pentru ce răspunde un angajator conform § 831 BGB?
+- EN: What applies to an employer's liability under section 831 of the Civil Code?
+- RO: Ce se aplică pentru răspunderea angajatorului conform § 831 BGB?
 
 **Erklärung DE:** Der Geschäftsherr haftet für Verrichtungsgehilfen. Er kann sich entlasten, wenn er sie sorgfältig ausgewählt und überwacht hat.
 
@@ -328,10 +328,10 @@
 
 ## 28. [bgb-028]
 
-**Frage DE:** Wann kann man Schmerzensgeld verlangen?
+**Frage DE:** In welchen Fällen kann man Schmerzensgeld verlangen?
 
-- EN: When can you demand compensation for pain and suffering (Schmerzensgeld)?
-- RO: Când se pot cere daune morale (Schmerzensgeld)?
+- EN: In which cases can you claim compensation for pain and suffering?
+- RO: În ce cazuri se pot cere daune morale?
 
 **Erklärung DE:** Schmerzensgeld ist Geld für einen Schaden, der kein Vermögensschaden ist. Es kann bei Verletzung von Körper, Gesundheit, Freiheit oder sexueller Selbstbestimmung verlangt werden.
 
@@ -388,10 +388,10 @@
 
 ## 33. [bgb-033]
 
-**Frage DE:** Ein 6-jähriges Kind wirft beim Spielen eine Scheibe ein. Ist das Kind für den Schaden verantwortlich?
+**Frage DE:** Ein 6-jähriges Kind wirft beim Spielen eine Scheibe ein. Was gilt?
 
-- EN: A 6-year-old child breaks a window while playing. Is the child responsible for the damage?
-- RO: Un copil de 6 ani sparge un geam în timp ce se joacă. Este copilul răspunzător pentru pagubă?
+- EN: A 6-year-old child breaks a window while playing. What applies?
+- RO: Un copil de 6 ani sparge un geam în timp ce se joacă. Ce se aplică?
 
 **Erklärung DE:** Wer noch nicht 7 Jahre alt ist, ist für einen Schaden nicht verantwortlich (deliktsunfähig). Unter Umständen haften aber die Aufsichtspflichtigen.
 
@@ -400,10 +400,10 @@
 
 ## 34. [bgb-034]
 
-**Frage DE:** Wie kommt ein Vertrag zustande?
+**Frage DE:** Was ist richtig über das Zustandekommen eines Vertrags?
 
-- EN: How is a contract concluded?
-- RO: Cum se încheie un contract?
+- EN: What is true about how a contract is formed?
+- RO: Ce este adevărat despre încheierea unui contract?
 
 **Erklärung DE:** Ein Vertrag entsteht durch Angebot und Annahme. Viele Verträge können auch mündlich oder durch schlüssiges Verhalten geschlossen werden.
 
@@ -484,10 +484,10 @@
 
 ## 41. [bgb-041]
 
-**Frage DE:** Personen besetzen ein leerstehendes Gebäude. Wann darf der Besitzer sie selbst wieder entfernen (Besitzkehr bei Grundstücken)?
+**Frage DE:** Personen besetzen ein leerstehendes Gebäude. Was gilt für die Besitzkehr bei Grundstücken?
 
-- EN: People occupy an empty building. When may the possessor remove them himself (recovery of possession of land)?
-- RO: Niște persoane ocupă o clădire goală. Când are voie posesorul să le scoată singur (recuperarea posesiei la imobile)?
+- EN: People occupy an empty building. What applies to recovery of possession of land and buildings?
+- RO: Niște persoane ocupă o clădire goală. Ce se aplică pentru recuperarea posesiei la terenuri și clădiri?
 
 **Erklärung DE:** Bei Grundstücken und Gebäuden darf der Besitzer sich den Besitz sofort nach der Entziehung durch Entsetzung des Täters wieder verschaffen. Später muss er den Rechtsweg gehen.
 

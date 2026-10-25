@@ -3,21 +3,21 @@ import type { UeEintrag } from './index';
 // [Frage EN, Erklärung EN, Frage RO, Erklärung RO]
 export const UE: Record<string, UeEintrag> = {
   'bgb-001': [
-    "A customer borrows a bicycle. What does he have during the loan?",
+    "A customer borrows a bicycle. What applies during the loan?",
     "The possessor is whoever has actual control over a thing. The owner is whoever legally owns it. When borrowing, you only get possession.",
-    "Un client împrumută o bicicletă. Ce are el în timpul împrumutului?",
+    "Un client împrumută o bicicletă. Ce se aplică pe durata împrumutului?",
     "Posesor este cel care are controlul efectiv asupra unui lucru. Proprietar este cel căruia îi aparține legal. La împrumut primești doar posesia.",
   ],
   'bgb-002': [
-    "Where does a security guard in a department store get the domestic authority (Hausrecht) from?",
+    "What applies to the house right of a security officer in a department store?",
     "The domestic authority belongs to the owner or the rightful possessor (e.g. tenant). He can transfer it to a security guard, who then exercises it on his behalf.",
-    "De unde are un agent de pază dintr-un magazin universal dreptul asupra spațiului (Hausrecht)?",
+    "Ce se aplică pentru dreptul de acces (dreptul casei) al unui agent de securitate într-un magazin universal?",
     "Dreptul asupra spațiului îl are proprietarul sau posesorul îndreptățit (de ex. chiriașul). El îl poate transmite unui agent de pază, care îl exercită apoi în numele lui.",
   ],
   'bgb-003': [
-    "When is self-help (Selbsthilfe) under § 229 BGB allowed?",
+    "Which conditions apply to self-help under section 229 of the Civil Code?",
     "Self-help is only an exception: the police or a court cannot help in time, and without acting immediately the claim would be lost or hard to enforce.",
-    "Când este permisă autoapărarea drepturilor (Selbsthilfe) conform § 229 BGB?",
+    "Ce condiții se aplică pentru autoapărarea dreptului (§ 229 BGB)?",
     "Autoapărarea drepturilor este doar o excepție: poliția sau instanța nu pot ajuta la timp, iar fără acțiune imediată dreptul s-ar pierde sau ar fi greu de obținut.",
   ],
   'bgb-004': [
@@ -39,15 +39,15 @@ export const UE: Record<string, UeEintrag> = {
     "Posesor este cel care are controlul efectiv asupra unui lucru – indiferent dacă îi aparține.",
   ],
   'bgb-007': [
-    "A thief steals a mobile phone. Who is the owner of the phone afterwards?",
+    "A thief steals a mobile phone. What applies afterwards?",
     "The owner does not lose ownership through theft. The thief only becomes the possessor, not the owner.",
-    "Un hoț fură un telefon mobil. Cine este după aceea proprietarul telefonului?",
+    "Un hoț fură un telefon. Ce se aplică după aceea?",
     "Prin furt, proprietarul nu își pierde proprietatea. Hoțul devine doar posesor, nu proprietar.",
   ],
   'bgb-008': [
-    "What is a guard's position regarding the things he guards for his client?",
+    "What applies to a security guard regarding the things they guard for their client?",
     "Anyone who exercises actual control for someone else and must follow their instructions is a possession servant (Besitzdiener). The client is the possessor.",
-    "Ce poziție are un agent de pază față de lucrurile pe care le păzește pentru client?",
+    "Ce se aplică pentru un agent de pază în legătură cu bunurile pe care le păzește pentru client?",
     "Cine exercită controlul efectiv pentru altcineva și trebuie să-i urmeze instrucțiunile este „servitor al posesiei“ (Besitzdiener). Posesorul este clientul.",
   ],
   'bgb-009': [
@@ -57,9 +57,9 @@ export const UE: Record<string, UeEintrag> = {
     "Tulburarea ilegală a posesiei înseamnă luarea sau tulburarea posesiei fără voia posesorului și fără permisiune legală.",
   ],
   'bgb-010': [
-    "What does defence of possession (Besitzwehr) under § 859 (1) BGB allow?",
+    "What applies to defence of possession under section 859 (1) of the Civil Code?",
     "The possessor may use force to defend himself against prohibited self-help (defence of possession). The force must be proportionate.",
-    "Ce permite apărarea posesiei (Besitzwehr) conform § 859 alin. 1 BGB?",
+    "Ce se aplică pentru apărarea posesiei conform § 859 alin. 1 BGB?",
     "Posesorul se poate apăra cu forța împotriva tulburării ilegale a posesiei (apărarea posesiei). Forța trebuie să fie proporțională.",
   ],
   'bgb-011': [
@@ -75,9 +75,9 @@ export const UE: Record<string, UeEintrag> = {
     "Și servitorul posesiei poate exercita drepturile din § 859 BGB pentru posesor.",
   ],
   'bgb-013': [
-    "What is self-defence (Notwehr) under § 227 BGB?",
+    "What is true about self-defence under section 227 of the Civil Code?",
     "Self-defence is the necessary defence against a present, unlawful attack. Anyone who acts in self-defence does not act unlawfully.",
-    "Ce este legitima apărare (Notwehr) conform § 227 BGB?",
+    "Ce este adevărat despre legitima apărare conform § 227 BGB?",
     "Legitima apărare este apărarea necesară împotriva unui atac actual și ilegal. Cine acționează în legitimă apărare nu acționează ilegal.",
   ],
   'bgb-014': [
@@ -99,9 +99,9 @@ export const UE: Record<string, UeEintrag> = {
     "Pericolul (incendiul) nu vine de la mașină. Folosiți un lucru străin, neimplicat, ca să evitați un pericol mult mai mare. Aceasta este starea de necesitate agresivă conform § 904 BGB.",
   ],
   'bgb-017': [
-    "What can the owner demand in the case of aggressive necessity under § 904 BGB?",
+    "What applies to the owner in an aggressive emergency under section 904 of the Civil Code?",
     "The owner must tolerate the interference but can demand compensation for the damage.",
-    "Ce poate cere proprietarul în cazul stării de necesitate agresive conform § 904 BGB?",
+    "Ce se aplică pentru proprietar în starea de necesitate agresivă conform § 904 BGB?",
     "Proprietarul trebuie să tolereze intervenția, dar poate cere despăgubiri pentru pagubă.",
   ],
   'bgb-018': [
@@ -123,15 +123,15 @@ export const UE: Record<string, UeEintrag> = {
     "Cine folosește din greșeală autoapărarea drepturilor trebuie să-i plătească celuilalt paguba – chiar și fără vină.",
   ],
   'bgb-021': [
-    "Who can have or exercise the domestic authority (Hausrecht)?",
-    "The domestic authority belongs to the owner or possessor, e.g. the tenant. He can instruct another person, e.g. a security guard, to exercise it.",
-    "Cine poate avea sau exercita dreptul asupra spațiului (Hausrecht)?",
-    "Dreptul asupra spațiului îl are proprietarul sau posesorul, de ex. chiriașul. El poate însărcina o altă persoană, de ex. un agent de pază, să-l exercite.",
+    "Who has the right to exclude people from the premises (house right)?",
+    "The owner or possessor, e.g. the tenant, has the house right. They can authorise another person, e.g. a security officer, to exercise it. Customers, suppliers or passers-by have no house right.",
+    "Cine are dreptul de proprietar asupra spațiului (dreptul de a decide accesul)?",
+    "Proprietarul sau posesorul, de ex. chiriașul, are acest drept. El poate împuternici o altă persoană, de ex. un agent de securitate, să îl exercite. Clienții, furnizorii sau trecătorii nu au acest drept.",
   ],
   'bgb-022': [
-    "Who has the domestic authority in a rented flat?",
+    "What applies to the house right in a rented flat?",
     "In a rented flat, the tenant has the domestic authority. The landlord may not enter the flat without permission.",
-    "Cine are dreptul asupra spațiului într-o locuință închiriată?",
+    "Ce se aplică pentru dreptul casei într-o locuință închiriată?",
     "Într-o locuință închiriată, chiriașul are dreptul asupra spațiului. Proprietarul nu are voie să intre fără permisiune.",
   ],
   'bgb-023': [
@@ -159,15 +159,15 @@ export const UE: Record<string, UeEintrag> = {
     "Cine deteriorează din neglijență proprietatea altcuiva trebuie să plătească despăgubiri. Adesea răspunde și angajatorul, de ex. pentru ajutoarele sale (Verrichtungsgehilfen).",
   ],
   'bgb-027': [
-    "What is an employer liable for under § 831 BGB?",
+    "What applies to an employer's liability under section 831 of the Civil Code?",
     "The principal is liable for his assistants. He can be released from liability if he chose and supervised them carefully.",
-    "Pentru ce răspunde un angajator conform § 831 BGB?",
+    "Ce se aplică pentru răspunderea angajatorului conform § 831 BGB?",
     "Angajatorul răspunde pentru ajutoarele sale. El poate scăpa de răspundere dacă le-a ales și supravegheat cu grijă.",
   ],
   'bgb-028': [
-    "When can you demand compensation for pain and suffering (Schmerzensgeld)?",
+    "In which cases can you claim compensation for pain and suffering?",
     "Compensation for pain and suffering is money for damage that is not financial damage. It can be demanded for injury to body, health, freedom or sexual self-determination.",
-    "Când se pot cere daune morale (Schmerzensgeld)?",
+    "În ce cazuri se pot cere daune morale?",
     "Daunele morale sunt bani pentru o pagubă care nu este materială. Pot fi cerute la vătămarea corpului, sănătății, libertății sau autodeterminării sexuale.",
   ],
   'bgb-029': [
@@ -195,15 +195,15 @@ export const UE: Record<string, UeEintrag> = {
     "Fiecare om are capacitate de folosință de la încheierea nașterii. Poate deci avea drepturi și obligații.",
   ],
   'bgb-033': [
-    "A 6-year-old child breaks a window while playing. Is the child responsible for the damage?",
+    "A 6-year-old child breaks a window while playing. What applies?",
     "Anyone under 7 years old is not responsible for damage. However, under certain circumstances the persons responsible for supervision may be liable.",
-    "Un copil de 6 ani sparge un geam în timp ce se joacă. Este copilul răspunzător pentru pagubă?",
+    "Un copil de 6 ani sparge un geam în timp ce se joacă. Ce se aplică?",
     "Cine nu a împlinit 7 ani nu răspunde pentru o pagubă. În anumite situații pot răspunde însă cei care au obligația de supraveghere.",
   ],
   'bgb-034': [
-    "How is a contract concluded?",
+    "What is true about how a contract is formed?",
     "A contract is made through offer and acceptance. Many contracts can also be concluded orally or through conduct.",
-    "Cum se încheie un contract?",
+    "Ce este adevărat despre încheierea unui contract?",
     "Un contract se încheie prin ofertă și acceptare. Multe contracte pot fi încheiate și verbal sau prin comportament concludent.",
   ],
   'bgb-035': [
@@ -243,9 +243,9 @@ export const UE: Record<string, UeEintrag> = {
     "Animalele nu sunt lucruri. Ele sunt protejate prin legi speciale. Regulile pentru lucruri se aplică însă în mod corespunzător.",
   ],
   'bgb-041': [
-    "People occupy an empty building. When may the possessor remove them himself (recovery of possession of land)?",
+    "People occupy an empty building. What applies to recovery of possession of land and buildings?",
     "With land and buildings, the possessor may regain possession by removing the offender immediately after possession was taken away. Later he must go to court.",
-    "Niște persoane ocupă o clădire goală. Când are voie posesorul să le scoată singur (recuperarea posesiei la imobile)?",
+    "Niște persoane ocupă o clădire goală. Ce se aplică pentru recuperarea posesiei la terenuri și clădiri?",
     "La terenuri și clădiri, posesorul își poate recupera posesia scoțându-l pe făptaș imediat după ce i-a fost luată. Mai târziu trebuie să meargă pe cale legală.",
   ],
   'bgb-042': [

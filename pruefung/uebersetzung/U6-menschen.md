@@ -16,10 +16,10 @@
 
 ## 2. [um-002]
 
-**Frage DE:** Was gehört zum aktiven Zuhören?
+**Frage DE:** Was ist ein Beispiel für aktives Zuhören?
 
-- EN: What is part of active listening?
-- RO: Ce face parte din ascultarea activă?
+- EN: What is an example of active listening?
+- RO: Care este un exemplu de ascultare activă?
 
 **Erklärung DE:** Aktives Zuhören zeigt dem Gegenüber, dass man ihn ernst nimmt: nachfragen, zusammenfassen und Aufmerksamkeit zeigen.
 

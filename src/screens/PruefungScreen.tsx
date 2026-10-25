@@ -19,12 +19,23 @@ const ARTEN: Record<Art, { fragen: number; minuten: number; titel: string; text:
   kurz: { fragen: 20, minuten: 30, titel: 'Kurztest', text: '20 Fragen · 30 Minuten – für zwischendurch' },
 };
 
-// Fragen nach der Verteilung der echten Prüfung aus allen Sachgebieten ziehen
-function stelleZusammen(anzahl: number): Frage[] {
+// Fragen nach der Verteilung der echten Prüfung ziehen: pro Sachgebiet so viele Fragen wie in der Prüfung,
+// davon (Punkte − Fragen) Multiple Choice mit je 2 Punkten. Echte Prüfung = genau 82 Fragen und 120 Punkte.
+// Kurztest: dieselbe Verteilung verkleinert.
+export function stelleZusammen(anzahl: number): Frage[] {
+  const echt = anzahl === PRUEFUNG.fragen;
   const liste: Frage[] = [];
   for (const sg of SACHGEBIETE) {
-    const n = Math.max(1, Math.round((sg.fragenInPruefung * anzahl) / PRUEFUNG.fragen));
-    liste.push(...mischen(fragenFuer(sg.id)).slice(0, n));
+    const n = echt ? sg.fragenInPruefung : Math.max(1, Math.round((sg.fragenInPruefung * anzahl) / PRUEFUNG.fragen));
+    const mcSoll = Math.round(((sg.punkteInPruefung - sg.fragenInPruefung) * n) / sg.fragenInPruefung);
+    const pool = fragenFuer(sg.id);
+    const multi = mischen(pool.filter((f) => f.typ === 'multi'));
+    const single = mischen(pool.filter((f) => f.typ === 'single'));
+    const mc = multi.slice(0, Math.min(mcSoll, n));
+    const sc = single.slice(0, n - mc.length);
+    // Falls ein Typ nicht reicht, mit dem anderen auffüllen, damit die Fragenzahl stimmt
+    const rest = [...multi.slice(mc.length), ...single.slice(sc.length)].slice(0, n - mc.length - sc.length);
+    liste.push(...mischen([...mc, ...sc, ...rest]));
   }
   return liste.slice(0, anzahl); // Reihenfolge nach Sachgebieten wie in der echten Prüfung
 }

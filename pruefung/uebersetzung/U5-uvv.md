@@ -28,10 +28,10 @@
 
 ## 3. [uv-003]
 
-**Frage DE:** Wer erlässt die Unfallverhütungsvorschriften?
+**Frage DE:** Wer erlässt die Unfallverhütungsvorschriften (Träger der gesetzlichen Unfallversicherung)?
 
-- EN: Who issues the accident prevention regulations?
-- RO: Cine emite regulamentele de prevenire a accidentelor?
+- EN: Who issues the accident prevention regulations (statutory accident insurance institutions)?
+- RO: Cine emite normele de prevenire a accidentelor (instituțiile asigurării legale de accidente)?
 
 **Erklärung DE:** Unfallverhütungsvorschriften (DGUV Vorschriften) werden von den Unfallversicherungsträgern erlassen, für Unternehmen von den Berufsgenossenschaften.
 
@@ -76,10 +76,10 @@
 
 ## 7. [uv-007]
 
-**Frage DE:** Wer muss die persönliche Schutzausrüstung bezahlen?
+**Frage DE:** Was gilt für die Kosten der persönliche Schutzausrüstung?
 
-- EN: Who has to pay for personal protective equipment?
-- RO: Cine trebuie să plătească echipamentul individual de protecție?
+- EN: What applies to the costs of personal protective equipment?
+- RO: Ce se aplică pentru costurile echipamentului individual de protecție?
 
 **Erklärung DE:** Der Unternehmer muss die erforderliche persönliche Schutzausrüstung kostenlos zur Verfügung stellen.
 
@@ -112,10 +112,10 @@
 
 ## 10. [uv-010]
 
-**Frage DE:** Darf eine Wachperson unter Alkoholeinfluss Dienst machen?
+**Frage DE:** Was gilt für Alkohol und Drogen im Wachdienst?
 
-- EN: May a guard work while under the influence of alcohol?
-- RO: Are voie un agent de pază să lucreze sub influența alcoolului?
+- EN: What applies to alcohol and drugs on security duty?
+- RO: Ce se aplică pentru alcool și droguri în serviciul de pază?
 
 **Erklärung DE:** Versicherte dürfen sich durch Alkohol, Drogen oder andere berauschende Mittel nicht in einen Zustand versetzen, in dem sie sich oder andere gefährden.
 
@@ -148,10 +148,10 @@
 
 ## 13. [uv-013]
 
-**Frage DE:** Wann muss der Unternehmer einen Arbeitsunfall dem Unfallversicherungsträger anzeigen?
+**Frage DE:** In welchen Fällen muss der Unternehmer einen Arbeitsunfall dem Unfallversicherungsträger anzeigen?
 
-- EN: When must the employer report an accident at work to the accident insurance institution?
-- RO: Când trebuie angajatorul să raporteze un accident de muncă instituției de asigurare împotriva accidentelor?
+- EN: In which cases must the employer report a work accident to the accident insurance institution?
+- RO: În ce cazuri trebuie angajatorul să anunțe un accident de muncă la asigurarea de accidente?
 
 **Erklärung DE:** Der Unternehmer muss einen Unfall anzeigen, wenn eine versicherte Person getötet oder so verletzt wird, dass sie mehr als drei Tage arbeitsunfähig ist.
 
@@ -208,10 +208,10 @@
 
 ## 18. [uv-018]
 
-**Frage DE:** Wer darf im Wachdienst einen Diensthund führen?
+**Frage DE:** Was gilt für das Führen eines Diensthundes im Wachdienst?
 
-- EN: Who may handle a service dog in security work?
-- RO: Cine are voie să conducă un câine de serviciu în paza?
+- EN: What applies to handling a service dog on security duty?
+- RO: Ce se aplică pentru conducerea unui câine de serviciu în paza?
 
 **Erklärung DE:** Diensthunde dürfen nur von geeigneten Hundeführern geführt werden, die zusammen mit dem Hund ausgebildet und geprüft sind.
 
@@ -225,10 +225,10 @@
 - EN: What is correct when using a fire extinguisher?
 - RO: Ce este corect la folosirea unui stingător?
 
-**Erklärung DE:** Mit dem Wind löschen, Flächenbrände von vorne nach hinten und von unten nach oben bekämpfen, mehrere Löscher gleichzeitig einsetzen. Fettbrände nie mit Wasser löschen.
+**Erklärung DE:** Mit dem Wind löschen, Flächenbrände von vorne nach hinten und von unten nach oben bekämpfen, auf die Glut statt auf die Flammenspitzen zielen. Mehrere Löscher gleichzeitig einsetzen. Fettbrände nie mit Wasser löschen.
 
-- EN: Extinguish with the wind behind you, fight surface fires from front to back and from bottom to top, use several extinguishers at the same time. Never put out fat fires with water.
-- RO: Stingeți cu vântul din spate, combateți incendiile de suprafață din față spre spate și de jos în sus, folosiți mai multe stingătoare în același timp. Nu stingeți niciodată grăsimea aprinsă cu apă.
+- EN: Extinguish with the wind, fight surface fires from front to back and from bottom to top, aim at the embers instead of the tips of the flames. Use several extinguishers at the same time. Never put out fat fires with water.
+- RO: Stingeți în direcția vântului, combateți incendiile de suprafață din față spre spate și de jos în sus, țintiți jarul, nu vârfurile flăcărilor. Folosiți mai multe stingătoare deodată. Nu stingeți niciodată grăsimea arzândă cu apă.
 
 ## 20. [uv-020]
 
@@ -316,10 +316,10 @@
 
 ## 27. [uv-027]
 
-**Frage DE:** Eine Person liegt nach einem Stromunfall an einem defekten Kabel. Was tun Sie zuerst?
+**Frage DE:** Eine Person liegt nach einem Stromunfall an einem defekten Kabel. Was ist richtig?
 
-- EN: After an electrical accident, a person is lying on a faulty cable. What do you do first?
-- RO: După un accident electric, o persoană stă pe un cablu defect. Ce faceți mai întâi?
+- EN: After an electrical accident, a person is lying on a faulty cable. What is correct?
+- RO: După un accident electric, o persoană stă întinsă pe un cablu defect. Ce este corect?
 
 **Erklärung DE:** Eigenschutz geht vor: Erst den Stromkreis unterbrechen, dann die Person berühren und Erste Hilfe leisten. Sonst wird man selbst zum Opfer.
 
@@ -340,10 +340,10 @@
 
 ## 29. [uv-029]
 
-**Frage DE:** Sie kommen als Erster an einen Verkehrsunfall auf der Straße vor dem Objekt. Was tun Sie zuerst?
+**Frage DE:** Sie kommen als Erster an einen Verkehrsunfall auf der Straße vor dem Objekt. Was tun Sie, bevor Sie Erste Hilfe leisten?
 
-- EN: You are the first person at a traffic accident on the road in front of the site. What do you do first?
-- RO: Ajungeți primul la un accident rutier pe strada din fața obiectivului. Ce faceți mai întâi?
+- EN: You are the first to arrive at a traffic accident on the road in front of the site. What do you do before giving first aid?
+- RO: Ajungeți primul la un accident rutier pe strada din fața obiectivului. Ce faceți înainte de a acorda primul ajutor?
 
 **Erklärung DE:** Zuerst sich selbst schützen und die Unfallstelle absichern (Warnweste, Warndreieck), damit es keinen weiteren Unfall gibt. Dann Notruf und Erste Hilfe.
 

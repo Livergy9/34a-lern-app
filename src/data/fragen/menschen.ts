@@ -18,17 +18,16 @@ export const FRAGEN: Frage[] = [
     erklaerung: 'Wer ruhig, sachlich und mit sicherem Abstand reagiert, nimmt Druck aus der Situation. Provokation oder Gewalt verschärfen den Konflikt.',
   },
   {
-    id: 'um-002', sachgebiet: 'menschen', typ: 'multi', schwierigkeit: 2, geprueft: false,
-    text: 'Was gehört zum aktiven Zuhören?',
+    id: 'um-002', sachgebiet: 'menschen', typ: 'single', schwierigkeit: 2, geprueft: false,
+    text: 'Was ist ein Beispiel für aktives Zuhören?',
     antworten: [
-      'Nachfragen, wenn etwas unklar ist',
       'Den anderen häufig unterbrechen',
-      'Das Gehörte mit eigenen Worten zusammenfassen',
       'Nebenbei auf das Handy schauen',
-      'Blickkontakt halten',
+      'Das Gehörte mit eigenen Worten zusammenfassen',
       'Sofort Vorwürfe machen',
+      'Schnell das Thema wechseln',
     ],
-    richtig: [0, 2, 4],
+    richtig: [2],
     erklaerung: 'Aktives Zuhören zeigt dem Gegenüber, dass man ihn ernst nimmt: nachfragen, zusammenfassen und Aufmerksamkeit zeigen.',
   },
   {

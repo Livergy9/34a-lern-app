@@ -15,9 +15,9 @@ export const UE: Record<string, UeEintrag> = {
     "112 este numărul de urgență pentru pompieri și ambulanță. 110 este numărul de urgență al poliției.",
   ],
   'uv-003': [
-    "Who issues the accident prevention regulations?",
+    "Who issues the accident prevention regulations (statutory accident insurance institutions)?",
     "Accident prevention regulations (DGUV regulations) are issued by the accident insurance institutions – for companies by the employers' liability insurance associations (Berufsgenossenschaften).",
-    "Cine emite regulamentele de prevenire a accidentelor?",
+    "Cine emite normele de prevenire a accidentelor (instituțiile asigurării legale de accidente)?",
     "Regulamentele de prevenire a accidentelor (regulamentele DGUV) sunt emise de instituțiile de asigurare împotriva accidentelor – pentru firme, de casele de asigurare profesională (Berufsgenossenschaften).",
   ],
   'uv-004': [
@@ -39,9 +39,9 @@ export const UE: Record<string, UeEintrag> = {
     "Instruirea trebuie făcută înainte de începerea activității și apoi la intervale potrivite, cel puțin o dată pe an, și trebuie documentată.",
   ],
   'uv-007': [
-    "Who has to pay for personal protective equipment?",
+    "What applies to the costs of personal protective equipment?",
     "The employer must provide the necessary personal protective equipment free of charge.",
-    "Cine trebuie să plătească echipamentul individual de protecție?",
+    "Ce se aplică pentru costurile echipamentului individual de protecție?",
     "Angajatorul trebuie să pună la dispoziție gratuit echipamentul individual de protecție necesar.",
   ],
   'uv-008': [
@@ -57,9 +57,9 @@ export const UE: Record<string, UeEintrag> = {
     "Pericolele și defectele trebuie raportate imediat și – dacă aveți dreptul și se poate face fără pericol – înlăturate. Ieșirile de urgență trebuie să fie mereu libere.",
   ],
   'uv-010': [
-    "May a guard work while under the influence of alcohol?",
+    "What applies to alcohol and drugs on security duty?",
     "Insured persons must not put themselves into a state through alcohol, drugs or other intoxicating substances in which they endanger themselves or others.",
-    "Are voie un agent de pază să lucreze sub influența alcoolului?",
+    "Ce se aplică pentru alcool și droguri în serviciul de pază?",
     "Persoanele asigurate nu au voie să ajungă, din cauza alcoolului, drogurilor sau altor substanțe, într-o stare în care se pun pe ei sau pe alții în pericol.",
   ],
   'uv-011': [
@@ -75,9 +75,9 @@ export const UE: Record<string, UeEintrag> = {
     "Drumul direct spre serviciu și înapoi este asigurat prin lege. Ocolurile private mai lungi nu sunt asigurate.",
   ],
   'uv-013': [
-    "When must the employer report an accident at work to the accident insurance institution?",
+    "In which cases must the employer report a work accident to the accident insurance institution?",
     "The employer must report an accident if an insured person is killed or injured so badly that they cannot work for more than three days.",
-    "Când trebuie angajatorul să raporteze un accident de muncă instituției de asigurare împotriva accidentelor?",
+    "În ce cazuri trebuie angajatorul să anunțe un accident de muncă la asigurarea de accidente?",
     "Angajatorul trebuie să raporteze un accident dacă o persoană asigurată moare sau este rănită atât de grav încât nu poate lucra mai mult de trei zile.",
   ],
   'uv-014': [
@@ -105,16 +105,16 @@ export const UE: Record<string, UeEintrag> = {
     "La munca periculoasă de unul singur trebuie asigurat că ajutorul vine repede, de ex. printr-un dispozitiv de alarmă personală sau mesaje de control regulate.",
   ],
   'uv-018': [
-    "Who may handle a service dog in security work?",
+    "What applies to handling a service dog on security duty?",
     "Service dogs may only be handled by suitable dog handlers who have been trained and tested together with the dog.",
-    "Cine are voie să conducă un câine de serviciu în paza?",
+    "Ce se aplică pentru conducerea unui câine de serviciu în paza?",
     "Câinii de serviciu pot fi conduși doar de dresori potriviți, care au fost instruiți și testați împreună cu câinele.",
   ],
   'uv-019': [
     "What is correct when using a fire extinguisher?",
-    "Extinguish with the wind behind you, fight surface fires from front to back and from bottom to top, use several extinguishers at the same time. Never put out fat fires with water.",
+    "Extinguish with the wind, fight surface fires from front to back and from bottom to top, aim at the embers instead of the tips of the flames. Use several extinguishers at the same time. Never put out fat fires with water.",
     "Ce este corect la folosirea unui stingător?",
-    "Stingeți cu vântul din spate, combateți incendiile de suprafață din față spre spate și de jos în sus, folosiți mai multe stingătoare în același timp. Nu stingeți niciodată grăsimea aprinsă cu apă.",
+    "Stingeți în direcția vântului, combateți incendiile de suprafață din față spre spate și de jos în sus, țintiți jarul, nu vârfurile flăcărilor. Folosiți mai multe stingătoare deodată. Nu stingeți niciodată grăsimea arzândă cu apă.",
   ],
   'uv-020': [
     "Which fire class applies to burning liquids such as petrol?",
@@ -159,9 +159,9 @@ export const UE: Record<string, UeEintrag> = {
     "Un AED este făcut pentru persoane fără pregătire medicală. Analizează ritmul inimii și dă instrucțiuni. Oricine are voie și ar trebui să-l folosească în caz de urgență.",
   ],
   'uv-027': [
-    "After an electrical accident, a person is lying on a faulty cable. What do you do first?",
+    "After an electrical accident, a person is lying on a faulty cable. What is correct?",
     "Your own safety comes first: first cut the power, then touch the person and give first aid. Otherwise you become a victim yourself.",
-    "După un accident electric, o persoană stă pe un cablu defect. Ce faceți mai întâi?",
+    "După un accident electric, o persoană stă întinsă pe un cablu defect. Ce este corect?",
     "Propria siguranță are prioritate: întâi întrerupeți curentul, apoi atingeți persoana și acordați primul ajutor. Altfel deveniți și dumneavoastră victimă.",
   ],
   'uv-028': [
@@ -171,9 +171,9 @@ export const UE: Record<string, UeEintrag> = {
     "Sângerările puternice se opresc prin presiune: ridicați brațul, apăsați vasul de sânge, aplicați un bandaj compresiv. Nu uitați de 112. Dacă se poate, purtați mănuși de unică folosință.",
   ],
   'uv-029': [
-    "You are the first person at a traffic accident on the road in front of the site. What do you do first?",
+    "You are the first to arrive at a traffic accident on the road in front of the site. What do you do before giving first aid?",
     "First protect yourself and secure the accident site (high-visibility vest, warning triangle) so that there is no further accident. Then emergency call and first aid.",
-    "Ajungeți primul la un accident rutier pe strada din fața obiectivului. Ce faceți mai întâi?",
+    "Ajungeți primul la un accident rutier pe strada din fața obiectivului. Ce faceți înainte de a acorda primul ajutor?",
     "Mai întâi vă protejați și asigurați locul accidentului (vestă reflectorizantă, triunghi reflectorizant), ca să nu mai aibă loc alt accident. Apoi sunați la urgență și acordați primul ajutor.",
   ],
   'uv-030': [

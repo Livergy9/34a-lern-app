@@ -2,13 +2,14 @@
 
 67 Fragen. ✅ = als richtig markierte Antwort. ⚠️ = Claude ist unsicher, bitte besonders genau prüfen.
 
-## 1. [st-001] Was ist Notwehr nach § 32 StGB?
+## 1. [st-001] (Mehrfachauswahl) Was ist richtig über die Notwehr nach § 32 StGB?
 
-- ✅ A) Die Verteidigung, die erforderlich ist, um einen gegenwärtigen rechtswidrigen Angriff von sich oder einem anderen abzuwenden
-- ❌ B) Die Bestrafung eines Täters nach der Tat
-- ❌ C) Jede Gewalt, die man nach einem Streit anwendet
-- ❌ D) Ein Recht, das nur Polizeibeamte haben
-- ❌ E) Die Verfolgung eines Täters, der bereits geflohen ist
+- ❌ A) Jede Gewalt, die man nach einem Streit anwendet
+- ✅ B) Die Verteidigung gegen einen gegenwärtigen rechtswidrigen Angriff
+- ❌ C) Ein Recht, das nur Polizeibeamte haben
+- ❌ D) Die Bestrafung eines Täters nach der Tat
+- ✅ E) Die erforderliche Verteidigung auch zugunsten eines anderen
+- ❌ F) Die Verfolgung eines Täters, der bereits geflohen ist
 
 **Erklärung:** Notwehr setzt einen gegenwärtigen (gerade stattfindenden) und rechtswidrigen Angriff voraus. Die Verteidigung muss erforderlich sein – Rache oder Strafe nach dem Angriff ist keine Notwehr.
 
@@ -16,24 +17,25 @@
 
 ## 2. [st-002] (Mehrfachauswahl) Unter welchen Voraussetzungen darf jedermann eine Person vorläufig festnehmen?
 
-- ✅ A) Die Person wird auf frischer Tat betroffen oder verfolgt.
-- ❌ B) Es genügt ein vager Verdacht ohne konkrete Tat.
-- ✅ C) Die Person ist der Flucht verdächtig.
-- ❌ D) Nur Polizeibeamte dürfen festnehmen.
-- ✅ E) Die Identität der Person kann nicht sofort festgestellt werden.
-- ❌ F) Die Festnahme ist nur bei Verbrechen erlaubt.
+- ✅ A) Die Person ist der Flucht verdächtig.
+- ❌ B) Nur Polizeibeamte dürfen festnehmen.
+- ❌ C) Die Person ist unhöflich.
+- ✅ D) Die Person wird auf frischer Tat betroffen oder verfolgt.
+- ❌ E) Die Festnahme ist nur bei Verbrechen erlaubt.
+- ❌ F) Es genügt ein vager Verdacht ohne konkrete Tat.
 
 **Erklärung:** Das Jedermann-Festnahmerecht gilt, wenn jemand auf frischer Tat betroffen oder verfolgt wird UND entweder fluchtverdächtig ist oder seine Identität nicht sofort festgestellt werden kann.
 
 **Rechtsgrundlage:** § 127 Abs. 1 StPO
 
-## 3. [st-003] Was ist ein Diebstahl nach § 242 StGB?
+## 3. [st-003] (Mehrfachauswahl) Was gehört zu einem Diebstahl nach § 242 StGB?
 
-- ✅ A) Das Wegnehmen einer fremden beweglichen Sache in der Absicht, sie sich rechtswidrig zuzueignen
-- ❌ B) Das Beschädigen einer fremden Sache
-- ❌ C) Das Betreten eines fremden Grundstücks
-- ❌ D) Das Ausleihen einer Sache ohne Rückgabefrist
-- ❌ E) Das Finden einer verlorenen Sache
+- ✅ A) Absicht, sich die Sache rechtswidrig zuzueignen
+- ❌ B) Beschädigen einer fremden Sache
+- ❌ C) Ausleihen einer Sache ohne Rückgabefrist
+- ❌ D) Finden einer verlorenen Sache
+- ❌ E) Betreten eines fremden Grundstücks
+- ✅ F) Wegnahme einer fremden beweglichen Sache
 
 **Erklärung:** Diebstahl bedeutet: Wegnahme einer fremden beweglichen Sache mit Zueignungsabsicht – der Täter will die Sache wie ein Eigentümer behalten oder nutzen.
 
@@ -51,13 +53,14 @@
 
 **Rechtsgrundlage:** § 12 StGB
 
-## 5. [st-005] Wer leitet die Strafverfolgung in Deutschland?
+## 5. [st-005] (Mehrfachauswahl) Wer ist in Deutschland für die Strafverfolgung zuständig?
 
-- ❌ A) Die Bewachungsunternehmen
-- ❌ B) Die Gewerbeämter
-- ❌ C) Der Geschädigte selbst
-- ❌ D) Die IHK
-- ✅ E) Die Staatsanwaltschaft, unterstützt von der Polizei
+- ❌ A) Der Geschädigte selbst
+- ✅ B) Die Polizei ermittelt im Auftrag der Staatsanwaltschaft.
+- ❌ C) Die Bewachungsunternehmen
+- ✅ D) Die Staatsanwaltschaft leitet die Ermittlungen.
+- ❌ E) Die IHK
+- ❌ F) Die Gewerbeämter
 
 **Erklärung:** Die Staatsanwaltschaft leitet das Ermittlungsverfahren. Die Polizei ermittelt in ihrem Auftrag. Sicherheitskräfte haben dabei keine eigenen Befugnisse.
 
@@ -75,24 +78,25 @@
 
 **Rechtsgrundlage:** § 1 StGB, Art. 103 Abs. 2 GG
 
-## 7. [st-007] (Mehrfachauswahl) Welche Stufen werden bei der Prüfung einer Straftat unterschieden?
+## 7. [st-007] (Mehrfachauswahl) Welche gehören zu den Stufen bei der Prüfung einer Straftat?
 
-- ✅ A) Tatbestand
-- ❌ B) Beliebtheit des Täters
-- ✅ C) Rechtswidrigkeit
-- ❌ D) Höhe des Einkommens
-- ✅ E) Schuld
-- ❌ F) Meinung der Nachbarn
+- ❌ A) Beliebtheit des Täters
+- ❌ B) Meinung der Nachbarn
+- ❌ C) Reue des Täters nach der Tat
+- ✅ D) Rechtswidrigkeit
+- ✅ E) Tatbestand
+- ❌ F) Höhe des Einkommens
 
 **Erklärung:** Eine Straftat liegt vor, wenn der Tatbestand erfüllt ist, die Tat rechtswidrig war (kein Rechtfertigungsgrund wie Notwehr) und der Täter schuldhaft gehandelt hat.
 
-## 8. [st-008] Was bedeutet Vorsatz?
+## 8. [st-008] (Mehrfachauswahl) Was ist richtig über den Vorsatz?
 
-- ❌ A) Der Täter hat aus Versehen gehandelt.
-- ❌ B) Der Täter hat geschlafen.
-- ❌ C) Der Täter hat auf Befehl gehandelt.
+- ❌ A) Der Täter hat geschlafen.
+- ✅ B) Der Täter handelt mit Wissen und Wollen.
+- ✅ C) Der Täter hält den Erfolg für möglich und nimmt ihn billigend in Kauf.
 - ❌ D) Der Täter war betrunken.
-- ✅ E) Der Täter handelt mit Wissen und Wollen.
+- ❌ E) Der Täter hat aus Versehen gehandelt.
+- ❌ F) Der Täter hat auf Befehl gehandelt.
 
 **Erklärung:** Vorsatz bedeutet Wissen und Wollen der Tat. Es reicht auch, wenn der Täter den Erfolg für möglich hält und billigend in Kauf nimmt.
 
@@ -110,13 +114,14 @@
 
 **Rechtsgrundlage:** § 276 BGB (Begriff), § 15 StGB
 
-## 10. [st-010] Ist fahrlässiges Handeln immer strafbar?
+## 10. [st-010] (Mehrfachauswahl) Ist fahrlässiges Handeln immer strafbar?
 
-- ❌ A) Ja, genauso wie vorsätzliches Handeln.
-- ❌ B) Nein, fahrlässiges Handeln ist nie strafbar.
+- ❌ A) Nein, fahrlässiges Handeln ist nie strafbar.
+- ❌ B) Ja, genauso wie vorsätzliches Handeln.
 - ❌ C) Nur bei Personen über 21 Jahren.
 - ✅ D) Nein, nur wenn das Gesetz fahrlässiges Handeln ausdrücklich mit Strafe bedroht.
-- ❌ E) Nur nachts.
+- ✅ E) Zum Beispiel ist fahrlässige Körperverletzung strafbar.
+- ❌ F) Nur nachts.
 
 **Erklärung:** Strafbar ist grundsätzlich nur vorsätzliches Handeln. Fahrlässigkeit nur, wenn das Gesetz es ausdrücklich sagt, z. B. fahrlässige Körperverletzung (§ 229 StGB).
 
@@ -134,13 +139,14 @@
 
 **Rechtsgrundlage:** § 12 Abs. 2 StGB
 
-## 12. [st-012] Ist der Versuch einer Straftat strafbar?
+## 12. [st-012] (Mehrfachauswahl) Ist der Versuch einer Straftat strafbar?
 
 - ❌ A) Nie, nur die vollendete Tat wird bestraft.
-- ❌ B) Immer, bei jeder Straftat.
-- ❌ C) Nur bei Ordnungswidrigkeiten.
-- ✅ D) Bei Verbrechen immer, bei Vergehen nur, wenn das Gesetz es ausdrücklich bestimmt.
+- ❌ B) Nur bei Ordnungswidrigkeiten.
+- ✅ C) Bei Vergehen nur, wenn das Gesetz es ausdrücklich bestimmt.
+- ✅ D) Bei Verbrechen ist der Versuch immer strafbar.
 - ❌ E) Nur, wenn der Täter es zugibt.
+- ❌ F) Immer, bei jeder Straftat.
 
 **Erklärung:** Der Versuch eines Verbrechens ist immer strafbar. Bei Vergehen nur, wenn es im Gesetz steht – z. B. beim Diebstahl.
 
@@ -170,13 +176,14 @@
 
 **Rechtsgrundlage:** § 1 JGG
 
-## 15. [st-015] Eine Wachperson bemerkt bei ihrem Kontrollgang einen Einbruch in das bewachte Objekt und unternimmt bewusst nichts. Was gilt?
+## 15. [st-015] (Mehrfachauswahl) Eine Wachperson bemerkt bei ihrem Kontrollgang einen Einbruch in das bewachte Objekt und unternimmt bewusst nichts. Was gilt?
 
-- ❌ A) Nur der Einbrecher kann bestraft werden, sonst niemand.
-- ❌ B) Sie ist nie strafbar, weil sie nichts getan hat.
-- ✅ C) Sie kann sich wegen Unterlassens strafbar machen, weil sie durch ihren Vertrag eine Garantenstellung hat.
+- ❌ A) Sie ist nie strafbar, weil sie nichts getan hat.
+- ❌ B) Nur der Auftraggeber haftet.
+- ✅ C) Sie kann sich wegen Unterlassens strafbar machen.
 - ❌ D) Sie bekommt eine Belohnung für Zurückhaltung.
-- ❌ E) Nur der Auftraggeber haftet.
+- ❌ E) Nur der Einbrecher kann bestraft werden, sonst niemand.
+- ✅ F) Sie hat durch ihren Auftrag eine Garantenstellung.
 
 **Erklärung:** Wer rechtlich dafür einstehen muss, dass ein Schaden nicht eintritt (Garant), kann durch Unterlassen strafbar werden. Wachpersonen haben durch ihren Auftrag eine solche Schutzpflicht.
 
@@ -184,10 +191,10 @@
 
 ## 16. [st-016] (Mehrfachauswahl) Wann macht sich jemand wegen unterlassener Hilfeleistung strafbar?
 
-- ✅ A) Bei einem Unglücksfall, gemeiner Gefahr oder Not
-- ❌ B) Nur, wenn er Arzt ist
-- ✅ C) Wenn die Hilfe erforderlich ist
-- ✅ D) Wenn die Hilfe zumutbar ist, ohne sich selbst erheblich zu gefährden
+- ✅ A) Wenn die Hilfe erforderlich und zumutbar ist
+- ✅ B) Bei einem Unglücksfall, gemeiner Gefahr oder Not
+- ❌ C) Nur, wenn er Arzt ist
+- ❌ D) Nur, wenn man dafür bezahlt wird
 - ❌ E) Nur, wenn das Opfer ein Verwandter ist
 - ❌ F) Nur, wenn ein Polizist dabei ist
 
@@ -195,25 +202,27 @@
 
 **Rechtsgrundlage:** § 323c StGB
 
-## 17. [st-017] Was bedeutet „Mittäterschaft“?
+## 17. [st-017] (Mehrfachauswahl) Was ist richtig über die Mittäterschaft?
 
-- ❌ A) Jemand hilft nach der Tat beim Verstecken der Beute.
-- ❌ B) Jemand stiftet einen anderen zur Tat an.
-- ❌ C) Jemand sieht der Tat nur zu.
-- ✅ D) Mehrere begehen die Straftat gemeinschaftlich und jeder wird als Täter bestraft.
-- ❌ E) Jemand meldet die Tat der Polizei.
+- ❌ A) Jemand meldet die Tat der Polizei.
+- ✅ B) Jeder Mittäter wird als Täter bestraft.
+- ❌ C) Jemand stiftet einen anderen zur Tat an.
+- ❌ D) Jemand hilft nach der Tat beim Verstecken der Beute.
+- ✅ E) Mehrere begehen die Straftat gemeinschaftlich nach einem gemeinsamen Plan.
+- ❌ F) Jemand sieht der Tat nur zu.
 
 **Erklärung:** Begehen mehrere die Tat gemeinschaftlich nach einem gemeinsamen Plan, wird jeder als Täter bestraft.
 
 **Rechtsgrundlage:** § 25 Abs. 2 StGB
 
-## 18. [st-018] Was ist Beihilfe?
+## 18. [st-018] (Mehrfachauswahl) Was ist Beihilfe zu einer Straftat?
 
-- ❌ A) Jemanden zur Tat überreden
+- ✅ A) Zum Beispiel bei einem Einbruch Schmiere stehen
 - ❌ B) Einem Verletzten Erste Hilfe leisten
-- ✅ C) Einem anderen bei seiner vorsätzlichen Straftat vorsätzlich Hilfe leisten
-- ❌ D) Die Polizei bei einer Festnahme unterstützen
-- ❌ E) Eine Straftat allein begehen
+- ❌ C) Die Polizei bei einer Festnahme unterstützen
+- ❌ D) Eine Straftat allein begehen
+- ❌ E) Jemanden zur Tat überreden
+- ✅ F) Einem anderen bei seiner vorsätzlichen Straftat vorsätzlich helfen
 
 **Erklärung:** Beihilfe leistet, wer einem anderen bei dessen vorsätzlicher Tat hilft, z. B. Schmiere steht. Wer einen anderen zur Tat bestimmt, ist Anstifter.
 
@@ -221,12 +230,12 @@
 
 ## 19. [st-019] (Mehrfachauswahl) Welche Voraussetzungen hat die Notwehr nach § 32 StGB?
 
-- ❌ A) Der Angreifer muss bewaffnet sein.
-- ✅ B) Es liegt ein gegenwärtiger Angriff vor.
-- ✅ C) Der Angriff ist rechtswidrig.
+- ✅ A) Es liegt ein gegenwärtiger Angriff vor.
+- ❌ B) Der Angreifer muss älter als 18 Jahre sein.
+- ❌ C) Der Angriff muss vorher angekündigt werden.
 - ❌ D) Die Polizei muss vorher zustimmen.
-- ✅ E) Die Verteidigung ist erforderlich.
-- ❌ F) Der Angriff muss vorher angekündigt werden.
+- ✅ E) Der Angriff ist rechtswidrig.
+- ❌ F) Der Angreifer muss bewaffnet sein.
 
 **Erklärung:** Notwehr setzt einen gegenwärtigen, rechtswidrigen Angriff und eine erforderliche (und gebotene) Verteidigung voraus. Waffen oder eine Zustimmung der Polizei sind keine Voraussetzung.
 
@@ -244,49 +253,53 @@
 
 **Rechtsgrundlage:** § 32 Abs. 2 StGB
 
-## 21. [st-021] Ein Dieb versucht, einer Besucherin die Handtasche zu entreißen. Darf die Sicherheitskraft Notwehr ausüben?
+## 21. [st-021] (Mehrfachauswahl) Ein Dieb versucht, einer Besucherin die Handtasche zu entreißen. Darf die Sicherheitskraft Notwehr ausüben?
 
-- ❌ A) Nur, wenn die Tasche mehr als 1.000 Euro wert ist.
-- ❌ B) Nein, Notwehr gilt nur bei Angriffen auf das Leben.
-- ❌ C) Nein, nur die Besucherin selbst darf sich wehren.
+- ❌ A) Nein, nur die Besucherin selbst darf sich wehren.
+- ❌ B) Nur, wenn ein Polizist es erlaubt.
+- ❌ C) Nur, wenn die Tasche mehr als 1.000 Euro wert ist.
 - ✅ D) Ja, auch das Eigentum ist durch Notwehr geschützt.
-- ❌ E) Nur, wenn ein Polizist es erlaubt.
+- ❌ E) Nein, Notwehr gilt nur bei Angriffen auf das Leben.
+- ✅ F) Ja, als Nothilfe für die Besucherin.
 
-**Erklärung:** Notwehr ist gegen Angriffe auf jedes Rechtsgut erlaubt, auch auf Eigentum. Die Verteidigung muss aber erforderlich sein.
+**Erklärung:** Notwehr ist gegen Angriffe auf jedes Rechtsgut erlaubt, auch auf Eigentum. Man darf sie auch für andere ausüben (Nothilfe). Die Verteidigung muss aber erforderlich sein.
 
 **Rechtsgrundlage:** § 32 StGB
 
-## 22. [st-022] Ein unbewaffneter Mann schubst eine Sicherheitskraft leicht. Diese zieht daraufhin ein Messer und verletzt ihn. Ist das Notwehr?
+## 22. [st-022] (Mehrfachauswahl) Ein unbewaffneter Mann schubst eine Sicherheitskraft leicht. Diese zieht daraufhin ein Messer und verletzt ihn. Ist das Notwehr?
 
-- ❌ A) Ja, jede Verteidigung ist erlaubt.
-- ❌ B) Ja, weil der Mann angefangen hat.
-- ❌ C) Ja, wenn die Sicherheitskraft Angst hatte.
-- ✅ D) Nein, die Verteidigung war nicht erforderlich – es gab mildere Mittel.
-- ❌ E) Ja, Messer sind im Dienst immer erlaubt.
+- ✅ A) Nein, die Verteidigung war nicht erforderlich.
+- ❌ B) Ja, Messer sind im Dienst immer erlaubt.
+- ❌ C) Ja, jede Verteidigung ist erlaubt.
+- ✅ D) Nein, es gab mildere Mittel, um den Schubs abzuwehren.
+- ❌ E) Ja, wenn die Sicherheitskraft Angst hatte.
+- ❌ F) Ja, weil der Mann angefangen hat.
 
 **Erklärung:** Erforderlich ist nur das mildeste von mehreren gleich wirksamen Mitteln. Ein Messer gegen einen leichten Schubs ist nicht erforderlich.
 
 **Rechtsgrundlage:** § 32 StGB
 
-## 23. [st-023] Was ist ein Notwehrexzess nach § 33 StGB?
+## 23. [st-023] (Mehrfachauswahl) Was ist richtig über den Notwehrexzess nach § 33 StGB?
 
 - ❌ A) Notwehr gegen ein Tier
-- ❌ B) Notwehr, die mehr als eine Stunde dauert
-- ✅ C) Der Verteidiger überschreitet die Grenzen der Notwehr aus Verwirrung, Furcht oder Schrecken und wird deshalb nicht bestraft.
-- ❌ D) Notwehr mit einer Schusswaffe
-- ❌ E) Die Bestrafung des Angreifers
+- ✅ B) Der Verteidiger überschreitet die Grenzen der Notwehr aus Verwirrung, Furcht oder Schrecken.
+- ✅ C) Der Verteidiger wird in diesem Fall nicht bestraft.
+- ❌ D) Die Bestrafung des Angreifers
+- ❌ E) Notwehr mit einer Schusswaffe
+- ❌ F) Notwehr, die mehr als eine Stunde dauert
 
 **Erklärung:** Wer die Grenzen der Notwehr aus Verwirrung, Furcht oder Schrecken überschreitet, wird nicht bestraft. Aus Wut oder Rache gilt das nicht.
 
 **Rechtsgrundlage:** § 33 StGB
 
-## 24. [st-024] Um ein Kind aus einem brennenden Haus zu retten, tritt eine Sicherheitskraft die Haustür ein. Was rechtfertigt die Sachbeschädigung?
+## 24. [st-024] (Mehrfachauswahl) Um ein Kind aus einem brennenden Haus zu retten, tritt eine Sicherheitskraft die Haustür ein. Was ist richtig?
 
-- ❌ A) Notwehr, weil die Tür angreift
-- ❌ B) Selbsthilfe
-- ❌ C) Vorläufige Festnahme
-- ❌ D) Gar nichts, sie wird bestraft
-- ✅ E) Rechtfertigender Notstand, weil das Leben des Kindes viel wichtiger ist als die Tür
+- ❌ A) Gar nichts, sie wird bestraft
+- ❌ B) Notwehr, weil die Tür angreift
+- ✅ C) Rechtfertigender Notstand
+- ✅ D) Das Leben des Kindes ist viel wichtiger als die Tür.
+- ❌ E) Selbsthilfe
+- ❌ F) Vorläufige Festnahme
 
 **Erklärung:** Wer eine Gefahr für Leben oder Gesundheit nur abwenden kann, indem er ein anderes Rechtsgut verletzt, handelt nicht rechtswidrig – wenn das geschützte Interesse deutlich überwiegt.
 
@@ -304,13 +317,14 @@
 
 **Rechtsgrundlage:** § 35 StGB
 
-## 26. [st-026] Was ist eine Körperverletzung nach § 223 StGB?
+## 26. [st-026] (Mehrfachauswahl) Was ist eine Körperverletzung nach § 223 StGB?
 
-- ❌ A) Jemanden beleidigen
-- ❌ B) Jemandem etwas wegnehmen
-- ❌ C) Jemanden belügen
+- ❌ A) Jemanden belügen
+- ❌ B) Jemanden beleidigen
+- ❌ C) Jemandem etwas wegnehmen
 - ❌ D) Jemanden einschließen
-- ✅ E) Jemanden körperlich misshandeln oder an der Gesundheit schädigen
+- ✅ E) Jemanden an der Gesundheit schädigen
+- ✅ F) Jemanden körperlich misshandeln
 
 **Erklärung:** Körperverletzung begeht, wer eine andere Person körperlich misshandelt oder an der Gesundheit schädigt. Auch eine Ohrfeige kann schon eine Körperverletzung sein.
 
@@ -318,52 +332,55 @@
 
 ## 27. [st-027] (Mehrfachauswahl) Wann liegt eine gefährliche Körperverletzung nach § 224 StGB vor?
 
-- ✅ A) Mittels einer Waffe oder eines anderen gefährlichen Werkzeugs
+- ❌ A) Durch Lügen
 - ❌ B) Durch eine Beleidigung
-- ✅ C) Mit einem anderen Beteiligten gemeinschaftlich
-- ✅ D) Mittels einer das Leben gefährdenden Behandlung
-- ❌ E) Durch einen bösen Blick
-- ❌ F) Durch Lügen
+- ❌ C) Durch eine laute Stimme
+- ✅ D) Mit einem anderen Beteiligten gemeinschaftlich
+- ✅ E) Mittels einer Waffe oder eines anderen gefährlichen Werkzeugs
+- ❌ F) Durch einen bösen Blick
 
 **Erklärung:** Gefährliche Körperverletzung liegt u. a. vor bei Waffen oder gefährlichen Werkzeugen, gemeinschaftlicher Begehung, einem hinterlistigen Überfall oder einer lebensgefährdenden Behandlung.
 
 **Rechtsgrundlage:** § 224 StGB
 
-## 28. [st-028] Eine Sicherheitskraft lässt aus Unachtsamkeit eine schwere Tür zufallen. Ein Besucher wird an der Hand verletzt. Welche Straftat kommt in Betracht?
+## 28. [st-028] (Mehrfachauswahl) Eine Sicherheitskraft lässt aus Unachtsamkeit eine schwere Tür zufallen. Ein Besucher wird an der Hand verletzt. Was ist richtig?
 
-- ✅ A) Fahrlässige Körperverletzung
-- ❌ B) Gefährliche Körperverletzung
-- ❌ C) Raub
-- ❌ D) Nötigung
-- ❌ E) Gar keine, weil es keine Absicht war
+- ✅ A) Strafbar ist das, obwohl es keine Absicht war.
+- ❌ B) Nötigung
+- ❌ C) Gefährliche Körperverletzung
+- ❌ D) Raub
+- ✅ E) Fahrlässige Körperverletzung
+- ❌ F) Gar keine, weil es keine Absicht war
 
 **Erklärung:** Wer durch Fahrlässigkeit die Körperverletzung einer anderen Person verursacht, kann wegen fahrlässiger Körperverletzung bestraft werden.
 
 **Rechtsgrundlage:** § 229 StGB
 
-## 29. [st-029] Was ist eine Nötigung?
+## 29. [st-029] (Mehrfachauswahl) Was ist eine Nötigung?
 
 - ❌ A) Jemanden um einen Gefallen bitten
-- ❌ B) Jemandem etwas schenken
-- ✅ C) Jemanden rechtswidrig mit Gewalt oder Drohung mit einem empfindlichen Übel zu einer Handlung, Duldung oder Unterlassung zwingen
-- ❌ D) Jemanden auf einen Fehler hinweisen
-- ❌ E) Jemanden zum Arzt begleiten
+- ✅ B) Jemanden mit Gewalt rechtswidrig zu einer Handlung zwingen
+- ❌ C) Jemanden auf einen Fehler hinweisen
+- ❌ D) Jemanden zum Arzt begleiten
+- ❌ E) Jemandem etwas schenken
+- ✅ F) Jemanden durch Drohung mit einem empfindlichen Übel rechtswidrig zu etwas zwingen
 
 **Erklärung:** Nötigung ist das rechtswidrige Zwingen eines anderen mit Gewalt oder Drohung. Auch eine Sicherheitskraft kann sich strafbar machen, wenn sie Personen ohne Recht zu etwas zwingt.
 
 **Rechtsgrundlage:** § 240 StGB
 
-## 30. [st-030] Ein Ladendetektiv sperrt einen Kunden ohne Verdacht einer Straftat für zwei Stunden in einen Raum. Welche Straftat kommt in Betracht?
+## 30. [st-030] (Mehrfachauswahl) Ein Ladendetektiv sperrt einen Kunden ohne Verdacht einer Straftat für zwei Stunden in einen Raum. Was ist richtig?
 
-- ✅ A) Freiheitsberaubung
-- ❌ B) Diebstahl
-- ❌ C) Unterschlagung
-- ❌ D) Hausfriedensbruch
-- ❌ E) Betrug
+- ❌ A) Diebstahl
+- ✅ B) Freiheitsberaubung
+- ❌ C) Hausfriedensbruch
+- ❌ D) Betrug
+- ✅ E) Ein Festnahmerecht nach § 127 StPO bestand nicht, weil es keinen Verdacht einer Straftat gab.
+- ❌ F) Unterschlagung
 
-**Erklärung:** Wer einen Menschen einsperrt oder auf andere Weise der Freiheit beraubt, ohne dass ein Recht dazu besteht, macht sich wegen Freiheitsberaubung strafbar.
+**Erklärung:** Wer einen Menschen einsperrt oder auf andere Weise der Freiheit beraubt, ohne dass ein Recht dazu besteht, macht sich wegen Freiheitsberaubung strafbar. Das Festnahmerecht nach § 127 StPO setzt eine Straftat voraus – ohne Verdacht gibt es kein Recht zum Festhalten.
 
-**Rechtsgrundlage:** § 239 StGB
+**Rechtsgrundlage:** § 239 StGB, § 127 StPO
 
 ## 31. [st-031] Was ist eine Bedrohung nach § 241 StGB?
 
@@ -377,13 +394,14 @@
 
 **Rechtsgrundlage:** § 241 StGB
 
-## 32. [st-032] Was ist der Unterschied zwischen übler Nachrede und Verleumdung?
+## 32. [st-032] (Mehrfachauswahl) Was ist richtig über üble Nachrede und Verleumdung?
 
-- ❌ A) Es gibt keinen Unterschied.
-- ✅ B) Bei der Verleumdung weiß der Täter, dass seine Behauptung unwahr ist.
+- ✅ A) Bei der Verleumdung weiß der Täter, dass seine Behauptung unwahr ist.
+- ✅ B) Bei der üblen Nachrede ist die Behauptung nicht erweislich wahr.
 - ❌ C) Verleumdung ist immer eine Ordnungswidrigkeit.
 - ❌ D) Üble Nachrede ist nur im Internet strafbar.
 - ❌ E) Bei der üblen Nachrede muss der Täter Geld verlangen.
+- ❌ F) Es gibt keinen Unterschied.
 
 **Erklärung:** Üble Nachrede: Behauptung einer ehrenrührigen Tatsache, die nicht erweislich wahr ist. Verleumdung: Der Täter weiß, dass die Behauptung unwahr ist.
 
@@ -391,24 +409,25 @@
 
 ## 33. [st-033] (Mehrfachauswahl) Wann begeht jemand Hausfriedensbruch?
 
-- ✅ A) Er dringt ohne Erlaubnis in eine fremde Wohnung ein.
+- ❌ A) Er betritt einen öffentlichen Park.
 - ❌ B) Er geht auf einem öffentlichen Gehweg spazieren.
-- ✅ C) Er dringt in ein eingezäuntes Firmengelände ein.
+- ❌ C) Er klingelt an einer Haustür.
 - ❌ D) Er betritt während der Öffnungszeit ein Kaufhaus zum Einkaufen.
-- ✅ E) Er bleibt in einem Geschäft, obwohl ihn der Berechtigte zum Gehen aufgefordert hat.
-- ❌ F) Er klingelt an einer Haustür.
+- ✅ E) Er dringt ohne Erlaubnis in eine fremde Wohnung ein.
+- ✅ F) Er bleibt in einem Geschäft, obwohl ihn der Berechtigte zum Gehen aufgefordert hat.
 
 **Erklärung:** Hausfriedensbruch: widerrechtliches Eindringen in Wohnung, Geschäftsräume oder befriedetes Besitztum – oder Verweilen trotz Aufforderung des Berechtigten.
 
 **Rechtsgrundlage:** § 123 StGB
 
-## 34. [st-034] Wie wird Hausfriedensbruch nach § 123 StGB verfolgt?
+## 34. [st-034] (Mehrfachauswahl) Wie wird Hausfriedensbruch nach § 123 StGB verfolgt?
 
 - ❌ A) Immer von Amts wegen
-- ✅ B) Nur auf Antrag des Berechtigten (Antragsdelikt)
+- ❌ B) Nur, wenn ein Schaden über 1.000 Euro entsteht
 - ❌ C) Nur von der IHK
-- ❌ D) Gar nicht, er ist straflos
-- ❌ E) Nur, wenn ein Schaden über 1.000 Euro entsteht
+- ✅ D) Es ist ein Antragsdelikt.
+- ✅ E) Nur auf Antrag des Berechtigten
+- ❌ F) Gar nicht, er ist straflos
 
 **Erklärung:** Hausfriedensbruch ist ein Antragsdelikt. Ohne Strafantrag des Berechtigten wird er nicht verfolgt.
 
@@ -438,25 +457,27 @@
 
 **Rechtsgrundlage:** § 252 StGB
 
-## 37. [st-037] Was ist ein Raub?
+## 37. [st-037] (Mehrfachauswahl) Was ist ein Raub?
 
-- ❌ A) Kaufen gestohlener Ware
+- ❌ A) Beschädigen einer fremden Sache
 - ❌ B) Heimliches Wegnehmen ohne Gewalt
 - ❌ C) Behalten einer gefundenen Sache
-- ✅ D) Wegnahme einer fremden beweglichen Sache mit Gewalt gegen eine Person oder mit Drohung mit gegenwärtiger Gefahr für Leib oder Leben
-- ❌ E) Beschädigen einer fremden Sache
+- ❌ D) Kaufen gestohlener Ware
+- ✅ E) Wegnahme mit Drohung mit gegenwärtiger Gefahr für Leib oder Leben
+- ✅ F) Wegnahme einer fremden beweglichen Sache mit Gewalt gegen eine Person
 
 **Erklärung:** Raub ist Diebstahl mit Gewalt oder Drohung gegen eine Person. Raub ist ein Verbrechen.
 
 **Rechtsgrundlage:** § 249 StGB
 
-## 38. [st-038] Ein Täter bricht nachts in ein Bürogebäude ein und stiehlt Laptops. Wie wird das im Gesetz eingeordnet?
+## 38. [st-038] (Mehrfachauswahl) Ein Täter bricht nachts in ein Bürogebäude ein und stiehlt Laptops. Was ist richtig?
 
 - ❌ A) Als Ordnungswidrigkeit
-- ❌ B) Als einfache Sachbeschädigung
-- ❌ C) Als Hausfriedensbruch allein
-- ❌ D) Als Betrug
-- ✅ E) Als Diebstahl in einem besonders schweren Fall (Einbruch in ein Gebäude)
+- ❌ B) Als einfache Sachbeschädigung allein
+- ✅ C) Als Diebstahl in einem besonders schweren Fall (Einbruch in ein Gebäude)
+- ✅ D) Daneben kann Hausfriedensbruch vorliegen.
+- ❌ E) Als Betrug
+- ❌ F) Gar nicht, wenn nichts kaputtgeht
 
 **Erklärung:** Wer zur Ausführung der Tat in ein Gebäude einbricht, begeht in der Regel einen besonders schweren Fall des Diebstahls. Daneben können Sachbeschädigung und Hausfriedensbruch vorliegen.
 
@@ -510,25 +531,27 @@
 
 **Rechtsgrundlage:** § 267 StGB
 
-## 43. [st-043] Gilt die Strafvorschrift „Widerstand gegen Vollstreckungsbeamte“ (§ 113 StGB) auch zum Schutz privater Sicherheitskräfte?
+## 43. [st-043] (Mehrfachauswahl) Gilt die Strafvorschrift „Widerstand gegen Vollstreckungsbeamte“ (§ 113 StGB) auch zum Schutz privater Sicherheitskräfte?
 
-- ❌ A) Ja, für alle Personen in Uniform.
-- ❌ B) Ja, wenn sie die Sachkundeprüfung haben.
-- ❌ C) Ja, aber nur nachts.
-- ❌ D) Ja, wenn der Auftraggeber eine Behörde ist.
-- ✅ E) Nein, sie schützt Amtsträger wie Polizeibeamte bei Vollstreckungshandlungen, nicht private Sicherheitskräfte.
+- ❌ A) Ja, wenn der Auftraggeber eine Behörde ist.
+- ✅ B) Nein, Angriffe auf sie sind aber z. B. als Körperverletzung strafbar.
+- ❌ C) Ja, wenn sie die Sachkundeprüfung haben.
+- ✅ D) Nein, private Sicherheitskräfte sind keine Amtsträger.
+- ❌ E) Ja, aber nur nachts.
+- ❌ F) Ja, für alle Personen in Uniform.
 
 **Erklärung:** § 113 StGB schützt Amtsträger und Soldaten bei Vollstreckungshandlungen. Private Sicherheitskräfte sind keine Amtsträger. Angriffe auf sie sind aber z. B. als Körperverletzung strafbar.
 
 **Rechtsgrundlage:** § 113 StGB
 
-## 44. [st-044] Eine Wachperson sagt zu einem Besucher: „Ich bin von der Polizei, zeigen Sie mir Ihren Ausweis!“ Welche Straftat kommt in Betracht?
+## 44. [st-044] (Mehrfachauswahl) Eine Wachperson sagt zu einem Besucher: „Ich bin von der Polizei, zeigen Sie mir Ihren Ausweis!“ Was ist richtig?
 
-- ✅ A) Amtsanmaßung
-- ❌ B) Betrug
-- ❌ C) Hausfriedensbruch
-- ❌ D) Diebstahl
+- ❌ A) Betrug
+- ❌ B) Diebstahl
+- ✅ C) Das Verhalten ist strafbar, auch wenn keine Gewalt angewendet wird.
+- ✅ D) Amtsanmaßung
 - ❌ E) Unterlassene Hilfeleistung
+- ❌ F) Hausfriedensbruch
 
 **Erklärung:** Wer sich unbefugt als Amtsträger ausgibt oder eine Handlung vornimmt, die nur ein Amtsträger vornehmen darf, begeht Amtsanmaßung.
 
@@ -546,25 +569,27 @@
 
 **Rechtsgrundlage:** § 145 StGB
 
-## 46. [st-046] Was bedeutet das Legalitätsprinzip im Strafverfahren?
+## 46. [st-046] (Mehrfachauswahl) Was ist richtig über das Legalitätsprinzip?
 
-- ❌ A) Die Polizei darf selbst entscheiden, ob sie eine Straftat verfolgt.
-- ❌ B) Nur legale Waffen dürfen benutzt werden.
-- ❌ C) Jeder Bürger muss jede Straftat anzeigen.
-- ✅ D) Die Staatsanwaltschaft muss bei zureichenden Anhaltspunkten für eine Straftat ermitteln.
-- ❌ E) Straftaten werden nur auf Antrag verfolgt.
+- ✅ A) Die Staatsanwaltschaft muss bei zureichenden Anhaltspunkten für eine Straftat ermitteln.
+- ✅ B) Bei Ordnungswidrigkeiten gilt es nicht, dort gilt das Opportunitätsprinzip.
+- ❌ C) Straftaten werden nur auf Antrag verfolgt.
+- ❌ D) Nur legale Waffen dürfen benutzt werden.
+- ❌ E) Jeder Bürger muss jede Straftat anzeigen.
+- ❌ F) Die Polizei darf selbst entscheiden, ob sie eine Straftat verfolgt.
 
 **Erklärung:** Nach dem Legalitätsprinzip ist die Staatsanwaltschaft verpflichtet, bei einem Anfangsverdacht einzuschreiten. Bei Ordnungswidrigkeiten gilt dagegen das Opportunitätsprinzip.
 
 **Rechtsgrundlage:** § 152 Abs. 2 StPO
 
-## 47. [st-047] Wo kann man eine Strafanzeige erstatten?
+## 47. [st-047] (Mehrfachauswahl) Wo kann man eine Strafanzeige erstatten?
 
-- ✅ A) Bei der Polizei, der Staatsanwaltschaft oder dem Amtsgericht – mündlich oder schriftlich
+- ✅ A) Bei der Polizei
 - ❌ B) Nur bei der IHK
-- ❌ C) Nur schriftlich beim Bundesgerichtshof
-- ❌ D) Nur beim Arbeitgeber
-- ❌ E) Nur beim Bürgermeister
+- ❌ C) Nur beim Bürgermeister
+- ❌ D) Nur schriftlich beim Bundesgerichtshof
+- ✅ E) Bei der Staatsanwaltschaft
+- ❌ F) Nur beim Arbeitgeber
 
 **Erklärung:** Eine Strafanzeige kann bei Polizei, Staatsanwaltschaft oder Amtsgericht erstattet werden, mündlich oder schriftlich.
 
@@ -584,24 +609,25 @@
 
 ## 49. [st-049] (Mehrfachauswahl) Welche Straftaten sind (grundsätzlich) Antragsdelikte?
 
-- ✅ A) Hausfriedensbruch
-- ❌ B) Raub
-- ✅ C) Beleidigung
-- ❌ D) Mord
-- ✅ E) Einfache Sachbeschädigung
+- ✅ A) Beleidigung
+- ❌ B) Diebstahl mit Waffen
+- ❌ C) Raub
+- ✅ D) Hausfriedensbruch
+- ❌ E) Mord
 - ❌ F) Brandstiftung
 
 **Erklärung:** Antragsdelikte werden nur auf Antrag verfolgt, z. B. Hausfriedensbruch und Beleidigung. Bei einfacher Sachbeschädigung und Körperverletzung kann die Staatsanwaltschaft auch ohne Antrag bei besonderem öffentlichem Interesse ermitteln. Raub und Mord werden immer von Amts wegen verfolgt.
 
 **Rechtsgrundlage:** §§ 123, 194, 303c StGB
 
-## 50. [st-050] Ein Passant wirft eine leere Dose auf den Gehweg (Ordnungswidrigkeit). Darf eine Sicherheitskraft ihn nach § 127 StPO vorläufig festnehmen?
+## 50. [st-050] (Mehrfachauswahl) Ein Passant wirft eine leere Dose auf den Gehweg (Ordnungswidrigkeit). Darf eine Sicherheitskraft ihn nach § 127 StPO vorläufig festnehmen?
 
 - ❌ A) Ja, bei jedem Regelverstoß.
-- ❌ B) Ja, wenn er sich nicht entschuldigt.
-- ✅ C) Nein, § 127 StPO setzt eine Straftat voraus – eine Ordnungswidrigkeit reicht nicht.
-- ❌ D) Ja, wenn er unhöflich ist.
-- ❌ E) Ja, wenn der Auftraggeber es will.
+- ❌ B) Ja, wenn er unhöflich ist.
+- ❌ C) Ja, wenn er sich nicht entschuldigt.
+- ✅ D) Nein, § 127 StPO setzt eine Straftat voraus.
+- ✅ E) Nein, eine Ordnungswidrigkeit reicht nicht aus.
+- ❌ F) Ja, wenn der Auftraggeber es will.
 
 **Erklärung:** Die vorläufige Festnahme durch jedermann ist nur bei einer Straftat erlaubt. Bei Ordnungswidrigkeiten besteht dieses Recht nicht.
 
@@ -609,60 +635,64 @@
 
 ## 51. [st-051] (Mehrfachauswahl) Welche Mittel sind bei einer vorläufigen Festnahme nach § 127 StPO in der Regel erlaubt?
 
-- ✅ A) Den Täter am Arm festhalten
+- ❌ A) Dem Täter das Handy abnehmen und behalten
 - ❌ B) Dem Täter ins Gesicht schlagen, obwohl er sich nicht wehrt
-- ✅ C) Dem Täter den Fluchtweg versperren
+- ✅ C) Den Täter am Arm festhalten
 - ❌ D) Den Täter stundenlang einschließen, ohne die Polizei zu rufen
-- ✅ E) Den Täter bis zum Eintreffen der Polizei festhalten
-- ❌ F) Mit einer Schusswaffe auf den fliehenden Täter schießen
+- ❌ E) Mit einer Schusswaffe auf den fliehenden Täter schießen
+- ✅ F) Dem Täter den Fluchtweg versperren
 
 **Erklärung:** Erlaubt ist, was zum Festhalten erforderlich und verhältnismäßig ist. Die Polizei muss sofort informiert werden. Schläge ohne Not oder Schüsse auf Fliehende sind nicht erlaubt.
 
 **Rechtsgrundlage:** § 127 Abs. 1 StPO
 
-## 52. [st-052] Darf ein Ladendetektiv die Tasche eines Verdächtigen gegen dessen Willen durchsuchen?
+## 52. [st-052] (Mehrfachauswahl) Darf ein Ladendetektiv die Tasche eines Verdächtigen gegen dessen Willen durchsuchen?
 
-- ✅ A) Nein, grundsätzlich nicht – er kann um freiwilliges Vorzeigen bitten und die Polizei rufen.
-- ❌ B) Ja, wenn das Geschäft ein Schild aufgehängt hat.
-- ❌ C) Ja, immer.
-- ❌ D) Ja, wenn der Verdächtige jünger als 18 ist.
-- ❌ E) Ja, wenn mehrere Detektive dabei sind.
+- ✅ A) Er kann um freiwilliges Vorzeigen bitten und die Polizei rufen.
+- ❌ B) Ja, immer.
+- ❌ C) Ja, wenn das Geschäft ein Schild aufgehängt hat.
+- ✅ D) Nein, gegen den Willen der Person grundsätzlich nicht.
+- ❌ E) Ja, wenn der Verdächtige jünger als 18 ist.
+- ❌ F) Ja, wenn mehrere Detektive dabei sind.
 
 **Erklärung:** Eine Durchsuchung gegen den Willen der Person ist Aufgabe der Polizei. Der Detektiv kann um freiwillige Mitwirkung bitten, die Person bei Straftatverdacht festhalten und die Polizei rufen.
 
 **Rechtsgrundlage:** § 127 StPO, § 102 StPO
 
-## 53. [st-053] Welches Recht hat ein Beschuldigter im Strafverfahren?
+## 53. [st-053] (Mehrfachauswahl) Welche Rechte hat ein Beschuldigter im Strafverfahren?
 
-- ❌ A) Er muss alle Fragen der Polizei beantworten.
-- ❌ B) Er muss sich selbst belasten.
-- ❌ C) Er darf keinen Anwalt fragen.
-- ✅ D) Er darf schweigen und muss sich nicht selbst belasten.
+- ❌ A) Er muss sich selbst belasten.
+- ❌ B) Er darf keinen Anwalt fragen.
+- ❌ C) Er muss alle Fragen der Polizei beantworten.
+- ✅ D) Er darf zur Sache schweigen.
 - ❌ E) Er darf die Polizei festnehmen.
+- ✅ F) Er darf jederzeit einen Verteidiger befragen.
 
 **Erklärung:** Niemand muss sich selbst belasten. Ein Beschuldigter darf zur Sache schweigen und jederzeit einen Verteidiger befragen.
 
 **Rechtsgrundlage:** § 136 StPO
 
-## 54. [st-054] Wer ordnet die Untersuchungshaft an?
+## 54. [st-054] (Mehrfachauswahl) Was gilt für die Anordnung der Untersuchungshaft?
 
-- ❌ A) Die Polizei
-- ❌ B) Der Sicherheitsdienst
-- ✅ C) Ein Richter
-- ❌ D) Das Opfer
+- ❌ A) Das Opfer
+- ✅ B) Dafür ist ein schriftlicher Haftbefehl nötig.
+- ❌ C) Der Sicherheitsdienst
+- ✅ D) Ein Richter ordnet sie an.
 - ❌ E) Die Staatsanwaltschaft allein
+- ❌ F) Die Polizei allein
 
 **Erklärung:** Untersuchungshaft wird durch einen schriftlichen Haftbefehl des Richters angeordnet. Das gilt auch für jede andere Freiheitsentziehung über die vorläufige Festnahme hinaus.
 
 **Rechtsgrundlage:** § 114 StPO, Art. 104 GG
 
-## 55. [st-055] Wer darf in der Regel die Durchsuchung einer Wohnung anordnen?
+## 55. [st-055] (Mehrfachauswahl) Wer darf in der Regel die Durchsuchung einer Wohnung anordnen?
 
-- ❌ A) Die IHK
-- ❌ B) Der Sicherheitsdienst
-- ❌ C) Der Vermieter
-- ❌ D) Jeder Nachbar
-- ✅ E) Ein Richter, bei Gefahr im Verzug auch Staatsanwaltschaft oder Polizei
+- ❌ A) Jeder Nachbar
+- ❌ B) Die IHK
+- ❌ C) Der Sicherheitsdienst
+- ❌ D) Der Vermieter
+- ✅ E) Bei Gefahr im Verzug auch Staatsanwaltschaft oder Polizei
+- ✅ F) Grundsätzlich ein Richter
 
 **Erklärung:** Durchsuchungen ordnet grundsätzlich der Richter an. Nur bei Gefahr im Verzug dürfen auch Staatsanwaltschaft und ihre Ermittlungspersonen sie anordnen.
 
@@ -692,13 +722,14 @@
 
 **Rechtsgrundlage:** WaffG, Anlage 1
 
-## 58. [st-058] Wofür braucht man einen Waffenschein?
+## 58. [st-058] (Mehrfachauswahl) Was gilt für den Waffenschein?
 
-- ❌ A) Für den Kauf eines Küchenmessers
-- ❌ B) Für den Besitz einer Waffe zu Hause
-- ✅ C) Für das Führen einer Schusswaffe
-- ❌ D) Für die Teilnahme an der Sachkundeprüfung
+- ❌ A) Für den Besitz einer Waffe nur zu Hause
+- ✅ B) Für das Führen einer Schusswaffe in der Öffentlichkeit
+- ✅ C) Er ist zusätzlich zur Waffenbesitzkarte nötig, wenn man die Waffe außerhalb der eigenen Räume bei sich haben will.
+- ❌ D) Für den Kauf eines Küchenmessers
 - ❌ E) Für das Tragen einer Taschenlampe
+- ❌ F) Für die Teilnahme an der Sachkundeprüfung
 
 **Erklärung:** Die Waffenbesitzkarte erlaubt Erwerb und Besitz. Für das Führen einer Schusswaffe in der Öffentlichkeit braucht man zusätzlich einen Waffenschein.
 
@@ -716,13 +747,14 @@
 
 **Rechtsgrundlage:** § 10 Abs. 4 WaffG
 
-## 60. [st-060] Darf man auf öffentlichen Veranstaltungen, z. B. einem Volksfest oder Konzert, Waffen führen?
+## 60. [st-060] (Mehrfachauswahl) Darf man auf öffentlichen Veranstaltungen, z. B. einem Volksfest oder Konzert, Waffen führen?
 
-- ❌ A) Ja, wenn man nicht trinkt.
-- ❌ B) Ja, immer.
+- ✅ A) Nein, das ist grundsätzlich verboten.
+- ❌ B) Ja, wenn man einen kleinen Waffenschein hat.
 - ❌ C) Ja, wenn die Waffe versteckt ist.
-- ❌ D) Ja, wenn man einen kleinen Waffenschein hat.
-- ✅ E) Nein, das ist grundsätzlich verboten.
+- ❌ D) Ja, immer.
+- ✅ E) Ausnahmen gibt es nur mit behördlicher Erlaubnis.
+- ❌ F) Ja, wenn man nicht trinkt.
 
 **Erklärung:** Bei öffentlichen Veranstaltungen ist das Führen von Waffen grundsätzlich verboten. Ausnahmen gibt es nur mit behördlicher Erlaubnis, z. B. für bestimmte Bewachungsaufgaben.
 
@@ -742,12 +774,12 @@
 
 ## 62. [st-062] ⚠️ (Mehrfachauswahl) Welche Gegenstände sind nach dem Waffengesetz verbotene Waffen?
 
-- ✅ A) Schlagringe
-- ❌ B) Taschenlampen
-- ✅ C) Butterflymesser
+- ❌ A) Küchenmesser in der eigenen Küche
+- ✅ B) Schlagringe
+- ❌ C) Kugelschreiber
 - ❌ D) Regenschirme
-- ✅ E) Totschläger
-- ❌ F) Küchenmesser in der eigenen Küche
+- ❌ E) Taschenlampen
+- ✅ F) Butterflymesser
 
 **Erklärung:** Bestimmte Gegenstände sind verbotene Waffen, z. B. Schlagringe, Butterflymesser und Totschläger. Umgang mit ihnen ist ohne besondere Ausnahmegenehmigung verboten.
 

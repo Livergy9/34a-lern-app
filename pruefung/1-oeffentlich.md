@@ -17,11 +17,11 @@
 ## 2. [oe-002] (Mehrfachauswahl) Für welche Tätigkeiten ist die Sachkundeprüfung vorgeschrieben?
 
 - ✅ A) Kontrollgänge im öffentlichen Verkehrsraum
-- ❌ B) Bewachung eines umzäunten Baustellengeländes ohne Publikumsverkehr
-- ✅ C) Schutz vor Ladendieben (Ladendetektiv)
-- ❌ D) Empfangsdienst an der Rezeption eines Hotels
-- ✅ E) Bewachung im Einlassbereich einer Diskothek
-- ❌ F) Reinigung von Bürogebäuden
+- ❌ B) Empfangsdienst an der Rezeption eines Hotels
+- ❌ C) Bewachung eines umzäunten Baustellengeländes ohne Publikumsverkehr
+- ❌ D) Reinigung von Bürogebäuden
+- ✅ E) Schutz vor Ladendieben (Ladendetektiv)
+- ❌ F) Hausmeistertätigkeit in einem Wohnhaus
 
 **Erklärung:** Für besonders konfliktträchtige Tätigkeiten reicht die Unterrichtung nicht aus. Dazu gehören u. a. Kontrollgänge im öffentlichen Verkehrsraum, Ladendetektive und der Einlassbereich von Diskotheken.
 
@@ -37,13 +37,14 @@
 
 **Erklärung:** Zwang auszuüben ist Aufgabe des Staates. Private Sicherheitskräfte haben keine hoheitlichen Befugnisse, sondern nur Jedermannsrechte wie Notwehr oder die vorläufige Festnahme.
 
-## 4. [oe-004] Was gilt für den Dienstausweis einer Wachperson im Dienst?
+## 4. [oe-004] (Mehrfachauswahl) Was gilt für den Dienstausweis einer Wachperson im Dienst?
 
-- ❌ A) Er muss nur bei Nachtdiensten mitgeführt werden.
-- ❌ B) Er bleibt im Büro des Unternehmens.
-- ❌ C) Er ersetzt den Personalausweis.
-- ✅ D) Er muss mitgeführt und auf Verlangen vorgezeigt werden.
+- ❌ A) Er bleibt im Büro des Unternehmens.
+- ❌ B) Er ersetzt den Personalausweis.
+- ✅ C) Er muss im Dienst mitgeführt werden.
+- ❌ D) Er muss nur bei Nachtdiensten mitgeführt werden.
 - ❌ E) Er ist nur für den Unternehmer selbst vorgeschrieben.
+- ✅ F) Er muss auf Verlangen vorgezeigt werden.
 
 **Erklärung:** Wachpersonen müssen im Dienst einen Dienstausweis bei sich haben und ihn auf Verlangen vorzeigen, z. B. gegenüber Behörden oder betroffenen Personen.
 
@@ -63,12 +64,12 @@
 
 ## 6. [oe-006] (Mehrfachauswahl) Welche Merkmale gehören zu einem Gewerbe?
 
-- ❌ A) Die Tätigkeit wird nur einmal ausgeübt.
-- ✅ B) Die Tätigkeit ist auf Gewinn ausgerichtet.
-- ✅ C) Die Tätigkeit wird selbstständig ausgeübt.
+- ✅ A) Die Tätigkeit ist auf Gewinn ausgerichtet.
+- ❌ B) Die Tätigkeit wird nur einmal ausgeübt.
+- ❌ C) Die Tätigkeit wird nur unentgeltlich für die Familie ausgeübt.
 - ❌ D) Die Tätigkeit ist ein Ehrenamt.
-- ✅ E) Die Tätigkeit ist auf Dauer angelegt.
-- ❌ F) Die Tätigkeit wird nur im Ausland ausgeübt.
+- ❌ E) Die Tätigkeit wird nur im Ausland ausgeübt.
+- ✅ F) Die Tätigkeit wird selbstständig ausgeübt.
 
 **Erklärung:** Ein Gewerbe ist eine erlaubte, selbstständige, auf Gewinn ausgerichtete und auf Dauer angelegte Tätigkeit. Ehrenamt oder eine einmalige Tätigkeit sind kein Gewerbe.
 
@@ -86,12 +87,12 @@
 
 ## 8. [oe-008] (Mehrfachauswahl) Welche Voraussetzungen muss ein Unternehmer für die Erlaubnis nach § 34a GewO erfüllen?
 
-- ✅ A) Er muss zuverlässig sein.
-- ❌ B) Er muss die deutsche Staatsangehörigkeit haben.
-- ✅ C) Er muss in geordneten Vermögensverhältnissen leben.
+- ✅ A) Er muss eine Haftpflichtversicherung nachweisen.
+- ❌ B) Er muss einen Führerschein haben.
+- ❌ C) Er muss mindestens 30 Jahre alt sein.
 - ❌ D) Er muss Abitur haben.
-- ✅ E) Er muss eine Haftpflichtversicherung nachweisen.
-- ❌ F) Er muss mindestens 30 Jahre alt sein.
+- ✅ E) Er muss zuverlässig sein.
+- ❌ F) Er muss die deutsche Staatsangehörigkeit haben.
 
 **Erklärung:** Der Unternehmer braucht Zuverlässigkeit, geordnete Vermögensverhältnisse, eine Haftpflichtversicherung und den Nachweis der Sachkundeprüfung. Staatsangehörigkeit und Schulabschluss sind keine Voraussetzung.
 
@@ -135,10 +136,10 @@
 
 - ❌ A) Bußgeld wegen Falschparkens
 - ✅ B) Diebstahl
-- ❌ C) Bußgeld wegen zu schnellen Fahrens
-- ✅ D) Körperverletzung
-- ✅ E) Betrug
-- ❌ F) Verspätete Abgabe der Steuererklärung
+- ✅ C) Körperverletzung
+- ❌ D) Verspätete Abgabe der Steuererklärung
+- ❌ E) Bußgeld wegen zu schnellen Fahrens
+- ❌ F) Verwarnungsgeld wegen Radfahrens auf dem Gehweg
 
 **Erklärung:** Wer in den letzten fünf Jahren wegen bestimmter Straftaten rechtskräftig verurteilt wurde, ist in der Regel unzuverlässig. Dazu gehören z. B. Diebstahl, Körperverletzung und Betrug. Ein Bußgeld im Straßenverkehr ist keine Verurteilung wegen einer Straftat.
 
@@ -146,12 +147,12 @@
 
 ## 13. [oe-013] ⚠️ (Mehrfachauswahl) Wo holt die Behörde bei der Prüfung der Zuverlässigkeit Auskünfte ein?
 
-- ✅ A) Beim Bundeszentralregister
-- ❌ B) Bei der Krankenkasse
-- ✅ C) Bei der Polizei
-- ❌ D) Beim Hausarzt
-- ✅ E) Bei der Verfassungsschutzbehörde
-- ❌ F) Beim früheren Vermieter
+- ❌ A) Beim Arbeitgeber des Ehepartners
+- ❌ B) Beim Hausarzt
+- ❌ C) Beim früheren Vermieter
+- ❌ D) Bei der Krankenkasse
+- ✅ E) Bei der Polizei
+- ✅ F) Beim Bundeszentralregister
 
 **Erklärung:** Die Behörde holt eine unbeschränkte Auskunft aus dem Bundeszentralregister ein und fragt bei der Polizei und beim Verfassungsschutz nach. Gesundheitsdaten beim Arzt oder bei der Krankenkasse gehören nicht dazu.
 
@@ -169,13 +170,14 @@
 
 **Rechtsgrundlage:** § 34a Abs. 1 GewO, BewachV
 
-## 15. [oe-015] Was gilt für die Dienstkleidung von Wachpersonen?
+## 15. [oe-015] (Mehrfachauswahl) Was gilt für die Dienstkleidung von Wachpersonen?
 
-- ❌ A) Sie muss genauso aussehen wie die Uniform der Polizei.
-- ❌ B) Sie darf keine Aufschrift haben.
-- ✅ C) Sie darf nicht mit Uniformen von Polizei oder Bundeswehr verwechselt werden können.
-- ❌ D) Es gibt keine Regeln für die Dienstkleidung.
-- ❌ E) Sie muss schwarz sein.
+- ❌ A) Sie muss schwarz sein.
+- ✅ B) Sie darf nicht mit Uniformen der Polizei verwechselt werden können.
+- ❌ C) Es gibt keine Regeln für die Dienstkleidung.
+- ❌ D) Sie darf keine Aufschrift haben.
+- ❌ E) Sie muss genauso aussehen wie die Uniform der Polizei.
+- ✅ F) Sie darf nicht mit Uniformen der Bundeswehr verwechselt werden können.
 
 **Erklärung:** Die Dienstkleidung darf nicht mit Uniformen der Polizei oder der Bundeswehr verwechselbar sein. Niemand soll glauben, eine Wachperson hätte staatliche Befugnisse.
 
@@ -195,23 +197,23 @@
 
 ## 17. [oe-017] (Mehrfachauswahl) Welche Rechte hat eine private Sicherheitskraft? (Jedermannrechte)
 
-- ✅ A) Notwehr und Nothilfe
-- ❌ B) Wohnungen ohne Zustimmung durchsuchen
-- ✅ C) Vorläufige Festnahme nach § 127 StPO
-- ❌ D) Bußgelder verhängen
-- ✅ E) Handeln im Notstand
-- ❌ F) Eine Blutprobe anordnen
+- ❌ A) Bußgelder verhängen
+- ❌ B) Eine Blutprobe anordnen
+- ❌ C) Personalien mit Zwang feststellen
+- ✅ D) Notwehr und Nothilfe
+- ✅ E) Vorläufige Festnahme nach § 127 StPO
+- ❌ F) Wohnungen ohne Zustimmung durchsuchen
 
 **Erklärung:** Private Sicherheitskräfte haben nur Jedermannrechte: Notwehr, Notstand, Selbsthilfe und vorläufige Festnahme. Durchsuchen, Bußgelder oder Blutproben sind Aufgaben des Staates.
 
-## 18. [oe-018] (Mehrfachauswahl) Aus welchen Teilen besteht die Verhältnismäßigkeit einer Maßnahme?
+## 18. [oe-018] (Mehrfachauswahl) Was gehört zur Verhältnismäßigkeit einer Maßnahme?
 
-- ❌ A) Die Maßnahme ist schnell.
-- ✅ B) Die Maßnahme ist geeignet.
-- ❌ C) Die Maßnahme ist billig.
-- ✅ D) Die Maßnahme ist erforderlich.
-- ✅ E) Die Maßnahme ist angemessen.
-- ❌ F) Der Auftraggeber wünscht die Maßnahme.
+- ❌ A) Der Auftraggeber wünscht die Maßnahme.
+- ✅ B) Die Maßnahme ist erforderlich.
+- ✅ C) Die Maßnahme ist geeignet.
+- ❌ D) Die Maßnahme ist für die Sicherheitskraft bequem.
+- ❌ E) Die Maßnahme ist schnell.
+- ❌ F) Die Maßnahme ist billig.
 
 **Erklärung:** Verhältnismäßig ist eine Maßnahme, wenn sie geeignet (sie hilft), erforderlich (es gibt kein milderes Mittel) und angemessen (Schaden und Nutzen stehen im richtigen Verhältnis) ist.
 
@@ -251,13 +253,14 @@
 
 **Rechtsgrundlage:** Art. 13 GG
 
-## 22. [oe-022] Was bedeutet der Gleichheitssatz nach Artikel 3 des Grundgesetzes?
+## 22. [oe-022] (Mehrfachauswahl) Was bedeutet der Gleichheitssatz nach Artikel 3 des Grundgesetzes?
 
-- ❌ A) Nur deutsche Staatsbürger sind gleich.
-- ❌ B) Alle Menschen verdienen gleich viel.
-- ❌ C) Alle Menschen haben den gleichen Beruf.
+- ❌ A) Alle Menschen verdienen gleich viel.
+- ✅ B) Niemand darf z. B. wegen seiner Herkunft oder seines Glaubens benachteiligt werden.
+- ❌ C) Nur deutsche Staatsbürger sind gleich.
 - ✅ D) Alle Menschen sind vor dem Gesetz gleich.
-- ❌ E) Männer haben mehr Rechte als Frauen.
+- ❌ E) Alle Menschen haben den gleichen Beruf.
+- ❌ F) Männer haben mehr Rechte als Frauen.
 
 **Erklärung:** Nach Art. 3 GG sind alle Menschen vor dem Gesetz gleich. Niemand darf z. B. wegen Geschlecht, Herkunft, Sprache, Glauben oder Behinderung benachteiligt werden.
 
@@ -273,17 +276,18 @@
 
 **Erklärung:** Gefahrenabwehr ist Aufgabe der Polizei- und Ordnungsbehörden. Private Sicherheitsdienste schützen nur im Auftrag ihrer Kunden und haben keine hoheitlichen Befugnisse.
 
-## 24. [oe-024] Wie wird eine Ordnungswidrigkeit geahndet?
+## 24. [oe-024] (Mehrfachauswahl) Wie kann eine Ordnungswidrigkeit geahndet werden?
 
-- ❌ A) Mit Freiheitsstrafe
-- ✅ B) Mit einem Bußgeld (Geldbuße)
-- ❌ C) Mit Sicherungsverwahrung
-- ❌ D) Mit Jugendarrest
-- ❌ E) Gar nicht
+- ✅ A) Mit einem Bußgeld (Geldbuße)
+- ❌ B) Mit Freiheitsstrafe
+- ✅ C) Bei geringfügigen Verstößen auch mit einem Verwarnungsgeld
+- ❌ D) Mit Sicherungsverwahrung
+- ❌ E) Mit Jugendarrest
+- ❌ F) Gar nicht
 
-**Erklärung:** Eine Ordnungswidrigkeit ist ein leichter Verstoß. Sie wird mit einer Geldbuße geahndet, nicht mit einer Strafe.
+**Erklärung:** Eine Ordnungswidrigkeit ist ein leichter Verstoß. Sie wird mit einer Geldbuße geahndet, bei geringfügigen Verstößen auch mit einem Verwarnungsgeld – nicht mit einer Strafe.
 
-**Rechtsgrundlage:** § 1 OWiG
+**Rechtsgrundlage:** §§ 1, 56 OWiG
 
 ## 25. [oe-025] Wer verfolgt Ordnungswidrigkeiten in der Regel?
 
@@ -297,25 +301,27 @@
 
 **Rechtsgrundlage:** §§ 35, 47 OWiG
 
-## 26. [oe-026] Was ist ein Verwaltungsakt?
+## 26. [oe-026] (Mehrfachauswahl) Was ist richtig über einen Verwaltungsakt?
 
-- ❌ A) Ein Gesetz, das der Bundestag beschließt
-- ❌ B) Ein Vertrag zwischen zwei Firmen
+- ✅ A) Eine Entscheidung einer Behörde in einem Einzelfall
+- ❌ B) Eine Anzeige bei der Polizei
 - ❌ C) Ein Urteil eines Gerichts
-- ✅ D) Eine Entscheidung einer Behörde in einem Einzelfall mit Wirkung nach außen
-- ❌ E) Eine Anzeige bei der Polizei
+- ❌ D) Ein Gesetz, das der Bundestag beschließt
+- ✅ E) Zum Beispiel die Erteilung oder der Widerruf einer Erlaubnis
+- ❌ F) Ein Vertrag zwischen zwei Firmen
 
 **Erklärung:** Ein Verwaltungsakt ist eine Regelung einer Behörde in einem einzelnen Fall, z. B. die Erteilung oder der Widerruf einer Erlaubnis.
 
 **Rechtsgrundlage:** § 35 VwVfG
 
-## 27. [oe-027] Wie kann man sich gegen einen belastenden Verwaltungsakt, z. B. die Ablehnung der Erlaubnis, wehren?
+## 27. [oe-027] (Mehrfachauswahl) Wie kann man sich gegen einen belastenden Verwaltungsakt, z. B. die Ablehnung der Erlaubnis, wehren?
 
-- ❌ A) Gar nicht, Behördenentscheidungen sind endgültig
-- ✅ B) Mit Widerspruch oder Klage beim Verwaltungsgericht
-- ❌ C) Durch eine Beschwerde bei der IHK
-- ❌ D) Durch Selbsthilfe
-- ❌ E) Nur durch eine Strafanzeige
+- ❌ A) Nur durch eine Strafanzeige
+- ❌ B) Durch Selbsthilfe
+- ❌ C) Gar nicht, Behördenentscheidungen sind endgültig
+- ✅ D) Mit einer Klage beim Verwaltungsgericht
+- ❌ E) Durch eine Beschwerde bei der IHK
+- ✅ F) Mit einem Widerspruch, wenn er vorgesehen ist
 
 **Erklärung:** Gegen einen Verwaltungsakt kann man Widerspruch einlegen (wenn vorgesehen) oder Klage beim Verwaltungsgericht erheben.
 
@@ -329,14 +335,14 @@
 
 **Erklärung:** Polizeirecht ist überwiegend Ländersache. Deshalb hat jedes Bundesland ein eigenes Polizeigesetz. Daneben gibt es Bundespolizei und Bundeskriminalamt.
 
-## 29. [oe-029] (Mehrfachauswahl) Welche drei Gewalten gibt es nach dem Prinzip der Gewaltenteilung?
+## 29. [oe-029] (Mehrfachauswahl) Welche gehören zu den drei Gewalten nach dem Prinzip der Gewaltenteilung?
 
-- ✅ A) Gesetzgebung (Legislative)
-- ❌ B) Presse
-- ✅ C) Vollziehende Gewalt (Exekutive)
-- ❌ D) Wirtschaft
-- ✅ E) Rechtsprechung (Judikative)
-- ❌ F) Kirche
+- ❌ A) Kirche
+- ✅ B) Rechtsprechung (Judikative)
+- ❌ C) Wirtschaft
+- ❌ D) Gewerkschaften
+- ❌ E) Presse
+- ✅ F) Gesetzgebung (Legislative)
 
 **Erklärung:** Die Staatsgewalt ist auf drei Gewalten verteilt: Gesetzgebung (Parlamente), vollziehende Gewalt (Regierung, Verwaltung, Polizei) und Rechtsprechung (Gerichte).
 
@@ -354,13 +360,14 @@
 
 **Rechtsgrundlage:** Art. 77 GG
 
-## 31. [oe-031] Was muss der Gewerbetreibende tun, bevor er eine neue Wachperson einsetzt?
+## 31. [oe-031] ⚠️ (Mehrfachauswahl) Was muss der Gewerbetreibende tun, bevor er eine neue Wachperson einsetzt?
 
-- ❌ A) Er muss sie bei der Polizei vereidigen lassen.
-- ❌ B) Nichts, er kann sie sofort einsetzen.
-- ❌ C) Er muss nur ihren Lebenslauf aufbewahren.
-- ✅ D) Er muss sie über das Bewacherregister bei der Behörde melden, die dann die Zuverlässigkeit prüft.
-- ❌ E) Er muss sie bei der Krankenkasse anmelden, sonst nichts.
+- ✅ A) Er muss sie über das Bewacherregister bei der Behörde melden.
+- ❌ B) Er muss nur ihren Lebenslauf aufbewahren.
+- ❌ C) Nichts, er kann sie sofort einsetzen.
+- ❌ D) Er muss sie bei der Polizei vereidigen lassen.
+- ✅ E) Er muss abwarten, bis die Behörde ihre Zuverlässigkeit geprüft hat.
+- ❌ F) Er muss sie bei der Krankenkasse anmelden, sonst nichts.
 
 **Erklärung:** Wachpersonen müssen vor dem Einsatz über das Bewacherregister gemeldet werden. Die Behörde prüft dann ihre Zuverlässigkeit.
 
@@ -390,83 +397,90 @@
 
 **Rechtsgrundlage:** § 34a Abs. 1 GewO
 
-## 34. [oe-034] Was kann die Behörde tun, wenn ein Unternehmer nach Erteilung der Erlaubnis unzuverlässig wird?
+## 34. [oe-034] (Mehrfachauswahl) Was kann die Behörde tun, wenn ein Unternehmer nach Erteilung der Erlaubnis unzuverlässig wird?
 
-- ✅ A) Sie kann die Erlaubnis widerrufen.
-- ❌ B) Sie darf nur eine Verwarnung aussprechen.
-- ❌ C) Sie muss warten, bis die IHK entscheidet.
-- ❌ D) Nichts, eine Erlaubnis gilt für immer.
-- ❌ E) Sie kann den Unternehmer verhaften.
+- ✅ A) Sie kann die Fortsetzung des Betriebs verhindern, wenn er ohne Erlaubnis weiterläuft.
+- ❌ B) Sie kann den Unternehmer verhaften.
+- ✅ C) Sie kann die Erlaubnis widerrufen.
+- ❌ D) Sie darf nur eine Verwarnung aussprechen.
+- ❌ E) Nichts, eine Erlaubnis gilt für immer.
+- ❌ F) Sie muss warten, bis die IHK entscheidet.
 
-**Erklärung:** Werden der Behörde nachträglich Tatsachen bekannt, die die Unzuverlässigkeit begründen, kann sie die Erlaubnis widerrufen.
+**Erklärung:** Werden der Behörde nachträglich Tatsachen bekannt, die die Unzuverlässigkeit begründen, kann sie die Erlaubnis widerrufen. Wer danach ohne Erlaubnis weitermacht, dem kann die Behörde den Betrieb untersagen.
 
-**Rechtsgrundlage:** § 49 VwVfG, § 34a GewO
+**Rechtsgrundlage:** § 49 VwVfG, § 34a GewO, § 15 Abs. 2 GewO
 
-## 35. [oe-035] Was passiert, wenn jemand ein Bewachungsgewerbe ohne Erlaubnis betreibt?
+## 35. [oe-035] (Mehrfachauswahl) Was passiert, wenn jemand ein Bewachungsgewerbe ohne Erlaubnis betreibt?
 
-- ❌ A) Nichts, solange niemand verletzt wird.
+- ✅ A) Die Behörde kann die Fortsetzung des Betriebs verhindern.
 - ✅ B) Er handelt ordnungswidrig und kann mit einer Geldbuße belegt werden.
-- ❌ C) Er muss nur nachträglich eine Gebühr zahlen.
-- ❌ D) Die IHK schließt seine Firma.
+- ❌ C) Die IHK schließt seine Firma.
+- ❌ D) Er muss nur nachträglich eine Gebühr zahlen.
 - ❌ E) Er bekommt automatisch eine Erlaubnis.
+- ❌ F) Nichts, solange niemand verletzt wird.
 
 **Erklärung:** Wer ein erlaubnispflichtiges Gewerbe ohne Erlaubnis betreibt, begeht eine Ordnungswidrigkeit. Die Behörde kann außerdem die Fortsetzung des Betriebs verhindern.
 
 **Rechtsgrundlage:** § 144 GewO, § 15 Abs. 2 GewO
 
-## 36. [oe-036] Wer muss der Wachperson eine Dienstanweisung erteilen?
+## 36. [oe-036] (Mehrfachauswahl) Was ist richtig über die Dienstanweisung für eine Wachperson?
 
-- ❌ A) Die Polizei
-- ✅ B) Der Gewerbetreibende (Arbeitgeber)
-- ❌ C) Die IHK
-- ❌ D) Der Kunde direkt, ohne den Arbeitgeber
-- ❌ E) Die Wachperson schreibt sie selbst
+- ✅ A) Der Gewerbetreibende muss sie erteilen.
+- ❌ B) Die Polizei
+- ❌ C) Der Kunde gibt sie direkt, ohne den Arbeitgeber.
+- ❌ D) Die IHK
+- ❌ E) Die Wachperson schreibt sie selbst.
+- ✅ F) Sie muss u. a. enthalten, dass die Wachperson keine Befugnisse wie die Polizei hat.
 
 **Erklärung:** Der Gewerbetreibende muss der Wachperson eine Dienstanweisung geben. Darin stehen u. a. ihre Aufgaben und dass sie keine Befugnisse wie die Polizei hat.
 
 **Rechtsgrundlage:** BewachV
 
-## 37. [oe-037] Darf eine Wachperson Betriebsgeheimnisse des Auftraggebers weitererzählen, die sie im Dienst erfahren hat?
+## 37. [oe-037] (Mehrfachauswahl) Darf eine Wachperson Betriebsgeheimnisse des Auftraggebers weitererzählen, die sie im Dienst erfahren hat?
 
-- ❌ A) Ja, nach Dienstende ist das erlaubt.
-- ❌ B) Ja, an Freunde und Familie.
-- ❌ C) Ja, in sozialen Netzwerken ohne Namen.
-- ❌ D) Ja, wenn sie dafür bezahlt wird.
-- ✅ E) Nein, sie muss darüber Stillschweigen bewahren.
+- ❌ A) Ja, in sozialen Netzwerken ohne Namen.
+- ✅ B) Nein, sie muss darüber Stillschweigen bewahren.
+- ✅ C) Nein, die Schweigepflicht gilt auch nach Ende des Auftrags.
+- ❌ D) Ja, nach Dienstende ist das erlaubt.
+- ❌ E) Ja, an Freunde und Familie.
+- ❌ F) Ja, wenn sie dafür bezahlt wird.
 
 **Erklärung:** Wachpersonen müssen über Geschäfts- und Betriebsgeheimnisse, die sie im Dienst erfahren, schweigen – auch nach Ende des Auftrags.
 
 **Rechtsgrundlage:** BewachV
 
-## 38. [oe-038] ⚠️ Unter welcher Bedingung darf eine Wachperson im Dienst eine Schusswaffe führen?
+## 38. [oe-038] ⚠️ (Mehrfachauswahl) Was gilt, wenn eine Wachperson im Dienst eine Schusswaffe führen soll?
 
-- ❌ A) Immer, wenn sie die Sachkundeprüfung bestanden hat
-- ✅ B) Nur mit Zustimmung der Behörde und mit den nötigen waffenrechtlichen Erlaubnissen
-- ❌ C) Wenn sie privat einen Jagdschein hat
-- ❌ D) Wenn der Auftraggeber es mündlich erlaubt
+- ❌ A) Wenn sie privat einen Jagdschein hat
+- ❌ B) Immer, wenn sie die Sachkundeprüfung bestanden hat
+- ❌ C) Wenn der Auftraggeber es mündlich erlaubt
+- ✅ D) Die Behörde muss zustimmen.
 - ❌ E) Nie, Schusswaffen sind im Bewachungsgewerbe ganz verboten
+- ✅ F) Sie braucht die nötigen waffenrechtlichen Erlaubnisse.
 
 **Erklärung:** Schusswaffen im Dienst sind nur ausnahmsweise erlaubt: Die Behörde muss zustimmen, und es müssen die waffenrechtlichen Erlaubnisse vorliegen. Die Sachkundeprüfung allein reicht nicht.
 
 **Rechtsgrundlage:** BewachV, § 28 WaffG
 
-## 39. [oe-039] Eine Sicherheitskraft möchte den Personalausweis eines Besuchers sehen. Was gilt?
+## 39. [oe-039] (Mehrfachauswahl) Eine Sicherheitskraft möchte den Personalausweis eines Besuchers sehen. Was gilt?
 
-- ❌ A) Sie darf den Ausweis mit Gewalt wegnehmen.
-- ✅ B) Sie kann darum bitten oder es zur Bedingung für den Zutritt machen, erzwingen kann sie es nicht.
-- ❌ C) Der Besucher muss den Ausweis immer zeigen.
-- ❌ D) Sie darf den Besucher dafür durchsuchen.
-- ❌ E) Sie darf den Ausweis behalten.
+- ❌ A) Der Besucher muss den Ausweis immer zeigen.
+- ✅ B) Sie kann den Besucher darum bitten.
+- ❌ C) Sie darf den Ausweis behalten.
+- ❌ D) Sie darf den Ausweis mit Gewalt wegnehmen.
+- ❌ E) Sie darf den Besucher dafür durchsuchen.
+- ✅ F) Sie kann den Ausweis über das Hausrecht zur Bedingung für den Zutritt machen.
 
 **Erklärung:** Eine Identitätsfeststellung mit Zwang darf nur die Polizei. Die Sicherheitskraft kann über das Hausrecht sagen: Ohne Ausweis kein Zutritt.
 
-## 40. [oe-040] Was ist der Unterschied zwischen einem Platzverweis und einem Hausverbot?
+## 40. [oe-040] (Mehrfachauswahl) Was ist richtig über Platzverweis und Hausverbot?
 
 - ❌ A) Es gibt keinen Unterschied.
-- ✅ B) Ein Platzverweis ist eine Maßnahme der Polizei, ein Hausverbot folgt aus dem Hausrecht.
+- ✅ B) Ein Platzverweis ist eine Maßnahme der Polizei.
 - ❌ C) Einen Platzverweis darf jeder Bürger aussprechen.
 - ❌ D) Ein Platzverweis gilt nur in Wohnungen.
 - ❌ E) Ein Hausverbot darf nur die Polizei aussprechen.
+- ✅ F) Ein Hausverbot folgt aus dem Hausrecht.
 
 **Erklärung:** Der Platzverweis ist eine hoheitliche Maßnahme der Polizei. Eine Sicherheitskraft kann im Auftrag des Hausrechtsinhabers ein Hausverbot aussprechen.
 
@@ -482,47 +496,50 @@
 
 **Rechtsgrundlage:** BewachV
 
-## 42. [oe-042] Was bedeutet der Grundsatz „Bindung der Verwaltung an Gesetz und Recht“?
+## 42. [oe-042] (Mehrfachauswahl) Was bedeutet der Grundsatz „Bindung der Verwaltung an Gesetz und Recht“?
 
-- ❌ A) Die Verwaltung darf tun, was sie für richtig hält.
-- ✅ B) Behörden müssen sich an die Gesetze halten und dürfen nur auf gesetzlicher Grundlage in Rechte eingreifen.
-- ❌ C) Die Verwaltung macht die Gesetze selbst.
-- ❌ D) Gerichte sind an die Verwaltung gebunden.
-- ❌ E) Gesetze gelten nur für Bürger, nicht für Behörden.
+- ✅ A) Behörden müssen sich an die Gesetze halten.
+- ❌ B) Gesetze gelten nur für Bürger, nicht für Behörden.
+- ❌ C) Die Verwaltung darf tun, was sie für richtig hält.
+- ❌ D) Die Verwaltung macht die Gesetze selbst.
+- ✅ E) Eingriffe in Rechte der Bürger brauchen eine gesetzliche Grundlage.
+- ❌ F) Gerichte sind an die Verwaltung gebunden.
 
 **Erklärung:** Nach dem Rechtsstaatsprinzip ist die Verwaltung an Gesetz und Recht gebunden. Eingriffe in Rechte der Bürger brauchen eine gesetzliche Grundlage.
 
 **Rechtsgrundlage:** Art. 20 Abs. 3 GG
 
-## 43. [oe-043] Welcher Bereich gehört zum öffentlichen Verkehrsraum?
+## 43. [oe-043] (Mehrfachauswahl) Welche Bereiche gehören zum öffentlichen Verkehrsraum?
 
-- ❌ A) Ein abgeschlossenes Firmenlager
-- ❌ B) Eine private Wohnung
-- ✅ C) Eine öffentliche Straße
-- ❌ D) Ein Büro ohne Publikumsverkehr
-- ❌ E) Ein eingezäuntes Privatgrundstück
+- ❌ A) Ein eingezäuntes Privatgrundstück
+- ✅ B) Eine öffentliche Straße
+- ✅ C) Ein öffentlicher Platz
+- ❌ D) Eine private Wohnung
+- ❌ E) Ein abgeschlossenes Firmenlager
+- ❌ F) Ein Büro ohne Publikumsverkehr
 
 **Erklärung:** Öffentlicher Verkehrsraum sind Flächen, die von jedermann benutzt werden dürfen, z. B. öffentliche Straßen, Wege und Plätze.
 
 ## 44. [oe-044] (Mehrfachauswahl) Welche Tätigkeiten erfordern die Sachkundeprüfung (nicht nur die Unterrichtung)?
 
-- ❌ A) Pfortendienst in einer Fabrik ohne Publikumsverkehr
-- ✅ B) Bewachung im Einlassbereich einer Diskothek
-- ❌ C) Bewachung eines Baustellengeländes in der Nacht
+- ❌ A) Fahrten als Kurier ohne Bewachungsaufgaben
+- ❌ B) Pfortendienst in einer Fabrik ohne Publikumsverkehr
+- ❌ C) Botendienste innerhalb eines Bürogebäudes
 - ✅ D) Schutz vor Ladendieben als Ladendetektiv
-- ✅ E) Kontrollgänge im öffentlichen Verkehrsraum
-- ❌ F) Fahrten als Kurier ohne Bewachungsaufgaben
+- ❌ E) Bewachung eines Baustellengeländes in der Nacht
+- ✅ F) Bewachung im Einlassbereich einer Diskothek
 
 **Erklärung:** Die Sachkundeprüfung ist u. a. Pflicht für Kontrollgänge im öffentlichen Verkehrsraum, den Schutz vor Ladendieben und den Einlassbereich von Diskotheken. Für einfache Objektbewachung reicht die Unterrichtung.
 
 **Rechtsgrundlage:** § 34a Abs. 1a GewO
 
-## 45. [oe-045] Eine Sicherheitskraft ist unsicher, ob sie eine Person festhalten darf. Was ist richtig?
+## 45. [oe-045] (Mehrfachauswahl) Eine Sicherheitskraft ist unsicher, ob sie eine Person festhalten darf. Was ist richtig?
 
-- ❌ A) Im Zweifel immer festhalten, die Polizei klärt das später.
+- ❌ A) Die Person einschließen, bis alles geklärt ist.
 - ❌ B) Den Auftraggeber entscheiden lassen, er trägt die Verantwortung.
-- ❌ C) Die Person einschließen, bis alles geklärt ist.
-- ✅ D) Im Zweifel nicht eingreifen, die Person beobachten und die Polizei rufen.
+- ❌ C) Im Zweifel immer festhalten, die Polizei klärt das später.
+- ✅ D) Die Polizei rufen.
 - ❌ E) Die Person durchsuchen, um sicher zu sein.
+- ✅ F) Im Zweifel nicht eingreifen und die Person beobachten.
 
 **Erklärung:** Ist unklar, ob ein Eingriff in die Rechte einer Person erlaubt ist, sollte die Sicherheitskraft darauf verzichten und die Polizei einschalten. Ein unrechtmäßiger Eingriff kann strafbar sein.

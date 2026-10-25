@@ -22,13 +22,14 @@
 
 **Erklärung:** Zutrittskontrolle prüft, ob eine Person berechtigt ist, einen Bereich zu betreten – z. B. per Ausweis, Karte, Code oder Personenkontrolle.
 
-## 3. [te-003] Was ist die Hauptaufgabe mechanischer Sicherungen (z. B. Gitter, Schlösser, einbruchhemmende Türen)?
+## 3. [te-003] (Mehrfachauswahl) Was leisten mechanische Sicherungen (z. B. Gitter, Schlösser, einbruchhemmende Türen)?
 
-- ❌ A) Besucher zählen
-- ❌ B) Einen Alarm an die Polizei senden
-- ❌ C) Täter fotografieren
-- ❌ D) Brände löschen
-- ✅ E) Täter aufhalten und das Eindringen erschweren
+- ✅ A) Täter aufhalten
+- ❌ B) Täter fotografieren
+- ❌ C) Brände löschen
+- ✅ D) Das Eindringen erschweren und dem Täter Zeit kosten
+- ❌ E) Besucher zählen
+- ❌ F) Einen Alarm an die Polizei senden
 
 **Erklärung:** Mechanische Sicherungen leisten Widerstand und kosten den Täter Zeit. Elektronische Anlagen melden den Angriff. Beides zusammen wirkt am besten.
 
@@ -42,13 +43,14 @@
 
 **Erklärung:** Eine Einbruchmeldeanlage überwacht Türen, Fenster und Räume mit Meldern und löst bei einem Einbruch Alarm aus – vor Ort und/oder bei einer Leitstelle.
 
-## 5. [te-005] Wozu dient eine Überfallmeldeanlage (ÜMA) mit stillem Alarm?
+## 5. [te-005] (Mehrfachauswahl) Was ist richtig über eine Überfallmeldeanlage (ÜMA) mit stillem Alarm?
 
-- ❌ A) Sie macht einen lauten Ton, um den Täter zu erschrecken.
+- ✅ A) Sie warnt den Täter nicht, damit Menschen im Raum nicht zusätzlich gefährdet werden.
 - ❌ B) Sie schaltet das Licht aus.
-- ❌ C) Sie öffnet automatisch den Tresor.
+- ❌ C) Sie macht einen lauten Ton, um den Täter zu erschrecken.
 - ❌ D) Sie zählt das Geld in der Kasse.
-- ✅ E) Sie meldet einen Überfall unbemerkt an Polizei oder Leitstelle, ohne den Täter zu warnen.
+- ❌ E) Sie öffnet automatisch den Tresor.
+- ✅ F) Sie meldet den Überfall an Polizei oder Leitstelle.
 
 **Erklärung:** Ein stiller Alarm soll Hilfe holen, ohne den Täter zu provozieren. So werden Menschen im Raum nicht zusätzlich gefährdet.
 
@@ -82,23 +84,25 @@
 
 **Erklärung:** Eine Lichtschranke sendet einen Strahl zu einem Empfänger. Wird der Strahl unterbrochen, z. B. durch eine Person, gibt es eine Meldung.
 
-## 9. [te-009] Wofür wird ein Körperschallmelder (Erschütterungsmelder) zum Beispiel eingesetzt?
+## 9. [te-009] (Mehrfachauswahl) Wofür wird ein Körperschallmelder (Erschütterungsmelder) eingesetzt?
 
 - ❌ A) Zur Aufzeichnung von Gesprächen
 - ❌ B) Zur Erkennung von Rauch
 - ❌ C) Zum Zählen von Personen
-- ❌ D) Zur Steuerung der Heizung
-- ✅ E) Zur Überwachung von Tresoren und Wänden gegen Bohren, Schlagen oder Schneiden
+- ✅ D) Zur Überwachung von Tresoren
+- ❌ E) Zur Steuerung der Heizung
+- ✅ F) Zur Überwachung von Wänden gegen Durchbruch, z. B. durch Bohren
 
 **Erklärung:** Körperschallmelder erkennen Schwingungen im Material, wie sie beim Bohren, Fräsen oder Schlagen entstehen. Typisch an Tresoren und Wertbehältnissen.
 
-## 10. [te-010] Warum setzt man in einer Küche eher einen Wärmemelder statt eines Rauchmelders ein?
+## 10. [te-010] (Mehrfachauswahl) Warum setzt man in einer Küche eher einen Wärmemelder statt eines Rauchmelders ein?
 
 - ❌ A) Weil Wärmemelder billiger sind
-- ❌ B) Weil in Küchen nie Brände entstehen
-- ❌ C) Weil Rauchmelder nur nachts funktionieren
-- ✅ D) Weil Kochdampf und Rauch beim Kochen bei Rauchmeldern Täuschungsalarme auslösen können
-- ❌ E) Weil Wärmemelder auch Einbrecher erkennen
+- ❌ B) Weil Wärmemelder auch Einbrecher erkennen
+- ✅ C) Weil Kochdampf bei Rauchmeldern Täuschungsalarme auslösen kann
+- ❌ D) Weil Rauchmelder nur nachts funktionieren
+- ✅ E) Weil normaler Rauch beim Braten bei Rauchmeldern Täuschungsalarme auslösen kann
+- ❌ F) Weil in Küchen nie Brände entstehen
 
 **Erklärung:** In Bereichen mit Dampf, Staub oder normalem Rauch (Küche, Werkstatt) sind Wärmemelder sinnvoller, um Täuschungsalarme zu vermeiden.
 
@@ -112,13 +116,14 @@
 
 **Erklärung:** Mit dem Handfeuermelder kann jeder einen Brand von Hand melden. Er ist meist an Fluchtwegen angebracht.
 
-## 12. [te-012] Wozu dient ein Feuerwehrschlüsseldepot (FSD) an einem Gebäude?
+## 12. [te-012] (Mehrfachauswahl) Wozu dient ein Feuerwehrschlüsseldepot (FSD) an einem Gebäude?
 
-- ✅ A) Damit die Feuerwehr bei einem Alarm ohne Gewalt ins Gebäude kommt
-- ❌ B) Als Briefkasten für die Feuerwehr
-- ❌ C) Zur Aufbewahrung von Ersatzschlüsseln für Mitarbeiter
-- ❌ D) Für den Schlüssel des Wachmanns nach Schichtende
+- ❌ A) Für den Schlüssel des Wachmanns nach Schichtende
+- ❌ B) Zur Aufbewahrung von Ersatzschlüsseln für Mitarbeiter
+- ✅ C) Damit die Feuerwehr schneller zum Brandort kommt
+- ❌ D) Als Briefkasten für die Feuerwehr
 - ❌ E) Als Tresor für Bargeld
+- ✅ F) Damit die Feuerwehr bei einem Alarm ohne Gewalt ins Gebäude kommt
 
 **Erklärung:** Im Feuerwehrschlüsseldepot liegt ein Generalschlüssel. Nur die Feuerwehr kann es bei einem Brandalarm öffnen und so schnell ins Gebäude gelangen.
 
@@ -132,66 +137,71 @@
 
 **Erklärung:** Zwangsläufigkeit verhindert Fehlbedienungen: Man kann die Anlage nicht scharf schalten, solange z. B. ein Fenster offen ist, und man kann den gesicherten Bereich nicht versehentlich betreten.
 
-## 14. [te-014] Was ist eine Notruf- und Serviceleitstelle (NSL)?
+## 14. [te-014] (Mehrfachauswahl) Was ist richtig über eine Notruf- und Serviceleitstelle (NSL)?
 
 - ❌ A) Ein Krankenhaus
-- ❌ B) Eine Polizeiwache
-- ❌ C) Ein Laden für Alarmanlagen
-- ❌ D) Ein Büro der IHK
-- ✅ E) Eine ständig besetzte Stelle, die Alarme empfängt, bewertet und Maßnahmen einleitet
+- ❌ B) Ein Büro der IHK
+- ✅ C) Eine Stelle, die nach einem Alarm Maßnahmen einleitet, z. B. einen Interventionsdienst schickt
+- ✅ D) Eine ständig besetzte Stelle, die Alarme empfängt und bewertet
+- ❌ E) Eine Polizeiwache
+- ❌ F) Ein Laden für Alarmanlagen
 
 **Erklärung:** In der NSL laufen Alarme aus vielen Objekten ein. Die Mitarbeiter bewerten sie und schicken z. B. einen Interventionsdienst oder alarmieren Polizei und Feuerwehr.
 
-## 15. [te-015] Ein Interventionsdienst kommt nach einem Einbruchalarm zum Objekt und sieht ein aufgebrochenes Fenster. Was ist richtig?
+## 15. [te-015] (Mehrfachauswahl) Ein Interventionsdienst kommt nach einem Einbruchalarm zum Objekt und sieht ein aufgebrochenes Fenster. Was ist richtig?
 
-- ✅ A) Das Objekt von außen beobachten, Eigensicherung beachten und die Polizei anfordern bzw. auf sie warten
-- ❌ B) Den Alarm abschalten und gehen
-- ❌ C) Den Schaden selbst reparieren
-- ❌ D) Sofort allein durch das Fenster einsteigen
-- ❌ E) Den Kunden anrufen und weiterfahren
+- ❌ A) Den Schaden selbst reparieren
+- ✅ B) Das Objekt von außen beobachten und auf Eigensicherung achten
+- ❌ C) Sofort allein durch das Fenster einsteigen
+- ❌ D) Den Kunden anrufen und weiterfahren
+- ✅ E) Die Polizei anfordern und auf sie warten
+- ❌ F) Den Alarm abschalten und gehen
 
 **Erklärung:** Bei Einbruchsspuren können Täter noch im Gebäude sein. Nicht allein hineingehen, sondern absichern, beobachten und die Polizei hinzuziehen. Spuren nicht verändern.
 
 ## 16. [te-016] (Mehrfachauswahl) Mit welchen Merkmalen kann sich eine Person bei einer Zutrittskontrolle ausweisen?
 
-- ✅ A) Mit Wissen, z. B. einer PIN
+- ❌ A) Mit ihrem Alter
 - ❌ B) Mit ihrer Hautfarbe
-- ✅ C) Mit Besitz, z. B. einer Karte oder einem Transponder
-- ❌ D) Mit ihrer Kleidung
-- ✅ E) Mit biometrischen Merkmalen, z. B. Fingerabdruck
-- ❌ F) Mit ihrem Alter
+- ❌ C) Mit ihrer Kleidung
+- ✅ D) Mit Besitz, z. B. einer Karte oder einem Transponder
+- ✅ E) Mit Wissen, z. B. einer PIN
+- ❌ F) Mit ihrer Lieblingsfarbe
 
 **Erklärung:** Zutrittskontrolle nutzt Wissen (PIN), Besitz (Karte, Schlüssel) oder Biometrie (Fingerabdruck, Gesicht). Eine Kombination ist am sichersten.
 
-## 17. [te-017] Wozu dient eine Vereinzelungsanlage (z. B. Drehkreuz oder Personenschleuse)?
+## 17. [te-017] (Mehrfachauswahl) Wozu dient eine Vereinzelungsanlage (z. B. Drehkreuz oder Personenschleuse)?
 
-- ✅ A) Damit nur jeweils eine Person auf einmal den Zugang passieren kann
-- ❌ B) Damit Gruppen schneller hineinkommen
-- ❌ C) Damit Fahrzeuge parken können
+- ❌ A) Damit Lieferungen abgeholt werden
+- ✅ B) Damit nur jeweils eine Person auf einmal den Zugang passieren kann
+- ❌ C) Damit Gruppen schneller hineinkommen
 - ❌ D) Damit es wärmer im Gebäude bleibt
-- ❌ E) Damit Lieferungen abgeholt werden
+- ✅ E) Damit niemand unberechtigt mit einer berechtigten Person durchschlüpft
+- ❌ F) Damit Fahrzeuge parken können
 
 **Erklärung:** Vereinzelungsanlagen verhindern, dass eine unberechtigte Person mit einer berechtigten Person durchschlüpft.
 
-## 18. [te-018] Was gehört zu einer ordentlichen Schlüsselverwaltung im Objekt?
+## 18. [te-018] (Mehrfachauswahl) Was gehört zu einer ordentlichen Schlüsselverwaltung im Objekt?
 
-- ❌ A) Schlüssel liegen offen am Empfang, jeder darf sich bedienen.
-- ❌ B) Schlüssel werden ohne Notiz ausgegeben.
-- ✅ C) Ausgabe und Rückgabe werden dokumentiert (z. B. Schlüsselbuch), Schlüssel sind sicher verwahrt.
-- ❌ D) Schlüssel werden mit Adressanhängern versehen.
-- ❌ E) Verlorene Schlüssel werden nicht gemeldet.
+- ✅ A) Schlüssel werden sicher verwahrt, z. B. im Schlüsselschrank.
+- ✅ B) Ausgabe und Rückgabe werden dokumentiert, z. B. im Schlüsselbuch.
+- ❌ C) Schlüssel werden mit Adressanhängern versehen.
+- ❌ D) Schlüssel liegen offen am Empfang, jeder darf sich bedienen.
+- ❌ E) Schlüssel werden ohne Notiz ausgegeben.
+- ❌ F) Verlorene Schlüssel werden nicht gemeldet.
 
 **Erklärung:** Schlüssel sind sicherheitsrelevant. Wer welchen Schlüssel wann hatte, muss nachvollziehbar sein. Schlüssel bleiben sicher verwahrt.
 
-## 19. [te-019] Sie haben einen Generalschlüssel des Objekts verloren. Was tun Sie?
+## 19. [te-019] (Mehrfachauswahl) Sie haben einen Generalschlüssel des Objekts verloren. Was tun Sie?
 
-- ❌ A) Nichts, er taucht schon wieder auf.
-- ❌ B) Einen Nachschlüssel machen lassen und nichts sagen.
-- ❌ C) Erst nach einer Woche melden.
-- ❌ D) Das Schloss selbst ausbauen.
-- ✅ E) Den Verlust sofort dem Vorgesetzten und dem Kunden melden.
+- ✅ A) Den Verlust über den Vorgesetzten auch dem Kunden mitteilen lassen.
+- ❌ B) Nichts, er taucht schon wieder auf.
+- ❌ C) Einen Nachschlüssel machen lassen und nichts sagen.
+- ✅ D) Den Verlust sofort dem Vorgesetzten melden.
+- ❌ E) Das Schloss selbst ausbauen.
+- ❌ F) Erst nach einer Woche melden.
 
-**Erklärung:** Ein verlorener Generalschlüssel ist ein großes Sicherheitsrisiko. Der Verlust muss sofort gemeldet werden, damit z. B. Schlösser getauscht werden können.
+**Erklärung:** Ein verlorener Generalschlüssel ist ein großes Sicherheitsrisiko. Der Verlust muss sofort gemeldet werden – an den Vorgesetzten und weiter an den Kunden –, damit z. B. Schlösser getauscht werden können.
 
 ## 20. [te-020] Was ist eine PTZ-Kamera?
 
@@ -203,13 +213,14 @@
 
 **Erklärung:** PTZ steht für Pan, Tilt, Zoom – schwenken, neigen und zoomen. Damit kann man in der Zentrale Bereiche gezielt beobachten.
 
-## 21. [te-021] Wozu dient ein Wächterkontrollsystem?
+## 21. [te-021] (Mehrfachauswahl) Wozu dient ein Wächterkontrollsystem?
 
-- ❌ A) Es ersetzt die Wachperson.
-- ✅ B) Es dokumentiert, dass die Wachperson bestimmte Kontrollpunkte zu bestimmten Zeiten erreicht hat.
-- ❌ C) Es misst die Körpertemperatur der Wachperson.
-- ❌ D) Es öffnet automatisch alle Türen.
+- ✅ A) Es zeigt, zu welcher Zeit die Kontrollpunkte erreicht wurden.
+- ✅ B) Es dokumentiert, dass die Wachperson bestimmte Kontrollpunkte erreicht hat.
+- ❌ C) Es ersetzt die Wachperson.
+- ❌ D) Es misst die Körpertemperatur der Wachperson.
 - ❌ E) Es zählt die Besucher.
+- ❌ F) Es öffnet automatisch alle Türen.
 
 **Erklärung:** Mit einem Wächterkontrollsystem (z. B. Kontrollpunkte mit Chip) wird nachgewiesen, dass der Kontrollgang wie vereinbart durchgeführt wurde.
 
@@ -225,13 +236,14 @@
 
 **Rechtsgrundlage:** DIN EN 1627
 
-## 23. [te-023] Was versteht man unter Perimeterschutz?
+## 23. [te-023] (Mehrfachauswahl) Was gehört zum Perimeterschutz?
 
 - ❌ A) Die Sicherung eines Tresors
 - ❌ B) Die Überwachung der Kasse
-- ✅ C) Die Sicherung der Grundstücksgrenze bzw. des Außengeländes, z. B. mit Zaun, Detektionskabeln oder Kameras
-- ❌ D) Den Schutz eines Computers vor Viren
-- ❌ E) Den Schutz einzelner Personen
+- ✅ C) Die Sicherung der Grundstücksgrenze, z. B. mit einem Zaun
+- ❌ D) Den Schutz einzelner Personen
+- ✅ E) Die Überwachung des Außengeländes, z. B. mit Detektionskabeln oder Kameras
+- ❌ F) Den Schutz eines Computers vor Viren
 
 **Erklärung:** Perimeterschutz sichert das Gelände bereits an der Grenze. So werden Täter früh erkannt, bevor sie das Gebäude erreichen.
 
@@ -245,22 +257,24 @@
 
 **Erklärung:** Bei der Fallenüberwachung werden nicht alle Öffnungen gesichert, sondern Bereiche, die ein Täter fast sicher betreten muss.
 
-## 25. [te-025] Was sollte eine Wachperson tun, wenn eine Alarmanlage eine Störung meldet?
+## 25. [te-025] (Mehrfachauswahl) Was sollte eine Wachperson tun, wenn eine Alarmanlage eine Störung meldet?
 
-- ❌ A) Die Meldung ignorieren
-- ❌ B) Die Anlage vom Strom trennen
-- ❌ C) Den Kunden nachts privat anrufen und beschimpfen
-- ✅ D) Nach Anweisung prüfen, dokumentieren und die Störung an die zuständige Stelle melden
-- ❌ E) Alle Melder abkleben
+- ❌ A) Den Kunden nachts privat anrufen und beschimpfen
+- ❌ B) Alle Melder abkleben
+- ✅ C) Die Störung an die zuständige Stelle melden
+- ❌ D) Die Anlage vom Strom trennen
+- ❌ E) Die Meldung ignorieren
+- ✅ F) Die Störung nach Anweisung prüfen und dokumentieren
 
 **Erklärung:** Auch Störungsmeldungen müssen ernst genommen werden: prüfen, dokumentieren, melden. Eine gestörte Anlage kann im Ernstfall versagen.
 
-## 26. [te-026] Warum ist eine Notstromversorgung (z. B. Akku) bei Gefahrenmeldeanlagen wichtig?
+## 26. [te-026] (Mehrfachauswahl) Warum ist eine Notstromversorgung (z. B. Akku) bei Gefahrenmeldeanlagen wichtig?
 
-- ✅ A) Damit die Anlage auch bei Stromausfall oder Sabotage der Stromleitung weiter funktioniert
+- ❌ A) Sie ist unwichtig.
 - ❌ B) Damit sie im Sommer kühler bleibt
-- ❌ C) Damit sie schneller startet
-- ❌ D) Sie ist unwichtig.
+- ✅ C) Damit die Anlage auch bei Sabotage der Stromleitung Alarm geben kann
+- ✅ D) Damit die Anlage auch bei Stromausfall weiter funktioniert
 - ❌ E) Damit die Anlage weniger Strom verbraucht
+- ❌ F) Damit sie schneller startet
 
 **Erklärung:** Täter können den Strom abschalten. Mit Notstrom bleibt die Anlage für eine bestimmte Zeit funktionsfähig und kann Alarm geben.

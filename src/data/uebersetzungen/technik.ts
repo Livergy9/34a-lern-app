@@ -15,9 +15,9 @@ export const UE: Record<string, UeEintrag> = {
     "Controlul accesului verifică dacă o persoană are dreptul să intre într-o zonă – de ex. cu legitimație, card, cod sau control personal.",
   ],
   'te-003': [
-    "What is the main task of mechanical protection (e.g. bars, locks, burglar-resistant doors)?",
+    "What do mechanical safeguards (e.g. bars, locks, burglar-resistant doors) achieve?",
     "Mechanical protection resists the attack and costs the offender time. Electronic systems report the attack. Both together work best.",
-    "Care este sarcina principală a protecției mecanice (de ex. gratii, încuietori, uși antiefracție)?",
+    "Ce realizează protecțiile mecanice (de ex. grilaje, încuietori, uși antiefracție)?",
     "Protecția mecanică opune rezistență și îl costă timp pe făptaș. Sistemele electronice semnalează atacul. Împreună funcționează cel mai bine.",
   ],
   'te-004': [
@@ -27,9 +27,9 @@ export const UE: Record<string, UeEintrag> = {
     "Un sistem de alarmă antiefracție supraveghează uși, ferestre și încăperi cu detectoare și declanșează alarma la o spargere – la fața locului și/sau la un dispecerat.",
   ],
   'te-005': [
-    "What is a hold-up alarm system (ÜMA) with silent alarm for?",
+    "What is true about a hold-up alarm system with silent alarm?",
     "A silent alarm is meant to get help without provoking the offender. This way, people in the room are not put in extra danger.",
-    "La ce servește un sistem de alarmă la atac (ÜMA) cu alarmă silențioasă?",
+    "Ce este adevărat despre un sistem de alarmă la atac cu alarmă silențioasă?",
     "O alarmă silențioasă trebuie să cheme ajutor fără să-l provoace pe făptaș. Astfel, oamenii din încăpere nu sunt puși în pericol suplimentar.",
   ],
   'te-006': [
@@ -51,9 +51,9 @@ export const UE: Record<string, UeEintrag> = {
     "O barieră cu lumină trimite un fascicul spre un receptor. Dacă fasciculul este întrerupt, de ex. de o persoană, apare o semnalare.",
   ],
   'te-009': [
-    "What is a structure-borne sound detector (vibration detector) used for, for example?",
+    "What is a structure-borne sound detector (vibration detector) used for?",
     "Structure-borne sound detectors recognise vibrations in the material, such as those caused by drilling, milling or hitting. Typical on safes and valuables containers.",
-    "Pentru ce se folosește, de exemplu, un detector de zgomot structural (detector de vibrații)?",
+    "Pentru ce se folosește un detector de zgomot structural (detector de vibrații)?",
     "Detectoarele de zgomot structural recunosc vibrațiile din material, cum apar la găurire, frezare sau lovire. Tipic la seifuri și containere de valori.",
   ],
   'te-010': [
@@ -81,9 +81,9 @@ export const UE: Record<string, UeEintrag> = {
     "Secvența obligatorie previne greșelile de operare: sistemul nu poate fi armat cât timp, de ex., o fereastră este deschisă, iar zona asigurată nu poate fi accesată din greșeală.",
   ],
   'te-014': [
-    "What is an alarm receiving and service centre (NSL)?",
+    "What is true about an emergency and service control centre (NSL)?",
     "Alarms from many sites come in at the NSL. The staff assess them and, for example, send a response service or alert the police and fire brigade.",
-    "Ce este un dispecerat de alarmă și servicii (NSL)?",
+    "Ce este adevărat despre un dispecerat de urgență și service (NSL)?",
     "La NSL ajung alarme de la multe obiective. Angajații le evaluează și trimit, de ex., o echipă de intervenție sau alertează poliția și pompierii.",
   ],
   'te-015': [
@@ -112,9 +112,9 @@ export const UE: Record<string, UeEintrag> = {
   ],
   'te-019': [
     "You have lost a master key for the site. What do you do?",
-    "A lost master key is a big security risk. The loss must be reported immediately so that, for example, locks can be changed.",
+    "A lost master key is a big security risk. The loss must be reported immediately – to the supervisor and on to the client – so that, for example, locks can be changed.",
     "Ați pierdut o cheie generală a obiectivului. Ce faceți?",
-    "O cheie generală pierdută este un risc mare de securitate. Pierderea trebuie raportată imediat, ca de ex. încuietorile să poată fi schimbate.",
+    "O cheie generală pierdută este un mare risc de securitate. Pierderea trebuie raportată imediat – superiorului și mai departe clientului – ca să se poată schimba, de exemplu, încuietorile.",
   ],
   'te-020': [
     "What is a PTZ camera?",
@@ -135,9 +135,9 @@ export const UE: Record<string, UeEintrag> = {
     "RC înseamnă clasă de rezistență (Resistance Class). Cu cât numărul este mai mare, cu atât elementul rezistă mai mult la o încercare de efracție.",
   ],
   'te-023': [
-    "What is meant by perimeter protection?",
+    "What is part of perimeter protection?",
     "Perimeter protection secures the site already at its boundary. This way, offenders are detected early, before they reach the building.",
-    "Ce se înțelege prin protecția perimetrală?",
+    "Ce face parte din protecția perimetrală?",
     "Protecția perimetrală asigură terenul deja la limită. Astfel făptașii sunt descoperiți din timp, înainte să ajungă la clădire.",
   ],
   'te-024': [

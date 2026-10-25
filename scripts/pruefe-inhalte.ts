@@ -19,7 +19,10 @@ for (const f of FRAGEN) {
   if (f.typ === 'single' && f.antworten.length !== 5) fehler.push(`${f.id}: Single Choice braucht 5 Antworten (hat ${f.antworten.length})`);
   if (f.typ === 'multi' && f.antworten.length !== 6) fehler.push(`${f.id}: Multiple Choice braucht 6 Antworten (hat ${f.antworten.length})`);
   if (f.typ === 'single' && f.richtig.length !== 1) fehler.push(`${f.id}: Single Choice braucht genau 1 richtige Antwort`);
-  if (f.typ === 'multi' && (f.richtig.length < 2 || f.richtig.length > 4)) fehler.push(`${f.id}: Multiple Choice braucht 2–4 richtige Antworten`);
+  // IHK: höchstens 2 richtige Antworten pro Frage → Multiple Choice hier immer genau 2
+  if (f.typ === 'multi' && f.richtig.length !== 2) fehler.push(`${f.id}: Multiple Choice braucht genau 2 richtige Antworten`);
+  // Umgang mit Menschen: in der Prüfung 19 Fragen = 19 Punkte → nur Single Choice
+  if (f.typ === 'multi' && f.sachgebiet === 'menschen') fehler.push(`${f.id}: Umgang mit Menschen nur Single Choice`);
   if (f.richtig.some((r) => r < 0 || r >= f.antworten.length)) fehler.push(`${f.id}: richtige Antwort außerhalb`);
   if (new Set(f.richtig).size !== f.richtig.length) fehler.push(`${f.id}: richtige Antwort doppelt`);
   if (new Set(f.antworten).size !== f.antworten.length) fehler.push(`${f.id}: Antwort doppelt`);
@@ -45,6 +48,14 @@ console.log(`  Gesamt: ${FRAGEN.length} Fragen, ${GLOSSAR.length} Glossarbegriff
 const pos = [0, 0, 0, 0, 0];
 FRAGEN.filter((f) => f.typ === 'single').forEach((f) => pos[f.richtig[0]]++);
 console.log(`  Single Choice richtige Position A–E: ${pos.join(' / ')}`);
+// Anteil Multiple Choice im Pool je Sachgebiet im Vergleich zur Prüfung (MC-Fragen = Punkte − Fragen)
+for (const sg of SACHGEBIETE) {
+  const l = FRAGEN.filter((f) => f.sachgebiet === sg.id);
+  const soll = (sg.punkteInPruefung - sg.fragenInPruefung) / sg.fragenInPruefung;
+  const ist = l.filter((f) => f.typ === 'multi').length / l.length;
+  if (l.filter((f) => f.typ === 'multi').length < sg.punkteInPruefung - sg.fragenInPruefung) fehler.push(`${sg.kurz}: zu wenig Multiple Choice für die Prüfungssimulation`);
+  console.log(`  ${sg.kurz.padEnd(22)} MC-Anteil Pool ${Math.round(ist * 100)} % (Prüfung ${Math.round(soll * 100)} %)`);
+}
 if (fehler.length) {
   console.log(`\n${fehler.length} Fehler:\n` + fehler.join('\n'));
   process.exit(1);

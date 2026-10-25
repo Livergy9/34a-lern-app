@@ -99,15 +99,15 @@ export const UE: Record<string, UeEintrag> = {
     "La anumite activități cu mult contact cu oamenii, de ex. ronduri în spații publice sau controlul la intrarea în discoteci, agentul trebuie să poarte un ecuson vizibil cu numele sau numărul de identificare.",
   ],
   'oe-017': [
-    "Which rights does a private security guard have? (rights of every citizen)",
+    "Which rights does a private security officer have? (everyone's rights)",
     "Private security staff only have the rights every citizen has: self-defence, necessity, self-help and provisional arrest. Searching people, fines or blood samples are tasks of the state.",
-    "Ce drepturi are un agent de pază privat? (drepturile oricărui cetățean)",
+    "Ce drepturi are un agent de securitate privat? (drepturile oricărei persoane)",
     "Agenții de pază privați au doar drepturile oricărui cetățean: legitima apărare, starea de necesitate, autoapărarea drepturilor (Selbsthilfe) și reținerea provizorie. Percheziția, amenzile sau probele de sânge sunt sarcini ale statului.",
   ],
   'oe-018': [
-    "Which parts make up the proportionality of a measure?",
+    "What is part of the proportionality of a measure?",
     "A measure is proportionate if it is suitable (it helps), necessary (there is no milder means) and appropriate (harm and benefit are in the right balance).",
-    "Din ce părți este alcătuită proporționalitatea unei măsuri?",
+    "Ce face parte din proporționalitatea unei măsuri?",
     "O măsură este proporțională dacă este potrivită (ajută), necesară (nu există un mijloc mai blând) și adecvată (paguba și folosul sunt în raport corect).",
   ],
   'oe-019': [
@@ -141,10 +141,10 @@ export const UE: Record<string, UeEintrag> = {
     "Înlăturarea pericolelor este sarcina poliției și a autorităților de ordine publică. Serviciile de pază private protejează doar la comanda clienților și nu au puteri de autoritate publică.",
   ],
   'oe-024': [
-    "How is an administrative offence (Ordnungswidrigkeit) punished?",
-    "An administrative offence is a minor violation. It is punished with a fine, not with a criminal penalty.",
-    "Cum se sancționează o contravenție (Ordnungswidrigkeit)?",
-    "O contravenție este o încălcare ușoară. Se sancționează cu amendă, nu cu o pedeapsă penală.",
+    "How can an administrative offence be punished?",
+    "An administrative offence is a minor violation. It is punished with a fine, for minor violations also with a warning fine – not with a criminal penalty.",
+    "Cum poate fi sancționată o contravenție?",
+    "O contravenție este o încălcare ușoară. Se sancționează cu amendă, la încălcări minore și cu un avertisment cu amendă – nu cu o pedeapsă penală.",
   ],
   'oe-025': [
     "Who usually prosecutes administrative offences?",
@@ -153,9 +153,9 @@ export const UE: Record<string, UeEintrag> = {
     "Contravențiile sunt urmărite de autoritatea administrativă. Ea decide după propria apreciere, conform obligațiilor ei, dacă dă o amendă (principiul oportunității).",
   ],
   'oe-026': [
-    "What is an administrative act (Verwaltungsakt)?",
+    "What is true about an administrative act?",
     "An administrative act is a decision by an authority in a single case, e.g. granting or revoking a licence.",
-    "Ce este un act administrativ (Verwaltungsakt)?",
+    "Ce este adevărat despre un act administrativ?",
     "Un act administrativ este o decizie a unei autorități într-un caz individual, de ex. acordarea sau retragerea unei autorizații.",
   ],
   'oe-027': [
@@ -171,9 +171,9 @@ export const UE: Record<string, UeEintrag> = {
     "Dreptul polițienesc este în mare parte treaba landurilor. De aceea fiecare land are propria lege a poliției. Pe lângă acestea există Poliția federală și Oficiul federal de poliție criminală.",
   ],
   'oe-029': [
-    "Which three powers exist according to the principle of separation of powers?",
+    "Which of these belong to the three powers under the separation of powers?",
     "State power is divided into three powers: legislative (parliaments), executive (government, administration, police) and judicial (courts).",
-    "Care sunt cele trei puteri conform principiului separației puterilor?",
+    "Care dintre acestea fac parte din cele trei puteri conform principiului separării puterilor?",
     "Puterea statului este împărțită în trei: puterea legislativă (parlamentele), puterea executivă (guvern, administrație, poliție) și puterea judecătorească (instanțele).",
   ],
   'oe-030': [
@@ -202,9 +202,9 @@ export const UE: Record<string, UeEintrag> = {
   ],
   'oe-034': [
     "What can the authority do if a business owner becomes unreliable after the licence has been granted?",
-    "If the authority later learns of facts that show unreliability, it can revoke the licence.",
+    "If the authority later learns of facts that show unreliability, it can revoke the licence. If the business continues without a licence, the authority can stop it.",
     "Ce poate face autoritatea dacă un antreprenor devine nedemn de încredere după acordarea autorizației?",
-    "Dacă autoritatea află ulterior fapte care arată că persoana nu este de încredere, poate retrage autorizația.",
+    "Dacă autoritatea află ulterior fapte care arată lipsa de încredere, poate revoca autorizația. Dacă activitatea continuă fără autorizație, autoritatea o poate interzice.",
   ],
   'oe-035': [
     "What happens if someone runs a security business without a licence?",
@@ -213,9 +213,9 @@ export const UE: Record<string, UeEintrag> = {
     "Cine desfășoară fără autorizație o activitate pentru care este nevoie de autorizație comite o contravenție. În plus, autoritatea poate opri continuarea activității.",
   ],
   'oe-036': [
-    "Who must give the guard written service instructions (Dienstanweisung)?",
+    "What is true about the service instructions for a security guard?",
     "The business owner must give the guard service instructions. They include, among other things, the guard's tasks and that they have no powers like the police.",
-    "Cine trebuie să-i dea agentului de pază instrucțiunile de serviciu (Dienstanweisung)?",
+    "Ce este adevărat despre instrucțiunile de serviciu pentru un agent de pază?",
     "Antreprenorul trebuie să-i dea agentului instrucțiunile de serviciu. În ele scrie, printre altele, ce sarcini are și că nu are puteri ca poliția.",
   ],
   'oe-037': [
@@ -225,9 +225,9 @@ export const UE: Record<string, UeEintrag> = {
     "Agenții de pază trebuie să păstreze secretele comerciale și de afaceri aflate în serviciu – chiar și după terminarea contractului.",
   ],
   'oe-038': [
-    "Under what condition may a guard carry a firearm on duty?",
+    "What applies if a security guard is to carry a firearm on duty?",
     "Firearms on duty are only allowed as an exception: the authority must agree and the weapons licences must be in place. The expertise exam alone is not enough.",
-    "În ce condiție are voie un agent de pază să poarte o armă de foc în serviciu?",
+    "Ce se aplică dacă un agent de pază urmează să poarte o armă de foc în serviciu?",
     "Armele de foc în serviciu sunt permise doar ca excepție: autoritatea trebuie să fie de acord și trebuie să existe permisele pentru arme. Examenul de cunoștințe singur nu este suficient.",
   ],
   'oe-039': [
@@ -237,9 +237,9 @@ export const UE: Record<string, UeEintrag> = {
     "Doar poliția are voie să stabilească identitatea cuiva prin constrângere. Agentul de pază poate spune, pe baza dreptului de proprietar al spațiului (Hausrecht): fără act de identitate nu aveți acces.",
   ],
   'oe-040': [
-    "What is the difference between an order to leave a place (Platzverweis) and a ban from the premises (Hausverbot)?",
+    "What is true about an order to leave a place and a ban from the premises?",
     "An order to leave a place is a sovereign measure by the police. A security guard can impose a ban from the premises on behalf of the person who holds the domestic authority.",
-    "Care este diferența dintre o somație de părăsire a locului (Platzverweis) și o interdicție de acces (Hausverbot)?",
+    "Ce este adevărat despre ordinul de părăsire a locului și interdicția de acces?",
     "Somația de părăsire a locului este o măsură de autoritate a poliției. Un agent de pază poate da o interdicție de acces în numele celui care deține dreptul asupra spațiului (Hausrecht).",
   ],
   'oe-041': [
@@ -255,9 +255,9 @@ export const UE: Record<string, UeEintrag> = {
     "Conform principiului statului de drept, administrația este obligată să respecte legea și dreptul. Pentru a limita drepturile cetățenilor este nevoie de un temei legal.",
   ],
   'oe-043': [
-    "Which area is part of public space (öffentlicher Verkehrsraum)?",
+    "Which areas are part of public traffic space?",
     "Public space means areas that anyone may use, e.g. public roads, paths and squares.",
-    "Ce zonă face parte din spațiul public (öffentlicher Verkehrsraum)?",
+    "Ce zone fac parte din spațiul public de circulație?",
     "Spațiul public înseamnă suprafețe pe care oricine are voie să le folosească, de ex. străzi, drumuri și piețe publice.",
   ],
   'oe-044': [

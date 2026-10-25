@@ -3,9 +3,9 @@ import type { UeEintrag } from './index';
 // [Frage EN, Erklärung EN, Frage RO, Erklärung RO]
 export const UE: Record<string, UeEintrag> = {
   'st-001': [
-    "What is self-defence (Notwehr) under § 32 StGB?",
+    "What is true about self-defence under section 32 of the Criminal Code?",
     "Self-defence requires a present (happening right now) and unlawful attack. The defence must be necessary – revenge or punishment after the attack is not self-defence.",
-    "Ce este legitima apărare (Notwehr) conform § 32 StGB?",
+    "Ce este adevărat despre legitima apărare conform § 32 StGB?",
     "Legitima apărare presupune un atac actual (care are loc chiar acum) și ilegal. Apărarea trebuie să fie necesară – răzbunarea sau pedepsirea după atac nu este legitimă apărare.",
   ],
   'st-002': [
@@ -15,9 +15,9 @@ export const UE: Record<string, UeEintrag> = {
     "Dreptul oricărui cetățean de a reține se aplică dacă cineva este prins în flagrant sau urmărit imediat ȘI fie există suspiciunea că fuge, fie identitatea lui nu poate fi stabilită imediat.",
   ],
   'st-003': [
-    "What is theft under § 242 StGB?",
+    "What is part of theft under section 242 of the Criminal Code?",
     "Theft means taking away a movable item belonging to someone else with the intention of appropriation – the offender wants to keep or use the item like an owner.",
-    "Ce este furtul conform § 242 StGB?",
+    "Ce face parte din furt conform § 242 StGB?",
     "Furtul înseamnă luarea unui lucru mobil care aparține altcuiva, cu intenția de însușire – făptașul vrea să păstreze sau să folosească lucrul ca un proprietar.",
   ],
   'st-004': [
@@ -27,9 +27,9 @@ export const UE: Record<string, UeEintrag> = {
     "Crimele (Verbrechen) sunt fapte cu pedeapsa minimă de un an de închisoare. Toate celelalte infracțiuni sunt delicte (Vergehen).",
   ],
   'st-005': [
-    "Who leads criminal prosecution in Germany?",
+    "Who is responsible for criminal prosecution in Germany?",
     "The public prosecutor's office leads the investigation. The police investigate on its behalf. Security staff have no powers of their own in this.",
-    "Cine conduce urmărirea penală în Germania?",
+    "Cine este responsabil de urmărirea penală în Germania?",
     "Parchetul conduce procedura de anchetă. Poliția anchetează la ordinul lui. Agenții de pază nu au aici puteri proprii.",
   ],
   'st-006': [
@@ -39,15 +39,15 @@ export const UE: Record<string, UeEintrag> = {
     "Conform § 1 StGB și art. 103 alin. 2 din Legea fundamentală, fapta trebuie să fie pedepsită prin lege înainte de a fi comisă. Necunoașterea legii nu te scapă de pedeapsă.",
   ],
   'st-007': [
-    "Which levels are distinguished when examining a criminal offence?",
+    "Which of these are stages when examining a criminal offence?",
     "A criminal offence exists if the elements of the offence are met, the act was unlawful (no justification such as self-defence) and the offender acted culpably.",
-    "Ce niveluri se deosebesc la analiza unei infracțiuni?",
+    "Care dintre acestea sunt etape în analiza unei infracțiuni?",
     "Există o infracțiune dacă sunt îndeplinite elementele faptei, fapta a fost ilegală (nu există o justificare precum legitima apărare) și făptașul a acționat cu vinovăție.",
   ],
   'st-008': [
-    "What does intent (Vorsatz) mean?",
+    "What is true about intent?",
     "Intent means knowing and wanting the act. It is also enough if the offender considers the result possible and accepts it.",
-    "Ce înseamnă intenția (Vorsatz)?",
+    "Ce este adevărat despre intenție?",
     "Intenția înseamnă a ști și a vrea fapta. Este suficient și dacă făptașul consideră rezultatul posibil și îl acceptă.",
   ],
   'st-009': [
@@ -99,15 +99,15 @@ export const UE: Record<string, UeEintrag> = {
     "Oricine trebuie să ajute la accidente, dacă este necesar și se poate cere în mod rezonabil. Dar nu trebuie să te pui singur într-un pericol grav. Adesea e suficient apelul de urgență.",
   ],
   'st-017': [
-    "What does „joint perpetration“ (Mittäterschaft) mean?",
+    "What is true about joint perpetration?",
     "If several people commit the act together according to a common plan, each is punished as a perpetrator.",
-    "Ce înseamnă „coautoratul“ (Mittäterschaft)?",
+    "Ce este adevărat despre coautorat?",
     "Dacă mai multe persoane comit fapta împreună, după un plan comun, fiecare este pedepsit ca autor.",
   ],
   'st-018': [
-    "What is aiding (Beihilfe)?",
+    "What is aiding and abetting a criminal offence?",
     "Someone aids if they help another person with their intentional act, e.g. keep a lookout. Someone who persuades another person to commit the act is an instigator.",
-    "Ce este complicitatea (Beihilfe)?",
+    "Ce este complicitatea la o infracțiune?",
     "Complice este cel care ajută o altă persoană la fapta ei săvârșită cu intenție, de ex. stă de pază. Cine determină pe altcineva să comită fapta este instigator.",
   ],
   'st-019': [
@@ -124,9 +124,9 @@ export const UE: Record<string, UeEintrag> = {
   ],
   'st-021': [
     "A thief tries to snatch a visitor's handbag. May the security guard use self-defence?",
-    "Self-defence is allowed against attacks on any legal interest, including property. But the defence must be necessary.",
+    "Self-defence is allowed against attacks on any legal interest, including property. You may also use it for others (defence of others). But the defence must be necessary.",
     "Un hoț încearcă să smulgă poșeta unei vizitatoare. Are voie agentul de pază să folosească legitima apărare?",
-    "Legitima apărare este permisă împotriva atacurilor asupra oricărui bun juridic, inclusiv asupra proprietății. Dar apărarea trebuie să fie necesară.",
+    "Legitima apărare este permisă împotriva atacurilor asupra oricărui bun juridic, inclusiv proprietatea. Poate fi exercitată și pentru alții (apărarea altuia). Dar apărarea trebuie să fie necesară.",
   ],
   'st-022': [
     "An unarmed man lightly pushes a security guard. The guard then pulls a knife and injures him. Is this self-defence?",
@@ -135,15 +135,15 @@ export const UE: Record<string, UeEintrag> = {
     "Necesar este doar cel mai blând dintre mai multe mijloace la fel de eficiente. Un cuțit împotriva unei împingeri ușoare nu este necesar.",
   ],
   'st-023': [
-    "What is excessive self-defence (Notwehrexzess) under § 33 StGB?",
+    "What is true about excessive self-defence under section 33 of the Criminal Code?",
     "Anyone who goes beyond the limits of self-defence out of confusion, fear or shock is not punished. This does not apply to anger or revenge.",
-    "Ce este depășirea limitelor legitimei apărări (Notwehrexzess) conform § 33 StGB?",
+    "Ce este adevărat despre depășirea limitelor legitimei apărări conform § 33 StGB?",
     "Cine depășește limitele legitimei apărări din confuzie, frică sau spaimă nu este pedepsit. Din furie sau răzbunare acest lucru nu se aplică.",
   ],
   'st-024': [
-    "To rescue a child from a burning house, a security guard kicks in the front door. What justifies the damage to property?",
+    "To rescue a child from a burning house, a security officer kicks in the front door. What is correct?",
     "Anyone who can only avert a danger to life or health by violating another legal interest does not act unlawfully – if the protected interest clearly outweighs it.",
-    "Pentru a salva un copil dintr-o casă în flăcări, un agent de pază sparge ușa cu piciorul. Ce justifică distrugerea?",
+    "Pentru a salva un copil dintr-o casă în flăcări, un agent de securitate sparge ușa de la intrare. Ce este corect?",
     "Cine poate înlătura un pericol pentru viață sau sănătate doar lezând un alt bun juridic nu acționează ilegal – dacă interesul protejat este clar mai important.",
   ],
   'st-025': [
@@ -165,9 +165,9 @@ export const UE: Record<string, UeEintrag> = {
     "Vătămarea corporală periculoasă există, printre altele, la folosirea armelor sau a uneltelor periculoase, la comiterea în grup, la un atac pe ascuns sau la un tratament care pune viața în pericol.",
   ],
   'st-028': [
-    "Through carelessness, a security guard lets a heavy door slam shut. A visitor's hand is injured. Which criminal offence may apply?",
+    "Through carelessness, a security officer lets a heavy door slam shut. A visitor's hand is injured. What is correct?",
     "Anyone who causes bodily harm to another person through negligence can be punished for negligent bodily harm.",
-    "Din neatenție, un agent de pază lasă o ușă grea să se închidă brusc. Un vizitator este rănit la mână. Ce infracțiune poate fi?",
+    "Din neatenție, un agent de securitate lasă o ușă grea să se închidă. Un vizitator este rănit la mână. Ce este corect?",
     "Cine provoacă din neglijență vătămarea corporală a altei persoane poate fi pedepsit pentru vătămare corporală din neglijență.",
   ],
   'st-029': [
@@ -177,10 +177,10 @@ export const UE: Record<string, UeEintrag> = {
     "Constrângerea înseamnă a obliga ilegal o altă persoană prin violență sau amenințare. Și un agent de pază poate fi pedepsit dacă obligă oameni la ceva fără să aibă dreptul.",
   ],
   'st-030': [
-    "A store detective locks a customer in a room for two hours without suspicion of a criminal offence. Which criminal offence may apply?",
-    "Anyone who locks a person up or deprives them of their freedom in another way without having the right to do so commits false imprisonment (Freiheitsberaubung).",
-    "Un detectiv de magazin închide un client într-o cameră timp de două ore fără suspiciunea unei infracțiuni. Ce infracțiune poate fi?",
-    "Cine închide un om sau îl lipsește în alt mod de libertate fără să aibă dreptul comite infracțiunea de lipsire de libertate (Freiheitsberaubung).",
+    "A store detective locks a customer in a room for two hours without suspicion of a crime. What is correct?",
+    "Anyone who locks up a person or otherwise deprives them of their liberty without having a right to do so commits false imprisonment. The right of arrest under section 127 of the Code of Criminal Procedure requires a criminal offence – without suspicion there is no right to hold someone.",
+    "Un detectiv de magazin închide un client într-o cameră timp de două ore, fără suspiciunea unei infracțiuni. Ce este corect?",
+    "Cine închide o persoană sau o privează în alt mod de libertate fără a avea acest drept comite lipsire de libertate. Dreptul de reținere conform § 127 StPO presupune o infracțiune – fără suspiciune nu există dreptul de a reține pe cineva.",
   ],
   'st-031': [
     "What is a threat (Bedrohung) under § 241 StGB?",
@@ -189,9 +189,9 @@ export const UE: Record<string, UeEintrag> = {
     "Comite amenințare cine amenință o persoană cu o faptă ilegală împotriva ei sau a unei persoane apropiate.",
   ],
   'st-032': [
-    "What is the difference between defamation (üble Nachrede) and slander (Verleumdung)?",
+    "What is true about defamation and slander?",
     "Defamation: claiming a fact that damages someone's honour and cannot be proven true. Slander: the offender knows that the claim is false.",
-    "Care este diferența dintre defăimare (üble Nachrede) și calomnie (Verleumdung)?",
+    "Ce este adevărat despre defăimare și calomnie?",
     "Defăimarea: afirmarea unui fapt care lezează onoarea și care nu poate fi dovedit ca adevărat. Calomnia: făptașul știe că afirmația este falsă.",
   ],
   'st-033': [
@@ -225,9 +225,9 @@ export const UE: Record<string, UeEintrag> = {
     "Tâlhăria este furt cu violență sau amenințare împotriva unei persoane. Tâlhăria este o crimă (Verbrechen).",
   ],
   'st-038': [
-    "An offender breaks into an office building at night and steals laptops. How is this classified in the law?",
+    "At night, an offender breaks into an office building and steals laptops. What is correct?",
     "Anyone who breaks into a building to commit the act usually commits a particularly serious case of theft. Damage to property and trespass may also apply.",
-    "Un făptaș pătrunde noaptea prin efracție într-o clădire de birouri și fură laptopuri. Cum este încadrată fapta în lege?",
+    "Noaptea, un făptaș pătrunde prin efracție într-o clădire de birouri și fură laptopuri. Ce este corect?",
     "Cine pătrunde prin efracție într-o clădire pentru a comite fapta comite de regulă un caz deosebit de grav de furt. Pe lângă aceasta pot exista distrugere și violare de domiciliu.",
   ],
   'st-039': [
@@ -261,9 +261,9 @@ export const UE: Record<string, UeEintrag> = {
     "§ 113 StGB protejează funcționarii publici și soldații la acțiunile de executare. Agenții de pază privați nu sunt funcționari publici. Atacurile asupra lor sunt însă pedepsite, de ex. ca vătămare corporală.",
   ],
   'st-044': [
-    "A guard says to a visitor: „I'm from the police, show me your ID!“ Which criminal offence may apply?",
+    "A security guard says to a visitor: \"I'm from the police, show me your ID!\" What is correct?",
     "Anyone who claims without authority to be a public official, or does something only a public official may do, commits impersonation of an official (Amtsanmaßung).",
-    "Un agent de pază îi spune unui vizitator: „Sunt de la poliție, arătați-mi actul de identitate!“ Ce infracțiune poate fi?",
+    "Un agent de pază îi spune unui vizitator: „Sunt de la poliție, arătați-mi actul de identitate!” Ce este corect?",
     "Cine pretinde fără drept că este funcționar public sau face ceva ce doar un funcționar public are voie să facă comite uzurpare de funcție (Amtsanmaßung).",
   ],
   'st-045': [
@@ -273,9 +273,9 @@ export const UE: Record<string, UeEintrag> = {
     "Cine folosește abuziv apelurile de urgență, intenționat sau cu bună știință, comite o infracțiune.",
   ],
   'st-046': [
-    "What does the principle of legality mean in criminal proceedings?",
+    "What is true about the principle of mandatory prosecution?",
     "According to the principle of legality, the public prosecutor's office is obliged to take action when there is an initial suspicion. For administrative offences, the principle of opportunity applies instead.",
-    "Ce înseamnă principiul legalității în procesul penal?",
+    "Ce este adevărat despre principiul legalității urmăririi penale?",
     "Conform principiului legalității, parchetul este obligat să intervină la o suspiciune inițială. La contravenții se aplică în schimb principiul oportunității.",
   ],
   'st-047': [
@@ -315,15 +315,15 @@ export const UE: Record<string, UeEintrag> = {
     "Percheziția împotriva voinței persoanei este sarcina poliției. Detectivul poate cere cooperare de bunăvoie, poate reține persoana la suspiciunea unei infracțiuni și poate chema poliția.",
   ],
   'st-053': [
-    "Which right does an accused person have in criminal proceedings?",
+    "Which rights does an accused person have in criminal proceedings?",
     "Nobody has to incriminate themselves. An accused person may remain silent about the case and consult a defence lawyer at any time.",
-    "Ce drept are un învinuit în procesul penal?",
+    "Ce drepturi are un învinuit în procesul penal?",
     "Nimeni nu trebuie să se acuze singur. Învinuitul are dreptul să tacă și să consulte oricând un avocat.",
   ],
   'st-054': [
-    "Who orders pre-trial detention?",
+    "What applies to ordering pre-trial detention?",
     "Pre-trial detention is ordered by a written arrest warrant from a judge. This also applies to any other deprivation of liberty beyond provisional arrest.",
-    "Cine dispune arestul preventiv?",
+    "Ce se aplică pentru dispunerea arestului preventiv?",
     "Arestul preventiv este dispus printr-un mandat de arestare scris al judecătorului. Acest lucru se aplică și oricărei alte privări de libertate care depășește reținerea provizorie.",
   ],
   'st-055': [
@@ -345,9 +345,9 @@ export const UE: Record<string, UeEintrag> = {
     "A purta înseamnă a avea arma la tine în afara propriei locuințe, a propriilor spații comerciale sau a propriei proprietăți împrejmuite.",
   ],
   'st-058': [
-    "What do you need a firearms carry licence (Waffenschein) for?",
+    "What applies to the firearms carry permit?",
     "The weapons ownership card (Waffenbesitzkarte) allows acquisition and ownership. To carry a firearm in public, you also need a carry licence (Waffenschein).",
-    "Pentru ce aveți nevoie de un permis de port armă (Waffenschein)?",
+    "Ce se aplică pentru permisul de port-armă?",
     "Permisul de deținere a armei (Waffenbesitzkarte) permite cumpărarea și deținerea. Pentru a purta o armă de foc în public aveți nevoie în plus de permisul de port armă (Waffenschein).",
   ],
   'st-059': [

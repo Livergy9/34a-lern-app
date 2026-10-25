@@ -105,22 +105,22 @@
 - EN: When must personal data be deleted?
 - RO: Când trebuie șterse datele cu caracter personal?
 
-**Erklärung DE:** Daten, die für ihren Zweck nicht mehr gebraucht werden, müssen gelöscht werden – es sei denn, ein Gesetz verlangt eine Aufbewahrung.
+**Erklärung DE:** Daten müssen gelöscht werden, wenn sie für ihren Zweck nicht mehr gebraucht werden oder wenn die Person ihre Einwilligung widerruft und es keine andere Rechtsgrundlage gibt. Ausnahme: Ein Gesetz verlangt eine Aufbewahrung.
 
-- EN: Data that is no longer needed for its purpose must be deleted – unless a law requires it to be kept.
-- RO: Datele care nu mai sunt necesare pentru scopul lor trebuie șterse – cu excepția cazului în care o lege cere păstrarea lor.
+- EN: Data must be deleted when it is no longer needed for its purpose, or when the person withdraws their consent and there is no other legal basis. Exception: a law requires it to be kept.
+- RO: Datele trebuie șterse când nu mai sunt necesare pentru scopul lor sau când persoana își retrage consimțământul și nu există alt temei legal. Excepție: o lege cere păstrarea lor.
 
 ## 10. [ds-010]
 
-**Frage DE:** Ein Geschäft überwacht seinen Verkaufsraum mit Kameras. Was ist Pflicht?
+**Frage DE:** Ein Geschäft überwacht seinen Verkaufsraum mit Kameras. Was ist dabei Pflicht?
 
 - EN: A shop monitors its sales area with cameras. What is required?
-- RO: Un magazin supraveghează spațiul de vânzare cu camere. Ce este obligatoriu?
+- RO: Un magazin își supraveghează spațiul de vânzare cu camere. Ce este obligatoriu?
 
-**Erklärung DE:** Bei Videoüberwachung öffentlich zugänglicher Räume müssen die Überwachung und der Verantwortliche früh erkennbar sein, meist durch ein Schild.
+**Erklärung DE:** Bei Videoüberwachung öffentlich zugänglicher Räume müssen die Überwachung und der Verantwortliche früh erkennbar sein, meist durch ein Schild. Aufnahmen werden gelöscht, sobald sie nicht mehr gebraucht werden.
 
-- EN: With video surveillance of publicly accessible areas, the surveillance and the person responsible must be visible early, usually with a sign.
-- RO: La supravegherea video a spațiilor accesibile publicului, supravegherea și persoana responsabilă trebuie să fie vizibile din timp, de obicei printr-un panou.
+- EN: With video surveillance of publicly accessible areas, the surveillance and the person responsible must be recognisable early, usually by a sign. Recordings are deleted as soon as they are no longer needed.
+- RO: La supravegherea video a spațiilor accesibile publicului, supravegherea și responsabilul trebuie să fie recunoscute din timp, de obicei printr-un panou. Înregistrările se șterg imediat ce nu mai sunt necesare.
 
 ## 11. [ds-011]
 
@@ -136,10 +136,10 @@
 
 ## 12. [ds-012]
 
-**Frage DE:** Sie führen am Empfang eine Besucherliste. Welche Daten sollten Sie erfassen?
+**Frage DE:** Sie führen am Empfang eine Besucherliste. Welche Angaben sind dafür nötig?
 
-- EN: You keep a visitor list at reception. Which data should you record?
-- RO: Țineți o listă de vizitatori la recepție. Ce date ar trebui să înregistrați?
+- EN: You keep a visitor list at reception. Which details are needed for it?
+- RO: Țineți o listă de vizitatori la recepție. Ce date sunt necesare pentru ea?
 
 **Erklärung DE:** Nach dem Grundsatz der Datenminimierung werden nur die Daten erfasst, die für den Zweck wirklich nötig sind.
 
@@ -165,10 +165,10 @@
 - EN: You lose a USB stick with visitor data. What do you do?
 - RO: Pierdeți un stick USB cu date ale vizitatorilor. Ce faceți?
 
-**Erklärung DE:** Der Verlust personenbezogener Daten ist eine Datenpanne. Sie muss sofort gemeldet werden, damit das Unternehmen reagieren und die Meldepflichten erfüllen kann.
+**Erklärung DE:** Der Verlust personenbezogener Daten ist eine Datenpanne. Sie muss sofort gemeldet werden, damit das Unternehmen reagieren und die Meldepflichten erfüllen kann. Genaue Angaben (wann, wo) helfen bei der Aufklärung.
 
-- EN: Losing personal data is a data breach. It must be reported immediately so that the company can react and meet its reporting duties.
-- RO: Pierderea datelor cu caracter personal este o încălcare a securității datelor. Trebuie raportată imediat, ca firma să poată reacționa și să-și îndeplinească obligațiile de notificare.
+- EN: Losing personal data is a data breach. It must be reported immediately so that the company can react and meet its reporting obligations. Exact details (when, where) help to clear it up.
+- RO: Pierderea datelor cu caracter personal este o încălcare a securității datelor. Trebuie raportată imediat, ca firma să poată reacționa și să-și îndeplinească obligațiile de notificare. Detaliile exacte (când, unde) ajută la clarificare.
 
 ## 15. [ds-015]
 
@@ -208,10 +208,10 @@
 
 ## 18. [ds-018]
 
-**Frage DE:** Welche Aufgabe hat ein betrieblicher Datenschutzbeauftragter?
+**Frage DE:** Welche Aufgaben hat ein betrieblicher Datenschutzbeauftragter?
 
-- EN: What is the task of a company data protection officer?
-- RO: Ce sarcină are responsabilul cu protecția datelor din firmă?
+- EN: What are the tasks of a company data protection officer?
+- RO: Care sunt sarcinile responsabilului cu protecția datelor dintr-o firmă?
 
 **Erklärung DE:** Der Datenschutzbeauftragte berät Unternehmen und Mitarbeiter und überwacht die Einhaltung des Datenschutzes. Er ist Ansprechpartner für Fragen.
 

@@ -9,9 +9,9 @@ export const UE: Record<string, UeEintrag> = {
     "Cine reacționează calm, obiectiv și la o distanță sigură scade tensiunea. Provocarea sau violența agravează conflictul.",
   ],
   'um-002': [
-    "What is part of active listening?",
+    "What is an example of active listening?",
     "Active listening shows the other person that you take them seriously: asking questions, summarising and showing attention.",
-    "Ce face parte din ascultarea activă?",
+    "Care este un exemplu de ascultare activă?",
     "Ascultarea activă îi arată celuilalt că îl iei în serios: pui întrebări, rezumi și arăți atenție.",
   ],
   'um-003': [

@@ -12,14 +12,13 @@
 
 **Erklärung:** Wer ruhig, sachlich und mit sicherem Abstand reagiert, nimmt Druck aus der Situation. Provokation oder Gewalt verschärfen den Konflikt.
 
-## 2. [um-002] (Mehrfachauswahl) Was gehört zum aktiven Zuhören?
+## 2. [um-002] Was ist ein Beispiel für aktives Zuhören?
 
-- ✅ A) Nachfragen, wenn etwas unklar ist
-- ❌ B) Den anderen häufig unterbrechen
+- ❌ A) Den anderen häufig unterbrechen
+- ❌ B) Nebenbei auf das Handy schauen
 - ✅ C) Das Gehörte mit eigenen Worten zusammenfassen
-- ❌ D) Nebenbei auf das Handy schauen
-- ✅ E) Blickkontakt halten
-- ❌ F) Sofort Vorwürfe machen
+- ❌ D) Sofort Vorwürfe machen
+- ❌ E) Schnell das Thema wechseln
 
 **Erklärung:** Aktives Zuhören zeigt dem Gegenüber, dass man ihn ernst nimmt: nachfragen, zusammenfassen und Aufmerksamkeit zeigen.
 
