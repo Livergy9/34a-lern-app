@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { FRAGEN, frageById } from './data/fragen';
 import { GLOSSAR } from './data/glossar';
 import { LERNBEGRIFFE } from './data/lernbegriffe';
+import { PRUEFUNG, SACHGEBIETE } from './data/sachgebiete';
 import { Frage, GlossarEintrag } from './data/types';
 import { heute, plusTage, tageZwischen } from './datum';
 import { frageFrei, karteFrei } from './premium';
@@ -53,6 +54,35 @@ export function quote(liste: Frage[], stand: Record<string, FrageStand>, minBean
     if (s) { p += s.punkte; m += s.max; n++; }
   }
   return m && n >= minBeantwortet ? p / m : null;
+}
+
+// Prüfungsreife = geschätzte Punkte in der echten Prüfung.
+// Pro Sachgebiet: durchschnittlicher Anteil der Punkte je Frage (letzter Versuch), unbeantwortete Fragen zählen 0.
+// Gewichtet mit den Punkten des Sachgebiets in der Prüfung. Gerechnet wird immer mit ALLEN Fragen
+// (auch gesperrten), damit Gratis-Nutzer nach 30 % der Fragen nicht fälschlich „bereit“ angezeigt bekommen.
+export type ReifeStufe = 'leer' | 'nichtBereit' | 'gutAufDemWeg' | 'bereit';
+export const REIFE_GRENZEN = { gutAufDemWeg: 0.5, bereit: 0.75 };
+
+export function pruefungsreife(alle: Frage[], stand: Record<string, FrageStand>) {
+  let beantwortet = 0;
+  const gebiete = SACHGEBIETE.map((sg) => {
+    const liste = alle.filter((f) => f.sachgebiet === sg.id);
+    let summe = 0;
+    for (const f of liste) {
+      const s = stand[f.id];
+      if (s && s.max > 0) { summe += s.punkte / s.max; beantwortet++; }
+    }
+    const anteil = liste.length ? summe / liste.length : 0;
+    return { sg, anteil, punkte: anteil * sg.punkteInPruefung, offenePunkte: (1 - anteil) * sg.punkteInPruefung };
+  });
+  const punkte = gebiete.reduce((a, g) => a + g.punkte, 0);
+  const anteil = punkte / PRUEFUNG.punkte;
+  const stufe: ReifeStufe = beantwortet === 0 ? 'leer'
+    : anteil >= REIFE_GRENZEN.bereit ? 'bereit'
+    : anteil >= REIFE_GRENZEN.gutAufDemWeg ? 'gutAufDemWeg' : 'nichtBereit';
+  // Größte Lücke = Sachgebiet, in dem die meisten Prüfungspunkte noch fehlen
+  const luecke = [...gebiete].sort((a, b) => b.offenePunkte - a.offenePunkte)[0];
+  return { punkte, anteil, stufe, gebiete, luecke: luecke && luecke.offenePunkte >= 1 ? luecke : null };
 }
 
 // Auswahl für „Heute lernen“: erst offene Fehler, dann neue Fragen, dann lange nicht gesehene

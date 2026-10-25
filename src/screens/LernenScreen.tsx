@@ -4,19 +4,39 @@ import { Ionicons } from '@expo/vector-icons';
 import { fragenFuer } from '../data/fragen';
 import { kapitelFuer } from '../data/kapitel';
 import { SACHGEBIETE } from '../data/sachgebiete';
-import { quote } from '../lernstand';
+import { mischen, quote, useLernstand } from '../lernstand';
 import { useNav } from '../nav';
 import { frageFrei } from '../premium';
 import { useApp } from '../state';
-import { C, Card, Chip, IconBox, ProgressBar, s, SeitenTitel } from '../ui';
+import { Abschnitt, C, Card, Chip, IconBox, ProgressBar, s, SeitenTitel, Zeile } from '../ui';
 
 export default function LernenScreen() {
   const app = useApp();
   const nav = useNav();
+  const ls = useLernstand();
   return (
     <ScrollView contentContainerStyle={s.seite}>
       <SeitenTitel titel="Lernen" info="Wähle ein Sachgebiet. Lies zuerst die Kapitel, dann übe die Fragen." />
-      <View style={{ gap: 12, marginTop: 18 }}>
+      {/* Wiederholen: früher auf dem Start-Bildschirm */}
+      <Card style={{ marginTop: 18, padding: 0 }}>
+        <Zeile
+          erste
+          icon="refresh-circle-outline"
+          farbe={C.warn}
+          titel="Meine Fehler"
+          untertitel={ls.fehler.length ? `${ls.fehler.length} ${ls.fehler.length === 1 ? 'Frage' : 'Fragen'} noch nicht sicher` : 'Keine offenen Fehler'}
+          onPress={ls.fehler.length ? () => nav.starteQuiz(mischen(ls.fehler), 'Meine Fehler') : undefined}
+        />
+        <Zeile
+          icon="bookmark-outline"
+          farbe={C.gold}
+          titel="Gemerkte Fragen"
+          untertitel={ls.gemerkt.length ? `${ls.gemerkt.length} gemerkt` : 'Tippe im Quiz oben rechts auf das Lesezeichen'}
+          onPress={ls.gemerkt.length ? () => nav.starteQuiz(ls.gemerkt, 'Gemerkte Fragen') : undefined}
+        />
+      </Card>
+      <Abschnitt titel="Sachgebiete" />
+      <View style={{ gap: 12 }}>
         {SACHGEBIETE.map((sg) => {
           const liste = fragenFuer(sg.id);
           const b = liste.filter((f) => app.fragen[f.id]).length;
