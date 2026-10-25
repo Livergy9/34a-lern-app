@@ -16,14 +16,15 @@ Projekt holen und starten (Eingabeaufforderung / PowerShell):
 git clone https://github.com/Livergy9/34a-lern-app
 cd 34a-lern-app
 npm install
-npx expo install react react-native react-dom react-native-web react-native-safe-area-context expo-status-bar @expo/metro-runtime @expo/vector-icons
 npx expo start
 ```
 
 Dann den QR-Code mit der iPhone-Kamera scannen – die App öffnet sich in Expo Go.
 PC und iPhone müssen im selben WLAN sein. Klappt es nicht, `npx expo start --tunnel` verwenden.
 
-Später, nach Änderungen: `git pull` und `npx expo start`.
+Später, nach Änderungen: `git pull`, `npm install` und `npx expo start`.
+
+Alle Pakete stehen in `package.json`. Neue Pakete immer dort eintragen (auf GitHub), nicht nur lokal installieren.
 
 ## Aufbau
 
