@@ -1,5 +1,7 @@
-import React, { createContext, useContext, useMemo, useState } from 'react';
+import React, { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Frage, HilfeSprache } from './data/types';
+import { heute, plusTage } from './datum';
 
 export type Ergebnis = { punkte: number; max: number };
 
@@ -16,33 +18,147 @@ export function bewerte(frage: Frage, auswahl: number[]): Ergebnis {
   return { punkte: Math.max(0, Math.min(max, treffer - fehler)), max };
 }
 
-type AppState = {
+// ── Gespeicherte Daten ──────────────────────────────────────────────
+export type FrageStand = {
+  punkte: number; // letzte Antwort
+  max: number;
+  versuche: number;
+  richtigInFolge: number;
+  fehlerOffen: boolean; // steht in „Meine Fehler“, bis 2× hintereinander richtig
+  zuletzt: string; // Datum
+};
+export type KarteStand = { box: number; faellig: string }; // Leitner-Fach 1–5
+export type PruefungEintrag = { datum: string; punkte: number; max: number; bestanden: boolean; fragen: number };
+
+type Daten = {
+  version: 1;
   hilfeSprache: HilfeSprache | null; // null = keine Übersetzungshilfe
+  fragen: Record<string, FrageStand>;
+  karten: Record<string, KarteStand>;
+  lesezeichen: string[];
+  tage: Record<string, number>; // Datum → erledigte Aufgaben (Fragen + Karten)
+  pruefungsDatum: string | null;
+  onboardingFertig: boolean;
+  premium: boolean; // Testmodus: in der Entwicklung frei umschaltbar, später echter Kauf
+  pruefungen: PruefungEintrag[];
+  gelesen: string[]; // Kapitel-IDs
+};
+
+const START: Daten = {
+  version: 1,
+  hilfeSprache: 'en',
+  fragen: {},
+  karten: {},
+  lesezeichen: [],
+  tage: {},
+  pruefungsDatum: null,
+  onboardingFertig: false,
+  premium: true,
+  pruefungen: [],
+  gelesen: [],
+};
+
+const SPEICHER_KEY = '34a-easy:v1';
+
+// Leitner: Wartezeit in Tagen je Fach (Fach 1 = jeden Tag)
+export const LEITNER_TAGE = [0, 1, 2, 4, 8, 16];
+export const MAX_FACH = 5;
+// Fehler gelten als gelernt nach so vielen richtigen Antworten hintereinander
+export const RICHTIG_FUER_GELERNT = 2;
+
+type AppState = Daten & {
+  geladen: boolean;
   setHilfeSprache: (s: HilfeSprache | null) => void;
-  fortschritt: Record<string, Ergebnis>; // letzte Antwort je Frage-ID
-  speichereErgebnis: (frageId: string, e: Ergebnis) => void;
+  beantworte: (frage: Frage, e: Ergebnis) => void;
+  bewerteKarte: (id: string, gewusst: boolean) => void;
+  toggleLesezeichen: (frageId: string) => void;
+  setPruefungsDatum: (d: string | null) => void;
+  beendeOnboarding: () => void;
+  zeigeEinfuehrung: () => void;
+  setPremium: (p: boolean) => void;
+  speicherePruefung: (p: PruefungEintrag) => void;
+  markiereGelesen: (kapitelId: string) => void;
+  zuruecksetzen: () => void;
   glossarOffen: string | null;
   zeigeGlossar: (id: string | null) => void;
 };
 
 const Ctx = createContext<AppState | null>(null);
 
-export function AppStateProvider({ children }: { children: React.ReactNode }) {
-  const [hilfeSprache, setHilfeSprache] = useState<HilfeSprache | null>('en');
-  const [fortschritt, setFortschritt] = useState<Record<string, Ergebnis>>({});
-  const [glossarOffen, zeigeGlossar] = useState<string | null>(null);
+const zaehleTag = (tage: Record<string, number>, n = 1) => {
+  const d = heute();
+  return { ...tage, [d]: (tage[d] ?? 0) + n };
+};
 
-  const value = useMemo<AppState>(
-    () => ({
-      hilfeSprache,
-      setHilfeSprache,
-      fortschritt,
-      speichereErgebnis: (frageId, e) => setFortschritt((f) => ({ ...f, [frageId]: e })),
+export function AppStateProvider({ children }: { children: React.ReactNode }) {
+  const [daten, setDaten] = useState<Daten>(START);
+  const [geladen, setGeladen] = useState(false);
+  const [glossarOffen, zeigeGlossar] = useState<string | null>(null);
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Laden beim Start
+  useEffect(() => {
+    AsyncStorage.getItem(SPEICHER_KEY)
+      .then((json) => {
+        if (json) {
+          const gespeichert = JSON.parse(json) as Partial<Daten>;
+          setDaten({ ...START, ...gespeichert, version: 1 });
+        }
+      })
+      .catch(() => {})
+      .finally(() => setGeladen(true));
+  }, []);
+
+  // Speichern bei jeder Änderung (kurz verzögert, damit nicht bei jedem Tipp geschrieben wird)
+  useEffect(() => {
+    if (!geladen) return;
+    if (timer.current) clearTimeout(timer.current);
+    timer.current = setTimeout(() => {
+      AsyncStorage.setItem(SPEICHER_KEY, JSON.stringify(daten)).catch(() => {});
+    }, 300);
+  }, [daten, geladen]);
+
+  const value = useMemo<AppState>(() => {
+    const aendere = (f: (d: Daten) => Daten) => setDaten(f);
+    return {
+      ...daten,
+      geladen,
       glossarOffen,
       zeigeGlossar,
-    }),
-    [hilfeSprache, fortschritt, glossarOffen]
-  );
+      setHilfeSprache: (s) => aendere((d) => ({ ...d, hilfeSprache: s })),
+      beantworte: (frage, e) =>
+        aendere((d) => {
+          const alt = d.fragen[frage.id];
+          const voll = e.punkte === e.max;
+          const richtigInFolge = voll ? (alt?.richtigInFolge ?? 0) + 1 : 0;
+          const fehlerOffen = voll ? !!alt?.fehlerOffen && richtigInFolge < RICHTIG_FUER_GELERNT : true;
+          const stand: FrageStand = {
+            punkte: e.punkte, max: e.max, versuche: (alt?.versuche ?? 0) + 1, richtigInFolge, fehlerOffen, zuletzt: heute(),
+          };
+          return { ...d, fragen: { ...d.fragen, [frage.id]: stand }, tage: zaehleTag(d.tage) };
+        }),
+      bewerteKarte: (id, gewusst) =>
+        aendere((d) => {
+          const alt = d.karten[id];
+          const box = gewusst ? Math.min(MAX_FACH, (alt?.box ?? 0) + 1) : 1;
+          const faellig = gewusst ? plusTage(heute(), LEITNER_TAGE[box]) : heute();
+          return { ...d, karten: { ...d.karten, [id]: { box, faellig } }, tage: zaehleTag(d.tage) };
+        }),
+      toggleLesezeichen: (frageId) =>
+        aendere((d) => ({
+          ...d,
+          lesezeichen: d.lesezeichen.includes(frageId) ? d.lesezeichen.filter((x) => x !== frageId) : [...d.lesezeichen, frageId],
+        })),
+      setPruefungsDatum: (p) => aendere((d) => ({ ...d, pruefungsDatum: p })),
+      beendeOnboarding: () => aendere((d) => ({ ...d, onboardingFertig: true })),
+      zeigeEinfuehrung: () => aendere((d) => ({ ...d, onboardingFertig: false })),
+      setPremium: (p) => aendere((d) => ({ ...d, premium: p })),
+      speicherePruefung: (p) => aendere((d) => ({ ...d, pruefungen: [p, ...d.pruefungen].slice(0, 30) })),
+      markiereGelesen: (id) => aendere((d) => (d.gelesen.includes(id) ? d : { ...d, gelesen: [...d.gelesen, id] })),
+      zuruecksetzen: () => aendere((d) => ({ ...START, hilfeSprache: d.hilfeSprache, premium: d.premium, onboardingFertig: true })),
+    };
+  }, [daten, geladen, glossarOffen]);
+
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }
 

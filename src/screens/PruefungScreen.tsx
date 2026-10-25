@@ -1,38 +1,56 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { ScrollView, Text, View } from 'react-native';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { Alert, Modal, Pressable, ScrollView, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-import { FRAGEN } from '../data/fragen';
+import { fragenFuer } from '../data/fragen';
 import { PRUEFUNG, SACHGEBIETE } from '../data/sachgebiete';
 import { Frage } from '../data/types';
+import { heute } from '../datum';
+import { mischen } from '../lernstand';
+import { useNav } from '../nav';
+import { PREMIUM, pruefungFrei } from '../premium';
 import { bewerte, useApp } from '../state';
-import { Button, C, Card, ProgressBar, s, ScreenHeader } from '../ui';
+import { Button, C, Card, IconBox, ProgressBar, s, ScreenHeader } from '../ui';
 import { AntwortListe, FrageKopf, waehle } from './QuizScreen';
 
-function mischen<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
+type Art = 'echt' | 'kurz';
+const ARTEN: Record<Art, { fragen: number; minuten: number; titel: string; text: string }> = {
+  echt: { fragen: PRUEFUNG.fragen, minuten: PRUEFUNG.minuten, titel: 'Echte Prüfung', text: `${PRUEFUNG.fragen} Fragen · ${PRUEFUNG.minuten} Minuten – wie bei der IHK` },
+  kurz: { fragen: 20, minuten: 30, titel: 'Kurztest', text: '20 Fragen · 30 Minuten – für zwischendurch' },
+};
+
+// Fragen nach der Verteilung der echten Prüfung aus allen Sachgebieten ziehen
+function stelleZusammen(anzahl: number): Frage[] {
+  const liste: Frage[] = [];
+  for (const sg of SACHGEBIETE) {
+    const n = Math.max(1, Math.round((sg.fragenInPruefung * anzahl) / PRUEFUNG.fragen));
+    liste.push(...mischen(fragenFuer(sg.id)).slice(0, n));
   }
-  return a;
+  return liste.slice(0, anzahl); // Reihenfolge nach Sachgebieten wie in der echten Prüfung
 }
 
-const mmss = (sek: number) => `${String(Math.floor(sek / 60)).padStart(2, '0')}:${String(sek % 60).padStart(2, '0')}`;
+const mmss = (sek: number) => {
+  const h = Math.floor(sek / 3600), m = Math.floor((sek % 3600) / 60), x = sek % 60;
+  const z = (n: number) => String(n).padStart(2, '0');
+  return h ? `${h}:${z(m)}:${z(x)}` : `${z(m)}:${z(x)}`;
+};
 
-export default function PruefungScreen({ onClose }: { onClose: () => void }) {
-  const { speichereErgebnis } = useApp();
+export default function PruefungScreen() {
+  const app = useApp();
+  const nav = useNav();
   const [phase, setPhase] = useState<'intro' | 'laeuft' | 'fertig'>('intro');
+  const [art, setArt] = useState<Art>('echt');
   const [fragen, setFragen] = useState<Frage[]>([]);
   const [antworten, setAntworten] = useState<Record<string, number[]>>({});
   const [index, setIndex] = useState(0);
-  // Zeit anteilig zur echten Prüfung (120 Min. für 82 Fragen)
-  const minuten = Math.max(5, Math.round((PRUEFUNG.minuten * FRAGEN.length) / PRUEFUNG.fragen));
-  const [rest, setRest] = useState(minuten * 60);
+  const [rest, setRest] = useState(0);
+  const [uebersicht, setUebersicht] = useState(false);
+  const endeZeit = useRef(0);
 
+  // Timer läuft über die Uhrzeit, damit er auch stimmt, wenn die App kurz im Hintergrund war
   useEffect(() => {
     if (phase !== 'laeuft') return;
-    const t = setInterval(() => setRest((r) => r - 1), 1000);
+    const t = setInterval(() => setRest(Math.max(0, Math.round((endeZeit.current - Date.now()) / 1000))), 1000);
     return () => clearInterval(t);
   }, [phase]);
 
@@ -40,75 +58,121 @@ export default function PruefungScreen({ onClose }: { onClose: () => void }) {
     if (phase === 'laeuft' && rest <= 0) abgeben();
   }, [rest, phase]);
 
-  const start = () => {
-    setFragen(mischen(FRAGEN));
+  const frei = pruefungFrei(app.premium, app.pruefungen.length);
+
+  const start = (a: Art) => {
+    if (!frei) return nav.push({ name: 'premium' });
+    setArt(a);
+    setFragen(stelleZusammen(ARTEN[a].fragen));
     setAntworten({});
     setIndex(0);
-    setRest(minuten * 60);
+    endeZeit.current = Date.now() + ARTEN[a].minuten * 60 * 1000;
+    setRest(ARTEN[a].minuten * 60);
     setPhase('laeuft');
   };
 
-  const abgeben = () => {
-    fragen.forEach((f) => speichereErgebnis(f.id, bewerte(f, antworten[f.id] ?? [])));
-    setPhase('fertig');
-  };
-
   const auswertung = useMemo(() => {
-    if (phase !== 'fertig') return null;
     let punkte = 0, max = 0;
     const proGebiet: Record<string, { punkte: number; max: number }> = {};
+    const falsche: { frage: Frage; auswahl: number[] }[] = [];
     for (const f of fragen) {
-      const e = bewerte(f, antworten[f.id] ?? []);
+      const auswahl = antworten[f.id] ?? [];
+      const e = bewerte(f, auswahl);
       punkte += e.punkte; max += e.max;
       const g = (proGebiet[f.sachgebiet] ??= { punkte: 0, max: 0 });
       g.punkte += e.punkte; g.max += e.max;
+      if (e.punkte < e.max) falsche.push({ frage: f, auswahl });
     }
-    return { punkte, max, proGebiet, bestanden: max > 0 && (punkte / max) * 100 >= PRUEFUNG.bestehenProzent };
-  }, [phase]);
+    // Wie IHK: bestanden ab 50 % der Punkte (60 von 120)
+    return { punkte, max, proGebiet, falsche, bestanden: max > 0 && (punkte / max) * 100 >= PRUEFUNG.bestehenProzent };
+  }, [fragen, antworten]);
+
+  function abgeben() {
+    if (phase !== 'laeuft') return;
+    for (const f of fragen) {
+      const auswahl = antworten[f.id];
+      if (auswahl?.length) app.beantworte(f, bewerte(f, auswahl));
+    }
+    app.speicherePruefung({ datum: heute(), punkte: auswertung.punkte, max: auswertung.max, bestanden: auswertung.bestanden, fragen: fragen.length });
+    setUebersicht(false);
+    setPhase('fertig');
+  }
+
+  const unbeantwortet = fragen.filter((f) => !antworten[f.id]?.length).length;
+  const abgebenFragen = () => {
+    if (!unbeantwortet) return abgeben();
+    Alert.alert(
+      'Prüfung abgeben?',
+      `Du hast ${unbeantwortet} ${unbeantwortet === 1 ? 'Frage' : 'Fragen'} noch nicht beantwortet. Diese zählen 0 Punkte.`,
+      [{ text: 'Weiter bearbeiten', style: 'cancel' }, { text: 'Abgeben', style: 'destructive', onPress: abgeben }]
+    );
+  };
+  const abbrechen = () =>
+    Alert.alert('Prüfung abbrechen?', 'Dein Ergebnis wird nicht gespeichert.', [
+      { text: 'Weitermachen', style: 'cancel' },
+      { text: 'Abbrechen', style: 'destructive', onPress: nav.zurueck },
+    ]);
 
   if (phase === 'intro') {
     return (
       <SafeAreaView style={{ flex: 1, backgroundColor: C.bg }}>
-        <ScreenHeader title="Prüfungssimulation" onClose={onClose} />
+        <ScreenHeader title="Prüfungssimulation" onClose={nav.zurueck} art="schliessen" />
         <ScrollView contentContainerStyle={{ padding: 20, gap: 14 }}>
           <Card>
-            <Ionicons name="timer-outline" size={32} color={C.primary} />
-            <Text style={[s.h2, { marginTop: 10 }]}>So läuft die Simulation</Text>
+            <Text style={s.h2}>So läuft es ab</Text>
             <View style={{ marginTop: 12, gap: 10 }}>
-              <Regel icon="help-circle-outline" text={`${FRAGEN.length} Fragen aus allen Sachgebieten`} />
-              <Regel icon="time-outline" text={`${minuten} Minuten Zeit`} />
-              <Regel icon="ribbon-outline" text={`Bestanden ab ${PRUEFUNG.bestehenProzent} % der Punkte`} />
+              <Regel icon="layers-outline" text="Fragen aus allen 7 Sachgebieten, verteilt wie in der echten Prüfung" />
+              <Regel icon="time-outline" text="Die Zeit läuft – am Ende wird automatisch abgegeben" />
+              <Regel icon="ribbon-outline" text={`Bestanden ab ${PRUEFUNG.bestehenProzent} % der Punkte (bei der IHK 60 von ${PRUEFUNG.punkte})`} />
               <Regel icon="language-outline" text="Nur Deutsch – keine Übersetzungen und keine Erklärungen, wie in der echten Prüfung" />
+              <Regel icon="grid-outline" text="Du kannst Fragen überspringen und später über die Übersicht zurückkommen" />
             </View>
           </Card>
-          <Text style={[s.muted, { paddingHorizontal: 4 }]}>
-            Die echte IHK-Prüfung hat {PRUEFUNG.fragen} Fragen, {PRUEFUNG.punkte} Punkte und {PRUEFUNG.minuten} Minuten. Im Prototyp ist die Simulation verkürzt.
-          </Text>
+          {(Object.keys(ARTEN) as Art[]).map((a) => (
+            <Pressable key={a} onPress={() => start(a)} style={({ pressed }) => pressed && { opacity: 0.85 }}>
+              <Card style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <IconBox icon={a === 'echt' ? 'timer-outline' : 'flash-outline'} farbe={a === 'echt' ? C.danger : '#6D5BD0'} />
+                <View style={{ flex: 1, marginLeft: 12 }}>
+                  <Text style={s.h3}>{ARTEN[a].titel}</Text>
+                  <Text style={s.muted}>{ARTEN[a].text}</Text>
+                </View>
+                <Ionicons name={frei ? 'play-circle' : 'lock-closed'} size={frei ? 30 : 20} color={frei ? C.primary : C.gold} />
+              </Card>
+            </Pressable>
+          ))}
+          {!app.premium ? (
+            <Text style={[s.muted, { paddingHorizontal: 4 }]}>
+              {frei ? `Gratis: ${PREMIUM.gratisPruefungen} Simulation. Danach mit Premium unbegrenzt.` : 'Deine Gratis-Simulation ist verbraucht. Mit Premium unbegrenzt.'}
+            </Text>
+          ) : null}
         </ScrollView>
-        <View style={{ padding: 20 }}>
-          <Button title="Prüfung starten" icon="play" onPress={start} />
-        </View>
       </SafeAreaView>
     );
   }
 
-  if (phase === 'fertig' && auswertung) {
-    const pct = auswertung.max ? Math.round((auswertung.punkte / auswertung.max) * 100) : 0;
+  if (phase === 'fertig') {
+    const a = auswertung;
+    const pct = a.max ? Math.round((a.punkte / a.max) * 100) : 0;
+    // Hochgerechnet auf die echte Prüfung mit 120 Punkten
+    const hochgerechnet = Math.round((pct / 100) * PRUEFUNG.punkte);
     return (
       <SafeAreaView style={{ flex: 1, backgroundColor: C.bg }}>
-        <ScreenHeader title="Ergebnis" onClose={onClose} />
+        <ScreenHeader title="Ergebnis" onClose={nav.zurueck} art="schliessen" />
         <ScrollView contentContainerStyle={{ padding: 20, gap: 14 }}>
-          <Card style={{ alignItems: 'center', backgroundColor: auswertung.bestanden ? C.successSoft : C.dangerSoft }}>
-            <Ionicons name={auswertung.bestanden ? 'checkmark-circle' : 'close-circle'} size={52} color={auswertung.bestanden ? C.success : C.danger} />
-            <Text style={[s.h1, { marginTop: 8 }]}>{auswertung.bestanden ? 'Bestanden' : 'Nicht bestanden'}</Text>
-            <Text style={[s.body, { marginTop: 4 }]}>{auswertung.punkte} von {auswertung.max} Punkten ({pct} %)</Text>
+          <Card style={{ alignItems: 'center', backgroundColor: a.bestanden ? C.successSoft : C.dangerSoft }}>
+            <Ionicons name={a.bestanden ? 'checkmark-circle' : 'close-circle'} size={56} color={a.bestanden ? C.success : C.danger} />
+            <Text style={[s.h1, { marginTop: 8 }]}>{a.bestanden ? 'Bestanden' : 'Nicht bestanden'}</Text>
+            <Text style={[s.body, { marginTop: 4 }]}>{a.punkte} von {a.max} Punkten ({pct} %)</Text>
+            {art === 'kurz' ? (
+              <Text style={[s.muted, { marginTop: 4 }]}>Das wären ca. {hochgerechnet} von {PRUEFUNG.punkte} Punkten in der echten Prüfung.</Text>
+            ) : null}
           </Card>
           <Card>
             <Text style={[s.h3, { marginBottom: 12 }]}>Nach Sachgebieten</Text>
             <View style={{ gap: 14 }}>
-              {SACHGEBIETE.filter((sg) => auswertung.proGebiet[sg.id]).map((sg) => {
-                const g = auswertung.proGebiet[sg.id];
-                const q = g.punkte / g.max;
+              {SACHGEBIETE.filter((sg) => a.proGebiet[sg.id]).map((sg) => {
+                const g = a.proGebiet[sg.id];
+                const q = g.max ? g.punkte / g.max : 0;
                 return (
                   <View key={sg.id}>
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 6 }}>
@@ -120,30 +184,51 @@ export default function PruefungScreen({ onClose }: { onClose: () => void }) {
                 );
               })}
             </View>
+            <Text style={[s.muted, { marginTop: 14, fontSize: 13 }]}>Rot = unter 50 %. Diese Sachgebiete solltest du noch üben.</Text>
           </Card>
         </ScrollView>
         <View style={{ padding: 20, gap: 10 }}>
-          <Button title="Noch einmal" variant="secondary" onPress={start} />
-          <Button title="Fertig" onPress={onClose} />
+          {a.falsche.length ? (
+            <>
+              <Button
+                title={`Fehler ansehen (${a.falsche.length})`}
+                variant="secondary"
+                onPress={() => nav.push({ name: 'durchsicht', titel: 'Fehler aus der Prüfung', eintraege: a.falsche })}
+              />
+              <Button title="Fehler jetzt üben" icon="refresh" onPress={() => nav.ersetze({ name: 'quiz', fragen: a.falsche.map((x) => x.frage), titel: 'Fehler aus der Prüfung' })} />
+            </>
+          ) : (
+            <Button title="Fertig" onPress={nav.zurueck} />
+          )}
         </View>
       </SafeAreaView>
     );
   }
 
   const frage = fragen[index];
+  if (!frage) return null;
   const auswahl = antworten[frage.id] ?? [];
   const letzte = index + 1 >= fragen.length;
-  const knapp = rest < 60;
+  const knapp = rest < 5 * 60;
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: C.bg }}>
       <ScreenHeader
         title={`Frage ${index + 1} von ${fragen.length}`}
-        onClose={onClose}
-        right={<Text style={{ fontWeight: '700', color: knapp ? C.danger : C.text, fontVariant: ['tabular-nums'] }}>{mmss(Math.max(0, rest))}</Text>}
+        onClose={abbrechen}
+        art="schliessen"
+        right={
+          <Pressable onPress={() => setUebersicht(true)} hitSlop={12} accessibilityLabel="Übersicht">
+            <Ionicons name="grid-outline" size={22} color={C.text} />
+          </Pressable>
+        }
       />
-      <View style={{ paddingHorizontal: 20, marginBottom: 6 }}>
-        <ProgressBar value={(index + 1) / fragen.length} />
+      <View style={{ paddingHorizontal: 20, marginBottom: 6, flexDirection: 'row', alignItems: 'center' }}>
+        <View style={{ flex: 1 }}><ProgressBar value={(fragen.length - unbeantwortet) / fragen.length} /></View>
+        <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 12 }}>
+          <Ionicons name="time-outline" size={16} color={knapp ? C.danger : C.muted} />
+          <Text style={{ marginLeft: 4, fontWeight: '700', color: knapp ? C.danger : C.text, fontVariant: ['tabular-nums'] }}>{mmss(rest)}</Text>
+        </View>
       </View>
       <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
         <FrageKopf frage={frage} interaktiv={false} zeigeSchwierigkeit={false} />
@@ -155,20 +240,50 @@ export default function PruefungScreen({ onClose }: { onClose: () => void }) {
       <View style={{ flexDirection: 'row', gap: 12, padding: 16, borderTopWidth: 1, borderTopColor: C.border, backgroundColor: C.card }}>
         <Button title="Zurück" variant="secondary" onPress={() => setIndex(index - 1)} disabled={index === 0} style={{ flex: 1 }} />
         {letzte ? (
-          <Button title="Abgeben" icon="checkmark" onPress={abgeben} disabled={!auswahl.length} style={{ flex: 2 }} />
+          <Button title="Abgeben" icon="checkmark" onPress={abgebenFragen} style={{ flex: 2 }} />
         ) : (
-          <Button title="Weiter" icon="arrow-forward" onPress={() => setIndex(index + 1)} disabled={!auswahl.length} style={{ flex: 2 }} />
+          <Button title={auswahl.length ? 'Weiter' : 'Überspringen'} icon="arrow-forward" onPress={() => setIndex(index + 1)} style={{ flex: 2 }} />
         )}
       </View>
+
+      {/* Übersicht: alle Fragen als Kästchen, zum Springen */}
+      <Modal visible={uebersicht} transparent animationType="slide" onRequestClose={() => setUebersicht(false)}>
+        <Pressable style={{ flex: 1, backgroundColor: 'rgba(15,23,42,0.35)' }} onPress={() => setUebersicht(false)} />
+        <View style={{ backgroundColor: C.card, borderTopLeftRadius: 24, borderTopRightRadius: 24, padding: 20, paddingBottom: 36, maxHeight: '75%' }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
+            <Text style={[s.h3, { flex: 1 }]}>Übersicht · {unbeantwortet} offen</Text>
+            <Pressable onPress={() => setUebersicht(false)} hitSlop={12}><Ionicons name="close" size={24} color={C.muted} /></Pressable>
+          </View>
+          <ScrollView contentContainerStyle={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+            {fragen.map((f, i) => {
+              const fertig = !!antworten[f.id]?.length;
+              const aktuell = i === index;
+              return (
+                <Pressable
+                  key={f.id}
+                  onPress={() => { setIndex(i); setUebersicht(false); }}
+                  style={{
+                    width: 44, height: 44, borderRadius: 10, alignItems: 'center', justifyContent: 'center',
+                    backgroundColor: fertig ? C.primary : C.bg, borderWidth: 2, borderColor: aktuell ? C.text : 'transparent',
+                  }}
+                >
+                  <Text style={{ color: fertig ? '#fff' : C.text, fontWeight: '600' }}>{i + 1}</Text>
+                </Pressable>
+              );
+            })}
+          </ScrollView>
+          <Button title="Prüfung abgeben" icon="checkmark" onPress={abgebenFragen} style={{ marginTop: 16 }} />
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }
 
-function Regel({ icon, text }: { icon: keyof typeof Ionicons.glyphMap; text: string }) {
+function Regel({ icon, text }: { icon: any; text: string }) {
   return (
     <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
       <Ionicons name={icon} size={20} color={C.muted} />
-      <Text style={[s.body, { marginLeft: 10, flex: 1 }]}>{text}</Text>
+      <Text style={[s.body, { marginLeft: 10, flex: 1, fontSize: 15 }]}>{text}</Text>
     </View>
   );
 }

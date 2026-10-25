@@ -1,0 +1,99 @@
+import { useMemo } from 'react';
+import { FRAGEN, frageById } from './data/fragen';
+import { GLOSSAR } from './data/glossar';
+import { LERNBEGRIFFE } from './data/lernbegriffe';
+import { Frage, GlossarEintrag } from './data/types';
+import { heute, plusTage, tageZwischen } from './datum';
+import { frageFrei, karteFrei } from './premium';
+import { FrageStand, useApp } from './state';
+
+// Ein Tag zählt für die Lernserie ab so vielen erledigten Aufgaben (Fragen oder Karteikarten)
+export const SERIE_MIN = 10;
+export const ZIEL_OHNE_DATUM = 15;
+export const NEUE_KARTEN_PRO_RUNDE = 10;
+
+export const ALLE_KARTEN: GlossarEintrag[] = [...GLOSSAR, ...LERNBEGRIFFE];
+
+export function mischen<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Tagesziel: offene Fragen gleichmäßig auf die Tage bis zur Prüfung verteilen (mit Puffer für Wiederholung)
+export function berechneTagesziel(offen: number, tageBis: number | null): number {
+  if (tageBis === null || tageBis <= 0) return ZIEL_OHNE_DATUM;
+  const lernTage = Math.max(1, tageBis - 1); // letzter Tag vor der Prüfung bleibt frei für die Simulation
+  const roh = Math.ceil((offen * 1.3) / lernTage);
+  const gerundet = Math.ceil(roh / 5) * 5;
+  return Math.min(60, Math.max(10, gerundet));
+}
+
+export function berechneSerie(tage: Record<string, number>): number {
+  let tag = heute();
+  if ((tage[tag] ?? 0) < SERIE_MIN) tag = plusTage(tag, -1); // heute noch nicht geschafft → Serie läuft noch
+  let n = 0;
+  while ((tage[tag] ?? 0) >= SERIE_MIN) {
+    n++;
+    tag = plusTage(tag, -1);
+  }
+  return n;
+}
+
+export function quote(liste: Frage[], stand: Record<string, FrageStand>) {
+  let p = 0, m = 0;
+  for (const f of liste) {
+    const s = stand[f.id];
+    if (s) { p += s.punkte; m += s.max; }
+  }
+  return m ? p / m : null;
+}
+
+// Auswahl für „Heute lernen“: erst offene Fehler, dann neue Fragen, dann lange nicht gesehene
+export function waehleTagesFragen(pool: Frage[], stand: Record<string, FrageStand>, anzahl: number): Frage[] {
+  const fehler = mischen(pool.filter((f) => stand[f.id]?.fehlerOffen));
+  const neu = pool.filter((f) => !stand[f.id]);
+  const alt = pool
+    .filter((f) => stand[f.id] && !stand[f.id].fehlerOffen)
+    .sort((a, b) => (stand[a.id].zuletzt < stand[b.id].zuletzt ? -1 : 1));
+  const fehlerAnteil = fehler.slice(0, Math.ceil(anzahl / 2));
+  const rest = [...neu, ...alt].slice(0, anzahl - fehlerAnteil.length);
+  return mischen([...fehlerAnteil, ...rest]);
+}
+
+export function useLernstand() {
+  const app = useApp();
+  return useMemo(() => {
+    const d = heute();
+    const frei = FRAGEN.filter((f) => frageFrei(f, app.premium));
+    const bearbeitet = (liste: Frage[]) => liste.filter((f) => app.fragen[f.id]).length;
+    const fehler = frei.filter((f) => app.fragen[f.id]?.fehlerOffen);
+    const gemerkt = app.lesezeichen.map((id) => frageById(id)).filter((f): f is Frage => !!f && frageFrei(f, app.premium));
+    const offen = frei.filter((f) => !app.fragen[f.id] || app.fragen[f.id].fehlerOffen).length;
+
+    const tageBis = app.pruefungsDatum ? tageZwischen(d, app.pruefungsDatum) : null;
+    const ziel = berechneTagesziel(offen, tageBis);
+    const heuteErledigt = app.tage[d] ?? 0;
+    const serie = berechneSerie(app.tage);
+
+    const karten = ALLE_KARTEN.filter((k) => karteFrei(k, app.premium));
+    const kartenFaellig = karten.filter((k) => app.karten[k.id] && app.karten[k.id].faellig <= d);
+    const kartenNeu = karten.filter((k) => !app.karten[k.id]);
+    const kartenSicher = karten.filter((k) => (app.karten[k.id]?.box ?? 0) >= 3).length;
+
+    const letzteTage = Array.from({ length: 7 }, (_, i) => {
+      const t = plusTage(d, i - 6);
+      return { datum: t, anzahl: app.tage[t] ?? 0 };
+    });
+
+    return {
+      frei, bearbeitet, fehler, gemerkt, offen,
+      tageBis, ziel, heuteErledigt, serie, letzteTage,
+      karten, kartenFaellig, kartenNeu, kartenSicher,
+      lerntageGesamt: Object.values(app.tage).filter((n) => n >= SERIE_MIN).length,
+    };
+  }, [app.fragen, app.karten, app.tage, app.lesezeichen, app.premium, app.pruefungsDatum]);
+}

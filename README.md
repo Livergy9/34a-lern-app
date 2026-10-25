@@ -30,15 +30,26 @@ Alle Pakete stehen in `package.json`. Neue Pakete immer dort eintragen (auf GitH
 
 | Ordner / Datei | Inhalt |
 | --- | --- |
-| `src/data/fragen.ts` | Prüfungsfragen |
-| `src/data/glossar.ts` | Fachbegriffe mit Übersetzung (EN, RO) und Erklärung |
+| `src/data/fragen/` | Prüfungsfragen, eine Datei pro Sachgebiet |
+| `src/data/kapitel.ts` | Lernkapitel (kurze Texte pro Sachgebiet) |
+| `src/data/glossar.ts` | Schwierige Fachbegriffe (antippbar), mit Übersetzung EN/RO |
+| `src/data/lernbegriffe.ts` | Weitere Lernwörter, nur für Karteikarten |
 | `src/data/sachgebiete.ts` | Sachgebiete und Verteilung in der Prüfung |
-| `src/screens/` | Bildschirme (Start, Lernen, Quiz, Prüfung, Glossar, Einstellungen) |
+| `src/premium.ts` | Was gratis ist und was Premium ist, Preise |
+| `src/lernstand.ts` | Tagesziel, Lernserie, Statistik |
+| `src/state.tsx` | Gespeicherter Fortschritt (AsyncStorage), Punktebewertung |
+| `src/screens/` | Bildschirme |
 | `src/ui.tsx` | Farben und gemeinsame Bausteine |
-| `src/state.tsx` | App-Zustand und Punktebewertung |
+| `pruefung/` | Prüflisten für die Fragen + Text für ChatGPT |
+
+### Inhalte prüfen (Formfehler)
+
+```
+npx tsx scripts/pruefe-inhalte.ts
+```
 
 ### Fragenformat
 
-- Single Choice: 5 Antworten, genau 1 richtig. Multiple Choice: 6 Antworten, mehrere richtig (wie IHK seit 01.07.2025).
+- Single Choice: 5 Antworten, genau 1 richtig. Multiple Choice: 6 Antworten, 2–4 richtig (wie IHK seit 01.07.2025).
 - Fachbegriffe im Text markieren: `[[Notwehr]]` oder `[[Anzeigetext|glossar-id]]`. Sie werden in der App antippbar.
-- `geprueft: false` bleibt, bis die Frage fachlich kontrolliert ist.
+- `geprueft: false` bleibt, bis die Frage fachlich kontrolliert ist. `unsicher: true` = besonders genau prüfen.

@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Pressable, ScrollView, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { Frage } from '../data/types';
 import { sachgebietById } from '../data/sachgebiete';
+import { useNav } from '../nav';
 import { bewerte, Ergebnis, useApp } from '../state';
 import { begriffeIn, Button, C, Card, Chip, GlossarInhalt, ProgressBar, s, ScreenHeader, TermText } from '../ui';
 
@@ -37,6 +38,8 @@ export function AntwortListe({
             key={i}
             disabled={aufgedeckt}
             onPress={() => onWaehle(i)}
+            accessibilityRole={frage.typ === 'multi' ? 'checkbox' : 'radio'}
+            accessibilityState={{ checked: gewaehlt }}
             style={{ flexDirection: 'row', alignItems: 'center', borderWidth: 1.5, borderColor: border, backgroundColor: bg, borderRadius: 16, padding: 14 }}
           >
             <View style={{
@@ -59,8 +62,8 @@ export function FrageKopf({ frage, interaktiv, zeigeSchwierigkeit = true }: { fr
   return (
     <View>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 14 }}>
-        <Chip label={sg.kurz} icon={sg.icon as any} />
-        {zeigeSchwierigkeit ? <Chip label={SCHWIERIGKEIT[frage.schwierigkeit]} color={C.warn} bg={C.warnSoft} /> : null}
+        <Chip label={sg.kurz} icon={sg.icon as any} color={sg.farbe} bg={sg.farbe + '1A'} />
+        {zeigeSchwierigkeit ? <Chip label={SCHWIERIGKEIT[frage.schwierigkeit]} color={C.muted} bg={C.border} /> : null}
       </View>
       <TermText text={frage.text} interaktiv={interaktiv} style={{ fontSize: 21, lineHeight: 29, fontWeight: '700', color: C.text }} />
       <Text style={[s.muted, { marginTop: 8, marginBottom: 16 }]}>
@@ -70,94 +73,118 @@ export function FrageKopf({ frage, interaktiv, zeigeSchwierigkeit = true }: { fr
   );
 }
 
-export default function QuizScreen({ fragen, onClose }: { fragen: Frage[]; onClose: () => void }) {
-  const { speichereErgebnis } = useApp();
+// Erklärung, Rechtsgrundlage und Fachbegriffe nach dem Antworten (auch in der Prüfungs-Durchsicht genutzt)
+export function ErklaerungKarte({ frage, interaktiv = true }: { frage: Frage; interaktiv?: boolean }) {
+  const begriffe = begriffeIn([frage.text, ...frage.antworten, frage.erklaerung].join(' '));
+  return (
+    <View style={{ gap: 12 }}>
+      <Card>
+        <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 8 }}>
+          <Ionicons name="document-text-outline" size={20} color={C.primary} />
+          <Text style={[s.h3, { marginLeft: 8 }]}>Erklärung</Text>
+        </View>
+        <TermText text={frage.erklaerung} style={s.body} interaktiv={interaktiv} />
+        {frage.rechtsgrundlage ? (
+          <View style={{ marginTop: 14, backgroundColor: C.bg, borderRadius: 12, padding: 12, flexDirection: 'row', alignItems: 'center' }}>
+            <Ionicons name="library-outline" size={18} color={C.muted} />
+            <View style={{ marginLeft: 10, flex: 1 }}>
+              <Text style={{ fontWeight: '600', color: C.text }}>Rechtliche Grundlage</Text>
+              <Text style={s.muted}>{frage.rechtsgrundlage}</Text>
+            </View>
+          </View>
+        ) : null}
+      </Card>
+      {begriffe.length && interaktiv ? (
+        <Card>
+          <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
+            <Ionicons name="book-outline" size={20} color={C.primary} />
+            <Text style={[s.h3, { marginLeft: 8 }]}>{begriffe.length > 1 ? 'Fachbegriffe' : 'Fachbegriff'}</Text>
+          </View>
+          <View style={{ gap: 16 }}>
+            {begriffe.map((id) => <GlossarInhalt key={id} id={id} kompakt />)}
+          </View>
+        </Card>
+      ) : null}
+    </View>
+  );
+}
+
+export function LesezeichenKnopf({ frageId }: { frageId: string }) {
+  const { lesezeichen, toggleLesezeichen } = useApp();
+  const an = lesezeichen.includes(frageId);
+  return (
+    <Pressable onPress={() => toggleLesezeichen(frageId)} hitSlop={12} accessibilityLabel={an ? 'Merken aufheben' : 'Frage merken'}>
+      <Ionicons name={an ? 'bookmark' : 'bookmark-outline'} size={24} color={an ? C.gold : C.text} />
+    </Pressable>
+  );
+}
+
+type Antwort = { frage: Frage; ergebnis: Ergebnis };
+
+export default function QuizScreen({ fragen, titel }: { fragen: Frage[]; titel?: string }) {
+  const { beantworte } = useApp();
+  const nav = useNav();
+  const insets = useSafeAreaInsets();
+  const scrollRef = useRef<ScrollView>(null);
+  const sollScrollen = useRef(false);
   const [index, setIndex] = useState(0);
   const [auswahl, setAuswahl] = useState<number[]>([]);
   const [ergebnis, setErgebnis] = useState<Ergebnis | null>(null);
-  const [summe, setSumme] = useState({ punkte: 0, max: 0 });
+  const [antworten, setAntworten] = useState<Antwort[]>([]);
   const [fertig, setFertig] = useState(false);
 
-  if (fertig) {
-    const quote = summe.max ? summe.punkte / summe.max : 0;
-    return (
-      <SafeAreaView style={{ flex: 1, backgroundColor: C.bg }}>
-        <ScreenHeader title="Auswertung" onClose={onClose} />
-        <View style={{ flex: 1, padding: 20, justifyContent: 'center' }}>
-          <Card style={{ alignItems: 'center', padding: 28 }}>
-            <Ionicons name={quote >= 0.5 ? 'trophy-outline' : 'refresh-outline'} size={48} color={quote >= 0.5 ? C.success : C.warn} />
-            <Text style={[s.h1, { marginTop: 12 }]}>{Math.round(quote * 100)} %</Text>
-            <Text style={[s.muted, { marginTop: 6 }]}>{summe.punkte} von {summe.max} Punkten</Text>
-            <Text style={[s.body, { marginTop: 16, textAlign: 'center' }]}>
-              {quote >= 0.5 ? 'Gut gemacht! Bleib dran.' : 'Wiederhole die Fragen, die noch nicht sitzen.'}
-            </Text>
-          </Card>
-        </View>
-        <View style={{ padding: 20 }}>
-          <Button title="Fertig" onPress={onClose} />
-        </View>
-      </SafeAreaView>
-    );
-  }
+  if (fertig) return <QuizAuswertung antworten={antworten} titel={titel} />;
 
   const frage = fragen[index];
   const aufgedeckt = ergebnis !== null;
+  const letzte = index + 1 >= fragen.length;
 
   const pruefen = () => {
     const e = bewerte(frage, auswahl);
+    sollScrollen.current = true;
     setErgebnis(e);
-    speichereErgebnis(frage.id, e);
-    setSumme((x) => ({ punkte: x.punkte + e.punkte, max: x.max + e.max }));
+    beantworte(frage, e);
+    setAntworten((a) => [...a, { frage, ergebnis: e }]);
   };
   const weiter = () => {
-    if (index + 1 >= fragen.length) return setFertig(true);
+    if (letzte) return setFertig(true);
     setIndex(index + 1);
     setAuswahl([]);
     setErgebnis(null);
+    scrollRef.current?.scrollTo({ y: 0, animated: false });
   };
 
-  const begriffe = begriffeIn([frage.text, ...frage.antworten, frage.erklaerung].join(' '));
+  const voll = ergebnis && ergebnis.punkte === ergebnis.max;
+  const teil = ergebnis && !voll && ergebnis.punkte > 0;
+  const leisteFarbe = voll ? C.success : teil ? C.warn : C.danger;
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: C.bg }}>
-      <ScreenHeader title={`Frage ${index + 1} von ${fragen.length}`} onClose={onClose} />
+    <SafeAreaView style={{ flex: 1, backgroundColor: C.bg }} edges={['top']}>
+      <ScreenHeader
+        title={`Frage ${index + 1} von ${fragen.length}`}
+        onClose={nav.zurueck}
+        art="schliessen"
+        right={<LesezeichenKnopf frageId={frage.id} />}
+      />
       <View style={{ paddingHorizontal: 20, marginBottom: 6 }}>
         <ProgressBar value={(index + (aufgedeckt ? 1 : 0)) / fragen.length} />
       </View>
-      <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
-        {aufgedeckt && ergebnis ? <ErgebnisBanner e={ergebnis} /> : null}
+      <ScrollView ref={scrollRef} contentContainerStyle={{ padding: 20, paddingBottom: 32 }}>
         <FrageKopf frage={frage} interaktiv />
         <AntwortListe frage={frage} auswahl={auswahl} aufgedeckt={aufgedeckt} interaktiv onWaehle={(i) => setAuswahl(waehle(frage, auswahl, i))} />
 
         {aufgedeckt ? (
-          <View style={{ gap: 12, marginTop: 20 }}>
-            <Card>
-              <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 8 }}>
-                <Ionicons name="document-text-outline" size={20} color={C.primary} />
-                <Text style={[s.h3, { marginLeft: 8 }]}>Erklärung</Text>
-              </View>
-              <TermText text={frage.erklaerung} style={s.body} />
-              {frage.rechtsgrundlage ? (
-                <View style={{ marginTop: 14, backgroundColor: C.bg, borderRadius: 12, padding: 12, flexDirection: 'row', alignItems: 'center' }}>
-                  <Ionicons name="library-outline" size={18} color={C.muted} />
-                  <View style={{ marginLeft: 10 }}>
-                    <Text style={{ fontWeight: '600', color: C.text }}>Rechtliche Grundlage</Text>
-                    <Text style={s.muted}>{frage.rechtsgrundlage}</Text>
-                  </View>
-                </View>
-              ) : null}
-            </Card>
-            {begriffe.length ? (
-              <Card>
-                <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
-                  <Ionicons name="book-outline" size={20} color={C.primary} />
-                  <Text style={[s.h3, { marginLeft: 8 }]}>{begriffe.length > 1 ? 'Fachbegriffe' : 'Fachbegriff'}</Text>
-                </View>
-                <View style={{ gap: 16 }}>
-                  {begriffe.map((id) => <GlossarInhalt key={id} id={id} kompakt />)}
-                </View>
-              </Card>
-            ) : null}
+          <View
+            style={{ marginTop: 20 }}
+            onLayout={(e) => {
+              // Nach dem Antworten automatisch zur Erklärung scrollen
+              if (!sollScrollen.current) return;
+              sollScrollen.current = false;
+              const y = e.nativeEvent.layout.y;
+              setTimeout(() => scrollRef.current?.scrollTo({ y: Math.max(0, y - 12), animated: true }), 50);
+            }}
+          >
+            <ErklaerungKarte frage={frage} />
           </View>
         ) : (
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 16 }}>
@@ -166,32 +193,70 @@ export default function QuizScreen({ fragen, onClose }: { fragen: Frage[]; onClo
           </View>
         )}
       </ScrollView>
-      <View style={{ flexDirection: 'row', gap: 12, padding: 16, borderTopWidth: 1, borderTopColor: C.border, backgroundColor: C.card }}>
-        {aufgedeckt ? (
-          <Button title={index + 1 >= fragen.length ? 'Auswertung' : 'Nächste Frage'} icon="arrow-forward" onPress={weiter} style={{ flex: 1 }} />
-        ) : (
-          <Button title="Antwort prüfen" icon="arrow-forward" onPress={pruefen} disabled={auswahl.length === 0} style={{ flex: 1 }} />
-        )}
-      </View>
+
+      {aufgedeckt && ergebnis ? (
+        // Farbige Leiste unten: grün = richtig, orange = teilweise, rot = falsch
+        <View style={{ backgroundColor: leisteFarbe, paddingHorizontal: 16, paddingTop: 14, paddingBottom: 14 + insets.bottom, borderTopLeftRadius: 20, borderTopRightRadius: 20 }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
+            <View style={{ width: 36, height: 36, borderRadius: 18, backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center' }}>
+              <Ionicons name={voll ? 'checkmark' : teil ? 'remove' : 'close'} size={24} color={leisteFarbe} />
+            </View>
+            <View style={{ marginLeft: 12, flex: 1 }}>
+              <Text style={{ fontSize: 20, fontWeight: '800', color: '#fff' }}>{voll ? 'Richtig!' : teil ? 'Teilweise richtig' : 'Falsch'}</Text>
+              <Text style={{ color: '#fff', opacity: 0.9 }}>
+                {ergebnis.punkte} von {ergebnis.max} {ergebnis.max === 1 ? 'Punkt' : 'Punkten'} · Erklärung siehe oben
+              </Text>
+            </View>
+          </View>
+          <Button title={letzte ? 'Zur Auswertung' : 'Weiter'} icon="arrow-forward" variant="weiss" farbe={leisteFarbe} onPress={weiter} />
+        </View>
+      ) : (
+        <View style={{ padding: 16, paddingBottom: 16 + insets.bottom, borderTopWidth: 1, borderTopColor: C.border, backgroundColor: C.card }}>
+          <Button title="Antwort prüfen" icon="arrow-forward" onPress={pruefen} disabled={auswahl.length === 0} />
+        </View>
+      )}
     </SafeAreaView>
   );
 }
 
-function ErgebnisBanner({ e }: { e: Ergebnis }) {
-  const voll = e.punkte === e.max;
-  const teil = !voll && e.punkte > 0;
-  const farbe = voll ? C.success : teil ? C.warn : C.danger;
-  const bg = voll ? C.successSoft : teil ? C.warnSoft : C.dangerSoft;
-  const titel = voll ? 'Richtig!' : teil ? 'Teilweise richtig' : 'Leider falsch';
+function QuizAuswertung({ antworten, titel }: { antworten: Antwort[]; titel?: string }) {
+  const nav = useNav();
+  const punkte = antworten.reduce((n, a) => n + a.ergebnis.punkte, 0);
+  const max = antworten.reduce((n, a) => n + a.ergebnis.max, 0);
+  const richtig = antworten.filter((a) => a.ergebnis.punkte === a.ergebnis.max).length;
+  const falsche = antworten.filter((a) => a.ergebnis.punkte < a.ergebnis.max).map((a) => a.frage);
+  const quote = max ? punkte / max : 0;
+  const gut = quote >= 0.5;
+
   return (
-    <View style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: bg, borderRadius: 18, padding: 16, marginBottom: 18 }}>
-      <View style={{ width: 44, height: 44, borderRadius: 22, backgroundColor: farbe, alignItems: 'center', justifyContent: 'center' }}>
-        <Ionicons name={voll ? 'checkmark' : teil ? 'remove' : 'close'} size={26} color="#fff" />
+    <SafeAreaView style={{ flex: 1, backgroundColor: C.bg }}>
+      <ScreenHeader title={titel ?? 'Auswertung'} onClose={nav.zurueck} art="schliessen" />
+      <ScrollView contentContainerStyle={{ padding: 20, flexGrow: 1, justifyContent: 'center' }}>
+        <Card style={{ alignItems: 'center', padding: 28 }}>
+          <Ionicons name={gut ? 'trophy-outline' : 'refresh-outline'} size={52} color={gut ? C.gold : C.warn} />
+          <Text style={[s.h1, { marginTop: 12 }]}>{Math.round(quote * 100)} %</Text>
+          <Text style={[s.muted, { marginTop: 6 }]}>{richtig} von {antworten.length} Fragen ganz richtig · {punkte} von {max} Punkten</Text>
+          <Text style={[s.body, { marginTop: 16, textAlign: 'center' }]}>
+            {quote >= 0.8 ? 'Sehr gut! Das sitzt schon richtig.' : gut ? 'Gut gemacht! Bleib dran.' : 'Nicht schlimm – wiederhole die Fragen, die noch nicht sitzen.'}
+          </Text>
+          {falsche.length ? (
+            <Text style={[s.muted, { marginTop: 10, textAlign: 'center' }]}>
+              Falsche Fragen landen automatisch unter „Meine Fehler“, bis du sie zweimal hintereinander richtig hast.
+            </Text>
+          ) : null}
+        </Card>
+      </ScrollView>
+      <View style={{ padding: 20, gap: 10 }}>
+        {falsche.length ? (
+          <Button
+            title={`Falsche nochmal üben (${falsche.length})`}
+            icon="refresh"
+            variant="secondary"
+            onPress={() => nav.ersetze({ name: 'quiz', fragen: falsche, titel: 'Fehler wiederholen' })}
+          />
+        ) : null}
+        <Button title="Fertig" onPress={nav.zurueck} />
       </View>
-      <View style={{ marginLeft: 14 }}>
-        <Text style={{ fontSize: 20, fontWeight: '800', color: C.text }}>{titel}</Text>
-        <Text style={s.muted}>{e.punkte} von {e.max} {e.max === 1 ? 'Punkt' : 'Punkten'}</Text>
-      </View>
-    </View>
+    </SafeAreaView>
   );
 }
