@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, Pressable, ScrollView, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { schoen } from '../datum';
-import { mischen, SERIE_MIN, useLernstand, waehleTagesFragen } from '../lernstand';
+import { mischen, useLernstand, waehleTagesFragen } from '../lernstand';
 import { useNav } from '../nav';
 import { useApp } from '../state';
 import { Abschnitt, Button, C, Card, IconBox, IconName, ProgressBar, s, Zeile } from '../ui';
@@ -16,7 +16,7 @@ export default function StartScreen() {
   const gesamt = ls.bearbeitet(ls.frei);
 
   const heuteLernen = () => {
-    const anzahl = zielErreicht ? 10 : Math.min(20, Math.max(5, ls.ziel - ls.heuteErledigt));
+    const anzahl = zielErreicht ? 10 : Math.min(ls.ziel, Math.max(5, ls.ziel - ls.heuteErledigt));
     nav.starteQuiz(waehleTagesFragen(ls.frei, app.fragen, anzahl), 'Heute lernen');
   };
 
@@ -29,9 +29,14 @@ export default function StartScreen() {
           <Text style={[s.h1, { fontSize: 28 }]}>34a Easy</Text>
           <Text style={[s.muted, { marginTop: 1 }]}>Sachkundeprüfung nach § 34a GewO</Text>
         </View>
-        <Pressable onPress={() => nav.push({ name: 'statistik' })} style={{ alignItems: 'center', paddingLeft: 8 }} accessibilityLabel={`Lernserie ${ls.serie} Tage`}>
-          <Ionicons name="flame" size={28} color={ls.serie > 0 ? '#F97316' : C.border} />
-          <Text style={{ fontWeight: '800', color: ls.serie > 0 ? C.text : C.faint, fontSize: 15 }}>{ls.serie}</Text>
+        {/* Lernserie: schlichtes Kalender-Symbol mit Zahl (kein Flammen-Emoji) */}
+        <Pressable
+          onPress={() => nav.push({ name: 'statistik' })}
+          accessibilityLabel={`Lernserie ${ls.serie} Tage`}
+          style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: ls.serie > 0 ? C.primarySoft : C.border, borderRadius: 12, paddingHorizontal: 10, paddingVertical: 7, marginLeft: 8 }}
+        >
+          <Ionicons name="calendar-outline" size={18} color={ls.serie > 0 ? C.primary : C.faint} />
+          <Text style={{ fontWeight: '700', color: ls.serie > 0 ? C.primary : C.faint, fontSize: 15, marginLeft: 6 }}>{ls.serie}</Text>
         </Pressable>
       </View>
 
@@ -42,7 +47,7 @@ export default function StartScreen() {
           <Text style={{ color: '#fff', marginLeft: 8, flex: 1, fontSize: 15 }}>
             {ls.tageBis !== null && ls.tageBis > 0
               ? `Prüfung am ${schoen(app.pruefungsDatum!)}`
-              : ls.tageBis === 0 ? 'Heute ist deine Prüfung – viel Erfolg!' : 'Prüfungsdatum eintragen'}
+              : ls.tageBis === 0 ? 'Heute ist deine Prüfung – viel Erfolg!' : `Tagesziel: ${ls.ziel} Aufgaben`}
           </Text>
           <Ionicons name="chevron-forward" size={18} color="#fff" />
         </Pressable>
@@ -52,7 +57,7 @@ export default function StartScreen() {
           </Text>
         ) : null}
         <Text style={{ color: '#fff', fontSize: 17, fontWeight: '600', marginTop: ls.tageBis ? 4 : 10 }}>
-          {zielErreicht ? 'Tagesziel geschafft! 🎉' : `Heute: ${ls.heuteErledigt} von ${ls.ziel} Aufgaben`}
+          {zielErreicht ? 'Tagesziel geschafft!' : `Heute: ${ls.heuteErledigt} von ${ls.ziel} Aufgaben`}
         </Text>
         <View style={{ marginTop: 10 }}>
           <ProgressBar value={anteil} color="#fff" bg="rgba(255,255,255,0.3)" height={10} />
@@ -65,7 +70,7 @@ export default function StartScreen() {
           style={{ marginTop: 16 }}
         />
         <Text style={{ color: '#fff', opacity: 0.85, fontSize: 13, marginTop: 10 }}>
-          {ls.fehler.length ? `Mit ${Math.min(ls.fehler.length, 10)} Fehlern zum Wiederholen. ` : ''}Ein Tag zählt für die Serie ab {SERIE_MIN} Aufgaben.
+          {ls.fehler.length ? `Mit ${Math.min(ls.fehler.length, 10)} Fehlern zum Wiederholen. ` : ''}Schaffst du dein Tagesziel, wächst deine Lernserie.
         </Text>
       </Card>
 

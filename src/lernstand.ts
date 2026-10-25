@@ -7,9 +7,7 @@ import { heute, plusTage, tageZwischen } from './datum';
 import { frageFrei, karteFrei } from './premium';
 import { FrageStand, useApp } from './state';
 
-// Ein Tag zählt für die Lernserie ab so vielen erledigten Aufgaben (Fragen oder Karteikarten)
-export const SERIE_MIN = 10;
-export const ZIEL_OHNE_DATUM = 15;
+// Ein Tag zählt für die Lernserie, wenn das gewählte Tagesziel erreicht wurde (siehe state.tsx, zielTage)
 export const NEUE_KARTEN_PRO_RUNDE = 10;
 
 export const ALLE_KARTEN: GlossarEintrag[] = [...GLOSSAR, ...LERNBEGRIFFE];
@@ -23,20 +21,22 @@ export function mischen<T>(arr: T[]): T[] {
   return a;
 }
 
-// Tagesziel: offene Fragen gleichmäßig auf die Tage bis zur Prüfung verteilen (mit Puffer für Wiederholung)
-export function berechneTagesziel(offen: number, tageBis: number | null): number {
-  if (tageBis === null || tageBis <= 0) return ZIEL_OHNE_DATUM;
+// Empfehlung bei eingetragenem Prüfungsdatum: offene Fragen auf die Tage bis zur Prüfung verteilen (mit Puffer).
+// Das echte Tagesziel wählt der Nutzer selbst (10/20/30). Ohne Datum: keine Empfehlung.
+export function empfohlenesZiel(offen: number, tageBis: number | null): number | null {
+  if (tageBis === null || tageBis <= 0) return null;
   const lernTage = Math.max(1, tageBis - 1); // letzter Tag vor der Prüfung bleibt frei für die Simulation
   const roh = Math.ceil((offen * 1.3) / lernTage);
   const gerundet = Math.ceil(roh / 5) * 5;
   return Math.min(60, Math.max(10, gerundet));
 }
 
-export function berechneSerie(tage: Record<string, number>): number {
+export function berechneSerie(zielTage: string[]): number {
+  const set = new Set(zielTage);
   let tag = heute();
-  if ((tage[tag] ?? 0) < SERIE_MIN) tag = plusTage(tag, -1); // heute noch nicht geschafft → Serie läuft noch
+  if (!set.has(tag)) tag = plusTage(tag, -1); // heute noch nicht geschafft → Serie läuft noch
   let n = 0;
-  while ((tage[tag] ?? 0) >= SERIE_MIN) {
+  while (set.has(tag)) {
     n++;
     tag = plusTage(tag, -1);
   }
@@ -75,9 +75,10 @@ export function useLernstand() {
     const offen = frei.filter((f) => !app.fragen[f.id] || app.fragen[f.id].fehlerOffen).length;
 
     const tageBis = app.pruefungsDatum ? tageZwischen(d, app.pruefungsDatum) : null;
-    const ziel = berechneTagesziel(offen, tageBis);
+    const ziel = app.tagesziel;
+    const empfohlen = empfohlenesZiel(offen, tageBis);
     const heuteErledigt = app.tage[d] ?? 0;
-    const serie = berechneSerie(app.tage);
+    const serie = berechneSerie(app.zielTage);
 
     const karten = ALLE_KARTEN.filter((k) => karteFrei(k, app.premium));
     const kartenFaellig = karten.filter((k) => app.karten[k.id] && app.karten[k.id].faellig <= d);
@@ -86,14 +87,14 @@ export function useLernstand() {
 
     const letzteTage = Array.from({ length: 7 }, (_, i) => {
       const t = plusTage(d, i - 6);
-      return { datum: t, anzahl: app.tage[t] ?? 0 };
+      return { datum: t, anzahl: app.tage[t] ?? 0, geschafft: app.zielTage.includes(t) };
     });
 
     return {
       frei, bearbeitet, fehler, gemerkt, offen,
-      tageBis, ziel, heuteErledigt, serie, letzteTage,
+      tageBis, ziel, empfohlen, heuteErledigt, serie, letzteTage,
       karten, kartenFaellig, kartenNeu, kartenSicher,
-      lerntageGesamt: Object.values(app.tage).filter((n) => n >= SERIE_MIN).length,
+      lerntageGesamt: app.zielTage.length,
     };
-  }, [app.fragen, app.karten, app.tage, app.lesezeichen, app.premium, app.pruefungsDatum]);
+  }, [app.fragen, app.karten, app.tage, app.zielTage, app.tagesziel, app.lesezeichen, app.premium, app.pruefungsDatum]);
 }

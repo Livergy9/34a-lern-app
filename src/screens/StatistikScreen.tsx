@@ -5,10 +5,11 @@ import { Ionicons } from '@expo/vector-icons';
 import { FRAGEN, fragenFuer } from '../data/fragen';
 import { SACHGEBIETE } from '../data/sachgebiete';
 import { kurz, WOCHENTAGE_KURZ, ausText } from '../datum';
-import { quote, SERIE_MIN, useLernstand } from '../lernstand';
+import { quote, useLernstand, waehleTagesFragen } from '../lernstand';
+import { frageFrei } from '../premium';
 import { useNav } from '../nav';
 import { useApp } from '../state';
-import { Abschnitt, C, Card, Leer, ProgressBar, s, ScreenHeader } from '../ui';
+import { Abschnitt, Button, C, Card, Leer, ProgressBar, s, ScreenHeader } from '../ui';
 
 export default function StatistikScreen() {
   const app = useApp();
@@ -16,14 +17,26 @@ export default function StatistikScreen() {
   const ls = useLernstand();
   const gesamtQuote = quote(FRAGEN, app.fragen);
   const bearbeitet = FRAGEN.filter((f) => app.fragen[f.id]).length;
-  const maxTag = Math.max(SERIE_MIN, ...ls.letzteTage.map((t) => t.anzahl));
+  // Schwächstes Sachgebiet: niedrigste Quote, aber erst ab 5 bearbeiteten Fragen (sonst zu wenig Daten)
+  const schwach = SACHGEBIETE.map((sg) => {
+    const liste = fragenFuer(sg.id);
+    return { sg, q: quote(liste, app.fragen), b: liste.filter((f) => app.fragen[f.id]).length };
+  })
+    .filter((x) => x.q !== null && x.b >= 5 && x.q < 0.8)
+    .sort((a, b) => (a.q ?? 0) - (b.q ?? 0))[0];
+  const uebeSchwach = () => {
+    if (!schwach) return;
+    const pool = fragenFuer(schwach.sg.id).filter((f) => frageFrei(f, app.premium));
+    nav.starteQuiz(waehleTagesFragen(pool, app.fragen, 10), `${schwach.sg.kurz} üben`);
+  };
+  const maxTag = Math.max(ls.ziel, ...ls.letzteTage.map((t) => t.anzahl));
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: C.bg }} edges={['top', 'bottom']}>
       <ScreenHeader title="Statistik" onClose={nav.zurueck} />
       <ScrollView contentContainerStyle={[s.seite, { paddingTop: 4 }]}>
         <View style={{ flexDirection: 'row', gap: 10 }}>
-          <Kachel icon="flame" farbe="#F97316" zahl={String(ls.serie)} text={ls.serie === 1 ? 'Tag Serie' : 'Tage Serie'} />
+          <Kachel icon="calendar-outline" farbe={C.primary} zahl={String(ls.serie)} text={ls.serie === 1 ? 'Tag Serie' : 'Tage Serie'} />
           <Kachel icon="checkmark-done" farbe={C.success} zahl={gesamtQuote === null ? '–' : `${Math.round(gesamtQuote * 100)} %`} text="richtig" />
           <Kachel icon="help-circle" farbe={C.primary} zahl={`${bearbeitet}`} text={`von ${FRAGEN.length} Fragen`} />
         </View>
@@ -33,7 +46,7 @@ export default function StatistikScreen() {
           <View style={{ flexDirection: 'row', alignItems: 'flex-end', height: 120, gap: 8 }}>
             {ls.letzteTage.map((t) => {
               const h = Math.max(4, (t.anzahl / maxTag) * 100);
-              const geschafft = t.anzahl >= SERIE_MIN;
+              const geschafft = t.geschafft;
               const wt = WOCHENTAGE_KURZ[(ausText(t.datum).getDay() + 6) % 7];
               return (
                 <View key={t.datum} style={{ flex: 1, alignItems: 'center' }}>
@@ -44,10 +57,22 @@ export default function StatistikScreen() {
               );
             })}
           </View>
-          <Text style={[s.muted, { fontSize: 12, marginTop: 12 }]}>Grün = mindestens {SERIE_MIN} Aufgaben (zählt für die Serie). Insgesamt {ls.lerntageGesamt} Lerntage.</Text>
+          <Text style={[s.muted, { fontSize: 12, marginTop: 12 }]}>Grün = Tagesziel geschafft (zählt für die Serie). Insgesamt {ls.lerntageGesamt} Lerntage.</Text>
         </Card>
 
         <Abschnitt titel="Nach Sachgebiet" />
+        {schwach ? (
+          <Card style={{ marginBottom: 12, backgroundColor: C.warnSoft }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+              <Ionicons name="trending-up-outline" size={22} color={C.warn} />
+              <View style={{ flex: 1, marginLeft: 10 }}>
+                <Text style={s.h3}>Hier kannst du am meisten verbessern</Text>
+                <Text style={s.muted}>{schwach.sg.kurz}: {Math.round((schwach.q ?? 0) * 100)} % richtig</Text>
+              </View>
+            </View>
+            <Button title="Jetzt üben" icon="arrow-forward" onPress={uebeSchwach} style={{ marginTop: 12 }} farbe={C.warn} />
+          </Card>
+        ) : null}
         <Card>
           <View style={{ gap: 16 }}>
             {SACHGEBIETE.map((sg) => {

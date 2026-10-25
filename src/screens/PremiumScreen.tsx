@@ -19,7 +19,7 @@ export default function PremiumScreen() {
     ['document-text-outline', `Alle ${KAPITEL.length} Lernkapitel`],
     ['albums-outline', `Alle ${ALLE_KARTEN.length} Karteikarten`],
     ['timer-outline', 'Unbegrenzt Prüfungssimulationen'],
-    ['language-outline', 'Hilfe auf Englisch und Rumänisch'],
+    ['language-outline', 'Übersetzung Englisch/Rumänisch bei allen Fragen'],
     ['infinite-outline', 'Einmal zahlen – kein Abo'],
   ];
 

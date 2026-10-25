@@ -16,7 +16,10 @@ export const anzahlHinweis = (f: Frage) =>
 
 export function waehle(f: Frage, auswahl: number[], i: number): number[] {
   if (f.typ === 'single') return [i];
-  return auswahl.includes(i) ? auswahl.filter((a) => a !== i) : [...auswahl, i];
+  if (auswahl.includes(i)) return auswahl.filter((a) => a !== i);
+  // Nicht mehr Antworten wählbar, als richtig sind – erst eine abwählen
+  if (auswahl.length >= f.richtig.length) return auswahl;
+  return [...auswahl, i];
 }
 
 export function AntwortListe({
@@ -24,10 +27,12 @@ export function AntwortListe({
 }: {
   frage: Frage; auswahl: number[]; onWaehle: (i: number) => void; aufgedeckt: boolean; interaktiv: boolean;
 }) {
+  const voll = frage.typ === 'multi' && !aufgedeckt && auswahl.length >= frage.richtig.length;
   return (
     <View style={{ gap: 10 }}>
       {frage.antworten.map((a, i) => {
         const gewaehlt = auswahl.includes(i);
+        const gedimmt = voll && !gewaehlt;
         const richtig = frage.richtig.includes(i);
         let border = C.border, bg = C.card, kreisBg = C.bg, kreisFarbe = C.text, icon: 'checkmark-circle' | 'close-circle' | null = null;
         if (!aufgedeckt && gewaehlt) { border = C.primary; bg = C.primarySoft; kreisBg = C.primary; kreisFarbe = '#fff'; }
@@ -40,7 +45,7 @@ export function AntwortListe({
             onPress={() => onWaehle(i)}
             accessibilityRole={frage.typ === 'multi' ? 'checkbox' : 'radio'}
             accessibilityState={{ checked: gewaehlt }}
-            style={{ flexDirection: 'row', alignItems: 'center', borderWidth: 1.5, borderColor: border, backgroundColor: bg, borderRadius: 16, padding: 14 }}
+            style={{ flexDirection: 'row', alignItems: 'center', borderWidth: 1.5, borderColor: border, backgroundColor: bg, borderRadius: 16, padding: 14, opacity: gedimmt ? 0.5 : 1 }}
           >
             <View style={{
               width: 34, height: 34, borderRadius: frage.typ === 'multi' ? 9 : 17, backgroundColor: kreisBg,
@@ -53,6 +58,11 @@ export function AntwortListe({
           </Pressable>
         );
       })}
+      {frage.typ === 'multi' && !aufgedeckt ? (
+        <Text style={[s.muted, { textAlign: 'center' }]}>
+          {auswahl.length} von {frage.richtig.length} gewählt{voll ? ' · Zum Ändern erst eine Antwort abwählen' : ''}
+        </Text>
+      ) : null}
     </View>
   );
 }

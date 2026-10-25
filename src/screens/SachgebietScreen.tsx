@@ -8,7 +8,7 @@ import { sachgebietById } from '../data/sachgebiete';
 import { SachgebietId } from '../data/types';
 import { ALLE_KARTEN, mischen, quote } from '../lernstand';
 import { useNav } from '../nav';
-import { frageFrei, kapitelFrei, karteFrei, PREMIUM, sachgebietGanzFrei } from '../premium';
+import { frageFrei, gratisProzent, kapitelFrei, karteFrei } from '../premium';
 import { useApp } from '../state';
 import { Abschnitt, C, Card, IconBox, ProgressBar, s, ScreenHeader, Zeile } from '../ui';
 import { heute } from '../datum';
@@ -26,7 +26,7 @@ export default function SachgebietScreen({ id }: { id: SachgebietId }) {
   const kapitel = kapitelFuer(id);
   const karten = ALLE_KARTEN.filter((k) => k.sachgebiet === id);
   const kartenFaellig = karten.filter((k) => !app.karten[k.id] || app.karten[k.id].faellig <= heute()).length;
-  const ganzFrei = sachgebietGanzFrei(id, app.premium);
+  const kapitelFreiAnzahl = kapitel.filter((k) => kapitelFrei(k, app.premium)).length;
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: C.bg }} edges={['top', 'bottom']}>
@@ -49,11 +49,11 @@ export default function SachgebietScreen({ id }: { id: SachgebietId }) {
           <View style={{ marginTop: 14 }}><ProgressBar value={alle.length ? bearbeitet / alle.length : 0} color={sg.farbe} height={8} /></View>
         </Card>
 
-        {!ganzFrei ? (
+        {!app.premium ? (
           <Card style={{ marginTop: 12, backgroundColor: C.goldSoft, flexDirection: 'row', alignItems: 'center' }}>
             <Ionicons name="lock-open-outline" size={20} color={C.gold} />
             <Text style={[s.body, { flex: 1, marginLeft: 10, fontSize: 14 }]}>
-              Gratis: die ersten {PREMIUM.gratisFragenProGebiet} Fragen und das erste Kapitel. Alles andere mit Premium.
+              Gratis: {frei.length} von {alle.length} Fragen und {kapitelFreiAnzahl} von {kapitel.length} {kapitel.length === 1 ? 'Kapitel' : 'Kapiteln'} (ca. {gratisProzent} %). Alles andere mit Premium.
             </Text>
           </Card>
         ) : null}

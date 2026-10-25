@@ -6,7 +6,7 @@ import { kapitelFuer } from '../data/kapitel';
 import { SACHGEBIETE } from '../data/sachgebiete';
 import { quote } from '../lernstand';
 import { useNav } from '../nav';
-import { sachgebietGanzFrei } from '../premium';
+import { frageFrei } from '../premium';
 import { useApp } from '../state';
 import { C, Card, Chip, IconBox, ProgressBar, s } from '../ui';
 
@@ -25,7 +25,7 @@ export default function LernenScreen() {
           const b = liste.filter((f) => app.fragen[f.id]).length;
           const q = quote(liste, app.fragen);
           const kap = kapitelFuer(sg.id);
-          const ganzFrei = sachgebietGanzFrei(sg.id, app.premium);
+          const freiAnzahl = liste.filter((f) => frageFrei(f, app.premium)).length;
           return (
             <Pressable key={sg.id} onPress={() => nav.push({ name: 'sachgebiet', id: sg.id })} style={({ pressed }) => pressed && { opacity: 0.85 }}>
               <Card>
@@ -34,10 +34,9 @@ export default function LernenScreen() {
                   <View style={{ flex: 1, marginLeft: 12 }}>
                     <Text style={s.h3}>{sg.name}</Text>
                     <Text style={[s.muted, { fontSize: 13, marginTop: 2 }]}>
-                      {kap.length ? `${kap.length} Kapitel · ` : ''}{liste.length} Fragen · in der Prüfung {sg.fragenInPruefung} Fragen
+                      {kap.length ? `${kap.length} Kapitel · ` : ''}{liste.length} Fragen{!app.premium ? ` (${freiAnzahl} gratis)` : ''} · in der Prüfung {sg.fragenInPruefung} Fragen
                     </Text>
                   </View>
-                  {!ganzFrei ? <Ionicons name="lock-closed" size={16} color={C.gold} style={{ marginRight: 6 }} /> : null}
                   <Ionicons name="chevron-forward" size={20} color={C.faint} />
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 12 }}>

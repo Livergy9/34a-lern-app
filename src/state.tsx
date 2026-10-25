@@ -37,6 +37,8 @@ type Daten = {
   karten: Record<string, KarteStand>;
   lesezeichen: string[];
   tage: Record<string, number>; // Datum → erledigte Aufgaben (Fragen + Karten)
+  tagesziel: number; // vom Nutzer gewählt: 10 / 20 / 30 Aufgaben
+  zielTage: string[]; // Tage, an denen das Tagesziel erreicht wurde (zählt für die Lernserie)
   pruefungsDatum: string | null;
   onboardingFertig: boolean;
   premium: boolean; // Testmodus: in der Entwicklung frei umschaltbar, später echter Kauf
@@ -51,6 +53,8 @@ const START: Daten = {
   karten: {},
   lesezeichen: [],
   tage: {},
+  tagesziel: 20,
+  zielTage: [],
   pruefungsDatum: null,
   onboardingFertig: false,
   premium: true,
@@ -73,6 +77,7 @@ type AppState = Daten & {
   bewerteKarte: (id: string, gewusst: boolean) => void;
   toggleLesezeichen: (frageId: string) => void;
   setPruefungsDatum: (d: string | null) => void;
+  setTagesziel: (n: number) => void;
   beendeOnboarding: () => void;
   zeigeEinfuehrung: () => void;
   setPremium: (p: boolean) => void;
@@ -85,9 +90,19 @@ type AppState = Daten & {
 
 const Ctx = createContext<AppState | null>(null);
 
-const zaehleTag = (tage: Record<string, number>, n = 1) => {
-  const d = heute();
-  return { ...tage, [d]: (tage[d] ?? 0) + n };
+// Tagesziel zur Auswahl: Aufgaben pro Tag und ungefähre Dauer
+export const ZIEL_STUFEN = [
+  { wert: 10, titel: 'Locker', dauer: 'ca. 5 Min.' },
+  { wert: 20, titel: 'Normal', dauer: 'ca. 10 Min.' },
+  { wert: 30, titel: 'Intensiv', dauer: 'ca. 15 Min.' },
+] as const;
+
+// Eine Aufgabe erledigt: Tageszähler erhöhen und merken, wenn das Tagesziel erreicht ist
+const zaehleTag = (d: Daten): Pick<Daten, 'tage' | 'zielTage'> => {
+  const t = heute();
+  const anzahl = (d.tage[t] ?? 0) + 1;
+  const zielTage = anzahl >= d.tagesziel && !d.zielTage.includes(t) ? [...d.zielTage, t] : d.zielTage;
+  return { tage: { ...d.tage, [t]: anzahl }, zielTage };
 };
 
 export function AppStateProvider({ children }: { children: React.ReactNode }) {
@@ -102,7 +117,9 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
       .then((json) => {
         if (json) {
           const gespeichert = JSON.parse(json) as Partial<Daten>;
-          setDaten({ ...START, ...gespeichert, version: 1 });
+          // Ältere Speicherstände: Tage mit mind. 10 Aufgaben zählen als „Ziel erreicht“
+          const zielTage = gespeichert.zielTage ?? Object.entries(gespeichert.tage ?? {}).filter(([, n]) => n >= 10).map(([t]) => t);
+          setDaten({ ...START, ...gespeichert, zielTage, version: 1 });
         }
       })
       .catch(() => {})
@@ -135,14 +152,14 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
           const stand: FrageStand = {
             punkte: e.punkte, max: e.max, versuche: (alt?.versuche ?? 0) + 1, richtigInFolge, fehlerOffen, zuletzt: heute(),
           };
-          return { ...d, fragen: { ...d.fragen, [frage.id]: stand }, tage: zaehleTag(d.tage) };
+          return { ...d, fragen: { ...d.fragen, [frage.id]: stand }, ...zaehleTag(d) };
         }),
       bewerteKarte: (id, gewusst) =>
         aendere((d) => {
           const alt = d.karten[id];
           const box = gewusst ? Math.min(MAX_FACH, (alt?.box ?? 0) + 1) : 1;
           const faellig = gewusst ? plusTage(heute(), LEITNER_TAGE[box]) : heute();
-          return { ...d, karten: { ...d.karten, [id]: { box, faellig } }, tage: zaehleTag(d.tage) };
+          return { ...d, karten: { ...d.karten, [id]: { box, faellig } }, ...zaehleTag(d) };
         }),
       toggleLesezeichen: (frageId) =>
         aendere((d) => ({
@@ -150,12 +167,19 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
           lesezeichen: d.lesezeichen.includes(frageId) ? d.lesezeichen.filter((x) => x !== frageId) : [...d.lesezeichen, frageId],
         })),
       setPruefungsDatum: (p) => aendere((d) => ({ ...d, pruefungsDatum: p })),
+      setTagesziel: (n) =>
+        aendere((d) => {
+          // Wer heute schon genug hat, behält den Tag in der Serie
+          const t = heute();
+          const zielTage = (d.tage[t] ?? 0) >= n && !d.zielTage.includes(t) ? [...d.zielTage, t] : d.zielTage;
+          return { ...d, tagesziel: n, zielTage };
+        }),
       beendeOnboarding: () => aendere((d) => ({ ...d, onboardingFertig: true })),
       zeigeEinfuehrung: () => aendere((d) => ({ ...d, onboardingFertig: false })),
       setPremium: (p) => aendere((d) => ({ ...d, premium: p })),
       speicherePruefung: (p) => aendere((d) => ({ ...d, pruefungen: [p, ...d.pruefungen].slice(0, 30) })),
       markiereGelesen: (id) => aendere((d) => (d.gelesen.includes(id) ? d : { ...d, gelesen: [...d.gelesen, id] })),
-      zuruecksetzen: () => aendere((d) => ({ ...START, hilfeSprache: d.hilfeSprache, premium: d.premium, onboardingFertig: true })),
+      zuruecksetzen: () => aendere((d) => ({ ...START, hilfeSprache: d.hilfeSprache, premium: d.premium, tagesziel: d.tagesziel, onboardingFertig: true })),
     };
   }, [daten, geladen, glossarOffen]);
 

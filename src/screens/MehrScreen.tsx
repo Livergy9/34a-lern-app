@@ -42,8 +42,8 @@ export default function MehrScreen() {
         <Zeile
           erste
           icon="calendar-outline"
-          titel="Prüfungsdatum"
-          untertitel={app.pruefungsDatum ? schoen(app.pruefungsDatum) : 'Noch nicht eingetragen'}
+          titel="Lernplan"
+          untertitel={`Tagesziel ${app.tagesziel} Aufgaben · ${app.pruefungsDatum ? `Prüfung ${schoen(app.pruefungsDatum)}` : 'kein Termin'}`}
           onPress={() => nav.push({ name: 'lernplan' })}
         />
         <Zeile icon="stats-chart-outline" farbe="#6D5BD0" titel="Statistik" untertitel="Fortschritt und Prüfungsergebnisse" onPress={() => nav.push({ name: 'statistik' })} />
