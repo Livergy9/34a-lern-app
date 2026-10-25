@@ -15,7 +15,7 @@ export const FRAGEN: Frage[] = [
       'Besitz und Eigentum gehen beide auf ihn über.',
     ],
     richtig: [1],
-    erklaerung: 'Besitzer ist, wer die tatsächliche Gewalt über eine Sache hat. Eigentümer ist, wem sie rechtlich gehört. Beim Leihen bekommt man nur den Besitz.',
+    erklaerung: 'Besitzer ist, wer die tatsächliche Gewalt über eine Sache hat. Eigentümer ist, wem sie rechtlich gehört. Beim Leihen bekommt man nur den [[Besitz]].',
     rechtsgrundlage: '§ 854 BGB (Besitz), § 903 BGB (Eigentum)',
   },
   {
@@ -29,7 +29,7 @@ export const FRAGEN: Frage[] = [
       'Jede Sicherheitskraft hat überall Hausrecht.',
     ],
     richtig: [1],
-    erklaerung: 'Das Hausrecht hat der Eigentümer oder berechtigte Besitzer (z. B. Mieter). Er kann es auf eine Sicherheitskraft übertragen, die es dann in seinem Auftrag ausübt.',
+    erklaerung: 'Das [[Hausrecht]] hat der Eigentümer oder berechtigte Besitzer (z. B. Mieter). Er kann es auf eine Sicherheitskraft übertragen, die es dann in seinem Auftrag ausübt.',
   },
   {
     id: 'bgb-003', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 3, geprueft: false,
@@ -42,7 +42,7 @@ export const FRAGEN: Frage[] = [
       'Nur zwischen Familienangehörigen',
     ],
     richtig: [0],
-    erklaerung: 'Selbsthilfe ist nur eine Ausnahme: Die Polizei oder ein Gericht kann nicht rechtzeitig helfen, und ohne sofortiges Handeln wäre der Anspruch verloren oder schwer durchsetzbar.',
+    erklaerung: '[[Selbsthilfe]] ist nur eine Ausnahme: Die Polizei oder ein Gericht kann nicht rechtzeitig helfen, und ohne sofortiges Handeln wäre der Anspruch verloren oder schwer durchsetzbar.',
     rechtsgrundlage: '§ 229 BGB',
   },
   {
@@ -70,7 +70,7 @@ export const FRAGEN: Frage[] = [
       'Die Pflicht, eine Sache zu reparieren.',
     ],
     richtig: [0],
-    erklaerung: 'Eigentum ist die rechtliche Herrschaft über eine Sache. Der Eigentümer kann mit der Sache grundsätzlich nach Belieben verfahren und andere davon ausschließen.',
+    erklaerung: '[[Eigentum]] ist die rechtliche Herrschaft über eine Sache. Der Eigentümer kann mit der Sache grundsätzlich nach Belieben verfahren und andere davon ausschließen.',
     rechtsgrundlage: '§ 903 BGB',
   },
   {
@@ -98,7 +98,7 @@ export const FRAGEN: Frage[] = [
       'Niemand',
     ],
     richtig: [1],
-    erklaerung: 'Durch einen Diebstahl verliert der Eigentümer sein Eigentum nicht. Der Dieb wird nur Besitzer, nicht Eigentümer.',
+    erklaerung: 'Durch einen [[Diebstahl]] verliert der Eigentümer sein [[Eigentum]] nicht. Der Dieb wird nur Besitzer, nicht Eigentümer.',
     rechtsgrundlage: '§§ 903, 935 BGB',
   },
   {
@@ -112,12 +112,12 @@ export const FRAGEN: Frage[] = [
       'Sie hat gar keine Beziehung zu den Sachen.',
     ],
     richtig: [2],
-    erklaerung: 'Wer die tatsächliche Gewalt für einen anderen ausübt und dessen Weisungen folgen muss, ist Besitzdiener. Besitzer ist der Auftraggeber.',
+    erklaerung: 'Wer die tatsächliche Gewalt für einen anderen ausübt und dessen Weisungen folgen muss, ist [[Besitzdiener]]. Besitzer ist der Auftraggeber.',
     rechtsgrundlage: '§ 855 BGB',
   },
   {
     id: 'bgb-009', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Was ist „verbotene Eigenmacht“?',
+    text: 'Was ist „[[verbotene Eigenmacht]]“?',
     antworten: [
       'Jede Handlung des Eigentümers',
       'Eine Festnahme durch die Polizei',
@@ -126,12 +126,12 @@ export const FRAGEN: Frage[] = [
       'Wenn jemand eine Sache findet',
     ],
     richtig: [2],
-    erklaerung: 'Verbotene Eigenmacht ist die Entziehung oder Störung des Besitzes ohne den Willen des Besitzers und ohne gesetzliche Erlaubnis.',
+    erklaerung: '[[Verbotene Eigenmacht|verbotene-eigenmacht]] ist die Entziehung oder Störung des Besitzes ohne den Willen des Besitzers und ohne gesetzliche [[Erlaubnis]].',
     rechtsgrundlage: '§ 858 BGB',
   },
   {
     id: 'bgb-010', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Was erlaubt die Besitzwehr nach § 859 Abs. 1 BGB?',
+    text: 'Was erlaubt die [[Besitzwehr]] nach § 859 Abs. 1 BGB?',
     antworten: [
       'Eine gestohlene Sache noch nach Wochen beim Täter abzuholen',
       'Den Täter zu bestrafen',
@@ -140,12 +140,12 @@ export const FRAGEN: Frage[] = [
       'Ein Bußgeld zu verlangen',
     ],
     richtig: [2],
-    erklaerung: 'Der Besitzer darf sich gegen verbotene Eigenmacht mit Gewalt wehren (Besitzwehr). Die Gewalt muss verhältnismäßig sein.',
+    erklaerung: 'Der Besitzer darf sich gegen [[verbotene Eigenmacht]] mit Gewalt wehren ([[Besitzwehr]]). Die Gewalt muss verhältnismäßig sein.',
     rechtsgrundlage: '§ 859 Abs. 1 BGB',
   },
   {
     id: 'bgb-011', sachgebiet: 'bgb', typ: 'multi', schwierigkeit: 3, geprueft: false,
-    text: 'Ein Täter hat eine bewegliche Sache weggenommen. Wann darf der Besitzer sie ihm mit Gewalt wieder abnehmen (Besitzkehr)?',
+    text: 'Ein Täter hat eine bewegliche Sache weggenommen. Wann darf der Besitzer sie ihm mit Gewalt wieder abnehmen ([[Besitzkehr]])?',
     antworten: [
       'Wenn der Täter auf frischer Tat betroffen wird',
       'Wenn der Täter eine Woche später auf der Straße gesehen wird',
@@ -155,12 +155,12 @@ export const FRAGEN: Frage[] = [
       'Nur, wenn der Täter minderjährig ist',
     ],
     richtig: [0, 2],
-    erklaerung: 'Besitzkehr ist erlaubt, wenn der Täter auf frischer Tat betroffen oder verfolgt wird. Später muss man den Rechtsweg gehen oder die Polizei einschalten.',
+    erklaerung: '[[Besitzkehr]] ist erlaubt, wenn der Täter [[auf frischer Tat]] betroffen oder verfolgt wird. Später muss man den Rechtsweg gehen oder die Polizei einschalten.',
     rechtsgrundlage: '§ 859 Abs. 2 BGB',
   },
   {
     id: 'bgb-012', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Darf eine Wachperson als Besitzdiener die Besitzwehr und Besitzkehr für den Auftraggeber ausüben?',
+    text: 'Darf eine Wachperson als [[Besitzdiener]] die [[Besitzwehr]] und [[Besitzkehr]] für den Auftraggeber ausüben?',
     antworten: [
       'Nein, nur der Besitzer selbst darf das.',
       'Nur mit schriftlicher Erlaubnis der Polizei.',
@@ -169,7 +169,7 @@ export const FRAGEN: Frage[] = [
       'Nur, wenn die Wachperson die Sachkundeprüfung hat.',
     ],
     richtig: [3],
-    erklaerung: 'Auch der Besitzdiener darf die Rechte aus § 859 BGB für den Besitzer ausüben.',
+    erklaerung: 'Auch der [[Besitzdiener]] darf die Rechte aus § 859 BGB für den Besitzer ausüben.',
     rechtsgrundlage: '§ 860 BGB',
   },
   {
@@ -183,12 +183,12 @@ export const FRAGEN: Frage[] = [
       'Die Verteidigung, die erforderlich ist, um einen gegenwärtigen rechtswidrigen Angriff von sich oder einem anderen abzuwenden',
     ],
     richtig: [4],
-    erklaerung: 'Notwehr ist die erforderliche Verteidigung gegen einen gegenwärtigen, rechtswidrigen Angriff. Wer in Notwehr handelt, handelt nicht widerrechtlich.',
+    erklaerung: '[[Notwehr]] ist die erforderliche Verteidigung gegen einen gegenwärtigen, rechtswidrigen Angriff. Wer in Notwehr handelt, handelt nicht widerrechtlich.',
     rechtsgrundlage: '§ 227 BGB',
   },
   {
     id: 'bgb-014', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Sie verletzen einen Angreifer in Notwehr. Müssen Sie ihm Schadensersatz zahlen?',
+    text: 'Sie verletzen einen Angreifer in [[Notwehr]]. Müssen Sie ihm [[Schadensersatz]] zahlen?',
     antworten: [
       'Ja, immer',
       'Ja, aber nur die Hälfte',
@@ -197,7 +197,7 @@ export const FRAGEN: Frage[] = [
       'Das entscheidet der Arbeitgeber',
     ],
     richtig: [2],
-    erklaerung: 'Wer in Notwehr handelt, handelt nicht widerrechtlich. Deshalb besteht kein Anspruch auf Schadensersatz.',
+    erklaerung: 'Wer in [[Notwehr]] handelt, handelt nicht widerrechtlich. Deshalb besteht kein Anspruch auf [[Schadensersatz]].',
     rechtsgrundlage: '§ 227 BGB',
   },
   {
@@ -212,7 +212,7 @@ export const FRAGEN: Frage[] = [
       'Die Sache muss wertlos sein.',
     ],
     richtig: [0, 2, 3],
-    erklaerung: 'Beim defensiven Notstand geht die Gefahr von der Sache aus, z. B. einem angreifenden Hund. Man darf sie beschädigen, wenn das erforderlich ist und der Schaden nicht außer Verhältnis zur Gefahr steht.',
+    erklaerung: 'Beim defensiven [[Notstand]] geht die Gefahr von der Sache aus, z. B. einem angreifenden Hund. Man darf sie beschädigen, wenn das erforderlich ist und der Schaden nicht außer Verhältnis zur Gefahr steht.',
     rechtsgrundlage: '§ 228 BGB',
   },
   {
@@ -226,12 +226,12 @@ export const FRAGEN: Frage[] = [
       'Notwehr nach § 227 BGB',
     ],
     richtig: [3],
-    erklaerung: 'Die Gefahr (Brand) geht nicht vom Auto aus. Man greift auf eine unbeteiligte fremde Sache zu, um eine viel größere Gefahr abzuwenden. Das ist aggressiver Notstand nach § 904 BGB.',
+    erklaerung: 'Die Gefahr (Brand) geht nicht vom Auto aus. Man greift auf eine unbeteiligte fremde Sache zu, um eine viel größere Gefahr abzuwenden. Das ist aggressiver [[Notstand]] nach § 904 BGB.',
     rechtsgrundlage: '§ 904 BGB',
   },
   {
     id: 'bgb-017', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 3, geprueft: false,
-    text: 'Was kann der Eigentümer beim aggressiven Notstand nach § 904 BGB verlangen?',
+    text: 'Was kann der Eigentümer beim aggressiven [[Notstand]] nach § 904 BGB verlangen?',
     antworten: [
       'Dass der Helfer bestraft wird',
       'Ersatz des entstandenen Schadens',
@@ -255,12 +255,12 @@ export const FRAGEN: Frage[] = [
       'Den Schuldner einsperren, bis er zahlt',
     ],
     richtig: [0, 2, 4],
-    erklaerung: 'Selbsthilfe erlaubt Wegnehmen, Zerstören oder Beschädigen einer Sache, die Festnahme eines fluchtverdächtigen Verpflichteten und das Beseitigen von Widerstand. Strafen oder Einsperren ist nicht erlaubt.',
+    erklaerung: '[[Selbsthilfe]] erlaubt Wegnehmen, Zerstören oder Beschädigen einer Sache, die Festnahme eines fluchtverdächtigen Verpflichteten und das Beseitigen von Widerstand. Strafen oder Einsperren ist nicht erlaubt.',
     rechtsgrundlage: '§ 229 BGB',
   },
   {
     id: 'bgb-019', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 3, geprueft: false,
-    text: 'Was muss nach einer Festnahme im Rahmen der Selbsthilfe geschehen?',
+    text: 'Was muss nach einer Festnahme im Rahmen der [[Selbsthilfe]] geschehen?',
     antworten: [
       'Der Festgenommene darf bis zum nächsten Tag festgehalten werden.',
       'Er muss unverzüglich dem Amtsgericht vorgeführt werden – in der Praxis wird sofort die Polizei gerufen.',
@@ -269,12 +269,12 @@ export const FRAGEN: Frage[] = [
       'Er muss beim Arbeitgeber abgegeben werden.',
     ],
     richtig: [1],
-    erklaerung: 'Wer im Wege der Selbsthilfe festgenommen wurde, muss unverzüglich dem Amtsgericht vorgeführt werden. Praktisch heißt das: sofort die Polizei rufen.',
+    erklaerung: 'Wer im Wege der [[Selbsthilfe]] festgenommen wurde, muss unverzüglich dem Amtsgericht vorgeführt werden. Praktisch heißt das: sofort die Polizei rufen.',
     rechtsgrundlage: '§ 230 Abs. 3 BGB',
   },
   {
     id: 'bgb-020', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 3, geprueft: false,
-    text: 'Jemand nimmt irrtümlich an, die Voraussetzungen der Selbsthilfe lägen vor. Was folgt daraus?',
+    text: 'Jemand nimmt irrtümlich an, die Voraussetzungen der [[Selbsthilfe]] lägen vor. Was folgt daraus?',
     antworten: [
       'Er wird belohnt.',
       'Es hat keine Folgen.',
@@ -283,7 +283,7 @@ export const FRAGEN: Frage[] = [
       'Er bekommt eine Verwarnung von der IHK.',
     ],
     richtig: [3],
-    erklaerung: 'Wer irrtümlich Selbsthilfe übt, muss dem anderen den Schaden ersetzen – auch ohne Verschulden.',
+    erklaerung: 'Wer irrtümlich [[Selbsthilfe]] übt, muss dem anderen den Schaden ersetzen – auch ohne Verschulden.',
     rechtsgrundlage: '§ 231 BGB',
   },
   {
@@ -298,11 +298,11 @@ export const FRAGEN: Frage[] = [
       'Die IHK',
     ],
     richtig: [0, 2, 3],
-    erklaerung: 'Das Hausrecht hat der Eigentümer oder Besitzer, z. B. der Mieter. Er kann eine andere Person, z. B. eine Sicherheitskraft, mit der Ausübung beauftragen.',
+    erklaerung: 'Das [[Hausrecht]] hat der Eigentümer oder Besitzer, z. B. der Mieter. Er kann eine andere Person, z. B. eine Sicherheitskraft, mit der Ausübung beauftragen.',
   },
   {
     id: 'bgb-022', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Wer hat in einer vermieteten Wohnung das Hausrecht?',
+    text: 'Wer hat in einer vermieteten Wohnung das [[Hausrecht]]?',
     antworten: [
       'Der Vermieter',
       'Die Polizei',
@@ -311,11 +311,11 @@ export const FRAGEN: Frage[] = [
       'Der Mieter',
     ],
     richtig: [4],
-    erklaerung: 'In einer vermieteten Wohnung hat der Mieter das Hausrecht. Der Vermieter darf die Wohnung nicht ohne Erlaubnis betreten.',
+    erklaerung: 'In einer vermieteten Wohnung hat der Mieter das [[Hausrecht]]. Der Vermieter darf die Wohnung nicht ohne Erlaubnis betreten.',
   },
   {
     id: 'bgb-023', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Wer darf in einem Kaufhaus ein Hausverbot aussprechen?',
+    text: 'Wer darf in einem Kaufhaus ein [[Hausverbot]] aussprechen?',
     antworten: [
       'Jeder Mitarbeiter eines anderen Geschäfts',
       'Jeder Kunde',
@@ -324,7 +324,7 @@ export const FRAGEN: Frage[] = [
       'Der Inhaber des Hausrechts oder eine von ihm beauftragte Person, z. B. die Sicherheitskraft',
     ],
     richtig: [4],
-    erklaerung: 'Das Hausverbot folgt aus dem Hausrecht. Aussprechen darf es der Hausrechtsinhaber oder eine Person, die er damit beauftragt hat.',
+    erklaerung: 'Das [[Hausverbot]] folgt aus dem [[Hausrecht]]. Aussprechen darf es der Hausrechtsinhaber oder eine Person, die er damit beauftragt hat.',
   },
   {
     id: 'bgb-024', sachgebiet: 'bgb', typ: 'multi', schwierigkeit: 2, geprueft: false,
@@ -334,11 +334,11 @@ export const FRAGEN: Frage[] = [
       'Die Hoffnung auf eine Beförderung',
       'Körper und Gesundheit',
       'Die Erwartung, im Lotto zu gewinnen',
-      'Eigentum',
+      '[[Eigentum]]',
       'Den Lieblingsplatz in der Kantine',
     ],
     richtig: [0, 2, 4],
-    erklaerung: 'Nach § 823 Abs. 1 BGB muss Schadensersatz leisten, wer vorsätzlich oder fahrlässig Leben, Körper, Gesundheit, Freiheit, Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt.',
+    erklaerung: 'Nach § 823 Abs. 1 BGB muss [[Schadensersatz]] leisten, wer vorsätzlich oder fahrlässig Leben, Körper, Gesundheit, Freiheit, [[Eigentum]] oder ein sonstiges Recht eines anderen widerrechtlich verletzt.',
     rechtsgrundlage: '§ 823 Abs. 1 BGB',
   },
   {
@@ -352,7 +352,7 @@ export const FRAGEN: Frage[] = [
       'Nur, wenn der Täter betrunken war',
     ],
     richtig: [2],
-    erklaerung: 'Es reicht schon Fahrlässigkeit. Wer nicht aufpasst und dadurch einen Schaden verursacht, haftet.',
+    erklaerung: 'Es reicht schon [[Fahrlässigkeit]]. Wer nicht aufpasst und dadurch einen Schaden verursacht, haftet.',
     rechtsgrundlage: '§ 823 Abs. 1, § 276 BGB',
   },
   {
@@ -366,7 +366,7 @@ export const FRAGEN: Frage[] = [
       'Nur die Polizei entscheidet, wer zahlt.',
     ],
     richtig: [1],
-    erklaerung: 'Wer fahrlässig fremdes Eigentum beschädigt, muss Schadensersatz leisten. Der Arbeitgeber haftet häufig mit, z. B. für seine Verrichtungsgehilfen.',
+    erklaerung: 'Wer fahrlässig fremdes [[Eigentum]] beschädigt, muss [[Schadensersatz]] leisten. Der Arbeitgeber haftet häufig mit, z. B. für seine Verrichtungsgehilfen.',
     rechtsgrundlage: '§§ 823, 831 BGB',
   },
   {
@@ -506,7 +506,7 @@ export const FRAGEN: Frage[] = [
       'Sie verkaufen sie und spenden das Geld.',
     ],
     richtig: [1],
-    erklaerung: 'Der Finder muss den Fund unverzüglich dem Verlierer, Eigentümer oder der zuständigen Behörde anzeigen. Wer die Sache behält, kann sich wegen Unterschlagung strafbar machen.',
+    erklaerung: 'Der Finder muss den Fund unverzüglich dem Verlierer, Eigentümer oder der zuständigen Behörde anzeigen. Wer die Sache behält, kann sich wegen [[Unterschlagung]] strafbar machen.',
     rechtsgrundlage: '§ 965 BGB',
   },
   {
@@ -525,7 +525,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'bgb-038', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 3, geprueft: false,
-    text: 'Wann wird ein Finder Eigentümer der Fundsache, wenn sich niemand meldet?',
+    text: 'Wann wird ein Finder Eigentümer der [[Fundsache]], wenn sich niemand meldet?',
     antworten: [
       'Sofort beim Finden',
       'Nach einer Woche',
@@ -534,7 +534,7 @@ export const FRAGEN: Frage[] = [
       'Nie',
     ],
     richtig: [3],
-    erklaerung: 'Meldet sich niemand, erwirbt der Finder sechs Monate nach der Anzeige bei der Fundbehörde das Eigentum – wenn ihm kein Empfangsberechtigter bekannt geworden ist.',
+    erklaerung: 'Meldet sich niemand, erwirbt der Finder sechs Monate nach der Anzeige bei der Fundbehörde das [[Eigentum]] – wenn ihm kein Empfangsberechtigter bekannt geworden ist.',
     rechtsgrundlage: '§ 973 BGB',
   },
   {
@@ -566,7 +566,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'bgb-041', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 3, geprueft: false,
-    text: 'Personen besetzen ein leerstehendes Gebäude. Wann darf der Besitzer sie selbst wieder entfernen (Besitzkehr bei Grundstücken)?',
+    text: 'Personen besetzen ein leerstehendes Gebäude. Wann darf der Besitzer sie selbst wieder entfernen ([[Besitzkehr]] bei Grundstücken)?',
     antworten: [
       'Jederzeit, auch Monate später',
       'Nur mit einem Urteil',
@@ -575,12 +575,12 @@ export const FRAGEN: Frage[] = [
       'Sofort nach der Besitzentziehung',
     ],
     richtig: [4],
-    erklaerung: 'Bei Grundstücken und Gebäuden darf der Besitzer sich den Besitz sofort nach der Entziehung durch Entsetzung des Täters wieder verschaffen. Später muss er den Rechtsweg gehen.',
+    erklaerung: 'Bei Grundstücken und Gebäuden darf der Besitzer sich den [[Besitz]] sofort nach der Entziehung durch Entsetzung des Täters wieder verschaffen. Später muss er den Rechtsweg gehen.',
     rechtsgrundlage: '§ 859 Abs. 3 BGB',
   },
   {
     id: 'bgb-042', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Wovon geht die Gefahr beim defensiven Notstand nach § 228 BGB aus?',
+    text: 'Wovon geht die Gefahr beim defensiven [[Notstand]] nach § 228 BGB aus?',
     antworten: [
       'Von einer unbeteiligten Sache',
       'Von einem Menschen, der angreift',
@@ -589,12 +589,12 @@ export const FRAGEN: Frage[] = [
       'Vom Wetter allgemein',
     ],
     richtig: [2],
-    erklaerung: 'Beim defensiven Notstand geht die Gefahr von der Sache selbst aus, z. B. von einem angreifenden Hund. Bei einem Angriff durch einen Menschen gilt Notwehr.',
+    erklaerung: 'Beim defensiven [[Notstand]] geht die Gefahr von der Sache selbst aus, z. B. von einem angreifenden Hund. Bei einem Angriff durch einen Menschen gilt [[Notwehr]].',
     rechtsgrundlage: '§ 228 BGB',
   },
   {
     id: 'bgb-043', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Ein Angreifer schlägt Sie und läuft dann weg. Sie holen ihn ein und schlagen zurück. Ist das Notwehr?',
+    text: 'Ein Angreifer schlägt Sie und läuft dann weg. Sie holen ihn ein und schlagen zurück. Ist das [[Notwehr]]?',
     antworten: [
       'Nein, der Angriff war schon beendet – es fehlt ein gegenwärtiger Angriff.',
       'Ja, wenn der Angreifer zuerst geschlagen hat.',
@@ -603,7 +603,7 @@ export const FRAGEN: Frage[] = [
       'Ja, man darf sich immer rächen.',
     ],
     richtig: [0],
-    erklaerung: 'Notwehr setzt einen gegenwärtigen Angriff voraus. Ist der Angriff vorbei, ist ein Gegenschlag Rache und keine Notwehr.',
+    erklaerung: '[[Notwehr]] setzt einen gegenwärtigen Angriff voraus. Ist der Angriff vorbei, ist ein Gegenschlag Rache und keine Notwehr.',
     rechtsgrundlage: '§ 227 BGB, § 32 StGB',
   },
   {
@@ -617,7 +617,7 @@ export const FRAGEN: Frage[] = [
       'Seine Wohnung aufsuchen und Geld holen',
     ],
     richtig: [1],
-    erklaerung: 'Wer die Zeche prellen will und unbekannt ist, darf festgehalten werden, bis die Polizei die Identität feststellt (Selbsthilfe nach § 229 BGB, außerdem § 127 StPO bei einer Straftat). Mehr Gewalt als nötig ist nicht erlaubt.',
+    erklaerung: 'Wer die Zeche prellen will und unbekannt ist, darf festgehalten werden, bis die Polizei die Identität feststellt ([[Selbsthilfe]] nach § 229 BGB, außerdem § 127 StPO bei einer Straftat). Mehr Gewalt als nötig ist nicht erlaubt.',
     rechtsgrundlage: '§ 229 BGB, § 127 StPO',
   },
   {
@@ -678,7 +678,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'bgb-049', sachgebiet: 'bgb', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Ein Kunde verlangt von einem Sicherheitsmitarbeiter Ersatz für eine Jacke, die ihm im Gerangel zerrissen wurde. Die Sicherheitskraft hat in Notwehr gehandelt. Was gilt?',
+    text: 'Ein Kunde verlangt von einem Sicherheitsmitarbeiter Ersatz für eine Jacke, die ihm im Gerangel zerrissen wurde. Die Sicherheitskraft hat in [[Notwehr]] gehandelt. Was gilt?',
     antworten: [
       'Die Sicherheitskraft muss die Jacke immer bezahlen.',
       'Der Kunde bekommt eine neue Jacke von der Polizei.',
@@ -687,7 +687,7 @@ export const FRAGEN: Frage[] = [
       'Kein Ersatz, wenn die Handlung durch Notwehr gerechtfertigt war.',
     ],
     richtig: [4],
-    erklaerung: 'Eine durch Notwehr gebotene Handlung ist nicht widerrechtlich. Daraus entsteht keine Schadensersatzpflicht gegenüber dem Angreifer.',
+    erklaerung: 'Eine durch [[Notwehr]] gebotene Handlung ist nicht widerrechtlich. Daraus entsteht keine Schadensersatzpflicht gegenüber dem Angreifer.',
     rechtsgrundlage: '§ 227 BGB',
   },
   {

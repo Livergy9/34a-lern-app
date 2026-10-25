@@ -368,7 +368,7 @@ export const FRAGEN: Frage[] = [
       'Sie verlassen sofort Ihren Posten.',
     ],
     richtig: [2],
-    erklaerung: 'Provokationen sollen oft eine Reaktion auslösen. Professionell ist, ruhig und sachlich zu bleiben. Bei einer Beleidigung kann später Strafantrag gestellt werden.',
+    erklaerung: 'Provokationen sollen oft eine Reaktion auslösen. Professionell ist, ruhig und sachlich zu bleiben. Bei einer Beleidigung kann später [[Strafantrag]] gestellt werden.',
   },
   {
     id: 'um-029', sachgebiet: 'menschen', typ: 'single', schwierigkeit: 2, geprueft: false,
@@ -398,7 +398,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'um-031', sachgebiet: 'menschen', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Was gehört zur Eigensicherung in einem Gespräch mit einer aggressiven Person?',
+    text: 'Was gehört zur [[Eigensicherung]] in einem Gespräch mit einer aggressiven Person?',
     antworten: [
       'Mit dem Rücken zur Wand ohne Ausweg stehen',
       'Die Hände in die Hosentaschen stecken',
@@ -407,7 +407,7 @@ export const FRAGEN: Frage[] = [
       'Abstand halten, die Hände der Person im Blick behalten und einen eigenen Rückzugsweg haben',
     ],
     richtig: [4],
-    erklaerung: 'Eigensicherung heißt: Abstand, Blick auf die Hände, offene Körperhaltung mit freien Händen und ein Rückzugsweg. Wenn möglich zu zweit arbeiten.',
+    erklaerung: '[[Eigensicherung]] heißt: Abstand, Blick auf die Hände, offene Körperhaltung mit freien Händen und ein Rückzugsweg. Wenn möglich zu zweit arbeiten.',
   },
   {
     id: 'um-032', sachgebiet: 'menschen', typ: 'single', schwierigkeit: 2, geprueft: false,
@@ -732,7 +732,7 @@ export const FRAGEN: Frage[] = [
       'Sie raten ihr, nach Hause zu gehen, ohne etwas zu tun.',
     ],
     richtig: [2],
-    erklaerung: 'Betroffene ernst nehmen, schützen und unterstützen. Den Belästiger ansprechen, ggf. Hausverbot und Polizei. Viele Veranstaltungen haben dafür feste Abläufe.',
+    erklaerung: 'Betroffene ernst nehmen, schützen und unterstützen. Den Belästiger ansprechen, ggf. [[Hausverbot]] und Polizei. Viele Veranstaltungen haben dafür feste Abläufe.',
   },
   {
     id: 'um-057', sachgebiet: 'menschen', typ: 'single', schwierigkeit: 1, geprueft: false,
@@ -927,7 +927,7 @@ export const FRAGEN: Frage[] = [
       'Gleichgültigkeit',
     ],
     richtig: [0],
-    erklaerung: 'Empathie hilft, Menschen zu verstehen und Konflikte zu entschärfen. Sie bedeutet nicht, alles zu erlauben.',
+    erklaerung: 'Empathie heißt, sich in andere hineinzuversetzen und ihre Gefühle zu verstehen. Sie hilft, Konflikte zu entschärfen. Sie bedeutet nicht, alles zu erlauben.',
   },
   {
     id: 'um-072', sachgebiet: 'menschen', typ: 'single', schwierigkeit: 1, geprueft: false,

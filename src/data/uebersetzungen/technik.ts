@@ -1,0 +1,161 @@
+import type { UeEintrag } from './index';
+
+// [Frage EN, Erklärung EN, Frage RO, Erklärung RO]
+export const UE: Record<string, UeEintrag> = {
+  'te-001': [
+    "What does a passive infrared motion detector react to?",
+    "A PIR detector recognises when a heat source (e.g. a person) moves in its detection area.",
+    "La ce reacționează un detector de mișcare cu infraroșu pasiv?",
+    "Un detector PIR recunoaște când o sursă de căldură (de ex. un om) se mișcă în zona de detecție.",
+  ],
+  'te-002': [
+    "What is the task of access control?",
+    "Access control checks whether a person is allowed to enter an area – e.g. by ID, card, code or a personal check.",
+    "Care este sarcina controlului accesului?",
+    "Controlul accesului verifică dacă o persoană are dreptul să intre într-o zonă – de ex. cu legitimație, card, cod sau control personal.",
+  ],
+  'te-003': [
+    "What is the main task of mechanical protection (e.g. bars, locks, burglar-resistant doors)?",
+    "Mechanical protection resists the attack and costs the offender time. Electronic systems report the attack. Both together work best.",
+    "Care este sarcina principală a protecției mecanice (de ex. gratii, încuietori, uși antiefracție)?",
+    "Protecția mecanică opune rezistență și îl costă timp pe făptaș. Sistemele electronice semnalează atacul. Împreună funcționează cel mai bine.",
+  ],
+  'te-004': [
+    "What is an intruder alarm system (EMA)?",
+    "An intruder alarm system monitors doors, windows and rooms with detectors and raises an alarm in case of a break-in – on site and/or at a control centre.",
+    "Ce este un sistem de alarmă antiefracție (EMA)?",
+    "Un sistem de alarmă antiefracție supraveghează uși, ferestre și încăperi cu detectoare și declanșează alarma la o spargere – la fața locului și/sau la un dispecerat.",
+  ],
+  'te-005': [
+    "What is a hold-up alarm system (ÜMA) with silent alarm for?",
+    "A silent alarm is meant to get help without provoking the offender. This way, people in the room are not put in extra danger.",
+    "La ce servește un sistem de alarmă la atac (ÜMA) cu alarmă silențioasă?",
+    "O alarmă silențioasă trebuie să cheme ajutor fără să-l provoace pe făptaș. Astfel, oamenii din încăpere nu sunt puși în pericol suplimentar.",
+  ],
+  'te-006': [
+    "What does a magnetic contact (opening detector) report?",
+    "A magnetic contact consists of a magnet and a switch. If a door or window opens, the contact changes and the system reports it.",
+    "Ce semnalează un contact magnetic (detector de deschidere)?",
+    "Un contact magnetic este format dintr-un magnet și un întrerupător. Dacă ușa sau fereastra se deschide, contactul se schimbă și sistemul semnalează acest lucru.",
+  ],
+  'te-007': [
+    "What does a glass-break detector recognise?",
+    "Glass-break detectors react to glass breaking, e.g. through the typical sound or the vibration of the pane.",
+    "Ce recunoaște un detector de spargere a geamului?",
+    "Detectoarele de spargere a geamului reacționează la spargerea sticlei, de ex. prin sunetul tipic sau vibrația geamului.",
+  ],
+  'te-008': [
+    "How does a light barrier work?",
+    "A light barrier sends a beam to a receiver. If the beam is interrupted, e.g. by a person, it reports this.",
+    "Cum funcționează o barieră cu lumină?",
+    "O barieră cu lumină trimite un fascicul spre un receptor. Dacă fasciculul este întrerupt, de ex. de o persoană, apare o semnalare.",
+  ],
+  'te-009': [
+    "What is a structure-borne sound detector (vibration detector) used for, for example?",
+    "Structure-borne sound detectors recognise vibrations in the material, such as those caused by drilling, milling or hitting. Typical on safes and valuables containers.",
+    "Pentru ce se folosește, de exemplu, un detector de zgomot structural (detector de vibrații)?",
+    "Detectoarele de zgomot structural recunosc vibrațiile din material, cum apar la găurire, frezare sau lovire. Tipic la seifuri și containere de valori.",
+  ],
+  'te-010': [
+    "Why is a heat detector rather than a smoke detector used in a kitchen?",
+    "In areas with steam, dust or normal smoke (kitchen, workshop), heat detectors make more sense to avoid false alarms.",
+    "De ce se folosește într-o bucătărie mai degrabă un detector de căldură decât unul de fum?",
+    "În zone cu abur, praf sau fum obișnuit (bucătărie, atelier), detectoarele de căldură sunt mai potrivite pentru a evita alarmele false.",
+  ],
+  'te-011': [
+    "What is a red push-button detector (manual fire alarm) on the wall for?",
+    "With the manual fire alarm, anyone can report a fire by hand. It is usually installed along escape routes.",
+    "La ce servește butonul roșu de pe perete (declanșator manual de alarmă la incendiu)?",
+    "Cu declanșatorul manual, oricine poate semnala de mână un incendiu. De obicei este montat pe căile de evacuare.",
+  ],
+  'te-012': [
+    "What is a fire brigade key depot (FSD) on a building for?",
+    "The fire brigade key depot contains a master key. Only the fire brigade can open it during a fire alarm and so get into the building quickly.",
+    "La ce servește o cutie de chei pentru pompieri (FSD) la o clădire?",
+    "În cutia de chei pentru pompieri se află o cheie generală. Doar pompierii o pot deschide la o alarmă de incendiu și astfel pot intra repede în clădire.",
+  ],
+  'te-013': [
+    "What does „forced sequence“ (Zwangsläufigkeit) mean for an intruder alarm system?",
+    "Forced sequence prevents operating errors: you cannot arm the system while, for example, a window is open, and you cannot enter the secured area by mistake.",
+    "Ce înseamnă „secvență obligatorie“ (Zwangsläufigkeit) la un sistem de alarmă antiefracție?",
+    "Secvența obligatorie previne greșelile de operare: sistemul nu poate fi armat cât timp, de ex., o fereastră este deschisă, iar zona asigurată nu poate fi accesată din greșeală.",
+  ],
+  'te-014': [
+    "What is an alarm receiving and service centre (NSL)?",
+    "Alarms from many sites come in at the NSL. The staff assess them and, for example, send a response service or alert the police and fire brigade.",
+    "Ce este un dispecerat de alarmă și servicii (NSL)?",
+    "La NSL ajung alarme de la multe obiective. Angajații le evaluează și trimit, de ex., o echipă de intervenție sau alertează poliția și pompierii.",
+  ],
+  'te-015': [
+    "A response service arrives at the site after a burglary alarm and sees a broken-open window. What is correct?",
+    "If there are signs of a break-in, offenders may still be in the building. Do not go in alone – secure the area, observe and call the police. Do not change any traces.",
+    "O echipă de intervenție ajunge la obiectiv după o alarmă de efracție și vede o fereastră spartă. Ce este corect?",
+    "La urme de efracție, făptașii pot fi încă în clădire. Nu intrați singur, ci asigurați zona, observați și chemați poliția. Nu modificați urmele.",
+  ],
+  'te-016': [
+    "With which features can a person identify themselves at access control?",
+    "Access control uses knowledge (PIN), possession (card, key) or biometrics (fingerprint, face). A combination is the safest.",
+    "Prin ce caracteristici se poate identifica o persoană la controlul accesului?",
+    "Controlul accesului folosește ceva ce știi (PIN), ceva ce ai (card, cheie) sau biometrie (amprentă, față). O combinație este cea mai sigură.",
+  ],
+  'te-017': [
+    "What is a separation system (e.g. turnstile or personnel airlock) for?",
+    "Separation systems prevent an unauthorised person from slipping through together with an authorised person.",
+    "La ce servește un sistem de separare a persoanelor (de ex. turnichet sau ecluză)?",
+    "Sistemele de separare împiedică o persoană neautorizată să treacă împreună cu o persoană autorizată.",
+  ],
+  'te-018': [
+    "What is part of proper key management at a site?",
+    "Keys are relevant for security. It must be traceable who had which key and when. Keys are stored securely.",
+    "Ce face parte dintr-o gestionare corectă a cheilor la obiectiv?",
+    "Cheile sunt importante pentru securitate. Trebuie să se poată verifica cine a avut ce cheie și când. Cheile sunt păstrate în siguranță.",
+  ],
+  'te-019': [
+    "You have lost a master key for the site. What do you do?",
+    "A lost master key is a big security risk. The loss must be reported immediately so that, for example, locks can be changed.",
+    "Ați pierdut o cheie generală a obiectivului. Ce faceți?",
+    "O cheie generală pierdută este un risc mare de securitate. Pierderea trebuie raportată imediat, ca de ex. încuietorile să poată fi schimbate.",
+  ],
+  'te-020': [
+    "What is a PTZ camera?",
+    "PTZ stands for pan, tilt, zoom. With it, areas can be watched in a targeted way from the control room.",
+    "Ce este o cameră PTZ?",
+    "PTZ înseamnă pan, tilt, zoom – rotire, înclinare și zoom. Cu ea se pot observa țintit anumite zone din camera de control.",
+  ],
+  'te-021': [
+    "What is a guard tour system for?",
+    "A guard tour system (e.g. checkpoints with a chip) proves that the patrol was carried out as agreed.",
+    "La ce servește un sistem de control al rondului?",
+    "Un sistem de control al rondului (de ex. puncte de control cu cip) dovedește că rondul a fost făcut așa cum s-a convenit.",
+  ],
+  'te-022': [
+    "What does „RC 2“ mean for a door or window?",
+    "RC stands for resistance class. The higher the number, the longer the part withstands a break-in attempt.",
+    "Ce înseamnă „RC 2“ la o ușă sau fereastră?",
+    "RC înseamnă clasă de rezistență (Resistance Class). Cu cât numărul este mai mare, cu atât elementul rezistă mai mult la o încercare de efracție.",
+  ],
+  'te-023': [
+    "What is meant by perimeter protection?",
+    "Perimeter protection secures the site already at its boundary. This way, offenders are detected early, before they reach the building.",
+    "Ce se înțelege prin protecția perimetrală?",
+    "Protecția perimetrală asigură terenul deja la limită. Astfel făptașii sunt descoperiți din timp, înainte să ajungă la clădire.",
+  ],
+  'te-024': [
+    "What is trap monitoring in an intruder alarm system?",
+    "With trap monitoring, not all openings are secured, but areas that an offender will almost certainly have to enter.",
+    "Ce este supravegherea de tip capcană la un sistem de alarmă antiefracție?",
+    "La supravegherea de tip capcană nu sunt asigurate toate deschiderile, ci zonele prin care un făptaș trebuie aproape sigur să treacă.",
+  ],
+  'te-025': [
+    "What should a guard do if an alarm system reports a fault?",
+    "Fault messages must also be taken seriously: check, document, report. A faulty system can fail in an emergency.",
+    "Ce ar trebui să facă un agent de pază dacă un sistem de alarmă semnalează o defecțiune?",
+    "Și semnalările de defecțiune trebuie luate în serios: verificați, documentați, raportați. Un sistem defect poate să nu funcționeze în caz de urgență.",
+  ],
+  'te-026': [
+    "Why is an emergency power supply (e.g. battery) important for alarm systems?",
+    "Offenders can switch off the power. With emergency power, the system keeps working for a certain time and can raise an alarm.",
+    "De ce este importantă alimentarea de rezervă (de ex. acumulator) la sistemele de alarmă?",
+    "Făptașii pot întrerupe curentul. Cu alimentarea de rezervă, sistemul rămâne funcțional un anumit timp și poate da alarma.",
+  ],
+};

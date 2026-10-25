@@ -15,12 +15,12 @@ export const FRAGEN: Frage[] = [
       'Der Bundesverband der Sicherheitswirtschaft',
     ],
     richtig: [0],
-    erklaerung: 'Die Erlaubnis erteilt die zuständige Behörde (meist Gewerbe- oder Ordnungsamt). Die IHK nimmt nur die Unterrichtung und die Sachkundeprüfung ab.',
+    erklaerung: 'Die Erlaubnis erteilt die [[zuständige Behörde]] (meist Gewerbe- oder Ordnungsamt). Die IHK nimmt nur die [[Unterrichtung]] und die [[Sachkundeprüfung]] ab.',
     rechtsgrundlage: '§ 34a Abs. 1 GewO',
   },
   {
     id: 'oe-002', sachgebiet: 'oeffentlich', typ: 'multi', schwierigkeit: 2, geprueft: false,
-    text: 'Für welche Tätigkeiten ist die Sachkundeprüfung vorgeschrieben?',
+    text: 'Für welche Tätigkeiten ist die [[Sachkundeprüfung]] vorgeschrieben?',
     antworten: [
       'Kontrollgänge im öffentlichen Verkehrsraum',
       'Bewachung eines umzäunten Baustellengeländes ohne Publikumsverkehr',
@@ -30,7 +30,7 @@ export const FRAGEN: Frage[] = [
       'Reinigung von Bürogebäuden',
     ],
     richtig: [0, 2, 4],
-    erklaerung: 'Für besonders konfliktträchtige Tätigkeiten reicht die Unterrichtung nicht aus. Dazu gehören u. a. Kontrollgänge im öffentlichen Verkehrsraum, Ladendetektive und der Einlassbereich von Diskotheken.',
+    erklaerung: 'Für besonders konfliktträchtige Tätigkeiten reicht die [[Unterrichtung]] nicht aus. Dazu gehören u. a. Kontrollgänge im öffentlichen Verkehrsraum, Ladendetektive und der Einlassbereich von Diskotheken.',
     rechtsgrundlage: '§ 34a Abs. 1a Satz 2 GewO',
   },
   {
@@ -44,7 +44,7 @@ export const FRAGEN: Frage[] = [
       'Sie darf Bußgelder verhängen.',
     ],
     richtig: [2],
-    erklaerung: 'Zwang auszuüben ist Aufgabe des Staates. Private Sicherheitskräfte haben keine hoheitlichen Befugnisse, sondern nur Jedermannsrechte wie Notwehr oder die vorläufige Festnahme.',
+    erklaerung: 'Zwang auszuüben ist Aufgabe des Staates. Private Sicherheitskräfte haben keine hoheitlichen Befugnisse, sondern nur Jedermannsrechte wie [[Notwehr]] oder die [[vorläufige Festnahme]].',
   },
   {
     id: 'oe-004', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 1, geprueft: false,
@@ -71,7 +71,7 @@ export const FRAGEN: Frage[] = [
       'Gewerbe dürfen keine Steuern zahlen.',
     ],
     richtig: [3],
-    erklaerung: 'Grundsätzlich darf jeder ein Gewerbe betreiben. Einschränkungen gibt es nur, wenn ein Gesetz sie vorschreibt – wie die Erlaubnispflicht für das Bewachungsgewerbe in § 34a GewO.',
+    erklaerung: 'Grundsätzlich darf jeder ein Gewerbe betreiben. Einschränkungen gibt es nur, wenn ein Gesetz sie vorschreibt – wie die Erlaubnispflicht für das [[Bewachungsgewerbe]] in § 34a GewO.',
     rechtsgrundlage: '§ 1 GewO',
   },
   {
@@ -99,7 +99,7 @@ export const FRAGEN: Frage[] = [
       'Die gewerbsmäßige Bewachung von Leben oder Eigentum fremder Personen',
     ],
     richtig: [4],
-    erklaerung: 'Bewachungsgewerbe heißt: Jemand bewacht gewerbsmäßig – also gegen Bezahlung und auf Dauer – Leben oder Eigentum fremder Personen.',
+    erklaerung: '[[Bewachungsgewerbe]] heißt: Jemand bewacht gewerbsmäßig – also gegen Bezahlung und auf Dauer – Leben oder [[Eigentum]] fremder Personen.',
     rechtsgrundlage: '§ 34a Abs. 1 GewO',
   },
   {
@@ -114,12 +114,12 @@ export const FRAGEN: Frage[] = [
       'Er muss mindestens 30 Jahre alt sein.',
     ],
     richtig: [0, 2, 4],
-    erklaerung: 'Der Unternehmer braucht Zuverlässigkeit, geordnete Vermögensverhältnisse, eine Haftpflichtversicherung und den Nachweis der Sachkundeprüfung. Staatsangehörigkeit und Schulabschluss sind keine Voraussetzung.',
+    erklaerung: 'Der Unternehmer braucht [[Zuverlässigkeit]], geordnete Vermögensverhältnisse, eine Haftpflichtversicherung und den Nachweis der [[Sachkundeprüfung]]. Staatsangehörigkeit und Schulabschluss sind keine Voraussetzung.',
     rechtsgrundlage: '§ 34a Abs. 1 GewO',
   },
   {
     id: 'oe-009', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 1, geprueft: false,
-    text: 'Welche Verordnung regelt die Pflichten im Bewachungsgewerbe genauer?',
+    text: 'Welche Verordnung regelt die Pflichten im [[Bewachungsgewerbe]] genauer?',
     antworten: [
       'Die Straßenverkehrs-Ordnung',
       'Die Arbeitsstättenverordnung',
@@ -128,11 +128,11 @@ export const FRAGEN: Frage[] = [
       'Die Verordnung über Fundsachen',
     ],
     richtig: [2],
-    erklaerung: 'Die Bewachungsverordnung (BewachV) regelt viele Einzelheiten, z. B. Unterrichtung, Sachkundeprüfung, Dienstausweis, Dienstkleidung und Pflichten des Gewerbetreibenden.',
+    erklaerung: 'Die Bewachungsverordnung (BewachV) regelt viele Einzelheiten, z. B. [[Unterrichtung]], [[Sachkundeprüfung]], Dienstausweis, Dienstkleidung und Pflichten des Gewerbetreibenden.',
   },
   {
     id: 'oe-010', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 1, geprueft: false,
-    text: 'Wie lange dauert die Unterrichtung bei der IHK für Wachpersonen?',
+    text: 'Wie lange dauert die [[Unterrichtung]] bei der IHK für Wachpersonen?',
     antworten: [
       '8 Unterrichtsstunden',
       '20 Unterrichtsstunden',
@@ -141,12 +141,12 @@ export const FRAGEN: Frage[] = [
       '40 Unterrichtsstunden',
     ],
     richtig: [4],
-    erklaerung: 'Die Unterrichtung für Wachpersonen dauert 40 Unterrichtsstunden. Am Ende gibt es eine Bescheinigung. Eine Prüfung wie bei der Sachkundeprüfung gibt es dort nicht.',
+    erklaerung: 'Die [[Unterrichtung]] für Wachpersonen dauert 40 Unterrichtsstunden. Am Ende gibt es eine Bescheinigung. Eine Prüfung wie bei der [[Sachkundeprüfung]] gibt es dort nicht.',
     rechtsgrundlage: 'BewachV',
   },
   {
     id: 'oe-011', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 1, geprueft: false,
-    text: 'Wer nimmt die Sachkundeprüfung nach § 34a GewO ab?',
+    text: 'Wer nimmt die [[Sachkundeprüfung]] nach § 34a GewO ab?',
     antworten: [
       'Die Polizei',
       'Die Industrie- und Handelskammer (IHK)',
@@ -155,27 +155,27 @@ export const FRAGEN: Frage[] = [
       'Die Agentur für Arbeit',
     ],
     richtig: [1],
-    erklaerung: 'Die Sachkundeprüfung wird vor der IHK abgelegt. Die Erlaubnis für das Gewerbe erteilt dagegen die zuständige Behörde.',
+    erklaerung: 'Die [[Sachkundeprüfung]] wird vor der IHK abgelegt. Die [[Erlaubnis]] für das Gewerbe erteilt dagegen die [[zuständige Behörde]].',
     rechtsgrundlage: '§ 34a Abs. 1a GewO',
   },
   {
     id: 'oe-012', sachgebiet: 'oeffentlich', typ: 'multi', schwierigkeit: 3, geprueft: false,
-    text: 'Eine Person wurde in den letzten fünf Jahren rechtskräftig verurteilt. Bei welchen Taten gilt sie in der Regel als unzuverlässig für das Bewachungsgewerbe?',
+    text: 'Eine Person wurde in den letzten fünf Jahren rechtskräftig verurteilt. Bei welchen Taten gilt sie in der Regel als unzuverlässig für das [[Bewachungsgewerbe]]?',
     antworten: [
       'Bußgeld wegen Falschparkens',
-      'Diebstahl',
+      '[[Diebstahl]]',
       'Bußgeld wegen zu schnellen Fahrens',
-      'Körperverletzung',
+      '[[Körperverletzung]]',
       'Betrug',
       'Verspätete Abgabe der Steuererklärung',
     ],
     richtig: [1, 3, 4],
-    erklaerung: 'Wer in den letzten fünf Jahren wegen bestimmter Straftaten rechtskräftig verurteilt wurde, ist in der Regel unzuverlässig. Dazu gehören z. B. Diebstahl, Körperverletzung und Betrug. Ein Bußgeld im Straßenverkehr ist keine Verurteilung wegen einer Straftat.',
+    erklaerung: 'Wer in den letzten fünf Jahren wegen bestimmter Straftaten rechtskräftig verurteilt wurde, ist in der Regel unzuverlässig. Dazu gehören z. B. [[Diebstahl]], [[Körperverletzung]] und Betrug. Ein Bußgeld im Straßenverkehr ist keine Verurteilung wegen einer Straftat.',
     rechtsgrundlage: '§ 34a Abs. 1 GewO',
   },
   {
     id: 'oe-013', sachgebiet: 'oeffentlich', typ: 'multi', schwierigkeit: 3, geprueft: false, unsicher: true,
-    text: 'Wo holt die Behörde bei der Prüfung der Zuverlässigkeit Auskünfte ein?',
+    text: 'Wo holt die Behörde bei der Prüfung der [[Zuverlässigkeit]] Auskünfte ein?',
     antworten: [
       'Beim Bundeszentralregister',
       'Bei der Krankenkasse',
@@ -190,7 +190,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'oe-014', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Wer muss eine Haftpflichtversicherung für das Bewachungsgewerbe nachweisen?',
+    text: 'Wer muss eine Haftpflichtversicherung für das [[Bewachungsgewerbe]] nachweisen?',
     antworten: [
       'Jede Wachperson selbst',
       'Der Gewerbetreibende (Unternehmer)',
@@ -242,7 +242,7 @@ export const FRAGEN: Frage[] = [
       'Eine Blutprobe anordnen',
     ],
     richtig: [0, 2, 4],
-    erklaerung: 'Private Sicherheitskräfte haben nur [[Jedermannrechte|jedermannrecht]]: Notwehr, Notstand, Selbsthilfe und vorläufige Festnahme. Durchsuchen, Bußgelder oder Blutproben sind Aufgaben des Staates.',
+    erklaerung: 'Private Sicherheitskräfte haben nur [[Jedermannrechte|jedermannrecht]]: Notwehr, [[Notstand]], [[Selbsthilfe]] und [[vorläufige Festnahme]]. Durchsuchen, Bußgelder oder Blutproben sind Aufgaben des Staates.',
   },
   {
     id: 'oe-018', sachgebiet: 'oeffentlich', typ: 'multi', schwierigkeit: 2, geprueft: false,
@@ -274,7 +274,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'oe-020', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Gegen wen richten sich die Grundrechte in erster Linie?',
+    text: 'Gegen wen richten sich die [[Grundrechte]] in erster Linie?',
     antworten: [
       'Gegen ausländische Staaten',
       'Nur gegen Privatpersonen',
@@ -283,7 +283,7 @@ export const FRAGEN: Frage[] = [
       'Gegen die Europäische Union',
     ],
     richtig: [3],
-    erklaerung: 'Grundrechte schützen den Bürger vor allem vor Eingriffen des Staates (Abwehrrechte). Sie wirken aber auch im Verhältnis zwischen Privatpersonen, z. B. über die Gesetze.',
+    erklaerung: '[[Grundrechte]] schützen den Bürger vor allem vor Eingriffen des Staates (Abwehrrechte). Sie wirken aber auch im Verhältnis zwischen Privatpersonen, z. B. über die Gesetze.',
     rechtsgrundlage: 'Art. 1 Abs. 3 GG',
   },
   {
@@ -338,7 +338,7 @@ export const FRAGEN: Frage[] = [
       'Gar nicht',
     ],
     richtig: [1],
-    erklaerung: 'Eine Ordnungswidrigkeit ist ein leichter Verstoß. Sie wird mit einer Geldbuße geahndet, nicht mit einer Strafe.',
+    erklaerung: 'Eine [[Ordnungswidrigkeit]] ist ein leichter Verstoß. Sie wird mit einer Geldbuße geahndet, nicht mit einer Strafe.',
     rechtsgrundlage: '§ 1 OWiG',
   },
   {
@@ -366,12 +366,12 @@ export const FRAGEN: Frage[] = [
       'Eine Anzeige bei der Polizei',
     ],
     richtig: [3],
-    erklaerung: 'Ein Verwaltungsakt ist eine Regelung einer Behörde in einem einzelnen Fall, z. B. die Erteilung oder der Widerruf einer Erlaubnis.',
+    erklaerung: 'Ein [[Verwaltungsakt]] ist eine Regelung einer Behörde in einem einzelnen Fall, z. B. die Erteilung oder der Widerruf einer [[Erlaubnis]].',
     rechtsgrundlage: '§ 35 VwVfG',
   },
   {
     id: 'oe-027', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Wie kann man sich gegen einen belastenden [[Verwaltungsakt]], z. B. die Ablehnung der Erlaubnis, wehren?',
+    text: 'Wie kann man sich gegen einen belastenden [[Verwaltungsakt]], z. B. die Ablehnung der [[Erlaubnis]], wehren?',
     antworten: [
       'Gar nicht, Behördenentscheidungen sind endgültig',
       'Mit Widerspruch oder Klage beim Verwaltungsgericht',
@@ -380,7 +380,7 @@ export const FRAGEN: Frage[] = [
       'Nur durch eine Strafanzeige',
     ],
     richtig: [1],
-    erklaerung: 'Gegen einen Verwaltungsakt kann man Widerspruch einlegen (wenn vorgesehen) oder Klage beim Verwaltungsgericht erheben.',
+    erklaerung: 'Gegen einen [[Verwaltungsakt]] kann man Widerspruch einlegen (wenn vorgesehen) oder Klage beim Verwaltungsgericht erheben.',
   },
   {
     id: 'oe-028', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 2, geprueft: false,
@@ -435,12 +435,12 @@ export const FRAGEN: Frage[] = [
       'Er muss sie bei der Krankenkasse anmelden, sonst nichts.',
     ],
     richtig: [3],
-    erklaerung: 'Wachpersonen müssen vor dem Einsatz über das Bewacherregister gemeldet werden. Die Behörde prüft dann ihre Zuverlässigkeit.',
+    erklaerung: 'Wachpersonen müssen vor dem Einsatz über das [[Bewacherregister]] gemeldet werden. Die Behörde prüft dann ihre [[Zuverlässigkeit]].',
     rechtsgrundlage: '§ 34a Abs. 1a GewO, BewachV',
   },
   {
     id: 'oe-032', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 3, geprueft: false, unsicher: true,
-    text: 'Welche Stelle führt das bundesweite Bewacherregister?',
+    text: 'Welche Stelle führt das bundesweite [[Bewacherregister]]?',
     antworten: [
       'Das Bundeskriminalamt',
       'Das Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA)',
@@ -449,12 +449,12 @@ export const FRAGEN: Frage[] = [
       'Das Statistische Bundesamt',
     ],
     richtig: [1],
-    erklaerung: 'Das Bewacherregister wird vom Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA) geführt. Die zuständigen Behörden der Länder arbeiten damit.',
+    erklaerung: 'Das [[Bewacherregister]] wird vom Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA) geführt. Die zuständigen Behörden der Länder arbeiten damit.',
     rechtsgrundlage: '§ 11b GewO',
   },
   {
     id: 'oe-033', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Darf die Behörde die Erlaubnis nach § 34a GewO mit Auflagen verbinden?',
+    text: 'Darf die Behörde die [[Erlaubnis]] nach § 34a GewO mit Auflagen verbinden?',
     antworten: [
       'Ja, soweit es zum Schutz der Allgemeinheit oder der Auftraggeber nötig ist.',
       'Nur der Bundestag darf Auflagen festlegen.',
@@ -463,12 +463,12 @@ export const FRAGEN: Frage[] = [
       'Nur, wenn die IHK zustimmt.',
     ],
     richtig: [0],
-    erklaerung: 'Die Erlaubnis kann beschränkt und mit Auflagen verbunden werden, soweit das zum Schutz der Allgemeinheit oder der Auftraggeber erforderlich ist.',
+    erklaerung: 'Die [[Erlaubnis]] kann beschränkt und mit Auflagen verbunden werden, soweit das zum Schutz der Allgemeinheit oder der Auftraggeber erforderlich ist.',
     rechtsgrundlage: '§ 34a Abs. 1 GewO',
   },
   {
     id: 'oe-034', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Was kann die Behörde tun, wenn ein Unternehmer nach Erteilung der Erlaubnis unzuverlässig wird?',
+    text: 'Was kann die Behörde tun, wenn ein Unternehmer nach Erteilung der [[Erlaubnis]] unzuverlässig wird?',
     antworten: [
       'Sie kann die Erlaubnis widerrufen.',
       'Sie darf nur eine Verwarnung aussprechen.',
@@ -477,12 +477,12 @@ export const FRAGEN: Frage[] = [
       'Sie kann den Unternehmer verhaften.',
     ],
     richtig: [0],
-    erklaerung: 'Werden der Behörde nachträglich Tatsachen bekannt, die die Unzuverlässigkeit begründen, kann sie die Erlaubnis widerrufen.',
+    erklaerung: 'Werden der Behörde nachträglich Tatsachen bekannt, die die Unzuverlässigkeit begründen, kann sie die [[Erlaubnis]] widerrufen.',
     rechtsgrundlage: '§ 49 VwVfG, § 34a GewO',
   },
   {
     id: 'oe-035', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Was passiert, wenn jemand ein Bewachungsgewerbe ohne Erlaubnis betreibt?',
+    text: 'Was passiert, wenn jemand ein [[Bewachungsgewerbe]] ohne [[Erlaubnis]] betreibt?',
     antworten: [
       'Nichts, solange niemand verletzt wird.',
       'Er handelt ordnungswidrig und kann mit einer Geldbuße belegt werden.',
@@ -491,12 +491,12 @@ export const FRAGEN: Frage[] = [
       'Er bekommt automatisch eine Erlaubnis.',
     ],
     richtig: [1],
-    erklaerung: 'Wer ein erlaubnispflichtiges Gewerbe ohne Erlaubnis betreibt, begeht eine Ordnungswidrigkeit. Die Behörde kann außerdem die Fortsetzung des Betriebs verhindern.',
+    erklaerung: 'Wer ein erlaubnispflichtiges Gewerbe ohne [[Erlaubnis]] betreibt, begeht eine [[Ordnungswidrigkeit]]. Die Behörde kann außerdem die Fortsetzung des Betriebs verhindern.',
     rechtsgrundlage: '§ 144 GewO, § 15 Abs. 2 GewO',
   },
   {
     id: 'oe-036', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 1, geprueft: false,
-    text: 'Wer muss der Wachperson eine Dienstanweisung erteilen?',
+    text: 'Wer muss der Wachperson eine [[Dienstanweisung]] erteilen?',
     antworten: [
       'Die Polizei',
       'Der Gewerbetreibende (Arbeitgeber)',
@@ -505,7 +505,7 @@ export const FRAGEN: Frage[] = [
       'Die Wachperson schreibt sie selbst',
     ],
     richtig: [1],
-    erklaerung: 'Der Gewerbetreibende muss der Wachperson eine Dienstanweisung geben. Darin stehen u. a. ihre Aufgaben und dass sie keine Befugnisse wie die Polizei hat.',
+    erklaerung: 'Der Gewerbetreibende muss der Wachperson eine [[Dienstanweisung]] geben. Darin stehen u. a. ihre Aufgaben und dass sie keine Befugnisse wie die Polizei hat.',
     rechtsgrundlage: 'BewachV',
   },
   {
@@ -533,7 +533,7 @@ export const FRAGEN: Frage[] = [
       'Nie, Schusswaffen sind im Bewachungsgewerbe ganz verboten',
     ],
     richtig: [1],
-    erklaerung: 'Schusswaffen im Dienst sind nur ausnahmsweise erlaubt: Die Behörde muss zustimmen, und es müssen die waffenrechtlichen Erlaubnisse vorliegen. Die Sachkundeprüfung allein reicht nicht.',
+    erklaerung: 'Schusswaffen im Dienst sind nur ausnahmsweise erlaubt: Die Behörde muss zustimmen, und es müssen die waffenrechtlichen Erlaubnisse vorliegen. Die [[Sachkundeprüfung]] allein reicht nicht.',
     rechtsgrundlage: 'BewachV, § 28 WaffG',
   },
   {
@@ -551,7 +551,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'oe-040', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Was ist der Unterschied zwischen einem Platzverweis und einem Hausverbot?',
+    text: 'Was ist der Unterschied zwischen einem Platzverweis und einem [[Hausverbot]]?',
     antworten: [
       'Es gibt keinen Unterschied.',
       'Ein Platzverweis ist eine Maßnahme der Polizei, ein Hausverbot folgt aus dem Hausrecht.',
@@ -560,11 +560,11 @@ export const FRAGEN: Frage[] = [
       'Ein Hausverbot darf nur die Polizei aussprechen.',
     ],
     richtig: [1],
-    erklaerung: 'Der Platzverweis ist eine hoheitliche Maßnahme der Polizei. Eine Sicherheitskraft kann im Auftrag des Hausrechtsinhabers ein Hausverbot aussprechen.',
+    erklaerung: 'Der Platzverweis ist eine hoheitliche Maßnahme der Polizei. Eine Sicherheitskraft kann im Auftrag des Hausrechtsinhabers ein [[Hausverbot]] aussprechen.',
   },
   {
     id: 'oe-041', sachgebiet: 'oeffentlich', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Welcher Abschluss ersetzt die Sachkundeprüfung nach § 34a GewO?',
+    text: 'Welcher Abschluss ersetzt die [[Sachkundeprüfung]] nach § 34a GewO?',
     antworten: [
       'Erste-Hilfe-Kurs',
       'Führerschein Klasse B',
@@ -573,7 +573,7 @@ export const FRAGEN: Frage[] = [
       'Gabelstaplerschein',
     ],
     richtig: [2],
-    erklaerung: 'Bestimmte Berufsabschlüsse im Sicherheitsbereich, z. B. die Fachkraft für Schutz und Sicherheit, ersetzen die Sachkundeprüfung.',
+    erklaerung: 'Bestimmte Berufsabschlüsse im Sicherheitsbereich, z. B. die Fachkraft für Schutz und Sicherheit, ersetzen die [[Sachkundeprüfung]].',
     rechtsgrundlage: 'BewachV',
   },
   {
@@ -605,7 +605,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'oe-044', sachgebiet: 'oeffentlich', typ: 'multi', schwierigkeit: 3, geprueft: false,
-    text: 'Welche Tätigkeiten erfordern die Sachkundeprüfung (nicht nur die Unterrichtung)?',
+    text: 'Welche Tätigkeiten erfordern die [[Sachkundeprüfung]] (nicht nur die [[Unterrichtung]])?',
     antworten: [
       'Pfortendienst in einer Fabrik ohne Publikumsverkehr',
       'Bewachung im Einlassbereich einer Diskothek',
@@ -615,7 +615,7 @@ export const FRAGEN: Frage[] = [
       'Fahrten als Kurier ohne Bewachungsaufgaben',
     ],
     richtig: [1, 3, 4],
-    erklaerung: 'Die Sachkundeprüfung ist u. a. Pflicht für Kontrollgänge im öffentlichen Verkehrsraum, den Schutz vor Ladendieben und den Einlassbereich von Diskotheken. Für einfache Objektbewachung reicht die Unterrichtung.',
+    erklaerung: 'Die [[Sachkundeprüfung]] ist u. a. Pflicht für Kontrollgänge im öffentlichen Verkehrsraum, den Schutz vor Ladendieben und den Einlassbereich von Diskotheken. Für einfache Objektbewachung reicht die [[Unterrichtung]].',
     rechtsgrundlage: '§ 34a Abs. 1a GewO',
   },
   {

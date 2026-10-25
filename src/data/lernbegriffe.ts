@@ -1,6 +1,6 @@
 import { GlossarEintrag } from './types';
 
-// Lernwörter für die Karteikarten. Anders als das Glossar sind sie in den Fragen nicht antippbar.
+// Lernwörter für die Karteikarten. Sie sind (wie das Glossar) in Fragen antippbar, wenn sie dort markiert sind.
 // ENTWURF: Übersetzungen und Erklärungen müssen vor dem Release geprüft werden (geprueft: true setzen).
 export const LERNBEGRIFFE: GlossarEintrag[] = [
   {

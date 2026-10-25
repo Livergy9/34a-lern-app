@@ -15,7 +15,7 @@ export const FRAGEN: Frage[] = [
       'Die Verfolgung eines Täters, der bereits geflohen ist',
     ],
     richtig: [0],
-    erklaerung: 'Notwehr setzt einen gegenwärtigen (gerade stattfindenden) und rechtswidrigen Angriff voraus. Die Verteidigung muss erforderlich sein – Rache oder Strafe nach dem Angriff ist keine Notwehr.',
+    erklaerung: '[[Notwehr]] setzt einen gegenwärtigen (gerade stattfindenden) und rechtswidrigen Angriff voraus. Die Verteidigung muss erforderlich sein – Rache oder Strafe nach dem Angriff ist keine Notwehr.',
     rechtsgrundlage: '§ 32 StGB',
   },
   {
@@ -30,12 +30,12 @@ export const FRAGEN: Frage[] = [
       'Die Festnahme ist nur bei Verbrechen erlaubt.',
     ],
     richtig: [0, 2, 4],
-    erklaerung: 'Das Jedermann-Festnahmerecht gilt, wenn jemand auf frischer Tat betroffen oder verfolgt wird UND entweder fluchtverdächtig ist oder seine Identität nicht sofort festgestellt werden kann.',
+    erklaerung: 'Das Jedermann-Festnahmerecht gilt, wenn jemand [[auf frischer Tat]] betroffen oder verfolgt wird UND entweder fluchtverdächtig ist oder seine Identität nicht sofort festgestellt werden kann.',
     rechtsgrundlage: '§ 127 Abs. 1 StPO',
   },
   {
     id: 'st-003', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 1, geprueft: false,
-    text: 'Was ist ein Diebstahl nach § 242 StGB?',
+    text: 'Was ist ein [[Diebstahl]] nach § 242 StGB?',
     antworten: [
       'Das Wegnehmen einer fremden beweglichen Sache in der Absicht, sie sich rechtswidrig zuzueignen',
       'Das Beschädigen einer fremden Sache',
@@ -44,7 +44,7 @@ export const FRAGEN: Frage[] = [
       'Das Finden einer verlorenen Sache',
     ],
     richtig: [0],
-    erklaerung: 'Diebstahl bedeutet: Wegnahme einer fremden beweglichen Sache mit [[Zueignungsabsicht]] – der Täter will die Sache wie ein Eigentümer behalten oder nutzen.',
+    erklaerung: '[[Diebstahl]] bedeutet: Wegnahme einer fremden beweglichen Sache mit [[Zueignungsabsicht]] – der Täter will die Sache wie ein Eigentümer behalten oder nutzen.',
     rechtsgrundlage: '§ 242 StGB',
   },
   {
@@ -58,7 +58,7 @@ export const FRAGEN: Frage[] = [
       'Jede Straftat ist ein Verbrechen.',
     ],
     richtig: [0],
-    erklaerung: 'Verbrechen sind Taten mit einer Mindeststrafe von einem Jahr Freiheitsstrafe. Alle anderen Straftaten sind Vergehen.',
+    erklaerung: '[[Verbrechen]] sind Taten mit einer Mindeststrafe von einem Jahr Freiheitsstrafe. Alle anderen Straftaten sind Vergehen.',
     rechtsgrundlage: '§ 12 StGB',
   },
   {
@@ -72,7 +72,7 @@ export const FRAGEN: Frage[] = [
       'Die [[Staatsanwaltschaft]], unterstützt von der Polizei',
     ],
     richtig: [4],
-    erklaerung: 'Die Staatsanwaltschaft leitet das Ermittlungsverfahren. Die Polizei ermittelt in ihrem Auftrag. Sicherheitskräfte haben dabei keine eigenen Befugnisse.',
+    erklaerung: 'Die [[Staatsanwaltschaft]] leitet das Ermittlungsverfahren. Die Polizei ermittelt in ihrem Auftrag. Sicherheitskräfte haben dabei keine eigenen Befugnisse.',
     rechtsgrundlage: '§§ 152, 160, 163 StPO',
   },
   {
@@ -101,7 +101,7 @@ export const FRAGEN: Frage[] = [
       'Meinung der Nachbarn',
     ],
     richtig: [0, 2, 4],
-    erklaerung: 'Eine Straftat liegt vor, wenn der Tatbestand erfüllt ist, die Tat rechtswidrig war (kein Rechtfertigungsgrund wie Notwehr) und der Täter schuldhaft gehandelt hat.',
+    erklaerung: 'Eine Straftat liegt vor, wenn der Tatbestand erfüllt ist, die Tat rechtswidrig war (kein Rechtfertigungsgrund wie [[Notwehr]]) und der Täter schuldhaft gehandelt hat.',
   },
   {
     id: 'st-008', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 1, geprueft: false,
@@ -114,7 +114,7 @@ export const FRAGEN: Frage[] = [
       'Der Täter handelt mit Wissen und Wollen.',
     ],
     richtig: [4],
-    erklaerung: 'Vorsatz bedeutet Wissen und Wollen der Tat. Es reicht auch, wenn der Täter den Erfolg für möglich hält und billigend in Kauf nimmt.',
+    erklaerung: '[[Vorsatz]] bedeutet Wissen und Wollen der Tat. Es reicht auch, wenn der Täter den Erfolg für möglich hält und billigend in Kauf nimmt.',
     rechtsgrundlage: '§ 15 StGB',
   },
   {
@@ -142,7 +142,7 @@ export const FRAGEN: Frage[] = [
       'Nur nachts.',
     ],
     richtig: [3],
-    erklaerung: 'Strafbar ist grundsätzlich nur vorsätzliches Handeln. Fahrlässigkeit nur, wenn das Gesetz es ausdrücklich sagt, z. B. fahrlässige Körperverletzung (§ 229 StGB).',
+    erklaerung: 'Strafbar ist grundsätzlich nur vorsätzliches Handeln. [[Fahrlässigkeit]] nur, wenn das Gesetz es ausdrücklich sagt, z. B. fahrlässige [[Körperverletzung]] (§ 229 StGB).',
     rechtsgrundlage: '§ 15 StGB',
   },
   {
@@ -156,7 +156,7 @@ export const FRAGEN: Frage[] = [
       'Ein Verstoß gegen eine Hausordnung',
     ],
     richtig: [3],
-    erklaerung: 'Vergehen sind Taten mit geringerer Mindeststrafe als ein Jahr oder mit Geldstrafe, z. B. Diebstahl. [[Verbrechen]] haben eine Mindeststrafe von einem Jahr.',
+    erklaerung: 'Vergehen sind Taten mit geringerer Mindeststrafe als ein Jahr oder mit Geldstrafe, z. B. [[Diebstahl]]. [[Verbrechen]] haben eine Mindeststrafe von einem Jahr.',
     rechtsgrundlage: '§ 12 Abs. 2 StGB',
   },
   {
@@ -170,7 +170,7 @@ export const FRAGEN: Frage[] = [
       'Nur, wenn der Täter es zugibt.',
     ],
     richtig: [3],
-    erklaerung: 'Der Versuch eines Verbrechens ist immer strafbar. Bei Vergehen nur, wenn es im Gesetz steht – z. B. beim Diebstahl.',
+    erklaerung: 'Der Versuch eines Verbrechens ist immer strafbar. Bei Vergehen nur, wenn es im Gesetz steht – z. B. beim [[Diebstahl]].',
     rechtsgrundlage: '§ 23 Abs. 1 StGB',
   },
   {
@@ -270,26 +270,26 @@ export const FRAGEN: Frage[] = [
       'Der Angriff muss vorher angekündigt werden.',
     ],
     richtig: [1, 2, 4],
-    erklaerung: 'Notwehr setzt einen gegenwärtigen, rechtswidrigen Angriff und eine erforderliche (und gebotene) Verteidigung voraus. Waffen oder eine Zustimmung der Polizei sind keine Voraussetzung.',
+    erklaerung: '[[Notwehr]] setzt einen gegenwärtigen, rechtswidrigen Angriff und eine erforderliche (und gebotene) Verteidigung voraus. Waffen oder eine Zustimmung der Polizei sind keine Voraussetzung.',
     rechtsgrundlage: '§ 32 StGB',
   },
   {
     id: 'st-020', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 1, geprueft: false,
     text: 'Ein Mann greift einen Besucher an. Die Sicherheitskraft hilft dem Besucher und wehrt den Angreifer ab. Wie nennt man das?',
     antworten: [
-      'Selbsthilfe',
+      '[[Selbsthilfe]]',
       'Nothilfe – sie ist ein Fall der Notwehr',
       'Festnahme',
-      'Besitzkehr',
-      'Notstand',
+      '[[Besitzkehr]]',
+      '[[Notstand]]',
     ],
     richtig: [1],
-    erklaerung: 'Notwehr darf man auch zugunsten eines anderen ausüben. Das nennt man Nothilfe.',
+    erklaerung: '[[Notwehr]] darf man auch zugunsten eines anderen ausüben. Das nennt man [[Nothilfe]].',
     rechtsgrundlage: '§ 32 Abs. 2 StGB',
   },
   {
     id: 'st-021', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Ein Dieb versucht, einer Besucherin die Handtasche zu entreißen. Darf die Sicherheitskraft Notwehr ausüben?',
+    text: 'Ein Dieb versucht, einer Besucherin die Handtasche zu entreißen. Darf die Sicherheitskraft [[Notwehr]] ausüben?',
     antworten: [
       'Nur, wenn die Tasche mehr als 1.000 Euro wert ist.',
       'Nein, Notwehr gilt nur bei Angriffen auf das Leben.',
@@ -298,12 +298,12 @@ export const FRAGEN: Frage[] = [
       'Nur, wenn ein Polizist es erlaubt.',
     ],
     richtig: [3],
-    erklaerung: 'Notwehr ist gegen Angriffe auf jedes Rechtsgut erlaubt, auch auf Eigentum. Die Verteidigung muss aber erforderlich sein.',
+    erklaerung: '[[Notwehr]] ist gegen Angriffe auf jedes Rechtsgut erlaubt, auch auf [[Eigentum]]. Die Verteidigung muss aber erforderlich sein.',
     rechtsgrundlage: '§ 32 StGB',
   },
   {
     id: 'st-022', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Ein unbewaffneter Mann schubst eine Sicherheitskraft leicht. Diese zieht daraufhin ein Messer und verletzt ihn. Ist das Notwehr?',
+    text: 'Ein unbewaffneter Mann schubst eine Sicherheitskraft leicht. Diese zieht daraufhin ein Messer und verletzt ihn. Ist das [[Notwehr]]?',
     antworten: [
       'Ja, jede Verteidigung ist erlaubt.',
       'Ja, weil der Mann angefangen hat.',
@@ -326,15 +326,15 @@ export const FRAGEN: Frage[] = [
       'Die Bestrafung des Angreifers',
     ],
     richtig: [2],
-    erklaerung: 'Wer die Grenzen der Notwehr aus Verwirrung, Furcht oder Schrecken überschreitet, wird nicht bestraft. Aus Wut oder Rache gilt das nicht.',
+    erklaerung: 'Wer die Grenzen der [[Notwehr]] aus Verwirrung, Furcht oder Schrecken überschreitet, wird nicht bestraft. Aus Wut oder Rache gilt das nicht.',
     rechtsgrundlage: '§ 33 StGB',
   },
   {
     id: 'st-024', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 3, geprueft: false,
-    text: 'Um ein Kind aus einem brennenden Haus zu retten, tritt eine Sicherheitskraft die Haustür ein. Was rechtfertigt die Sachbeschädigung?',
+    text: 'Um ein Kind aus einem brennenden Haus zu retten, tritt eine Sicherheitskraft die Haustür ein. Was rechtfertigt die [[Sachbeschädigung]]?',
     antworten: [
       'Notwehr, weil die Tür angreift',
-      'Selbsthilfe',
+      '[[Selbsthilfe]]',
       'Vorläufige Festnahme',
       'Gar nichts, sie wird bestraft',
       'Rechtfertigender Notstand, weil das Leben des Kindes viel wichtiger ist als die Tür',
@@ -345,7 +345,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'st-025', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 3, geprueft: false,
-    text: 'Was regelt der entschuldigende Notstand nach § 35 StGB?',
+    text: 'Was regelt der entschuldigende [[Notstand]] nach § 35 StGB?',
     antworten: [
       'Man darf jede Sache beschädigen, um Geld zu sparen.',
       'Man darf Täter bestrafen.',
@@ -354,7 +354,7 @@ export const FRAGEN: Frage[] = [
       'Man muss nie Erste Hilfe leisten.',
     ],
     richtig: [3],
-    erklaerung: 'Beim entschuldigenden Notstand bleibt die Tat rechtswidrig, aber der Täter handelt ohne Schuld. Das gilt nur bei Gefahr für Leben, Leib oder Freiheit.',
+    erklaerung: 'Beim entschuldigenden [[Notstand]] bleibt die Tat rechtswidrig, aber der Täter handelt ohne Schuld. Das gilt nur bei Gefahr für Leben, Leib oder Freiheit.',
     rechtsgrundlage: '§ 35 StGB',
   },
   {
@@ -368,12 +368,12 @@ export const FRAGEN: Frage[] = [
       'Jemanden körperlich misshandeln oder an der Gesundheit schädigen',
     ],
     richtig: [4],
-    erklaerung: 'Körperverletzung begeht, wer eine andere Person körperlich misshandelt oder an der Gesundheit schädigt. Auch eine Ohrfeige kann schon eine Körperverletzung sein.',
+    erklaerung: '[[Körperverletzung]] begeht, wer eine andere Person körperlich misshandelt oder an der Gesundheit schädigt. Auch eine Ohrfeige kann schon eine Körperverletzung sein.',
     rechtsgrundlage: '§ 223 StGB',
   },
   {
     id: 'st-027', sachgebiet: 'strafrecht', typ: 'multi', schwierigkeit: 3, geprueft: false,
-    text: 'Wann liegt eine gefährliche Körperverletzung nach § 224 StGB vor?',
+    text: 'Wann liegt eine gefährliche [[Körperverletzung]] nach § 224 StGB vor?',
     antworten: [
       'Mittels einer Waffe oder eines anderen gefährlichen Werkzeugs',
       'Durch eine Beleidigung',
@@ -383,7 +383,7 @@ export const FRAGEN: Frage[] = [
       'Durch Lügen',
     ],
     richtig: [0, 2, 3],
-    erklaerung: 'Gefährliche Körperverletzung liegt u. a. vor bei Waffen oder gefährlichen Werkzeugen, gemeinschaftlicher Begehung, einem hinterlistigen Überfall oder einer lebensgefährdenden Behandlung.',
+    erklaerung: 'Gefährliche [[Körperverletzung]] liegt u. a. vor bei Waffen oder gefährlichen Werkzeugen, gemeinschaftlicher Begehung, einem hinterlistigen Überfall oder einer lebensgefährdenden Behandlung.',
     rechtsgrundlage: '§ 224 StGB',
   },
   {
@@ -392,12 +392,12 @@ export const FRAGEN: Frage[] = [
     antworten: [
       'Fahrlässige Körperverletzung',
       'Gefährliche Körperverletzung',
-      'Raub',
-      'Nötigung',
+      '[[Raub]]',
+      '[[Nötigung]]',
       'Gar keine, weil es keine Absicht war',
     ],
     richtig: [0],
-    erklaerung: 'Wer durch Fahrlässigkeit die Körperverletzung einer anderen Person verursacht, kann wegen fahrlässiger Körperverletzung bestraft werden.',
+    erklaerung: 'Wer durch [[Fahrlässigkeit]] die [[Körperverletzung]] einer anderen Person verursacht, kann wegen fahrlässiger Körperverletzung bestraft werden.',
     rechtsgrundlage: '§ 229 StGB',
   },
   {
@@ -411,7 +411,7 @@ export const FRAGEN: Frage[] = [
       'Jemanden zum Arzt begleiten',
     ],
     richtig: [2],
-    erklaerung: 'Nötigung ist das rechtswidrige Zwingen eines anderen mit Gewalt oder Drohung. Auch eine Sicherheitskraft kann sich strafbar machen, wenn sie Personen ohne Recht zu etwas zwingt.',
+    erklaerung: '[[Nötigung]] ist das rechtswidrige Zwingen eines anderen mit Gewalt oder Drohung. Auch eine Sicherheitskraft kann sich strafbar machen, wenn sie Personen ohne Recht zu etwas zwingt.',
     rechtsgrundlage: '§ 240 StGB',
   },
   {
@@ -419,9 +419,9 @@ export const FRAGEN: Frage[] = [
     text: 'Ein Ladendetektiv sperrt einen Kunden ohne Verdacht einer Straftat für zwei Stunden in einen Raum. Welche Straftat kommt in Betracht?',
     antworten: [
       'Freiheitsberaubung',
-      'Diebstahl',
-      'Unterschlagung',
-      'Hausfriedensbruch',
+      '[[Diebstahl]]',
+      '[[Unterschlagung]]',
+      '[[Hausfriedensbruch]]',
       'Betrug',
     ],
     richtig: [0],
@@ -468,12 +468,12 @@ export const FRAGEN: Frage[] = [
       'Er klingelt an einer Haustür.',
     ],
     richtig: [0, 2, 4],
-    erklaerung: 'Hausfriedensbruch: widerrechtliches Eindringen in Wohnung, Geschäftsräume oder befriedetes Besitztum – oder Verweilen trotz Aufforderung des Berechtigten.',
+    erklaerung: '[[Hausfriedensbruch]]: widerrechtliches Eindringen in Wohnung, Geschäftsräume oder befriedetes Besitztum – oder Verweilen trotz Aufforderung des Berechtigten.',
     rechtsgrundlage: '§ 123 StGB',
   },
   {
     id: 'st-034', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 3, geprueft: false,
-    text: 'Wie wird Hausfriedensbruch nach § 123 StGB verfolgt?',
+    text: 'Wie wird [[Hausfriedensbruch]] nach § 123 StGB verfolgt?',
     antworten: [
       'Immer von Amts wegen',
       'Nur auf Antrag des Berechtigten (Antragsdelikt)',
@@ -482,21 +482,21 @@ export const FRAGEN: Frage[] = [
       'Nur, wenn ein Schaden über 1.000 Euro entsteht',
     ],
     richtig: [1],
-    erklaerung: 'Hausfriedensbruch ist ein Antragsdelikt. Ohne Strafantrag des Berechtigten wird er nicht verfolgt.',
+    erklaerung: '[[Hausfriedensbruch]] ist ein [[Antragsdelikt]]. Ohne [[Strafantrag]] des Berechtigten wird er nicht verfolgt.',
     rechtsgrundlage: '§ 123 Abs. 2 StGB',
   },
   {
     id: 'st-035', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 2, geprueft: false,
     text: 'Sie finden eine Geldbörse und behalten das Geld für sich. Welche Straftat kommt in Betracht?',
     antworten: [
-      'Diebstahl',
-      'Raub',
+      '[[Diebstahl]]',
+      '[[Raub]]',
       'Betrug',
-      'Unterschlagung',
+      '[[Unterschlagung]]',
       'Hehlerei',
     ],
     richtig: [3],
-    erklaerung: 'Beim Diebstahl wird fremder Gewahrsam gebrochen. Eine verlorene Sache hat niemand mehr im Gewahrsam. Wer sie sich rechtswidrig zueignet, begeht Unterschlagung.',
+    erklaerung: 'Beim [[Diebstahl]] wird fremder [[Gewahrsam]] gebrochen. Eine verlorene Sache hat niemand mehr im Gewahrsam. Wer sie sich rechtswidrig zueignet, begeht [[Unterschlagung]].',
     rechtsgrundlage: '§ 246 StGB',
   },
   {
@@ -505,17 +505,17 @@ export const FRAGEN: Frage[] = [
     antworten: [
       'Einfacher Diebstahl',
       'Betrug',
-      'Hausfriedensbruch',
-      'Unterschlagung',
+      '[[Hausfriedensbruch]]',
+      '[[Unterschlagung]]',
       'Räuberischer Diebstahl',
     ],
     richtig: [4],
-    erklaerung: 'Wer bei einem Diebstahl auf frischer Tat betroffen wird und Gewalt anwendet, um die Beute zu behalten, wird wie ein Räuber bestraft (räuberischer Diebstahl).',
+    erklaerung: 'Wer bei einem [[Diebstahl]] [[auf frischer Tat]] betroffen wird und Gewalt anwendet, um die Beute zu behalten, wird wie ein Räuber bestraft (räuberischer Diebstahl).',
     rechtsgrundlage: '§ 252 StGB',
   },
   {
     id: 'st-037', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 1, geprueft: false,
-    text: 'Was ist ein Raub?',
+    text: 'Was ist ein [[Raub]]?',
     antworten: [
       'Kaufen gestohlener Ware',
       'Heimliches Wegnehmen ohne Gewalt',
@@ -524,7 +524,7 @@ export const FRAGEN: Frage[] = [
       'Beschädigen einer fremden Sache',
     ],
     richtig: [3],
-    erklaerung: 'Raub ist Diebstahl mit Gewalt oder Drohung gegen eine Person. Raub ist ein Verbrechen.',
+    erklaerung: '[[Raub]] ist [[Diebstahl]] mit Gewalt oder Drohung gegen eine Person. Raub ist ein [[Verbrechen]].',
     rechtsgrundlage: '§ 249 StGB',
   },
   {
@@ -538,7 +538,7 @@ export const FRAGEN: Frage[] = [
       'Als Diebstahl in einem besonders schweren Fall (Einbruch in ein Gebäude)',
     ],
     richtig: [4],
-    erklaerung: 'Wer zur Ausführung der Tat in ein Gebäude einbricht, begeht in der Regel einen besonders schweren Fall des Diebstahls. Daneben können Sachbeschädigung und Hausfriedensbruch vorliegen.',
+    erklaerung: 'Wer zur Ausführung der Tat in ein Gebäude einbricht, begeht in der Regel einen besonders schweren Fall des Diebstahls. Daneben können [[Sachbeschädigung]] und [[Hausfriedensbruch]] vorliegen.',
     rechtsgrundlage: '§ 243 Abs. 1 Nr. 1 StGB',
   },
   {
@@ -559,14 +559,14 @@ export const FRAGEN: Frage[] = [
     id: 'st-040', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 1, geprueft: false,
     text: 'Jemand sprüht ein Graffiti an eine fremde Hauswand. Welche Straftat liegt vor?',
     antworten: [
-      'Nötigung',
-      'Diebstahl',
+      '[[Nötigung]]',
+      '[[Diebstahl]]',
       'Betrug',
-      'Sachbeschädigung',
+      '[[Sachbeschädigung]]',
       'Gar keine, das ist Kunst',
     ],
     richtig: [3],
-    erklaerung: 'Wer das Erscheinungsbild einer fremden Sache unbefugt nicht nur unerheblich und nicht nur vorübergehend verändert, begeht Sachbeschädigung.',
+    erklaerung: 'Wer das Erscheinungsbild einer fremden Sache unbefugt nicht nur unerheblich und nicht nur vorübergehend verändert, begeht [[Sachbeschädigung]].',
     rechtsgrundlage: '§ 303 Abs. 2 StGB',
   },
   {
@@ -587,10 +587,10 @@ export const FRAGEN: Frage[] = [
     id: 'st-042', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 2, geprueft: false,
     text: 'Jemand zeigt am Einlass einen selbst hergestellten falschen Ausweis vor. Welche Straftat kommt in Betracht?',
     antworten: [
-      'Hausfriedensbruch',
+      '[[Hausfriedensbruch]]',
       'Urkundenfälschung',
-      'Diebstahl',
-      'Sachbeschädigung',
+      '[[Diebstahl]]',
+      '[[Sachbeschädigung]]',
       'Beleidigung',
     ],
     richtig: [1],
@@ -608,7 +608,7 @@ export const FRAGEN: Frage[] = [
       'Nein, sie schützt Amtsträger wie Polizeibeamte bei Vollstreckungshandlungen, nicht private Sicherheitskräfte.',
     ],
     richtig: [4],
-    erklaerung: '§ 113 StGB schützt Amtsträger und Soldaten bei Vollstreckungshandlungen. Private Sicherheitskräfte sind keine Amtsträger. Angriffe auf sie sind aber z. B. als Körperverletzung strafbar.',
+    erklaerung: '§ 113 StGB schützt Amtsträger und Soldaten bei Vollstreckungshandlungen. Private Sicherheitskräfte sind keine Amtsträger. Angriffe auf sie sind aber z. B. als [[Körperverletzung]] strafbar.',
     rechtsgrundlage: '§ 113 StGB',
   },
   {
@@ -617,8 +617,8 @@ export const FRAGEN: Frage[] = [
     antworten: [
       'Amtsanmaßung',
       'Betrug',
-      'Hausfriedensbruch',
-      'Diebstahl',
+      '[[Hausfriedensbruch]]',
+      '[[Diebstahl]]',
       'Unterlassene Hilfeleistung',
     ],
     richtig: [0],
@@ -650,7 +650,7 @@ export const FRAGEN: Frage[] = [
       'Straftaten werden nur auf Antrag verfolgt.',
     ],
     richtig: [3],
-    erklaerung: 'Nach dem Legalitätsprinzip ist die Staatsanwaltschaft verpflichtet, bei einem Anfangsverdacht einzuschreiten. Bei Ordnungswidrigkeiten gilt dagegen das Opportunitätsprinzip.',
+    erklaerung: 'Nach dem Legalitätsprinzip ist die [[Staatsanwaltschaft]] verpflichtet, bei einem Anfangsverdacht einzuschreiten. Bei Ordnungswidrigkeiten gilt dagegen das Opportunitätsprinzip.',
     rechtsgrundlage: '§ 152 Abs. 2 StPO',
   },
   {
@@ -664,12 +664,12 @@ export const FRAGEN: Frage[] = [
       'Nur beim Bürgermeister',
     ],
     richtig: [0],
-    erklaerung: 'Eine Strafanzeige kann bei Polizei, Staatsanwaltschaft oder Amtsgericht erstattet werden, mündlich oder schriftlich.',
+    erklaerung: 'Eine Strafanzeige kann bei Polizei, [[Staatsanwaltschaft]] oder Amtsgericht erstattet werden, mündlich oder schriftlich.',
     rechtsgrundlage: '§ 158 StPO',
   },
   {
     id: 'st-048', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Wie lange hat der Verletzte Zeit, einen Strafantrag zu stellen?',
+    text: 'Wie lange hat der Verletzte Zeit, einen [[Strafantrag]] zu stellen?',
     antworten: [
       'Drei Monate ab Kenntnis von Tat und Täter',
       'Einen Monat',
@@ -685,20 +685,20 @@ export const FRAGEN: Frage[] = [
     id: 'st-049', sachgebiet: 'strafrecht', typ: 'multi', schwierigkeit: 3, geprueft: false,
     text: 'Welche Straftaten sind (grundsätzlich) Antragsdelikte?',
     antworten: [
-      'Hausfriedensbruch',
-      'Raub',
+      '[[Hausfriedensbruch]]',
+      '[[Raub]]',
       'Beleidigung',
       'Mord',
       'Einfache Sachbeschädigung',
       'Brandstiftung',
     ],
     richtig: [0, 2, 4],
-    erklaerung: 'Antragsdelikte werden nur auf Antrag verfolgt, z. B. Hausfriedensbruch und Beleidigung. Bei einfacher Sachbeschädigung und Körperverletzung kann die Staatsanwaltschaft auch ohne Antrag bei besonderem öffentlichem Interesse ermitteln. Raub und Mord werden immer von Amts wegen verfolgt.',
+    erklaerung: 'Antragsdelikte werden nur auf Antrag verfolgt, z. B. [[Hausfriedensbruch]] und Beleidigung. Bei einfacher Sachbeschädigung und [[Körperverletzung]] kann die [[Staatsanwaltschaft]] auch ohne Antrag bei besonderem öffentlichem Interesse ermitteln. Raub und Mord werden immer von Amts wegen verfolgt.',
     rechtsgrundlage: '§§ 123, 194, 303c StGB',
   },
   {
     id: 'st-050', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Ein Passant wirft eine leere Dose auf den Gehweg (Ordnungswidrigkeit). Darf eine Sicherheitskraft ihn nach § 127 StPO vorläufig festnehmen?',
+    text: 'Ein Passant wirft eine leere Dose auf den Gehweg ([[Ordnungswidrigkeit]]). Darf eine Sicherheitskraft ihn nach § 127 StPO vorläufig festnehmen?',
     antworten: [
       'Ja, bei jedem Regelverstoß.',
       'Ja, wenn er sich nicht entschuldigt.',
@@ -707,7 +707,7 @@ export const FRAGEN: Frage[] = [
       'Ja, wenn der Auftraggeber es will.',
     ],
     richtig: [2],
-    erklaerung: 'Die vorläufige Festnahme durch jedermann ist nur bei einer Straftat erlaubt. Bei Ordnungswidrigkeiten besteht dieses Recht nicht.',
+    erklaerung: 'Die [[vorläufige Festnahme]] durch jedermann ist nur bei einer Straftat erlaubt. Bei Ordnungswidrigkeiten besteht dieses Recht nicht.',
     rechtsgrundlage: '§ 127 Abs. 1 StPO',
   },
   {
@@ -764,7 +764,7 @@ export const FRAGEN: Frage[] = [
       'Die Staatsanwaltschaft allein',
     ],
     richtig: [2],
-    erklaerung: 'Untersuchungshaft wird durch einen schriftlichen Haftbefehl des Richters angeordnet. Das gilt auch für jede andere Freiheitsentziehung über die vorläufige Festnahme hinaus.',
+    erklaerung: 'Untersuchungshaft wird durch einen schriftlichen Haftbefehl des Richters angeordnet. Das gilt auch für jede andere Freiheitsentziehung über die [[vorläufige Festnahme]] hinaus.',
     rechtsgrundlage: '§ 114 StPO, Art. 104 GG',
   },
   {
@@ -778,7 +778,7 @@ export const FRAGEN: Frage[] = [
       'Ein Richter, bei Gefahr im Verzug auch Staatsanwaltschaft oder Polizei',
     ],
     richtig: [4],
-    erklaerung: 'Durchsuchungen ordnet grundsätzlich der Richter an. Nur bei Gefahr im Verzug dürfen auch Staatsanwaltschaft und ihre Ermittlungspersonen sie anordnen.',
+    erklaerung: 'Durchsuchungen ordnet grundsätzlich der Richter an. Nur bei Gefahr im Verzug dürfen auch [[Staatsanwaltschaft]] und ihre Ermittlungspersonen sie anordnen.',
     rechtsgrundlage: '§ 105 StPO, Art. 13 GG',
   },
   {
@@ -811,7 +811,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'st-058', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Wofür braucht man einen Waffenschein?',
+    text: 'Wofür braucht man einen [[Waffenschein]]?',
     antworten: [
       'Für den Kauf eines Küchenmessers',
       'Für den Besitz einer Waffe zu Hause',
@@ -820,12 +820,12 @@ export const FRAGEN: Frage[] = [
       'Für das Tragen einer Taschenlampe',
     ],
     richtig: [2],
-    erklaerung: 'Die Waffenbesitzkarte erlaubt Erwerb und Besitz. Für das Führen einer Schusswaffe in der Öffentlichkeit braucht man zusätzlich einen Waffenschein.',
+    erklaerung: 'Die Waffenbesitzkarte erlaubt Erwerb und [[Besitz]]. Für das Führen einer Schusswaffe in der Öffentlichkeit braucht man zusätzlich einen [[Waffenschein]].',
     rechtsgrundlage: '§ 10 WaffG',
   },
   {
     id: 'st-059', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Wofür braucht man den kleinen Waffenschein?',
+    text: 'Wofür braucht man den kleinen [[Waffenschein]]?',
     antworten: [
       'Für das Führen einer scharfen Pistole',
       'Für den Kauf eines Jagdgewehrs',
@@ -834,7 +834,7 @@ export const FRAGEN: Frage[] = [
       'Für das Führen von Schreckschuss-, Reizstoff- und Signalwaffen',
     ],
     richtig: [4],
-    erklaerung: 'Wer Schreckschuss-, Reizstoff- oder Signalwaffen außerhalb der eigenen Wohnung führen will, braucht den kleinen Waffenschein.',
+    erklaerung: 'Wer Schreckschuss-, Reizstoff- oder Signalwaffen außerhalb der eigenen Wohnung führen will, braucht den kleinen [[Waffenschein]].',
     rechtsgrundlage: '§ 10 Abs. 4 WaffG',
   },
   {
@@ -848,12 +848,12 @@ export const FRAGEN: Frage[] = [
       'Nein, das ist grundsätzlich verboten.',
     ],
     richtig: [4],
-    erklaerung: 'Bei öffentlichen Veranstaltungen ist das Führen von Waffen grundsätzlich verboten. Ausnahmen gibt es nur mit behördlicher Erlaubnis, z. B. für bestimmte Bewachungsaufgaben.',
+    erklaerung: 'Bei öffentlichen Veranstaltungen ist das Führen von Waffen grundsätzlich verboten. Ausnahmen gibt es nur mit behördlicher [[Erlaubnis]], z. B. für bestimmte Bewachungsaufgaben.',
     rechtsgrundlage: '§ 42 WaffG',
   },
   {
     id: 'st-061', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Ab welchem Alter kann man grundsätzlich eine waffenrechtliche Erlaubnis bekommen?',
+    text: 'Ab welchem Alter kann man grundsätzlich eine waffenrechtliche [[Erlaubnis]] bekommen?',
     antworten: [
       'Ab 14 Jahren',
       'Ab 16 Jahren',
@@ -882,7 +882,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'st-063', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Was ist der Unterschied zwischen Waffenbesitzkarte und Waffenschein?',
+    text: 'Was ist der Unterschied zwischen Waffenbesitzkarte und [[Waffenschein]]?',
     antworten: [
       'Es gibt keinen Unterschied.',
       'Die Waffenbesitzkarte erlaubt das Führen, der Waffenschein nur den Kauf.',
@@ -891,7 +891,7 @@ export const FRAGEN: Frage[] = [
       'Die Waffenbesitzkarte erlaubt Erwerb und Besitz, der Waffenschein das Führen.',
     ],
     richtig: [4],
-    erklaerung: 'Waffenbesitzkarte: Erwerb und Besitz einer Schusswaffe. Waffenschein: zusätzlich das Führen außerhalb der eigenen Räume.',
+    erklaerung: 'Waffenbesitzkarte: Erwerb und [[Besitz]] einer Schusswaffe. [[Waffenschein]]: zusätzlich das Führen außerhalb der eigenen Räume.',
     rechtsgrundlage: '§ 10 WaffG',
   },
   {
@@ -912,19 +912,19 @@ export const FRAGEN: Frage[] = [
     id: 'st-065', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 2, geprueft: false,
     text: 'Was ist eine „Straftat gegen das Leben“?',
     antworten: [
-      'Sachbeschädigung',
+      '[[Sachbeschädigung]]',
       'Beleidigung',
       'Totschlag',
-      'Diebstahl',
-      'Hausfriedensbruch',
+      '[[Diebstahl]]',
+      '[[Hausfriedensbruch]]',
     ],
     richtig: [2],
-    erklaerung: 'Straftaten gegen das Leben sind z. B. Mord (§ 211 StGB) und Totschlag (§ 212 StGB). Sie sind Verbrechen.',
+    erklaerung: 'Straftaten gegen das Leben sind z. B. Mord (§ 211 StGB) und Totschlag (§ 212 StGB). Sie sind [[Verbrechen]].',
     rechtsgrundlage: '§§ 211, 212 StGB',
   },
   {
     id: 'st-066', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 3, geprueft: false, unsicher: true,
-    text: 'Eine Person nimmt sich im Supermarkt eine Flasche aus dem Regal und trinkt sie im Laden aus, ohne zu bezahlen. Ab wann kann ein Diebstahl vollendet sein?',
+    text: 'Eine Person nimmt sich im Supermarkt eine Flasche aus dem Regal und trinkt sie im Laden aus, ohne zu bezahlen. Ab wann kann ein [[Diebstahl]] vollendet sein?',
     antworten: [
       'Schon im Laden, wenn sie neuen Gewahrsam begründet, z. B. die Ware verbraucht oder versteckt',
       'Erst wenn sie zu Hause ist',
@@ -938,7 +938,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'st-067', sachgebiet: 'strafrecht', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Was gehört zur [[Zueignungsabsicht]] beim Diebstahl?',
+    text: 'Was gehört zur [[Zueignungsabsicht]] beim [[Diebstahl]]?',
     antworten: [
       'Der Täter will die Sache nur kurz ansehen.',
       'Der Täter will die Sache sofort zurückgeben.',
@@ -947,7 +947,7 @@ export const FRAGEN: Frage[] = [
       'Der Täter will die Sache sich oder einem Dritten rechtswidrig wie ein Eigentümer zueignen.',
     ],
     richtig: [4],
-    erklaerung: 'Zueignungsabsicht heißt: Der Täter will den Eigentümer dauerhaft verdrängen und die Sache sich selbst oder einem anderen zuführen.',
+    erklaerung: '[[Zueignungsabsicht]] heißt: Der Täter will den Eigentümer dauerhaft verdrängen und die Sache sich selbst oder einem anderen zuführen.',
     rechtsgrundlage: '§ 242 StGB',
   },
 ];

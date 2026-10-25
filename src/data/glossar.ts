@@ -1,4 +1,5 @@
 import { GlossarEintrag } from './types';
+import { LERNBEGRIFFE } from './lernbegriffe';
 
 // Glossar = Wörter, die man ohne gutes Deutsch nicht versteht – vor allem Rechtsbegriffe.
 // Sie sind in Fragen und Lernkapiteln antippbar. Einfache Lernwörter stehen in lernbegriffe.ts (nur Karteikarten).
@@ -18,9 +19,9 @@ export const GLOSSAR: GlossarEintrag[] = [
     id: 'erlaubnis', begriff: 'Erlaubnis', sachgebiet: 'oeffentlich',
     uebersetzung: { en: 'licence / permit', ro: 'autorizație' },
     erklaerung: {
-      de: 'Eine behördliche Genehmigung. Ohne sie darf man das Gewerbe nicht betreiben.',
-      en: 'An official permission. Without it, you may not run the business.',
-      ro: 'O aprobare oficială. Fără ea nu ai voie să desfășori activitatea.',
+      de: 'Eine Genehmigung von einer Behörde. Ohne sie darf man z. B. kein Bewachungsgewerbe betreiben oder keine Schusswaffe besitzen.',
+      en: 'A permission from an authority. Without it you may not, for example, run a security business or own a firearm.',
+      ro: 'O aprobare de la o autoritate. Fără ea nu ai voie, de exemplu, să desfășori o activitate de pază sau să deții o armă de foc.',
     },
     geprueft: false,
   },
@@ -324,10 +325,223 @@ export const GLOSSAR: GlossarEintrag[] = [
     },
     geprueft: false,
   },
+  // Ergänzt am 25.10.2026: weitere wichtige Fachbegriffe aus den Fragen
+  {
+    id: 'speicherbegrenzung', begriff: 'Speicherbegrenzung', sachgebiet: 'datenschutz',
+    uebersetzung: { en: 'storage limitation', ro: 'limitarea stocării' },
+    erklaerung: {
+      de: 'Daten dürfen nur so lange gespeichert werden, wie sie für den Zweck gebraucht werden. Danach müssen sie gelöscht werden.',
+      en: 'Data may only be stored for as long as it is needed for the purpose. After that it must be deleted.',
+      ro: 'Datele pot fi stocate doar cât timp sunt necesare pentru scop. După aceea trebuie șterse.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'datenpanne', begriff: 'Datenpanne', sachgebiet: 'datenschutz',
+    uebersetzung: { en: 'data breach', ro: 'încălcarea securității datelor' },
+    erklaerung: {
+      de: 'Personenbezogene Daten gehen verloren, werden gestohlen oder kommen in falsche Hände. Das muss sofort gemeldet werden.',
+      en: 'Personal data is lost, stolen or gets into the wrong hands. This must be reported immediately.',
+      ro: 'Date cu caracter personal sunt pierdute, furate sau ajung în mâini greșite. Acest lucru trebuie raportat imediat.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'aufsichtsbehoerde', begriff: 'Aufsichtsbehörde', sachgebiet: 'datenschutz',
+    uebersetzung: { en: 'supervisory authority', ro: 'autoritate de supraveghere' },
+    erklaerung: {
+      de: 'Ein Amt, das kontrolliert, ob Firmen den Datenschutz einhalten. Dort kann man sich auch beschweren.',
+      en: 'An authority that checks whether companies follow data protection rules. You can also complain there.',
+      ro: 'O autoritate care verifică dacă firmele respectă protecția datelor. Acolo se pot face și plângeri.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'besitzdiener', begriff: 'Besitzdiener', sachgebiet: 'bgb',
+    uebersetzung: { en: 'possession servant (person holding a thing for someone else)', ro: 'servitor al posesiei (deține lucrul pentru altcineva)' },
+    erklaerung: {
+      de: 'Eine Person, die eine Sache für einen anderen in der Hand hat und dessen Anweisungen folgen muss, z. B. eine Wachperson für den Auftraggeber.',
+      en: 'A person who holds a thing for someone else and must follow their instructions, e.g. a guard for the client.',
+      ro: 'O persoană care ține un lucru pentru altcineva și trebuie să-i urmeze instrucțiunile, de ex. un agent de pază pentru client.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'verbotene-eigenmacht', begriff: 'verbotene Eigenmacht', sachgebiet: 'bgb',
+    uebersetzung: { en: 'unlawful interference with possession', ro: 'tulburarea ilegală a posesiei' },
+    erklaerung: {
+      de: 'Jemand nimmt einem Besitzer eine Sache weg oder stört ihn im Besitz – ohne seinen Willen und ohne Erlaubnis durch ein Gesetz.',
+      en: 'Someone takes a thing away from the possessor or disturbs their possession – against their will and without legal permission.',
+      ro: 'Cineva ia un lucru de la posesor sau îl tulbură în posesie – fără voia lui și fără permisiune legală.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'besitzwehr', begriff: 'Besitzwehr', sachgebiet: 'bgb',
+    uebersetzung: { en: 'defence of possession', ro: 'apărarea posesiei' },
+    erklaerung: {
+      de: 'Der Besitzer darf sich mit Gewalt gegen verbotene Eigenmacht wehren, während sie passiert. Die Gewalt muss angemessen sein.',
+      en: 'The possessor may use force to defend against unlawful interference while it is happening. The force must be appropriate.',
+      ro: 'Posesorul se poate apăra cu forța împotriva tulburării ilegale a posesiei cât timp aceasta are loc. Forța trebuie să fie potrivită.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'besitzkehr', begriff: 'Besitzkehr', sachgebiet: 'bgb',
+    uebersetzung: { en: 'recovery of possession', ro: 'recuperarea posesiei' },
+    erklaerung: {
+      de: 'Der Besitzer darf sich eine weggenommene Sache sofort mit Gewalt zurückholen, wenn der Täter auf frischer Tat erwischt oder verfolgt wird.',
+      en: 'The possessor may immediately take back a stolen thing by force if the offender is caught in the act or pursued.',
+      ro: 'Posesorul își poate lua imediat înapoi cu forța un lucru luat, dacă făptașul este prins în flagrant sau urmărit.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'geschaeftsfaehigkeit', begriff: 'Geschäftsfähigkeit', sachgebiet: 'bgb',
+    uebersetzung: { en: 'legal capacity (to make contracts)', ro: 'capacitate de exercițiu' },
+    erklaerung: {
+      de: 'Die Fähigkeit, selbst wirksam Verträge zu schließen. Unter 7 Jahren: keine, von 7 bis 17: beschränkt, ab 18: voll.',
+      en: 'The ability to make valid contracts yourself. Under 7: none, from 7 to 17: limited, from 18: full.',
+      ro: 'Capacitatea de a încheia singur contracte valabile. Sub 7 ani: deloc, de la 7 la 17 ani: restrânsă, de la 18 ani: deplină.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'hausverbot', begriff: 'Hausverbot', sachgebiet: 'bgb',
+    uebersetzung: { en: 'ban from the premises', ro: 'interdicție de acces' },
+    erklaerung: {
+      de: 'Der Inhaber des Hausrechts verbietet einer Person, ein Gebäude oder Gelände zu betreten. Wer trotzdem kommt, begeht Hausfriedensbruch.',
+      en: 'The holder of the domestic authority forbids a person to enter a building or site. Anyone who still comes commits trespass.',
+      ro: 'Cel care are dreptul asupra spațiului interzice unei persoane să intre într-o clădire sau pe un teren. Cine vine totuși comite violare de domiciliu.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'nothilfe', begriff: 'Nothilfe', sachgebiet: 'strafrecht',
+    uebersetzung: { en: 'defence of others', ro: 'apărarea altei persoane' },
+    erklaerung: {
+      de: 'Notwehr für eine andere Person: Man verteidigt jemanden, der gerade rechtswidrig angegriffen wird.',
+      en: 'Self-defence for another person: you defend someone who is being unlawfully attacked right now.',
+      ro: 'Legitima apărare pentru altă persoană: aperi pe cineva care este atacat ilegal chiar acum.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'unterschlagung', begriff: 'Unterschlagung', sachgebiet: 'strafrecht',
+    uebersetzung: { en: 'embezzlement / misappropriation', ro: 'însușirea bunului găsit / delapidare' },
+    erklaerung: {
+      de: 'Jemand behält eine fremde Sache rechtswidrig für sich, die er schon hat, z. B. eine gefundene Geldbörse.',
+      en: 'Someone unlawfully keeps another person\'s thing that they already have, e.g. a wallet they found.',
+      ro: 'Cineva păstrează ilegal pentru sine un lucru străin pe care îl are deja, de ex. un portofel găsit.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'strafantrag', begriff: 'Strafantrag', sachgebiet: 'strafrecht',
+    uebersetzung: { en: 'request for prosecution', ro: 'plângere prealabilă' },
+    erklaerung: {
+      de: 'Der Verletzte verlangt, dass der Täter bestraft wird. Bei manchen Taten wird nur mit Strafantrag ermittelt. Frist: drei Monate.',
+      en: 'The injured person demands that the offender be punished. For some offences, there is only an investigation if this request is made. Deadline: three months.',
+      ro: 'Victima cere pedepsirea făptașului. La unele fapte se face anchetă doar dacă există această plângere. Termen: trei luni.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'antragsdelikt', begriff: 'Antragsdelikt', sachgebiet: 'strafrecht',
+    uebersetzung: { en: 'offence prosecuted only on request', ro: 'infracțiune urmărită doar la plângere' },
+    erklaerung: {
+      de: 'Eine Straftat, die nur verfolgt wird, wenn der Verletzte einen Strafantrag stellt, z. B. Hausfriedensbruch oder Beleidigung.',
+      en: 'A criminal offence that is only prosecuted if the injured person files a request for prosecution, e.g. trespass or insult.',
+      ro: 'O infracțiune care se urmărește doar dacă victima face plângere, de ex. violarea de domiciliu sau insulta.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'gewahrsam', begriff: 'Gewahrsam', sachgebiet: 'strafrecht',
+    uebersetzung: { en: 'custody / actual control', ro: 'pază / detenție (control efectiv)' },
+    erklaerung: {
+      de: 'Die tatsächliche Herrschaft über eine Sache, z. B. die Ware im Laden gehört zum Gewahrsam des Ladeninhabers.',
+      en: 'Actual control over a thing, e.g. the goods in a shop are in the shop owner\'s custody.',
+      ro: 'Stăpânirea efectivă asupra unui lucru, de ex. marfa din magazin este în paza proprietarului magazinului.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'unterlassene-hilfeleistung', begriff: 'unterlassene Hilfeleistung', sachgebiet: 'strafrecht',
+    uebersetzung: { en: 'failure to render assistance', ro: 'omisiunea de a acorda ajutor' },
+    erklaerung: {
+      de: 'Wer bei einem Unglücksfall nicht hilft, obwohl es nötig und zumutbar ist, macht sich strafbar. Oft reicht schon der Notruf.',
+      en: 'Anyone who does not help in an accident although it is necessary and reasonable commits a criminal offence. Often an emergency call is enough.',
+      ro: 'Cine nu ajută la un accident, deși este necesar și i se poate cere, comite o infracțiune. Adesea este suficient apelul de urgență.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'waffenschein', begriff: 'Waffenschein', sachgebiet: 'strafrecht',
+    uebersetzung: { en: 'firearms carry licence', ro: 'permis de port armă' },
+    erklaerung: {
+      de: 'Erlaubnis, eine Schusswaffe außerhalb der eigenen Wohnung oder Firma bei sich zu tragen (zu führen).',
+      en: 'Permission to carry a firearm outside your own home or business.',
+      ro: 'Permisiunea de a purta o armă de foc în afara propriei locuințe sau firme.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'zuverlaessigkeit', begriff: 'Zuverlässigkeit', sachgebiet: 'oeffentlich',
+    uebersetzung: { en: 'reliability (trustworthiness)', ro: 'încredere (fiabilitate)' },
+    erklaerung: {
+      de: 'Die Behörde prüft, ob man vertrauenswürdig ist, z. B. keine passenden Vorstrafen hat. Ohne Zuverlässigkeit darf man nicht im Bewachungsgewerbe arbeiten.',
+      en: 'The authority checks whether you are trustworthy, e.g. have no relevant criminal record. Without reliability you may not work in the security business.',
+      ro: 'Autoritatea verifică dacă ești de încredere, de ex. dacă nu ai condamnări relevante. Fără această încredere nu ai voie să lucrezi în pază.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'dienstanweisung', begriff: 'Dienstanweisung', sachgebiet: 'oeffentlich',
+    uebersetzung: { en: 'service instructions', ro: 'instrucțiuni de serviciu' },
+    erklaerung: {
+      de: 'Schriftliche Anweisung des Arbeitgebers: Was die Wachperson tun muss und was sie nicht darf.',
+      en: 'Written instructions from the employer: what the guard must do and what they may not do.',
+      ro: 'Instrucțiuni scrise de la angajator: ce trebuie să facă agentul de pază și ce nu are voie.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'grundrechte', begriff: 'Grundrechte', sachgebiet: 'oeffentlich',
+    uebersetzung: { en: 'fundamental rights', ro: 'drepturi fundamentale' },
+    erklaerung: {
+      de: 'Die wichtigsten Rechte jedes Menschen aus dem Grundgesetz, z. B. Menschenwürde, Gleichheit, Schutz der Wohnung.',
+      en: 'The most important rights of every person in the Basic Law (German constitution), e.g. human dignity, equality, protection of the home.',
+      ro: 'Cele mai importante drepturi ale fiecărui om din Legea fundamentală (constituția germană), de ex. demnitatea umană, egalitatea, protecția locuinței.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'stabile-seitenlage', begriff: 'stabile Seitenlage', sachgebiet: 'uvv',
+    uebersetzung: { en: 'recovery position', ro: 'poziția laterală de siguranță' },
+    erklaerung: {
+      de: 'So legt man eine bewusstlose Person hin, die normal atmet: auf die Seite, Kopf nach hinten, damit sie nicht erstickt.',
+      en: 'How to lay down an unconscious person who is breathing normally: on their side, head tilted back, so they do not choke.',
+      ro: 'Așa se așază o persoană inconștientă care respiră normal: pe o parte, cu capul dat pe spate, ca să nu se sufoce.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'eigensicherung', begriff: 'Eigensicherung', sachgebiet: 'menschen',
+    uebersetzung: { en: 'self-protection', ro: 'autoprotecție' },
+    erklaerung: {
+      de: 'Sich selbst schützen: Abstand halten, Hände im Blick, Fluchtweg frei, wenn möglich zu zweit arbeiten.',
+      en: 'Protecting yourself: keep your distance, watch the hands, keep an escape route free, work in pairs if possible.',
+      ro: 'Să te protejezi: păstrezi distanța, urmărești mâinile, ai o cale de retragere, dacă se poate lucrezi în doi.',
+    },
+    geprueft: false,
+  },
 ];
 
-const byId = new Map(GLOSSAR.map((g) => [g.id, g]));
-const byBegriff = new Map(GLOSSAR.map((g) => [g.begriff.toLowerCase(), g]));
+// Antippbar sind Glossar-Begriffe und die Lernwörter (Karteikarten), damit jedes markierte Wort eine Erklärung hat
+const ALLE = [...GLOSSAR, ...LERNBEGRIFFE];
+const byId = new Map(ALLE.map((g) => [g.id, g]));
+const byBegriff = new Map(ALLE.map((g) => [g.begriff.toLowerCase(), g]));
 
 export const findeGlossar = (key: string): GlossarEintrag | undefined =>
   byId.get(key) ?? byBegriff.get(key.toLowerCase());

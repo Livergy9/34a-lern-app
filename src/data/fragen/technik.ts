@@ -28,7 +28,7 @@ export const FRAGEN: Frage[] = [
       'Videoaufnahmen zu speichern',
     ],
     richtig: [2],
-    erklaerung: 'Zutrittskontrolle prüft, ob eine Person berechtigt ist, einen Bereich zu betreten – z. B. per Ausweis, Karte, Code oder Personenkontrolle.',
+    erklaerung: '[[Zutrittskontrolle]] prüft, ob eine Person berechtigt ist, einen Bereich zu betreten – z. B. per Ausweis, Karte, Code oder Personenkontrolle.',
   },
   {
     id: 'te-003', sachgebiet: 'technik', typ: 'single', schwierigkeit: 1, geprueft: false,
@@ -211,7 +211,7 @@ export const FRAGEN: Frage[] = [
       'Mit ihrem Alter',
     ],
     richtig: [0, 2, 4],
-    erklaerung: 'Zutrittskontrolle nutzt Wissen (PIN), Besitz (Karte, Schlüssel) oder Biometrie (Fingerabdruck, Gesicht). Eine Kombination ist am sichersten.',
+    erklaerung: '[[Zutrittskontrolle]] nutzt Wissen (PIN), Besitz (Karte, Schlüssel) oder Biometrie (Fingerabdruck, Gesicht). Eine Kombination ist am sichersten.',
   },
   {
     id: 'te-017', sachgebiet: 'technik', typ: 'single', schwierigkeit: 2, geprueft: false,

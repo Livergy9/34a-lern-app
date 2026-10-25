@@ -4,6 +4,7 @@ import { GLOSSAR, findeGlossar } from '../src/data/glossar';
 import { LERNBEGRIFFE } from '../src/data/lernbegriffe';
 import { KAPITEL } from '../src/data/kapitel';
 import { SACHGEBIETE } from '../src/data/sachgebiete';
+import { UEBERSETZUNGEN } from '../src/data/uebersetzungen';
 
 const fehler: string[] = [];
 const TERM = /\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g;
@@ -23,6 +24,8 @@ for (const f of FRAGEN) {
   if (new Set(f.richtig).size !== f.richtig.length) fehler.push(`${f.id}: richtige Antwort doppelt`);
   if (new Set(f.antworten).size !== f.antworten.length) fehler.push(`${f.id}: Antwort doppelt`);
   if (!f.erklaerung || f.erklaerung.length < 20) fehler.push(`${f.id}: Erklärung fehlt/zu kurz`);
+  const ue = UEBERSETZUNGEN[f.id];
+  if (!ue || ue.some((x) => !x.trim())) fehler.push(`${f.id}: Übersetzung (EN/RO) fehlt oder unvollständig`);
   [f.text, ...f.antworten, f.erklaerung].forEach((t) => pruefeBegriffe(f.id, t));
 }
 const kartenIds = new Set<string>();

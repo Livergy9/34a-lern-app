@@ -170,7 +170,7 @@ export function TermText({ text, style, interaktiv = true }: { text: string; sty
   return <Text style={style}>{teile}</Text>;
 }
 
-export function GlossarInhalt({ id, kompakt }: { id: string; kompakt?: boolean }) {
+export function GlossarInhalt({ id }: { id: string; kompakt?: boolean }) {
   const { hilfeSprache } = useApp();
   const g = findeGlossar(id);
   if (!g) return null;
@@ -185,7 +185,7 @@ export function GlossarInhalt({ id, kompakt }: { id: string; kompakt?: boolean }
         ) : null}
       </View>
       <Text style={[s.body, { marginTop: 10 }]}>{g.erklaerung.de}</Text>
-      {hilfeSprache && !kompakt ? (
+      {hilfeSprache ? (
         <Text style={[s.body, { marginTop: 8, color: C.muted, fontStyle: 'italic' }]}>{g.erklaerung[hilfeSprache]}</Text>
       ) : null}
     </View>
@@ -209,6 +209,41 @@ export function GlossarSheet() {
         {glossarOffen ? <GlossarInhalt id={glossarOffen} /> : null}
       </View>
     </Modal>
+  );
+}
+
+// Knopf „Übersetzen“: schaltet die Übersetzung von Frage und Erklärung an/aus (bleibt für die nächsten Fragen an)
+export function UebersetzenKnopf() {
+  const { hilfeSprache, uebersetzungAn, setUebersetzungAn } = useApp();
+  if (!hilfeSprache) return null;
+  return (
+    <Pressable
+      onPress={() => setUebersetzungAn(!uebersetzungAn)}
+      hitSlop={8}
+      accessibilityRole="switch"
+      accessibilityState={{ checked: uebersetzungAn }}
+      style={{
+        flexDirection: 'row', alignItems: 'center', alignSelf: 'flex-start', paddingHorizontal: 10, paddingVertical: 6, borderRadius: 10,
+        backgroundColor: uebersetzungAn ? C.primary : C.primarySoft,
+      }}
+    >
+      <Ionicons name="language-outline" size={16} color={uebersetzungAn ? '#fff' : C.primary} />
+      <Text style={{ marginLeft: 6, fontWeight: '600', fontSize: 14, color: uebersetzungAn ? '#fff' : C.primary }}>
+        {uebersetzungAn ? `${SPRACHEN[hilfeSprache]} an` : `Übersetzen (${hilfeSprache.toUpperCase()})`}
+      </Text>
+    </Pressable>
+  );
+}
+
+// Übersetzter Text in einem hellblauen Kasten unter dem deutschen Text
+export function UebersetzungBox({ text, style }: { text: string; style?: StyleProp<ViewStyle> }) {
+  const { hilfeSprache } = useApp();
+  if (!hilfeSprache) return null;
+  return (
+    <View style={[{ backgroundColor: C.primarySoft, borderRadius: 12, padding: 12, flexDirection: 'row' }, style]}>
+      <Text style={{ color: C.primary, fontWeight: '700', fontSize: 13, marginRight: 8, marginTop: 2 }}>{hilfeSprache.toUpperCase()}</Text>
+      <Text style={[s.body, { flex: 1 }]}>{text}</Text>
+    </View>
   );
 }
 

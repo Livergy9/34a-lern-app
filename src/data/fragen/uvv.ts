@@ -41,7 +41,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'uv-004', sachgebiet: 'uvv', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Welche Berufsgenossenschaft ist für das Bewachungsgewerbe zuständig?',
+    text: 'Welche [[Berufsgenossenschaft]] ist für das [[Bewachungsgewerbe]] zuständig?',
     antworten: [
       'Die Berufsgenossenschaft Bau',
       'Die Berufsgenossenschaft Nahrungsmittel und Gastgewerbe',
@@ -50,11 +50,11 @@ export const FRAGEN: Frage[] = [
       'Die Verwaltungs-Berufsgenossenschaft (VBG)',
     ],
     richtig: [4],
-    erklaerung: 'Für Wach- und Sicherungsunternehmen ist die Verwaltungs-Berufsgenossenschaft (VBG) zuständig.',
+    erklaerung: 'Für Wach- und Sicherungsunternehmen ist die Verwaltungs-[[Berufsgenossenschaft]] (VBG) zuständig.',
   },
   {
     id: 'uv-005', sachgebiet: 'uvv', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Welche Unfallverhütungsvorschrift enthält die allgemeinen Grundsätze der Prävention für alle Betriebe?',
+    text: 'Welche [[Unfallverhütungsvorschrift]] enthält die allgemeinen Grundsätze der Prävention für alle Betriebe?',
     antworten: [
       'DGUV Vorschrift 1',
       'DGUV Vorschrift 23',
@@ -81,7 +81,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'uv-007', sachgebiet: 'uvv', typ: 'single', schwierigkeit: 1, geprueft: false,
-    text: 'Wer muss die persönliche Schutzausrüstung bezahlen?',
+    text: 'Wer muss die [[persönliche Schutzausrüstung]] bezahlen?',
     antworten: [
       'Die Wachperson selbst',
       'Die IHK',
@@ -90,7 +90,7 @@ export const FRAGEN: Frage[] = [
       'Der Arbeitgeber',
     ],
     richtig: [4],
-    erklaerung: 'Der Unternehmer muss die erforderliche persönliche Schutzausrüstung kostenlos zur Verfügung stellen.',
+    erklaerung: 'Der Unternehmer muss die erforderliche [[persönliche Schutzausrüstung]] kostenlos zur Verfügung stellen.',
     rechtsgrundlage: '§ 29 DGUV Vorschrift 1, § 3 ArbSchG',
   },
   {
@@ -327,7 +327,7 @@ export const FRAGEN: Frage[] = [
       'Sie beginnen sofort mit der Herzdruckmassage.',
     ],
     richtig: [3],
-    erklaerung: 'Bewusstlose mit normaler Atmung kommen in die stabile Seitenlage, damit die Atemwege frei bleiben. Notruf absetzen und die Atmung regelmäßig prüfen.',
+    erklaerung: 'Bewusstlose mit normaler Atmung kommen in die [[stabile Seitenlage]], damit die Atemwege frei bleiben. Notruf absetzen und die Atmung regelmäßig prüfen.',
   },
   {
     id: 'uv-025', sachgebiet: 'uvv', typ: 'single', schwierigkeit: 2, geprueft: false,

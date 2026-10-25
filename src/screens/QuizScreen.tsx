@@ -6,7 +6,8 @@ import { Frage } from '../data/types';
 import { sachgebietById } from '../data/sachgebiete';
 import { useNav } from '../nav';
 import { bewerte, Ergebnis, useApp } from '../state';
-import { begriffeIn, Button, C, Card, Chip, GlossarInhalt, ProgressBar, s, ScreenHeader, TermText } from '../ui';
+import { uebersetzung } from '../data/uebersetzungen';
+import { begriffeIn, Button, C, Card, Chip, GlossarInhalt, ProgressBar, s, ScreenHeader, TermText, UebersetzenKnopf, UebersetzungBox } from '../ui';
 
 const BUCHSTABEN = ['A', 'B', 'C', 'D', 'E', 'F'];
 const SCHWIERIGKEIT = { 1: 'Leicht', 2: 'Mittel', 3: 'Schwer' } as const;
@@ -53,7 +54,7 @@ export function AntwortListe({
             }}>
               <Text style={{ fontWeight: '700', color: kreisFarbe }}>{BUCHSTABEN[i]}</Text>
             </View>
-            <TermText text={a} interaktiv={interaktiv} style={[s.body, { flex: 1 }]} />
+            <TermText text={a} interaktiv={interaktiv && aufgedeckt} style={[s.body, { flex: 1 }]} />
             {icon ? <Ionicons name={icon} size={22} color={icon === 'checkmark-circle' ? C.success : C.danger} style={{ marginLeft: 8 }} /> : null}
           </Pressable>
         );
@@ -69,6 +70,9 @@ export function AntwortListe({
 
 export function FrageKopf({ frage, interaktiv, zeigeSchwierigkeit = true }: { frage: Frage; interaktiv: boolean; zeigeSchwierigkeit?: boolean }) {
   const sg = sachgebietById(frage.sachgebiet);
+  const { hilfeSprache, uebersetzungAn } = useApp();
+  // Übersetzung nur beim Lernen (interaktiv), nie in der Prüfungssimulation
+  const ue = interaktiv && hilfeSprache ? uebersetzung(frage.id, hilfeSprache) : null;
   return (
     <View>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 14 }}>
@@ -76,6 +80,12 @@ export function FrageKopf({ frage, interaktiv, zeigeSchwierigkeit = true }: { fr
         {zeigeSchwierigkeit ? <Chip label={SCHWIERIGKEIT[frage.schwierigkeit]} color={C.muted} bg={C.border} /> : null}
       </View>
       <TermText text={frage.text} interaktiv={interaktiv} style={{ fontSize: 21, lineHeight: 29, fontWeight: '700', color: C.text }} />
+      {ue ? (
+        <View style={{ marginTop: 10, gap: 8 }}>
+          <UebersetzenKnopf />
+          {uebersetzungAn ? <UebersetzungBox text={ue.text} /> : null}
+        </View>
+      ) : null}
       <Text style={[s.muted, { marginTop: 8, marginBottom: 16 }]}>
         {frage.typ === 'multi' ? 'Mehrfachauswahl · ' : ''}{anzahlHinweis(frage)}
       </Text>
@@ -85,15 +95,19 @@ export function FrageKopf({ frage, interaktiv, zeigeSchwierigkeit = true }: { fr
 
 // Erklärung, Rechtsgrundlage und Fachbegriffe nach dem Antworten (auch in der Prüfungs-Durchsicht genutzt)
 export function ErklaerungKarte({ frage, interaktiv = true }: { frage: Frage; interaktiv?: boolean }) {
+  const { hilfeSprache, uebersetzungAn } = useApp();
+  const ue = interaktiv && hilfeSprache ? uebersetzung(frage.id, hilfeSprache) : null;
   const begriffe = begriffeIn([frage.text, ...frage.antworten, frage.erklaerung].join(' '));
   return (
     <View style={{ gap: 12 }}>
       <Card>
         <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 8 }}>
           <Ionicons name="document-text-outline" size={20} color={C.primary} />
-          <Text style={[s.h3, { marginLeft: 8 }]}>Erklärung</Text>
+          <Text style={[s.h3, { marginLeft: 8, flex: 1 }]}>Erklärung</Text>
+          {ue ? <UebersetzenKnopf /> : null}
         </View>
         <TermText text={frage.erklaerung} style={s.body} interaktiv={interaktiv} />
+        {ue && uebersetzungAn ? <UebersetzungBox text={ue.erklaerung} style={{ marginTop: 10 }} /> : null}
         {frage.rechtsgrundlage ? (
           <View style={{ marginTop: 14, backgroundColor: C.bg, borderRadius: 12, padding: 12, flexDirection: 'row', alignItems: 'center' }}>
             <Ionicons name="library-outline" size={18} color={C.muted} />
@@ -199,7 +213,7 @@ export default function QuizScreen({ fragen, titel }: { fragen: Frage[]; titel?:
         ) : (
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 16 }}>
             <Ionicons name="information-circle-outline" size={18} color={C.muted} />
-            <Text style={[s.muted, { marginLeft: 6, flex: 1 }]}>Tippe auf blau unterstrichene Wörter für Übersetzung und Erklärung.</Text>
+            <Text style={[s.muted, { marginLeft: 6, flex: 1 }]}>Blau unterstrichene Wörter antippen für Fachbegriffe. „Übersetzen“ zeigt Frage und Erklärung in deiner Sprache.</Text>
           </View>
         )}
       </ScrollView>

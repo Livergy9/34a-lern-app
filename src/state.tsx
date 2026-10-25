@@ -33,6 +33,7 @@ export type PruefungEintrag = { datum: string; punkte: number; max: number; best
 type Daten = {
   version: 1;
   hilfeSprache: HilfeSprache | null; // null = keine Übersetzungshilfe
+  uebersetzungAn: boolean; // Frage und Erklärung zusätzlich in der Hilfesprache zeigen (bleibt an, bis man es ausschaltet)
   fragen: Record<string, FrageStand>;
   karten: Record<string, KarteStand>;
   lesezeichen: string[];
@@ -49,6 +50,7 @@ type Daten = {
 const START: Daten = {
   version: 1,
   hilfeSprache: 'en',
+  uebersetzungAn: false,
   fragen: {},
   karten: {},
   lesezeichen: [],
@@ -73,6 +75,7 @@ export const RICHTIG_FUER_GELERNT = 2;
 type AppState = Daten & {
   geladen: boolean;
   setHilfeSprache: (s: HilfeSprache | null) => void;
+  setUebersetzungAn: (an: boolean) => void;
   beantworte: (frage: Frage, e: Ergebnis) => void;
   bewerteKarte: (id: string, gewusst: boolean) => void;
   toggleLesezeichen: (frageId: string) => void;
@@ -143,6 +146,7 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
       glossarOffen,
       zeigeGlossar,
       setHilfeSprache: (s) => aendere((d) => ({ ...d, hilfeSprache: s })),
+      setUebersetzungAn: (an) => aendere((d) => ({ ...d, uebersetzungAn: an })),
       beantworte: (frage, e) =>
         aendere((d) => {
           const alt = d.fragen[frage.id];

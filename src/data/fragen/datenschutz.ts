@@ -26,7 +26,7 @@ export const FRAGEN: Frage[] = [
       'Daten dürfen unbegrenzt gespeichert werden.',
       '[[Datenminimierung]]',
       'Daten dürfen immer an Dritte weitergegeben werden.',
-      'Speicherbegrenzung',
+      '[[Speicherbegrenzung]]',
       'Möglichst viele Daten auf Vorrat sammeln',
     ],
     richtig: [0, 2, 4],
@@ -88,12 +88,12 @@ export const FRAGEN: Frage[] = [
       'Die Daten sind im Dienst zufällig bekannt geworden.',
     ],
     richtig: [0, 2, 4],
-    erklaerung: 'Daten dürfen nur mit einer Rechtsgrundlage verarbeitet werden, z. B. Einwilligung, Vertrag, gesetzliche Pflicht oder überwiegendes berechtigtes Interesse.',
+    erklaerung: 'Daten dürfen nur mit einer Rechtsgrundlage verarbeitet werden, z. B. [[Einwilligung]], Vertrag, gesetzliche Pflicht oder überwiegendes berechtigtes Interesse.',
     rechtsgrundlage: 'Art. 6 DSGVO',
   },
   {
     id: 'ds-007', sachgebiet: 'datenschutz', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Was gilt für eine wirksame Einwilligung in die Datenverarbeitung?',
+    text: 'Was gilt für eine wirksame [[Einwilligung]] in die Datenverarbeitung?',
     antworten: [
       'Sie muss immer mündlich erteilt werden.',
       'Schweigen gilt als Einwilligung.',
@@ -102,7 +102,7 @@ export const FRAGEN: Frage[] = [
       'Sie darf nur vom Arbeitgeber erteilt werden.',
     ],
     richtig: [3],
-    erklaerung: 'Eine Einwilligung muss freiwillig, für einen bestimmten Zweck und in Kenntnis der Sachlage gegeben werden. Sie kann jederzeit für die Zukunft widerrufen werden.',
+    erklaerung: 'Eine [[Einwilligung]] muss freiwillig, für einen bestimmten Zweck und in Kenntnis der Sachlage gegeben werden. Sie kann jederzeit für die Zukunft widerrufen werden.',
     rechtsgrundlage: 'Art. 7 DSGVO',
   },
   {
@@ -121,7 +121,7 @@ export const FRAGEN: Frage[] = [
   },
   {
     id: 'ds-009', sachgebiet: 'datenschutz', typ: 'single', schwierigkeit: 2, geprueft: false,
-    text: 'Wann müssen personenbezogene Daten gelöscht werden?',
+    text: 'Wann müssen [[personenbezogene Daten]] gelöscht werden?',
     antworten: [
       'Nie, Daten müssen immer aufbewahrt werden.',
       'Erst nach 30 Jahren.',
@@ -199,12 +199,12 @@ export const FRAGEN: Frage[] = [
       'Sie erzählen niemandem davon.',
     ],
     richtig: [3],
-    erklaerung: 'Der Verlust personenbezogener Daten ist eine Datenpanne. Sie muss sofort gemeldet werden, damit das Unternehmen reagieren und die Meldepflichten erfüllen kann.',
+    erklaerung: 'Der Verlust personenbezogener Daten ist eine [[Datenpanne]]. Sie muss sofort gemeldet werden, damit das Unternehmen reagieren und die Meldepflichten erfüllen kann.',
     rechtsgrundlage: 'Art. 33 DSGVO',
   },
   {
     id: 'ds-015', sachgebiet: 'datenschutz', typ: 'single', schwierigkeit: 3, geprueft: false,
-    text: 'Innerhalb welcher Frist muss ein Unternehmen eine meldepflichtige Datenpanne der Aufsichtsbehörde melden?',
+    text: 'Innerhalb welcher Frist muss ein Unternehmen eine meldepflichtige [[Datenpanne]] der [[Aufsichtsbehörde]] melden?',
     antworten: [
       'Innerhalb von 24 Minuten',
       'Innerhalb von 4 Wochen',
@@ -213,7 +213,7 @@ export const FRAGEN: Frage[] = [
       'Möglichst innerhalb von 72 Stunden, nachdem sie bekannt wurde',
     ],
     richtig: [4],
-    erklaerung: 'Eine Verletzung des Schutzes personenbezogener Daten ist der Aufsichtsbehörde möglichst innerhalb von 72 Stunden zu melden, wenn ein Risiko für die Betroffenen besteht.',
+    erklaerung: 'Eine Verletzung des Schutzes personenbezogener Daten ist der [[Aufsichtsbehörde]] möglichst innerhalb von 72 Stunden zu melden, wenn ein Risiko für die Betroffenen besteht.',
     rechtsgrundlage: 'Art. 33 Abs. 1 DSGVO',
   },
   {
@@ -241,7 +241,7 @@ export const FRAGEN: Frage[] = [
       'Ja, wenn die Personen sich falsch verhalten haben.',
     ],
     richtig: [1],
-    erklaerung: 'Fotos von Personen sind personenbezogene Daten. Private Aufnahmen und die Weitergabe an Freunde sind nicht erlaubt und können Bußgelder und Strafen nach sich ziehen.',
+    erklaerung: 'Fotos von Personen sind [[personenbezogene Daten]]. Private Aufnahmen und die Weitergabe an Freunde sind nicht erlaubt und können Bußgelder und Strafen nach sich ziehen.',
   },
   {
     id: 'ds-018', sachgebiet: 'datenschutz', typ: 'single', schwierigkeit: 2, geprueft: false,

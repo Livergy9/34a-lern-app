@@ -27,7 +27,7 @@ export default function MehrScreen() {
       <Text style={s.h1}>Mehr</Text>
 
       <Abschnitt titel="Hilfesprache" />
-      <Text style={[s.muted, { marginBottom: 12, marginTop: -4 }]}>Gelernt wird auf Deutsch. Fachbegriffe werden zusätzlich in dieser Sprache erklärt.</Text>
+      <Text style={[s.muted, { marginBottom: 12, marginTop: -4 }]}>Gelernt wird auf Deutsch. Fachbegriffe, Fragen und Erklärungen kannst du dir zusätzlich in dieser Sprache anzeigen lassen. In der Prüfungssimulation gibt es keine Übersetzung.</Text>
       <Card style={{ padding: 0 }}>
         {optionen.map((o, i) => (
           <Pressable key={o.label} onPress={() => app.setHilfeSprache(o.wert)} style={{ flexDirection: 'row', alignItems: 'center', padding: 16, borderTopWidth: i ? 1 : 0, borderTopColor: C.border }}>
