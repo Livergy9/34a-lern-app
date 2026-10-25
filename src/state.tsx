@@ -6,8 +6,9 @@ import { vibriere } from './feedback';
 
 export type Ergebnis = { punkte: number; max: number };
 
-// Bewertung wie IHK seit 01.07.2025: Single Choice 1 Punkt, Multiple Choice 1 Punkt je richtiger Antwort.
-// ANNAHME (mit IHK-Bewertungsschema abgleichen): falsch angekreuzte Antworten ziehen je 1 Punkt ab, minimal 0.
+// Bewertung wie IHK seit 01.07.2025: Single Choice 1 Punkt, Multiple Choice 1 Punkt je richtig angekreuzter Antwort.
+// Falsch angekreuzte Antworten bringen keinen Punkt, ziehen aber auch nichts ab (IHK-Merkblatt zum neuen Bewertungsschema:
+// 2 richtige Antworten, 1 richtig + 1 falsch angekreuzt = 1 Punkt). Mehr Kreuze als richtige Antworten lässt die App nicht zu.
 export function bewerte(frage: Frage, auswahl: number[]): Ergebnis {
   if (frage.typ === 'single') {
     const ok = auswahl.length === 1 && frage.richtig.includes(auswahl[0]);
@@ -15,8 +16,7 @@ export function bewerte(frage: Frage, auswahl: number[]): Ergebnis {
   }
   const max = frage.richtig.length;
   const treffer = auswahl.filter((a) => frage.richtig.includes(a)).length;
-  const fehler = auswahl.length - treffer;
-  return { punkte: Math.max(0, Math.min(max, treffer - fehler)), max };
+  return { punkte: Math.min(max, treffer), max };
 }
 
 // ── Gespeicherte Daten ──────────────────────────────────────────────
