@@ -1,0 +1,291 @@
+import { GlossarEintrag } from './types';
+
+// ENTWURF: Übersetzungen und Erklärungen müssen vor dem Release geprüft werden (geprueft: true setzen).
+export const GLOSSAR: GlossarEintrag[] = [
+  {
+    id: 'bewachungsgewerbe', begriff: 'Bewachungsgewerbe',
+    uebersetzung: { en: 'security services business', ro: 'activitate de pază' },
+    erklaerung: {
+      de: 'Ein Gewerbe, das Leben oder Eigentum fremder Personen gegen Bezahlung bewacht.',
+      en: 'A business that protects the life or property of other people for payment.',
+      ro: 'O afacere care protejează, contra plată, viața sau bunurile altor persoane.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'erlaubnis', begriff: 'Erlaubnis',
+    uebersetzung: { en: 'licence / permit', ro: 'autorizație' },
+    erklaerung: {
+      de: 'Eine behördliche Genehmigung. Ohne sie darf man das Gewerbe nicht betreiben.',
+      en: 'An official permission. Without it, you may not run the business.',
+      ro: 'O aprobare oficială. Fără ea nu ai voie să desfășori activitatea.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'behoerde', begriff: 'zuständige Behörde',
+    uebersetzung: { en: 'competent authority', ro: 'autoritatea competentă' },
+    erklaerung: {
+      de: 'Das Amt, das für eine bestimmte Sache verantwortlich ist, z. B. das Gewerbe- oder Ordnungsamt.',
+      en: 'The public office responsible for a matter, e.g. the trade or public order office.',
+      ro: 'Instituția publică responsabilă de o anumită problemă, de ex. biroul de comerț sau de ordine publică.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'sachkundepruefung', begriff: 'Sachkundeprüfung',
+    uebersetzung: { en: 'competence examination', ro: 'examen de competență' },
+    erklaerung: {
+      de: 'Prüfung bei der IHK, die für bestimmte Bewachungstätigkeiten Pflicht ist.',
+      en: 'An exam at the Chamber of Commerce (IHK) that is mandatory for certain security tasks.',
+      ro: 'Examen la Camera de Comerț (IHK), obligatoriu pentru anumite activități de pază.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'dienstausweis', begriff: 'Dienstausweis',
+    uebersetzung: { en: 'service ID card', ro: 'legitimație de serviciu' },
+    erklaerung: {
+      de: 'Ausweis, der zeigt, dass man für ein Bewachungsunternehmen arbeitet.',
+      en: 'An ID card that shows you work for a security company.',
+      ro: 'Act care arată că lucrezi pentru o firmă de pază.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'gewaltmonopol', begriff: 'Gewaltmonopol',
+    uebersetzung: { en: 'state monopoly on the use of force', ro: 'monopolul statului asupra forței' },
+    erklaerung: {
+      de: 'Nur der Staat (z. B. Polizei) darf Zwang anwenden. Private haben nur die Rechte, die jeder Bürger hat.',
+      en: 'Only the state (e.g. the police) may use force. Private persons only have the rights every citizen has.',
+      ro: 'Doar statul (de ex. poliția) are voie să folosească forța. Persoanele private au doar drepturile pe care le are orice cetățean.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'personenbezogene-daten', begriff: 'personenbezogene Daten',
+    uebersetzung: { en: 'personal data', ro: 'date cu caracter personal' },
+    erklaerung: {
+      de: 'Alle Informationen, mit denen man eine Person erkennen kann, z. B. Name, Adresse, Foto.',
+      en: 'Any information that can identify a person, e.g. name, address, photo.',
+      ro: 'Orice informație prin care poate fi identificată o persoană, de ex. nume, adresă, fotografie.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'zweckbindung', begriff: 'Zweckbindung',
+    uebersetzung: { en: 'purpose limitation', ro: 'limitarea scopului' },
+    erklaerung: {
+      de: 'Daten dürfen nur für den Zweck genutzt werden, für den sie erhoben wurden.',
+      en: 'Data may only be used for the purpose it was collected for.',
+      ro: 'Datele pot fi folosite doar în scopul pentru care au fost colectate.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'datenminimierung', begriff: 'Datenminimierung',
+    uebersetzung: { en: 'data minimisation', ro: 'minimizarea datelor' },
+    erklaerung: {
+      de: 'Man sammelt nur so viele Daten, wie wirklich nötig sind.',
+      en: 'You only collect as much data as is really necessary.',
+      ro: 'Se colectează doar atâtea date câte sunt cu adevărat necesare.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'besitz', begriff: 'Besitz',
+    uebersetzung: { en: 'possession', ro: 'posesie' },
+    erklaerung: {
+      de: 'Wer eine Sache tatsächlich hat und darüber verfügt, ist Besitzer – auch wenn sie ihm nicht gehört.',
+      en: 'Whoever actually holds and controls a thing is the possessor – even if it does not belong to them.',
+      ro: 'Cine deține efectiv un lucru și dispune de el este posesor – chiar dacă lucrul nu îi aparține.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'eigentum', begriff: 'Eigentum',
+    uebersetzung: { en: 'ownership', ro: 'proprietate' },
+    erklaerung: {
+      de: 'Wem eine Sache rechtlich gehört, ist Eigentümer – auch wenn er sie gerade nicht hat.',
+      en: 'Whoever legally owns a thing is the owner – even if they do not have it right now.',
+      ro: 'Cel căruia un lucru îi aparține legal este proprietar – chiar dacă nu îl are la el în acel moment.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'hausrecht', begriff: 'Hausrecht',
+    uebersetzung: { en: 'right to control the premises', ro: 'dreptul de a decide accesul în incintă' },
+    erklaerung: {
+      de: 'Das Recht zu bestimmen, wer ein Gebäude oder Gelände betreten und dort bleiben darf.',
+      en: 'The right to decide who may enter and stay in a building or on a property.',
+      ro: 'Dreptul de a decide cine poate intra și rămâne într-o clădire sau pe un teren.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'selbsthilfe', begriff: 'Selbsthilfe',
+    uebersetzung: { en: 'self-help (enforcing a claim yourself)', ro: 'autoapărarea unui drept (justiție proprie)' },
+    erklaerung: {
+      de: 'Man setzt einen eigenen Anspruch selbst durch, weil die Polizei nicht rechtzeitig helfen kann.',
+      en: 'You enforce your own legal claim yourself because the police cannot help in time.',
+      ro: 'Îți aperi singur un drept, pentru că poliția nu poate interveni la timp.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'notstand', begriff: 'Notstand',
+    uebersetzung: { en: 'necessity (state of emergency)', ro: 'stare de necesitate' },
+    erklaerung: {
+      de: 'Man beschädigt eine Sache oder greift in Rechte ein, um eine größere Gefahr abzuwenden.',
+      en: 'You damage a thing or interfere with rights to prevent a greater danger.',
+      ro: 'Deteriorezi un lucru sau încalci un drept pentru a evita un pericol mai mare.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'notwehr', begriff: 'Notwehr',
+    uebersetzung: { en: 'self-defence', ro: 'legitimă apărare' },
+    erklaerung: {
+      de: 'Verteidigung gegen einen gegenwärtigen, rechtswidrigen Angriff auf sich oder andere.',
+      en: 'Defending yourself or others against a present, unlawful attack.',
+      ro: 'Apărarea ta sau a altora împotriva unui atac actual și ilegal.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'festnahme', begriff: 'vorläufige Festnahme',
+    uebersetzung: { en: 'provisional arrest (citizen’s arrest)', ro: 'reținere provizorie' },
+    erklaerung: {
+      de: 'Jeder darf einen Täter kurz festhalten, bis die Polizei kommt – nur unter bestimmten Voraussetzungen.',
+      en: 'Anyone may briefly hold an offender until the police arrive – only under certain conditions.',
+      ro: 'Oricine poate reține pe scurt un făptaș până vine poliția – doar în anumite condiții.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'frische-tat', begriff: 'auf frischer Tat',
+    uebersetzung: { en: 'caught in the act', ro: 'în flagrant' },
+    erklaerung: {
+      de: 'Der Täter wird während der Tat oder direkt danach bemerkt.',
+      en: 'The offender is noticed during the act or immediately afterwards.',
+      ro: 'Făptașul este observat în timpul faptei sau imediat după.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'diebstahl', begriff: 'Diebstahl',
+    uebersetzung: { en: 'theft', ro: 'furt' },
+    erklaerung: {
+      de: 'Jemand nimmt eine fremde bewegliche Sache weg, um sie zu behalten.',
+      en: 'Someone takes another person’s movable thing in order to keep it.',
+      ro: 'Cineva ia un bun mobil al altcuiva cu intenția de a-l păstra.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'zueignungsabsicht', begriff: 'Zueignungsabsicht',
+    uebersetzung: { en: 'intent to appropriate', ro: 'intenția de însușire' },
+    erklaerung: {
+      de: 'Der Täter will die Sache wie ein Eigentümer behalten oder nutzen.',
+      en: 'The offender wants to keep or use the thing as if they were the owner.',
+      ro: 'Făptașul vrea să păstreze sau să folosească bunul ca și cum ar fi proprietarul.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'verbrechen', begriff: 'Verbrechen',
+    uebersetzung: { en: 'felony (serious crime)', ro: 'infracțiune gravă' },
+    erklaerung: {
+      de: 'Eine Straftat mit mindestens einem Jahr Freiheitsstrafe. Leichtere Straftaten heißen Vergehen.',
+      en: 'A crime punishable by at least one year in prison. Less serious crimes are called misdemeanours (Vergehen).',
+      ro: 'O infracțiune pedepsită cu cel puțin un an de închisoare. Faptele mai ușoare se numesc „Vergehen”.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'strafverfolgung', begriff: 'Strafverfolgung',
+    uebersetzung: { en: 'criminal prosecution', ro: 'urmărire penală' },
+    erklaerung: {
+      de: 'Der Staat ermittelt Straftaten und bringt Täter vor Gericht.',
+      en: 'The state investigates crimes and brings offenders to court.',
+      ro: 'Statul cercetează infracțiunile și îi aduce pe făptași în fața instanței.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'staatsanwaltschaft', begriff: 'Staatsanwaltschaft',
+    uebersetzung: { en: 'public prosecutor’s office', ro: 'parchet' },
+    erklaerung: {
+      de: 'Behörde, die Ermittlungen leitet und Anklage erhebt. Die Polizei hilft ihr dabei.',
+      en: 'The authority that leads investigations and brings charges. The police support it.',
+      ro: 'Instituția care conduce cercetările și formulează acuzarea. Poliția o ajută.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'unfallverhuetung', begriff: 'Unfallverhütungsvorschrift',
+    uebersetzung: { en: 'accident prevention regulation', ro: 'normă de prevenire a accidentelor' },
+    erklaerung: {
+      de: 'Regeln der Berufsgenossenschaft, damit bei der Arbeit niemand verletzt wird.',
+      en: 'Rules of the statutory accident insurance so that no one gets hurt at work.',
+      ro: 'Reguli ale asigurării de accidente de muncă, pentru ca nimeni să nu fie rănit la lucru.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'deeskalation', begriff: 'Deeskalation',
+    uebersetzung: { en: 'de-escalation', ro: 'dezescaladare' },
+    erklaerung: {
+      de: 'Einen Konflikt beruhigen, damit er nicht schlimmer wird.',
+      en: 'Calming a conflict down so that it does not get worse.',
+      ro: 'Calmarea unui conflict, ca să nu se agraveze.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'aktives-zuhoeren', begriff: 'aktives Zuhören',
+    uebersetzung: { en: 'active listening', ro: 'ascultare activă' },
+    erklaerung: {
+      de: 'Aufmerksam zuhören, nachfragen und das Gehörte mit eigenen Worten wiederholen.',
+      en: 'Listening attentively, asking questions and repeating what you heard in your own words.',
+      ro: 'Asculți atent, pui întrebări și repeți cu propriile cuvinte ce ai auzit.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'nonverbal', begriff: 'nonverbale Kommunikation',
+    uebersetzung: { en: 'non-verbal communication', ro: 'comunicare nonverbală' },
+    erklaerung: {
+      de: 'Verständigung ohne Worte, z. B. durch Mimik, Gestik und Körperhaltung.',
+      en: 'Communication without words, e.g. through facial expressions, gestures and posture.',
+      ro: 'Comunicare fără cuvinte, de ex. prin mimică, gesturi și postură.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'bewegungsmelder', begriff: 'Bewegungsmelder',
+    uebersetzung: { en: 'motion detector', ro: 'detector de mișcare' },
+    erklaerung: {
+      de: 'Sensor, der Bewegungen im Raum erkennt und Alarm oder Licht auslöst.',
+      en: 'A sensor that detects movement in a room and triggers an alarm or light.',
+      ro: 'Senzor care detectează mișcarea într-o încăpere și declanșează alarma sau lumina.',
+    },
+    geprueft: false,
+  },
+  {
+    id: 'zutrittskontrolle', begriff: 'Zutrittskontrolle',
+    uebersetzung: { en: 'access control', ro: 'controlul accesului' },
+    erklaerung: {
+      de: 'Prüfen, wer einen Bereich betreten darf, z. B. mit Ausweis, Karte oder Code.',
+      en: 'Checking who may enter an area, e.g. with an ID, card or code.',
+      ro: 'Verificarea cine are voie să intre într-o zonă, de ex. cu legitimație, card sau cod.',
+    },
+    geprueft: false,
+  },
+];
+
+const byId = new Map(GLOSSAR.map((g) => [g.id, g]));
+const byBegriff = new Map(GLOSSAR.map((g) => [g.begriff.toLowerCase(), g]));
+
+export const findeGlossar = (key: string): GlossarEintrag | undefined =>
+  byId.get(key) ?? byBegriff.get(key.toLowerCase());
