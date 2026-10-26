@@ -5,7 +5,7 @@ import { FRAGEN, fragenFuer } from '../data/fragen';
 import { PRUEFUNG, SACHGEBIETE } from '../data/sachgebiete';
 import { MIN_FUER_QUOTE, MIN_FUER_REIFE, PREMIUM_HINWEIS_AB, pruefungsreife, ReifeStufe, useLernstand, waehleTagesFragen } from '../lernstand';
 import { useNav } from '../nav';
-import { frageFrei } from '../premium';
+import { frageFrei, pruefungFrei } from '../premium';
 import { useApp } from '../state';
 import { Button, C, Card, ProgressBar, Ring, s, Zeile } from '../ui';
 
@@ -38,6 +38,10 @@ export default function StartScreen() {
   const zielErreicht = ls.heuteErledigt >= ls.ziel;
   const anteilHeute = Math.min(1, ls.heuteErledigt / ls.ziel);
   const grenze = PRUEFUNG.bestehenProzent / 100;
+  const pruefungOffen = pruefungFrei(app.premium, app.pruefungen.length);
+  const pruefungText = app.premium
+    ? `${PRUEFUNG.fragen} Fragen · ${PRUEFUNG.minuten} Min. oder Kurztest`
+    : pruefungOffen ? `1× gratis · ${PRUEFUNG.fragen} Fragen · ${PRUEFUNG.minuten} Min.` : 'Gratis-Simulation genutzt';
   const fehlenBisReife = Math.max(0, MIN_FUER_REIFE - reife.beantwortet);
   const reifeLabel = reife.stufe === 'leer'
     ? `Prüfungsreife: noch keine Einschätzung. Noch ${fehlenBisReife} Fragen beantworten. Statistik öffnen`
@@ -182,14 +186,20 @@ export default function StartScreen() {
         />
       </Card>
 
-      {/* Prüfung simulieren */}
+      {/* Prüfung simulieren: eigener Knopf „Starten“, aber nur umrandet – Hauptknopf auf dem Start bleibt „Weiterlernen“ */}
       <Card style={{ marginTop: 12, padding: 0 }}>
         <Zeile
           erste
           icon="timer-outline"
           farbe={C.danger}
           titel="Prüfung simulieren"
-          untertitel={`${PRUEFUNG.fragen} Fragen · ${PRUEFUNG.minuten} Minuten`}
+          untertitel={pruefungText}
+          gesperrt={!pruefungOffen}
+          rechts={pruefungOffen ? (
+            <View style={stil.starten}>
+              <Text style={{ color: C.primary, fontWeight: '700', fontSize: 15 }}>Starten</Text>
+            </View>
+          ) : undefined}
           onPress={() => nav.push({ name: 'pruefung' })}
         />
       </Card>
@@ -227,6 +237,7 @@ export default function StartScreen() {
 const stil = {
   label: { fontSize: 14, fontWeight: '600' as const, color: C.muted, marginTop: 24, marginBottom: 8 },
   trenner: { borderTopWidth: 1, borderTopColor: C.border },
+  starten: { borderWidth: 1.5, borderColor: C.primary, borderRadius: 999, paddingHorizontal: 16, paddingVertical: 7, marginLeft: 8 },
   gebiet: {
     width: '50%' as const, flexDirection: 'row' as const, alignItems: 'center' as const,
     paddingHorizontal: 10, paddingVertical: 9, borderRadius: 12,

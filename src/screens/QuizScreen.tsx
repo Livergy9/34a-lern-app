@@ -19,7 +19,8 @@ export const anzahlHinweis = (f: Frage) =>
   f.typ === 'single' ? '1 richtige Antwort' : `${f.richtig.length} richtige Antworten`;
 
 export function waehle(f: Frage, auswahl: number[], i: number): number[] {
-  if (f.typ === 'single') return [i];
+  // Einfachauswahl: andere Antwort wählt um, dieselbe nochmal antippen wählt ab (wie Wegradieren in der echten Prüfung)
+  if (f.typ === 'single') return auswahl.includes(i) ? [] : [i];
   if (auswahl.includes(i)) return auswahl.filter((a) => a !== i);
   // Nicht mehr Antworten wählbar, als richtig sind – erst eine abwählen
   if (auswahl.length >= f.richtig.length) return auswahl;

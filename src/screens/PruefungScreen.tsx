@@ -56,7 +56,14 @@ export default function PruefungScreen() {
   const [index, setIndex] = useState(0);
   const [rest, setRest] = useState(0);
   const [uebersicht, setUebersicht] = useState(false);
+  // Welche Fragen schon angezeigt wurden – damit die Übersicht übersprungene von noch nicht gesehenen unterscheidet
+  const [gesehen, setGesehen] = useState<Record<string, true>>({});
   const endeZeit = useRef(0);
+
+  useEffect(() => {
+    const id = fragen[index]?.id;
+    if (phase === 'laeuft' && id && !gesehen[id]) setGesehen((g) => ({ ...g, [id]: true }));
+  }, [phase, index, fragen]);
 
   // Timer läuft über die Uhrzeit, damit er auch stimmt, wenn die App kurz im Hintergrund war
   useEffect(() => {
@@ -76,6 +83,7 @@ export default function PruefungScreen() {
     setArt(a);
     setFragen(stelleZusammen(ARTEN[a].fragen));
     setAntworten({});
+    setGesehen({});
     setIndex(0);
     endeZeit.current = Date.now() + ARTEN[a].minuten * 60 * 1000;
     setRest(ARTEN[a].minuten * 60);
@@ -110,6 +118,11 @@ export default function PruefungScreen() {
   }
 
   const unbeantwortet = fragen.filter((f) => !antworten[f.id]?.length).length;
+  // Für die Übersicht: beantwortet / übersprungen (gesehen, nichts gewählt, nicht die aktuelle) / offen
+  const zustand = (f: Frage, i: number): 'beantwortet' | 'uebersprungen' | 'offen' =>
+    antworten[f.id]?.length ? 'beantwortet' : gesehen[f.id] && i !== index ? 'uebersprungen' : 'offen';
+  const zaehlung = { beantwortet: 0, uebersprungen: 0, offen: 0 };
+  fragen.forEach((f, i) => { zaehlung[zustand(f, i)]++; });
   const abgebenFragen = () => {
     if (!unbeantwortet) return abgeben();
     Alert.alert(
@@ -262,23 +275,34 @@ export default function PruefungScreen() {
         <Pressable style={{ flex: 1, backgroundColor: 'rgba(15,23,42,0.35)' }} onPress={() => setUebersicht(false)} />
         <View style={{ backgroundColor: C.card, borderTopLeftRadius: 24, borderTopRightRadius: 24, padding: 20, paddingBottom: 36, maxHeight: '75%' }}>
           <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
-            <Text style={[s.h3, { flex: 1 }]}>Übersicht · {unbeantwortet} offen</Text>
-            <Pressable onPress={() => setUebersicht(false)} hitSlop={12}><Ionicons name="close" size={24} color={C.muted} /></Pressable>
+            <Text style={[s.h3, { flex: 1 }]}>Übersicht</Text>
+            <Pressable onPress={() => setUebersicht(false)} hitSlop={12} accessibilityLabel="Übersicht schließen"><Ionicons name="close" size={24} color={C.muted} /></Pressable>
+          </View>
+          {/* Legende mit Anzahl je Zustand */}
+          <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 14, marginBottom: 14 }}>
+            {(['beantwortet', 'uebersprungen', 'offen'] as const).map((z) => (
+              <View key={z} style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <View style={[stil.punkt, KACHEL[z].kachel]} />
+                <Text style={[s.muted, { marginLeft: 6, fontSize: 13 }]}>{zaehlung[z]} {KACHEL[z].label}</Text>
+              </View>
+            ))}
           </View>
           <ScrollView contentContainerStyle={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
             {fragen.map((f, i) => {
-              const fertig = !!antworten[f.id]?.length;
+              const z = zustand(f, i);
               const aktuell = i === index;
               return (
                 <Pressable
                   key={f.id}
                   onPress={() => { setIndex(i); setUebersicht(false); }}
-                  style={{
-                    width: 44, height: 44, borderRadius: 10, alignItems: 'center', justifyContent: 'center',
-                    backgroundColor: fertig ? C.primary : C.bg, borderWidth: 2, borderColor: aktuell ? C.text : 'transparent',
-                  }}
+                  accessibilityLabel={`Frage ${i + 1}, ${KACHEL[z].label}${aktuell ? ', aktuell' : ''}`}
+                  style={[
+                    { width: 44, height: 44, borderRadius: 10, alignItems: 'center', justifyContent: 'center' },
+                    KACHEL[z].kachel,
+                    aktuell && { borderColor: C.text },
+                  ]}
                 >
-                  <Text style={{ color: fertig ? '#fff' : C.text, fontWeight: '600' }}>{i + 1}</Text>
+                  <Text style={{ color: KACHEL[z].text, fontWeight: '600' }}>{i + 1}</Text>
                 </Pressable>
               );
             })}
@@ -289,6 +313,14 @@ export default function PruefungScreen() {
     </SafeAreaView>
   );
 }
+
+// Aussehen der Kacheln in der Übersicht. Rahmen immer 2 px, damit die aktuelle Frage nicht springt.
+const KACHEL = {
+  beantwortet: { label: 'beantwortet', kachel: { backgroundColor: C.primary, borderWidth: 2, borderColor: C.primary }, text: '#fff' },
+  uebersprungen: { label: 'übersprungen', kachel: { backgroundColor: C.border, borderWidth: 2, borderColor: C.border }, text: C.muted },
+  offen: { label: 'offen', kachel: { backgroundColor: C.card, borderWidth: 2, borderColor: C.border }, text: C.text },
+};
+const stil = { punkt: { width: 14, height: 14, borderRadius: 4 } };
 
 function Regel({ icon, text }: { icon: any; text: string }) {
   return (
