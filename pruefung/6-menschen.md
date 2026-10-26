@@ -1,6 +1,6 @@
 # Prüfliste 6: Umgang mit Menschen
 
-72 Fragen. ✅ = als richtig markierte Antwort. ⚠️ = Claude ist unsicher, bitte besonders genau prüfen.
+89 Fragen. ✅ = als richtig markierte Antwort. ⚠️ = Claude ist unsicher, bitte besonders genau prüfen.
 
 ## 1. [um-001] Ein Besucher wird laut und beleidigend. Welches Verhalten dient der Deeskalation?
 
@@ -723,3 +723,173 @@
 - ❌ E) Gar nicht sprechen
 
 **Erklärung:** Freundlich und gleichzeitig bestimmt aufzutreten schafft Respekt. Regeln gelten für alle gleich.
+
+## 73. [um-073] Welche Bedürfnisse bilden nach Maslow die unterste Stufe der Bedürfnispyramide?
+
+- ✅ A) Körperliche Grundbedürfnisse wie Essen, Trinken, Schlaf und Wärme
+- ❌ B) Anerkennung und Wertschätzung
+- ❌ C) Selbstverwirklichung
+- ❌ D) Freundschaft und Zugehörigkeit
+- ❌ E) Ein sicherer Arbeitsplatz
+
+**Erklärung:** Maslow ordnet Bedürfnisse in fünf Stufen: körperliche Grundbedürfnisse, Sicherheit, soziale Bedürfnisse, Anerkennung und ganz oben Selbstverwirklichung. Die unteren Stufen sind am dringendsten.
+
+## 74. [um-074] Welche Stufe steht nach Maslow ganz oben in der Bedürfnispyramide?
+
+- ❌ A) Sicherheit
+- ❌ B) Essen und Trinken
+- ❌ C) Soziale Bedürfnisse
+- ✅ D) Selbstverwirklichung
+- ❌ E) Schlaf
+
+**Erklärung:** Ganz oben steht die Selbstverwirklichung: die eigenen Fähigkeiten entfalten und Ziele erreichen. Darunter liegen Anerkennung, soziale Bedürfnisse, Sicherheit und die körperlichen Grundbedürfnisse.
+
+## 75. [um-075] Ein Obdachloser will sich bei Frost in der Bahnhofshalle aufwärmen und reagiert gereizt, als Sie ihn ansprechen. Was hilft Ihnen nach Maslow, sein Verhalten zu verstehen?
+
+- ❌ A) Er sucht vor allem Anerkennung
+- ✅ B) Ein körperliches Grundbedürfnis (Wärme) ist nicht erfüllt und steht für ihn im Vordergrund
+- ❌ C) Er will sich selbst verwirklichen
+- ❌ D) Er will Sie absichtlich provozieren, weil er Sicherheitskräfte grundsätzlich ablehnt
+- ❌ E) Sein Verhalten hat keinen erkennbaren Grund
+
+**Erklärung:** Wer friert oder hungert, denkt zuerst an dieses Bedürfnis. Das erklärt Gereiztheit. Ruhig bleiben und, wenn möglich, auf Hilfsangebote wie eine Wärmestube hinweisen.
+
+## 76. [um-076] Was bezeichnet beim Johari-Fenster der „blinde Fleck“?
+
+- ❌ A) Was ich über mich weiß, aber anderen verschweige
+- ❌ B) Was weder ich noch andere über mich wissen
+- ❌ C) Was alle über mich wissen
+- ❌ D) Einen Bereich ohne Videoüberwachung
+- ✅ E) Was andere an mir wahrnehmen, ich selbst aber nicht bemerke
+
+**Erklärung:** Das Johari-Fenster hat vier Bereiche: öffentlich (alle wissen es), blinder Fleck (nur andere sehen es), geheim (nur ich weiß es) und unbekannt (niemand weiß es).
+
+## 77. [um-077] Wie kann eine Sicherheitskraft ihren „blinden Fleck“ (Johari-Fenster) verkleinern?
+
+- ✅ A) Indem sie Kollegen um ehrliche Rückmeldung (Feedback) bittet
+- ❌ B) Indem sie möglichst wenig mit Kollegen spricht und Probleme allein löst
+- ❌ C) Indem sie Kritik grundsätzlich zurückweist
+- ❌ D) Indem sie nur Befehle befolgt
+- ❌ E) Das ist nicht möglich
+
+**Erklärung:** Den blinden Fleck sehen nur die anderen. Durch Feedback erfährt man, wie man wirkt, zum Beispiel ob man im Dienst unfreundlich oder unsicher auftritt.
+
+## 78. [um-078] Aus welchem Ich-Zustand der Transaktionsanalyse reagiert jemand sachlich, ruhig und überlegt?
+
+- ❌ A) Aus dem Eltern-Ich
+- ❌ B) Aus dem Kind-Ich
+- ✅ C) Aus dem Erwachsenen-Ich
+- ❌ D) Aus dem Trotz-Ich
+- ❌ E) Aus dem Über-Ich
+
+**Erklärung:** Die Transaktionsanalyse kennt drei Ich-Zustände: Eltern-Ich (bestimmend oder fürsorglich), Erwachsenen-Ich (sachlich und überlegt) und Kind-Ich (gefühlsbetont, trotzig oder angepasst).
+
+## 79. [um-079] Ein Gast schreit Sie trotzig an. Welche Reaktion entspricht nach der Transaktionsanalyse dem Erwachsenen-Ich?
+
+- ❌ A) „So redet man nicht mit mir, benehmen Sie sich!“
+- ✅ B) „Ich sehe, dass Sie verärgert sind. Lassen Sie uns klären, was passiert ist.“
+- ❌ C) „Dann schreie ich eben auch.“
+- ❌ D) „Sie sind wie ein kleines Kind.“
+- ❌ E) „Mir doch egal.“
+
+**Erklärung:** Das Erwachsenen-Ich bleibt sachlich und lädt das Gegenüber ein, ebenfalls sachlich zu werden. Belehren (Eltern-Ich) oder Zurückschreien (Kind-Ich) verschärft den Konflikt.
+
+## 80. [um-080] Was kennzeichnet den Führungsstil „Laissez-faire“?
+
+- ❌ A) Der Vorgesetzte entscheidet alles allein
+- ❌ B) Der Vorgesetzte bezieht die Mitarbeiter in Entscheidungen ein
+- ❌ C) Der Vorgesetzte kontrolliert jeden Schritt
+- ✅ D) Der Vorgesetzte greift kaum ein und lässt die Mitarbeiter weitgehend selbst machen
+- ❌ E) Der Vorgesetzte arbeitet nur mit Belohnungen
+
+**Erklärung:** Man unterscheidet drei klassische Führungsstile: autoritär (der Chef bestimmt), kooperativ oder demokratisch (gemeinsam beraten) und Laissez-faire (der Chef lässt laufen).
+
+## 81. [um-081] Bei einer Veranstaltung bricht ein Feuer aus. Welcher Führungsstil des Einsatzleiters ist jetzt am sinnvollsten?
+
+- ❌ A) Laissez-faire, jeder macht, was er für richtig hält
+- ❌ B) Kooperativ: erst ausführlich im Team beraten, dann gemeinsam entscheiden
+- ❌ C) Abstimmung unter allen Kräften
+- ❌ D) Gar keine Führung
+- ✅ E) Autoritär: klare, kurze Anweisungen, die sofort befolgt werden
+
+**Erklärung:** Im Notfall zählt jede Sekunde. Dann sind klare Anweisungen nötig. Im normalen Dienstalltag ist ein kooperativer Stil meist besser, weil er Motivation und Mitdenken fördert.
+
+## 82. [um-082] Wie reagieren Menschen mit geringem Selbstwertgefühl häufig, wenn sie vor anderen kritisiert werden?
+
+- ✅ A) Empfindlich, beleidigt oder aggressiv, weil sie sich bloßgestellt fühlen
+- ❌ B) Immer völlig gelassen
+- ❌ C) Sie bedanken sich für die Kritik
+- ❌ D) Sie bemerken die Kritik gar nicht
+- ❌ E) Sie werden sofort sehr selbstbewusst
+
+**Erklärung:** Wer sich selbst wenig wert fühlt, erlebt Kritik schnell als Angriff. Deshalb Personen möglichst nicht vor Publikum zurechtweisen und ihnen die Chance lassen, ihr Gesicht zu wahren.
+
+## 83. [um-083] Was versteht man unter Frustration?
+
+- ❌ A) Große Freude über einen Erfolg
+- ❌ B) Eine Krankheit des Nervensystems
+- ✅ C) Enttäuschung, wenn ein Wunsch oder Ziel blockiert wird
+- ❌ D) Eine Form der Höflichkeit
+- ❌ E) Ein Begriff aus dem Datenschutz
+
+**Erklärung:** Frustration entsteht, wenn jemand etwas will und daran gehindert wird, zum Beispiel wenn ihm der Einlass verweigert wird. Frustration kann zu Aggression führen.
+
+## 84. [um-084] Sie müssen einem Besucher den Einlass verweigern. Wie verringern Sie das Risiko, dass seine Frustration in Aggression umschlägt?
+
+- ❌ A) Gar nichts sagen und die Tür schließen
+- ✅ B) Den Grund ruhig erklären und, wenn möglich, eine Alternative nennen
+- ❌ C) Ihn vor allen anderen lächerlich machen
+- ❌ D) Ihm drohen, damit er sofort geht
+- ❌ E) Ihn absichtlich lange warten lassen
+
+**Erklärung:** Wer versteht, warum etwas nicht geht, und einen anderen Weg aufgezeigt bekommt, ist weniger frustriert. Schweigen, Spott oder Drohungen verstärken die Wut.
+
+## 85. [um-085] Welche Frage ist eine offene Frage?
+
+- ❌ A) „Haben Sie den Täter gesehen?“
+- ❌ B) „War das Auto rot?“
+- ❌ C) „Sind Sie sicher?“
+- ❌ D) „Waren Sie allein?“
+- ✅ E) „Was haben Sie beobachtet?“
+
+**Erklärung:** Offene Fragen beginnen meist mit einem W-Wort (was, wer, wie, wo, wann). Sie lassen den Befragten frei erzählen. Geschlossene Fragen erlauben nur „ja“ oder „nein“.
+
+## 86. [um-086] Sie befragen nach einem Vorfall Zeugen. Was ist richtig?
+
+- ❌ A) Alle Zeugen gemeinsam befragen, damit es schneller geht
+- ✅ B) Zeugen getrennt befragen und keine Suggestivfragen stellen
+- ❌ C) Die Antwort schon in der Frage vorgeben
+- ❌ D) Nur Fragen stellen, die mit „ja“ oder „nein“ beantwortet werden
+- ❌ E) Zeugen nach Hause schicken, ohne ihre Angaben zu notieren
+
+**Erklärung:** Werden Zeugen gemeinsam befragt, beeinflussen sie sich gegenseitig. Suggestivfragen wie „Der Täter war doch groß, oder?“ geben die Antwort vor. Angaben und Personalien notieren.
+
+## 87. [um-087] Was ist typisch für das Verhalten von Menschen in einer Masse?
+
+- ❌ A) Jeder denkt besonders kritisch nach
+- ❌ B) Jeder fühlt sich stärker für sein Handeln verantwortlich
+- ✅ C) Gefühle übertragen sich schnell und der Einzelne fühlt sich anonym
+- ❌ D) Alle bleiben grundsätzlich ruhig
+- ❌ E) Niemand lässt sich beeinflussen
+
+**Erklärung:** In der Masse fühlen sich Menschen anonym und weniger verantwortlich. Stimmungen wie Wut oder Angst springen schnell über. Eine Gruppe hat dagegen ein gemeinsames Ziel und ein Wir-Gefühl.
+
+## 88. [um-088] Was sollten Sie vor Dienstbeginn bei einer Großveranstaltung unbedingt kennen?
+
+- ✅ A) Flucht- und Rettungswege, Sammelplätze und Ansprechpartner im Notfall
+- ❌ B) Das Programm der Musikgruppen
+- ❌ C) Die Preise am Getränkestand
+- ❌ D) Die Namen aller Besucher
+- ❌ E) Nur den eigenen Pausenplan
+
+**Erklärung:** Bei vielen Menschen auf engem Raum muss im Notfall jeder Handgriff sitzen. Wer Wege, Sammelplätze und Meldewege kennt, kann Besucher schnell und ruhig leiten.
+
+## 89. [um-089] Woran erkennt man eine Sucht (Abhängigkeit)?
+
+- ❌ A) Man probiert ein Mittel einmal auf einer Feier aus und lässt es danach wieder sein
+- ❌ B) Man trinkt jeden Morgen ein Glas Wasser
+- ❌ C) Man ist nach einer langen Nachtschicht gelegentlich müde und unkonzentriert
+- ✅ D) Man hat ein starkes Verlangen, verliert die Kontrolle und hat ohne das Mittel Entzugserscheinungen
+- ❌ E) Man treibt regelmäßig Sport
+
+**Erklärung:** Typisch für Sucht sind starkes Verlangen, Kontrollverlust und Entzugserscheinungen. Abhängige Menschen können unberechenbar reagieren. Abstand halten und bei Notfällen den Rettungsdienst rufen.

@@ -1,6 +1,6 @@
 # Übersetzung prüfen 6: Umgang mit Menschen
 
-72 Fragen. Zu jeder Frage: deutscher Text, dann Englisch (EN) und Rumänisch (RO). Die Antworten bleiben in der App Deutsch und werden nicht übersetzt.
+89 Fragen. Zu jeder Frage: deutscher Text, dann Englisch (EN) und Rumänisch (RO). Die Antworten bleiben in der App Deutsch und werden nicht übersetzt.
 
 ## 1. [um-001]
 
@@ -865,3 +865,207 @@
 
 - EN: Being friendly and firm at the same time creates respect. Rules apply equally to everyone.
 - RO: O atitudine prietenoasă și fermă în același timp creează respect. Regulile sunt aceleași pentru toți.
+
+## 73. [um-073]
+
+**Frage DE:** Welche Bedürfnisse bilden nach Maslow die unterste Stufe der Bedürfnispyramide?
+
+- EN: According to Maslow, which needs form the bottom level of the hierarchy of needs?
+- RO: Conform lui Maslow, ce nevoi formează treapta de jos a piramidei nevoilor?
+
+**Erklärung DE:** Maslow ordnet Bedürfnisse in fünf Stufen: körperliche Grundbedürfnisse, Sicherheit, soziale Bedürfnisse, Anerkennung und ganz oben Selbstverwirklichung. Die unteren Stufen sind am dringendsten.
+
+- EN: Maslow arranges needs in five levels: basic physical needs, safety, social needs, esteem and, at the top, self-actualisation. The lower levels are the most urgent.
+- RO: Maslow ordonează nevoile pe cinci trepte: nevoi fizice de bază, siguranță, nevoi sociale, recunoaștere și, în vârf, autorealizarea. Treptele de jos sunt cele mai urgente.
+
+## 74. [um-074]
+
+**Frage DE:** Welche Stufe steht nach Maslow ganz oben in der Bedürfnispyramide?
+
+- EN: According to Maslow, which level is at the very top of the hierarchy of needs?
+- RO: Conform lui Maslow, ce treaptă se află în vârful piramidei nevoilor?
+
+**Erklärung DE:** Ganz oben steht die Selbstverwirklichung: die eigenen Fähigkeiten entfalten und Ziele erreichen. Darunter liegen Anerkennung, soziale Bedürfnisse, Sicherheit und die körperlichen Grundbedürfnisse.
+
+- EN: At the top is self-actualisation: developing your own abilities and reaching your goals. Below it are esteem, social needs, safety and the basic physical needs.
+- RO: În vârf se află autorealizarea: să îți dezvolți abilitățile și să îți atingi obiectivele. Sub ea sunt recunoașterea, nevoile sociale, siguranța și nevoile fizice de bază.
+
+## 75. [um-075]
+
+**Frage DE:** Ein Obdachloser will sich bei Frost in der Bahnhofshalle aufwärmen und reagiert gereizt, als Sie ihn ansprechen. Was hilft Ihnen nach Maslow, sein Verhalten zu verstehen?
+
+- EN: A homeless man wants to warm up in the station hall during frost and reacts irritably when you speak to him. According to Maslow, what helps you understand his behaviour?
+- RO: Un om fără adăpost vrea să se încălzească în hala gării pe ger și reacționează iritat când îl abordați. Ce vă ajută, conform lui Maslow, să îi înțelegeți comportamentul?
+
+**Erklärung DE:** Wer friert oder hungert, denkt zuerst an dieses Bedürfnis. Das erklärt Gereiztheit. Ruhig bleiben und, wenn möglich, auf Hilfsangebote wie eine Wärmestube hinweisen.
+
+- EN: Someone who is freezing or hungry thinks of that need first. This explains the irritation. Stay calm and, if possible, point out help such as a warming shelter.
+- RO: Cine îngheață sau îi este foame se gândește întâi la această nevoie. Asta explică iritarea. Rămâneți calm și, dacă se poate, indicați ajutoare precum un adăpost de încălzire.
+
+## 76. [um-076]
+
+**Frage DE:** Was bezeichnet beim Johari-Fenster der „blinde Fleck“?
+
+- EN: In the Johari window, what does the "blind spot" mean?
+- RO: În fereastra Johari, ce înseamnă „punctul orb”?
+
+**Erklärung DE:** Das Johari-Fenster hat vier Bereiche: öffentlich (alle wissen es), blinder Fleck (nur andere sehen es), geheim (nur ich weiß es) und unbekannt (niemand weiß es).
+
+- EN: The Johari window has four areas: open (everyone knows it), blind spot (only others see it), hidden (only I know it) and unknown (nobody knows it).
+- RO: Fereastra Johari are patru zone: deschisă (toți o știu), punctul orb (doar ceilalți îl văd), ascunsă (doar eu o știu) și necunoscută (nimeni nu o știe).
+
+## 77. [um-077]
+
+**Frage DE:** Wie kann eine Sicherheitskraft ihren „blinden Fleck“ (Johari-Fenster) verkleinern?
+
+- EN: How can a security officer make their "blind spot" (Johari window) smaller?
+- RO: Cum își poate micșora un agent de securitate „punctul orb” (fereastra Johari)?
+
+**Erklärung DE:** Den blinden Fleck sehen nur die anderen. Durch Feedback erfährt man, wie man wirkt, zum Beispiel ob man im Dienst unfreundlich oder unsicher auftritt.
+
+- EN: Only other people see the blind spot. Through feedback you learn how you come across, for example whether you seem unfriendly or unsure on duty.
+- RO: Punctul orb îl văd doar ceilalți. Prin feedback afli cum pari celorlalți, de exemplu dacă în serviciu pari neprietenos sau nesigur.
+
+## 78. [um-078]
+
+**Frage DE:** Aus welchem Ich-Zustand der Transaktionsanalyse reagiert jemand sachlich, ruhig und überlegt?
+
+- EN: In transactional analysis, from which ego state does someone react objectively, calmly and thoughtfully?
+- RO: În analiza tranzacțională, din ce stare a eului reacționează cineva obiectiv, calm și chibzuit?
+
+**Erklärung DE:** Die Transaktionsanalyse kennt drei Ich-Zustände: Eltern-Ich (bestimmend oder fürsorglich), Erwachsenen-Ich (sachlich und überlegt) und Kind-Ich (gefühlsbetont, trotzig oder angepasst).
+
+- EN: Transactional analysis knows three ego states: Parent (controlling or caring), Adult (objective and thoughtful) and Child (emotional, defiant or compliant).
+- RO: Analiza tranzacțională cunoaște trei stări ale eului: Părinte (autoritar sau grijuliu), Adult (obiectiv și chibzuit) și Copil (emoțional, încăpățânat sau supus).
+
+## 79. [um-079]
+
+**Frage DE:** Ein Gast schreit Sie trotzig an. Welche Reaktion entspricht nach der Transaktionsanalyse dem Erwachsenen-Ich?
+
+- EN: A guest shouts at you defiantly. Which reaction corresponds to the Adult ego state in transactional analysis?
+- RO: Un oaspete țipă la dumneavoastră încăpățânat. Ce reacție corespunde stării Adult în analiza tranzacțională?
+
+**Erklärung DE:** Das Erwachsenen-Ich bleibt sachlich und lädt das Gegenüber ein, ebenfalls sachlich zu werden. Belehren (Eltern-Ich) oder Zurückschreien (Kind-Ich) verschärft den Konflikt.
+
+- EN: The Adult stays objective and invites the other person to become objective too. Lecturing (Parent) or shouting back (Child) makes the conflict worse.
+- RO: Adultul rămâne obiectiv și îl invită pe celălalt să devină și el obiectiv. Mustrarea (Părinte) sau țipatul înapoi (Copil) agravează conflictul.
+
+## 80. [um-080]
+
+**Frage DE:** Was kennzeichnet den Führungsstil „Laissez-faire“?
+
+- EN: What characterises the "laissez-faire" leadership style?
+- RO: Ce caracterizează stilul de conducere „laissez-faire”?
+
+**Erklärung DE:** Man unterscheidet drei klassische Führungsstile: autoritär (der Chef bestimmt), kooperativ oder demokratisch (gemeinsam beraten) und Laissez-faire (der Chef lässt laufen).
+
+- EN: There are three classic leadership styles: authoritarian (the boss decides), cooperative or democratic (deciding together) and laissez-faire (the boss lets things run).
+- RO: Există trei stiluri clasice de conducere: autoritar (șeful decide), cooperativ sau democratic (se decide împreună) și laissez-faire (șeful lasă lucrurile să meargă de la sine).
+
+## 81. [um-081]
+
+**Frage DE:** Bei einer Veranstaltung bricht ein Feuer aus. Welcher Führungsstil des Einsatzleiters ist jetzt am sinnvollsten?
+
+- EN: A fire breaks out at an event. Which leadership style of the operations manager makes most sense now?
+- RO: La un eveniment izbucnește un incendiu. Ce stil de conducere al șefului de intervenție are acum cel mai mult sens?
+
+**Erklärung DE:** Im Notfall zählt jede Sekunde. Dann sind klare Anweisungen nötig. Im normalen Dienstalltag ist ein kooperativer Stil meist besser, weil er Motivation und Mitdenken fördert.
+
+- EN: In an emergency every second counts, so clear instructions are needed. In normal daily duty a cooperative style is usually better because it encourages motivation and thinking along.
+- RO: În caz de urgență contează fiecare secundă, de aceea sunt necesare instrucțiuni clare. În serviciul obișnuit, un stil cooperativ este de obicei mai bun, pentru că încurajează motivația și implicarea.
+
+## 82. [um-082]
+
+**Frage DE:** Wie reagieren Menschen mit geringem Selbstwertgefühl häufig, wenn sie vor anderen kritisiert werden?
+
+- EN: How do people with low self-esteem often react when they are criticised in front of others?
+- RO: Cum reacționează adesea persoanele cu stimă de sine scăzută când sunt criticate în fața altora?
+
+**Erklärung DE:** Wer sich selbst wenig wert fühlt, erlebt Kritik schnell als Angriff. Deshalb Personen möglichst nicht vor Publikum zurechtweisen und ihnen die Chance lassen, ihr Gesicht zu wahren.
+
+- EN: Someone who feels worth little quickly experiences criticism as an attack. So avoid correcting people in front of an audience and let them save face.
+- RO: Cine se simte puțin valoros percepe repede critica drept un atac. De aceea nu mustrați persoanele în fața publicului și lăsați-le să își salveze aparențele.
+
+## 83. [um-083]
+
+**Frage DE:** Was versteht man unter Frustration?
+
+- EN: What is meant by frustration?
+- RO: Ce se înțelege prin frustrare?
+
+**Erklärung DE:** Frustration entsteht, wenn jemand etwas will und daran gehindert wird, zum Beispiel wenn ihm der Einlass verweigert wird. Frustration kann zu Aggression führen.
+
+- EN: Frustration arises when someone wants something and is prevented from getting it, for example when they are refused entry. Frustration can lead to aggression.
+- RO: Frustrarea apare când cineva vrea ceva și este împiedicat, de exemplu când i se refuză intrarea. Frustrarea poate duce la agresivitate.
+
+## 84. [um-084]
+
+**Frage DE:** Sie müssen einem Besucher den Einlass verweigern. Wie verringern Sie das Risiko, dass seine Frustration in Aggression umschlägt?
+
+- EN: You have to refuse a visitor entry. How do you reduce the risk that his frustration turns into aggression?
+- RO: Trebuie să refuzați intrarea unui vizitator. Cum reduceți riscul ca frustrarea lui să se transforme în agresivitate?
+
+**Erklärung DE:** Wer versteht, warum etwas nicht geht, und einen anderen Weg aufgezeigt bekommt, ist weniger frustriert. Schweigen, Spott oder Drohungen verstärken die Wut.
+
+- EN: Someone who understands why something is not possible and is shown another way is less frustrated. Silence, mockery or threats increase anger.
+- RO: Cine înțelege de ce ceva nu este posibil și primește o altă variantă este mai puțin frustrat. Tăcerea, batjocura sau amenințările cresc furia.
+
+## 85. [um-085]
+
+**Frage DE:** Welche Frage ist eine offene Frage?
+
+- EN: Which question is an open question?
+- RO: Care întrebare este o întrebare deschisă?
+
+**Erklärung DE:** Offene Fragen beginnen meist mit einem W-Wort (was, wer, wie, wo, wann). Sie lassen den Befragten frei erzählen. Geschlossene Fragen erlauben nur „ja“ oder „nein“.
+
+- EN: Open questions usually start with a W-word in German (what, who, how, where, when). They let the person talk freely. Closed questions only allow "yes" or "no".
+- RO: Întrebările deschise încep de obicei cu un cuvânt interogativ (ce, cine, cum, unde, când). Ele îl lasă pe cel întrebat să povestească liber. Întrebările închise permit doar „da” sau „nu”.
+
+## 86. [um-086]
+
+**Frage DE:** Sie befragen nach einem Vorfall Zeugen. Was ist richtig?
+
+- EN: After an incident you question witnesses. What is correct?
+- RO: După un incident interogați martori. Ce este corect?
+
+**Erklärung DE:** Werden Zeugen gemeinsam befragt, beeinflussen sie sich gegenseitig. Suggestivfragen wie „Der Täter war doch groß, oder?“ geben die Antwort vor. Angaben und Personalien notieren.
+
+- EN: If witnesses are questioned together, they influence each other. Leading questions such as "The offender was tall, wasn't he?" suggest the answer. Write down statements and personal details.
+- RO: Dacă martorii sunt întrebați împreună, se influențează reciproc. Întrebările sugestive, de exemplu „Făptașul era înalt, nu?”, dictează răspunsul. Notați declarațiile și datele personale.
+
+## 87. [um-087]
+
+**Frage DE:** Was ist typisch für das Verhalten von Menschen in einer Masse?
+
+- EN: What is typical of how people behave in a crowd (mass)?
+- RO: Ce este tipic pentru comportamentul oamenilor într-o mulțime (masă)?
+
+**Erklärung DE:** In der Masse fühlen sich Menschen anonym und weniger verantwortlich. Stimmungen wie Wut oder Angst springen schnell über. Eine Gruppe hat dagegen ein gemeinsames Ziel und ein Wir-Gefühl.
+
+- EN: In a crowd people feel anonymous and less responsible. Moods such as anger or fear spread quickly. A group, by contrast, has a common goal and a sense of "we".
+- RO: În mulțime oamenii se simt anonimi și mai puțin responsabili. Stări precum furia sau frica se transmit repede. Un grup, în schimb, are un scop comun și un sentiment de „noi”.
+
+## 88. [um-088]
+
+**Frage DE:** Was sollten Sie vor Dienstbeginn bei einer Großveranstaltung unbedingt kennen?
+
+- EN: What must you know before starting duty at a large event?
+- RO: Ce trebuie neapărat să știți înainte de începerea serviciului la un eveniment mare?
+
+**Erklärung DE:** Bei vielen Menschen auf engem Raum muss im Notfall jeder Handgriff sitzen. Wer Wege, Sammelplätze und Meldewege kennt, kann Besucher schnell und ruhig leiten.
+
+- EN: With many people in a small space, every action must be right in an emergency. Anyone who knows the routes, assembly points and reporting channels can guide visitors quickly and calmly.
+- RO: Când mulți oameni sunt într-un spațiu restrâns, în caz de urgență fiecare gest trebuie să fie corect. Cine cunoaște căile, punctele de adunare și căile de raportare poate ghida vizitatorii repede și calm.
+
+## 89. [um-089]
+
+**Frage DE:** Woran erkennt man eine Sucht (Abhängigkeit)?
+
+- EN: How do you recognise an addiction (dependence)?
+- RO: După ce recunoașteți o dependență?
+
+**Erklärung DE:** Typisch für Sucht sind starkes Verlangen, Kontrollverlust und Entzugserscheinungen. Abhängige Menschen können unberechenbar reagieren. Abstand halten und bei Notfällen den Rettungsdienst rufen.
+
+- EN: Typical signs of addiction are strong craving, loss of control and withdrawal symptoms. Addicted people can react unpredictably. Keep your distance and call the ambulance service in emergencies.
+- RO: Tipice pentru dependență sunt dorința puternică, pierderea controlului și simptomele de sevraj. Persoanele dependente pot reacționa imprevizibil. Păstrați distanța și chemați serviciul de ambulanță în caz de urgență.

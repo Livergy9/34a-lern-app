@@ -386,6 +386,54 @@ export const KAPITEL: Kapitel[] = [
       },
     ],
   },
+  {
+    id: 'um-k5', sachgebiet: 'menschen', geprueft: false,
+    titel: 'Warum Menschen so handeln',
+    abschnitte: [
+      {
+        ueberschrift: 'Bedürfnispyramide nach Maslow',
+        text: 'Menschen haben Bedürfnisse, die aufeinander aufbauen. Von unten nach oben:\n• Körperliche Grundbedürfnisse: Essen, Trinken, Schlaf, Wärme\n• Sicherheit: Schutz, Ordnung, fester Wohnort\n• Soziale Bedürfnisse: Familie, Freunde, Zugehörigkeit\n• Anerkennung: Wertschätzung, Respekt\n• Selbstverwirklichung: eigene Fähigkeiten entfalten\nIst eine untere Stufe nicht erfüllt, steht sie im Vordergrund. Wer friert oder Hunger hat, reagiert oft gereizt.',
+      },
+      {
+        ueberschrift: 'Frustration und Aggression',
+        text: 'Frustration ist die Enttäuschung, wenn ein Wunsch oder Ziel blockiert wird, zum Beispiel beim abgelehnten Einlass. Frustration kann in Aggression umschlagen. Deshalb Entscheidungen ruhig begründen und, wenn möglich, eine Alternative nennen.',
+      },
+      {
+        ueberschrift: 'Selbstwertgefühl',
+        text: 'Menschen mit geringem Selbstwertgefühl erleben Kritik schnell als Angriff. Sie reagieren dann beleidigt oder aggressiv. Weise Personen nicht vor Publikum zurecht und lass ihnen die Chance, ihr Gesicht zu wahren.',
+      },
+      {
+        ueberschrift: 'Gruppe, Menge und Masse',
+        text: '• Gruppe: wenige Menschen mit gemeinsamem Ziel und Wir-Gefühl\n• Menge: viele Menschen am selben Ort ohne gemeinsames Ziel, z. B. Wartende am Bahnsteig\n• Masse: In ihr fühlt sich der Einzelne anonym und weniger verantwortlich. Gefühle wie Wut oder Angst springen schnell über.',
+      },
+      {
+        ueberschrift: 'Sucht',
+        text: 'Typisch für eine Sucht sind starkes Verlangen, Kontrollverlust und Entzugserscheinungen. Süchtige Menschen können unberechenbar sein. Abstand halten, früh Unterstützung holen und im Notfall den Rettungsdienst rufen.',
+      },
+    ],
+  },
+  {
+    id: 'um-k6', sachgebiet: 'menschen', geprueft: false,
+    titel: 'Befragung, Feedback und Führung',
+    abschnitte: [
+      {
+        ueberschrift: 'Richtig befragen',
+        text: '• Offene Fragen (W-Fragen: was, wer, wie, wo, wann) lassen frei erzählen.\n• Geschlossene Fragen erlauben nur „ja“ oder „nein“. Gut, um Einzelheiten zu klären.\n• Keine Suggestivfragen, die die Antwort vorgeben („Er war doch groß, oder?“).\n• Zeugen getrennt befragen und Angaben sowie Personalien notieren.',
+      },
+      {
+        ueberschrift: 'Johari-Fenster',
+        text: 'Das Johari-Fenster zeigt, was ich und andere über mich wissen:\n• Öffentlich: Ich weiß es, andere auch.\n• Blinder Fleck: Andere sehen es, ich nicht.\n• Geheim: Ich weiß es, andere nicht.\n• Unbekannt: Niemand weiß es.\nDen blinden Fleck verkleinert man durch ehrliches Feedback.',
+      },
+      {
+        ueberschrift: 'Transaktionsanalyse',
+        text: 'Jeder Mensch handelt aus drei Ich-Zuständen:\n• Eltern-Ich: bestimmend oder fürsorglich („Das macht man nicht!“)\n• Erwachsenen-Ich: sachlich und überlegt\n• Kind-Ich: gefühlsbetont, trotzig oder angepasst\nIm Dienst reagierst du am besten aus dem Erwachsenen-Ich. Das beruhigt auch das Gegenüber.',
+      },
+      {
+        ueberschrift: 'Führungsstile',
+        text: '• Autoritär: Der Chef entscheidet allein. Sinnvoll im Notfall, wenn es schnell gehen muss.\n• Kooperativ (demokratisch): Der Chef bezieht das Team ein. Fördert Motivation, im Alltag meist am besten.\n• Laissez-faire: Der Chef greift kaum ein. Führt leicht zu Durcheinander.',
+      },
+    ],
+  },
 
   // ── Sicherheitstechnik ──
   {

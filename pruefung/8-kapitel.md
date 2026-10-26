@@ -476,6 +476,90 @@ Bei einem bewaffneten Überfall geht das Leben vor. Keine Gegenwehr, keine Helde
 
 Diese Menschen reagieren oft unberechenbar. Sprich langsam und einfach, halte Abstand und hole früh Unterstützung. Hilflose Personen nicht allein lassen – wenn nötig Rettungsdienst rufen.
 
+## [um-k5] Warum Menschen so handeln
+
+**Bedürfnispyramide nach Maslow**
+
+Menschen haben Bedürfnisse, die aufeinander aufbauen. Von unten nach oben:
+
+• Körperliche Grundbedürfnisse: Essen, Trinken, Schlaf, Wärme
+
+• Sicherheit: Schutz, Ordnung, fester Wohnort
+
+• Soziale Bedürfnisse: Familie, Freunde, Zugehörigkeit
+
+• Anerkennung: Wertschätzung, Respekt
+
+• Selbstverwirklichung: eigene Fähigkeiten entfalten
+
+Ist eine untere Stufe nicht erfüllt, steht sie im Vordergrund. Wer friert oder Hunger hat, reagiert oft gereizt.
+
+**Frustration und Aggression**
+
+Frustration ist die Enttäuschung, wenn ein Wunsch oder Ziel blockiert wird, zum Beispiel beim abgelehnten Einlass. Frustration kann in Aggression umschlagen. Deshalb Entscheidungen ruhig begründen und, wenn möglich, eine Alternative nennen.
+
+**Selbstwertgefühl**
+
+Menschen mit geringem Selbstwertgefühl erleben Kritik schnell als Angriff. Sie reagieren dann beleidigt oder aggressiv. Weise Personen nicht vor Publikum zurecht und lass ihnen die Chance, ihr Gesicht zu wahren.
+
+**Gruppe, Menge und Masse**
+
+• Gruppe: wenige Menschen mit gemeinsamem Ziel und Wir-Gefühl
+
+• Menge: viele Menschen am selben Ort ohne gemeinsames Ziel, z. B. Wartende am Bahnsteig
+
+• Masse: In ihr fühlt sich der Einzelne anonym und weniger verantwortlich. Gefühle wie Wut oder Angst springen schnell über.
+
+**Sucht**
+
+Typisch für eine Sucht sind starkes Verlangen, Kontrollverlust und Entzugserscheinungen. Süchtige Menschen können unberechenbar sein. Abstand halten, früh Unterstützung holen und im Notfall den Rettungsdienst rufen.
+
+## [um-k6] Befragung, Feedback und Führung
+
+**Richtig befragen**
+
+• Offene Fragen (W-Fragen: was, wer, wie, wo, wann) lassen frei erzählen.
+
+• Geschlossene Fragen erlauben nur „ja“ oder „nein“. Gut, um Einzelheiten zu klären.
+
+• Keine Suggestivfragen, die die Antwort vorgeben („Er war doch groß, oder?“).
+
+• Zeugen getrennt befragen und Angaben sowie Personalien notieren.
+
+**Johari-Fenster**
+
+Das Johari-Fenster zeigt, was ich und andere über mich wissen:
+
+• Öffentlich: Ich weiß es, andere auch.
+
+• Blinder Fleck: Andere sehen es, ich nicht.
+
+• Geheim: Ich weiß es, andere nicht.
+
+• Unbekannt: Niemand weiß es.
+
+Den blinden Fleck verkleinert man durch ehrliches Feedback.
+
+**Transaktionsanalyse**
+
+Jeder Mensch handelt aus drei Ich-Zuständen:
+
+• Eltern-Ich: bestimmend oder fürsorglich („Das macht man nicht!“)
+
+• Erwachsenen-Ich: sachlich und überlegt
+
+• Kind-Ich: gefühlsbetont, trotzig oder angepasst
+
+Im Dienst reagierst du am besten aus dem Erwachsenen-Ich. Das beruhigt auch das Gegenüber.
+
+**Führungsstile**
+
+• Autoritär: Der Chef entscheidet allein. Sinnvoll im Notfall, wenn es schnell gehen muss.
+
+• Kooperativ (demokratisch): Der Chef bezieht das Team ein. Fördert Motivation, im Alltag meist am besten.
+
+• Laissez-faire: Der Chef greift kaum ein. Führt leicht zu Durcheinander.
+
 ## [te-k1] Mechanische und elektronische Sicherung
 
 **Erst mechanisch, dann elektronisch**
