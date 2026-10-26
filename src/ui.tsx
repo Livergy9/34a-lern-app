@@ -65,6 +65,42 @@ export function ProgressBar({ value, color = C.primary, height = 6, bg = C.borde
   );
 }
 
+// Fortschrittsring ohne SVG-Paket: zwei Halbkreis-Bögen, je in einer Hälfte abgeschnitten und gedreht.
+// Ein Bogen = Kreis mit nur oberem + rechtem Rand farbig, um -45° gedreht → rechte Hälfte.
+export function Ring({ value, size = 32, dicke = 4, color = C.primary, bg = C.border, children }: {
+  value: number; size?: number; dicke?: number; color?: string; bg?: string; children?: React.ReactNode;
+}) {
+  const p = Math.max(0, Math.min(1, value));
+  const halb = size / 2;
+  const bogen = (grad: number, links: number) => (
+    <View style={{
+      position: 'absolute', left: links, top: 0, width: size, height: size, borderRadius: halb, borderWidth: dicke,
+      borderTopColor: color, borderRightColor: color, borderBottomColor: 'transparent', borderLeftColor: 'transparent',
+      transform: [{ rotate: `${grad}deg` }],
+    }} />
+  );
+  return (
+    <View style={{ width: size, height: size, alignItems: 'center', justifyContent: 'center' }}>
+      <View style={{ position: 'absolute', width: size, height: size, borderRadius: halb, borderWidth: dicke, borderColor: bg }} />
+      {p > 0 ? (
+        <>
+          {/* rechte Hälfte: 0–50 % */}
+          <View style={{ position: 'absolute', left: halb, top: 0, width: halb, height: size, overflow: 'hidden' }}>
+            {bogen(p >= 0.5 ? -45 : -225 + p * 360, -halb)}
+          </View>
+          {/* linke Hälfte: 50–100 % */}
+          {p > 0.5 ? (
+            <View style={{ position: 'absolute', left: 0, top: 0, width: halb, height: size, overflow: 'hidden' }}>
+              {bogen(-45 + (p - 0.5) * 360, 0)}
+            </View>
+          ) : null}
+        </>
+      ) : null}
+      {children}
+    </View>
+  );
+}
+
 export function Chip({ label, icon, color = C.primary, bg = C.primarySoft }: {
   label: string; icon?: IconName; color?: string; bg?: string;
 }) {

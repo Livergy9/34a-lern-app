@@ -2,36 +2,46 @@ import React from 'react';
 import { Image, Pressable, ScrollView, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { FRAGEN, fragenFuer } from '../data/fragen';
-import { PRUEFUNG } from '../data/sachgebiete';
-import { MIN_FUER_REIFE, pruefungsreife, ReifeStufe, useLernstand, waehleTagesFragen } from '../lernstand';
+import { PRUEFUNG, SACHGEBIETE } from '../data/sachgebiete';
+import { MIN_FUER_QUOTE, MIN_FUER_REIFE, PREMIUM_HINWEIS_AB, pruefungsreife, ReifeStufe, useLernstand, waehleTagesFragen } from '../lernstand';
 import { useNav } from '../nav';
 import { frageFrei } from '../premium';
 import { useApp } from '../state';
-import { Button, C, Card, Chip, ProgressBar, s, Zeile } from '../ui';
+import { Button, C, Card, ProgressBar, Ring, s, Zeile } from '../ui';
 
 // Start beantwortet nur zwei Fragen: „Bin ich bereit?“ und „Was mache ich heute?“.
 // Fehler und Gemerkte Fragen liegen im Tab „Lernen“, Details in der Statistik.
 
+// Stufen bewusst ohne Rot: Anfangen ist kein Fehler. „Gut vorbereitet“ statt „Bereit“, weil wir nichts garantieren können.
 const STUFE: Record<ReifeStufe, { text: string; farbe: string; bg: string }> = {
-  leer: { text: 'Noch nicht gestartet', farbe: C.muted, bg: C.border },
-  nichtBereit: { text: 'Noch nicht bereit', farbe: C.danger, bg: C.dangerSoft },
-  gutAufDemWeg: { text: 'Auf gutem Weg', farbe: C.warn, bg: C.warnSoft },
-  bereit: { text: 'Bereit', farbe: C.success, bg: C.successSoft },
+  leer: { text: 'Noch keine Einschätzung', farbe: C.text, bg: C.border },
+  amAnfang: { text: 'Am Anfang', farbe: C.primary, bg: C.primarySoft },
+  aufGutemWeg: { text: 'Auf gutem Weg', farbe: C.warn, bg: C.warnSoft },
+  gutVorbereitet: { text: 'Gut vorbereitet', farbe: C.success, bg: C.successSoft },
 };
+
+const REIFE_INFO = 'Schätzung aus deinen Übungsfragen. Keine Garantie für die echte Prüfung. Der Strich im Balken zeigt die Bestehensgrenze.';
 
 export default function StartScreen() {
   const app = useApp();
   const nav = useNav();
   const ls = useLernstand();
-  const reife = React.useMemo(() => pruefungsreife(FRAGEN, app.fragen), [app.fragen]);
+  const reife = React.useMemo(() => pruefungsreife(FRAGEN, app.fragen, app.premium), [app.fragen, app.premium]);
   const stufe = STUFE[reife.stufe];
+  const [infoOffen, setInfoOffen] = React.useState(false);
+  // „X von Y (Gratis-)Fragen geübt“: bei Gratis nur die freien Fragen, sonst klingt „30 von 308“ unerreichbar
+  const geuebt = ls.bearbeitet(ls.frei);
+  const quoteText = reife.beantwortet >= MIN_FUER_QUOTE ? ` · ${Math.round(reife.quote * 100)} % richtig` : '';
+  const geuebtText = `${geuebt} von ${ls.frei.length} ${app.premium ? 'Fragen' : 'Gratis-Fragen'} geübt${quoteText}`;
+  const gesperrt = FRAGEN.length - ls.frei.length;
+  const zeigePremium = !app.premium && gesperrt > 0 && ls.frei.length > 0 && geuebt / ls.frei.length >= PREMIUM_HINWEIS_AB;
   const zielErreicht = ls.heuteErledigt >= ls.ziel;
   const anteilHeute = Math.min(1, ls.heuteErledigt / ls.ziel);
   const grenze = PRUEFUNG.bestehenProzent / 100;
   const fehlenBisReife = Math.max(0, MIN_FUER_REIFE - reife.beantwortet);
   const reifeLabel = reife.stufe === 'leer'
     ? `Prüfungsreife: noch keine Einschätzung. Noch ${fehlenBisReife} Fragen beantworten. Statistik öffnen`
-    : `Prüfungsreife: ${stufe.text}. Geschätzt etwa ${Math.round(reife.punkte)} von ${PRUEFUNG.punkte} Punkten. Statistik öffnen`;
+    : `Prüfungsreife: ${stufe.text}. ${geuebtText}. Statistik öffnen`;
 
   const heuteLernen = () => {
     const anzahl = zielErreicht ? 10 : Math.min(ls.ziel, Math.max(5, ls.ziel - ls.heuteErledigt));
@@ -73,7 +83,18 @@ export default function StartScreen() {
       </View>
 
       {/* Bin ich bereit? */}
-      <Text style={stil.label}>Bin ich bereit?</Text>
+      <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 24, marginBottom: 8 }}>
+        <Text style={[stil.label, { marginTop: 0, marginBottom: 0, flex: 1 }]}>Bin ich bereit?</Text>
+        <Pressable
+          onPress={() => setInfoOffen(!infoOffen)}
+          hitSlop={12}
+          accessibilityRole="button"
+          accessibilityLabel={infoOffen ? 'Erklärung ausblenden' : 'Erklärung anzeigen'}
+        >
+          <Ionicons name={infoOffen ? 'information-circle' : 'information-circle-outline'} size={20} color={infoOffen ? C.primary : C.faint} />
+        </Pressable>
+      </View>
+      {infoOffen ? <Text style={[s.muted, { fontSize: 13, marginBottom: 8, lineHeight: 18 }]}>{REIFE_INFO}</Text> : null}
       <Card style={{ padding: 0 }}>
         <Pressable
           onPress={() => nav.push({ name: 'statistik' })}
@@ -98,19 +119,21 @@ export default function StartScreen() {
               </View>
               <View style={{ marginTop: 12 }}>
                 <ProgressBar value={reife.anteil} color={stufe.farbe} bg={stufe.bg} height={12} />
-                {/* Markierung Bestehensgrenze */}
-                <View style={{ position: 'absolute', left: `${grenze * 100}%`, top: -4, width: 2, height: 20, marginLeft: -1, borderRadius: 1, backgroundColor: C.text }} />
+                {/* Markierung Bestehensgrenze (Erklärung hinter dem (i)) */}
+                <View style={{ position: 'absolute', left: `${grenze * 100}%`, top: -3, width: 2, height: 18, marginLeft: -1, borderRadius: 1, backgroundColor: C.faint }} />
               </View>
-              <View style={{ flexDirection: 'row', marginTop: 4 }}>
-                <View style={{ width: `${grenze * 100}%` }} />
-                <Text style={{ fontSize: 11, color: C.muted, marginLeft: -28 }}>Bestehensgrenze</Text>
-              </View>
-              <Text style={[s.muted, { fontSize: 13, marginTop: 8 }]}>
-                Geschätzt ca. {Math.round(reife.punkte)} von {PRUEFUNG.punkte} Punkten{!app.premium ? ' · gerechnet mit allen Fragen' : ''}
-              </Text>
+              <Text style={[s.muted, { fontSize: 13, marginTop: 10 }]}>{geuebtText}</Text>
             </>
           )}
         </Pressable>
+        {zeigePremium ? (
+          <View style={[stil.trenner, { padding: 16 }]}>
+            <Text style={{ fontSize: 14, color: C.text, lineHeight: 20 }}>
+              Für die Prüfung fehlen dir noch <Text style={{ fontWeight: '700' }}>{gesperrt} Fragen</Text>.
+            </Text>
+            <Button title="Alle Fragen freischalten" icon="star" farbe={C.gold} onPress={() => nav.push({ name: 'premium' })} style={{ marginTop: 12 }} />
+          </View>
+        ) : null}
         {reife.luecke && reife.stufe !== 'leer' ? (
           <Pressable
             onPress={uebeLuecke}
@@ -171,18 +194,43 @@ export default function StartScreen() {
         />
       </Card>
 
-      {!app.premium ? (
-        <Pressable onPress={() => nav.push({ name: 'premium' })} hitSlop={8} style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginTop: 18, paddingVertical: 6 }}>
-          <Ionicons name="star" size={15} color={C.gold} />
-          <Text style={{ color: C.gold, fontWeight: '700', fontSize: 14, marginLeft: 6 }}>Alle Fragen freischalten</Text>
-        </Pressable>
-      ) : null}
+      {/* Deine Sachgebiete: zeigt, woraus sich die Einschätzung oben zusammensetzt. Ring = geübter Anteil */}
+      <Text style={stil.label}>Deine Sachgebiete</Text>
+      <Card style={{ paddingVertical: 6, paddingHorizontal: 6 }}>
+        <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+          {reife.gebiete.map((g) => {
+            const gesamt = fragenFuer(g.sg.id).length;
+            const n = Math.round(g.geuebt * gesamt);
+            return (
+              <Pressable
+                key={g.sg.id}
+                onPress={() => nav.push({ name: 'sachgebiet', id: g.sg.id })}
+                accessibilityLabel={`${g.sg.name}: ${n} von ${gesamt} Fragen geübt. Öffnen`}
+                style={({ pressed }) => [stil.gebiet, pressed && { backgroundColor: C.bg }]}
+              >
+                <Ring value={g.geuebt} color={g.sg.farbe} bg={g.sg.farbe + '22'} size={34} dicke={4}>
+                  <Ionicons name={g.sg.icon as any} size={14} color={g.sg.farbe} />
+                </Ring>
+                <View style={{ flex: 1, marginLeft: 10 }}>
+                  <Text numberOfLines={1} style={{ fontSize: 14, fontWeight: '600', color: C.text }}>{g.sg.kurz}</Text>
+                  <Text style={{ fontSize: 12, color: C.muted, marginTop: 1 }}>{n} / {gesamt}</Text>
+                </View>
+              </Pressable>
+            );
+          })}
+        </View>
+      </Card>
     </ScrollView>
   );
 }
 
 const stil = {
   label: { fontSize: 14, fontWeight: '600' as const, color: C.muted, marginTop: 24, marginBottom: 8 },
+  trenner: { borderTopWidth: 1, borderTopColor: C.border },
+  gebiet: {
+    width: '50%' as const, flexDirection: 'row' as const, alignItems: 'center' as const,
+    paddingHorizontal: 10, paddingVertical: 9, borderRadius: 12,
+  },
   lueckeZeile: {
     flexDirection: 'row' as const, alignItems: 'center' as const,
     paddingHorizontal: 16, paddingVertical: 13, borderTopWidth: 1, borderTopColor: C.border,

@@ -56,36 +56,55 @@ export function quote(liste: Frage[], stand: Record<string, FrageStand>, minBean
   return m && n >= minBeantwortet ? p / m : null;
 }
 
-// Prüfungsreife = geschätzte Punkte in der echten Prüfung.
-// Pro Sachgebiet: durchschnittlicher Anteil der Punkte je Frage (letzter Versuch), unbeantwortete Fragen zählen 0.
-// Gewichtet mit den Punkten des Sachgebiets in der Prüfung. Gerechnet wird immer mit ALLEN Fragen
-// (auch gesperrten), damit Gratis-Nutzer nach 30 % der Fragen nicht fälschlich „bereit“ angezeigt bekommen.
-export type ReifeStufe = 'leer' | 'nichtBereit' | 'gutAufDemWeg' | 'bereit';
-export const REIFE_GRENZEN = { gutAufDemWeg: 0.5, bereit: 0.75 };
-// Erst ab so vielen beantworteten Fragen eine Einschätzung zeigen (sonst wirkt „5 von 120“ am ersten Tag entmutigend)
+// Prüfungsreife (Anzeige auf dem Start). Bewusst KEINE Punktzahl für den Nutzer:
+// unsere Fragen sind nicht die echten, und „7 von 120“ liest sich am Anfang wie „schlecht“.
+// Die Stufe hängt von zwei Dingen ab:
+//  - quote:     wie gut (Anteil richtiger Punkte der beantworteten Fragen)
+//  - abdeckung: wie viel Stoff geübt (beantwortet / alle Fragen je Sachgebiet, gewichtet mit den Prüfungspunkten)
+// „Gut vorbereitet“ nur mit fast ganzem Stoff → Gratis-Nutzer (30 %) kommen höchstens bis „Auf gutem Weg“.
+// `anteil` (Schätzung mit ALLEN Fragen, unbeantwortet = 0) treibt nur noch den Balken.
+export type ReifeStufe = 'leer' | 'amAnfang' | 'aufGutemWeg' | 'gutVorbereitet';
+export const REIFE_GRENZEN = {
+  aufGutemWeg: { quote: 0.6, abdeckung: 0.2 },
+  gutVorbereitet: { quote: 0.75, abdeckung: 0.9 },
+};
+// Erst ab so vielen beantworteten Fragen eine Einschätzung zeigen
 export const MIN_FUER_REIFE = 20;
 
-export function pruefungsreife(alle: Frage[], stand: Record<string, FrageStand>) {
-  let beantwortet = 0;
+export function reifeStufe(beantwortet: number, quote: number, abdeckung: number, premium: boolean): ReifeStufe {
+  if (beantwortet < MIN_FUER_REIFE) return 'leer';
+  const g = REIFE_GRENZEN;
+  if (premium && quote >= g.gutVorbereitet.quote && abdeckung >= g.gutVorbereitet.abdeckung) return 'gutVorbereitet';
+  if (quote >= g.aufGutemWeg.quote && abdeckung >= g.aufGutemWeg.abdeckung) return 'aufGutemWeg';
+  return 'amAnfang';
+}
+
+export function pruefungsreife(alle: Frage[], stand: Record<string, FrageStand>, premium: boolean) {
+  let beantwortet = 0, pSumme = 0, mSumme = 0;
   const gebiete = SACHGEBIETE.map((sg) => {
     const liste = alle.filter((f) => f.sachgebiet === sg.id);
-    let summe = 0;
+    let summe = 0, n = 0;
     for (const f of liste) {
       const s = stand[f.id];
-      if (s && s.max > 0) { summe += s.punkte / s.max; beantwortet++; }
+      if (s && s.max > 0) { summe += s.punkte / s.max; n++; pSumme += s.punkte; mSumme += s.max; }
     }
+    beantwortet += n;
     const anteil = liste.length ? summe / liste.length : 0;
-    return { sg, anteil, punkte: anteil * sg.punkteInPruefung, offenePunkte: (1 - anteil) * sg.punkteInPruefung };
+    const geuebt = liste.length ? n / liste.length : 0;
+    return { sg, anteil, geuebt, punkte: anteil * sg.punkteInPruefung, offenePunkte: (1 - anteil) * sg.punkteInPruefung };
   });
   const punkte = gebiete.reduce((a, g) => a + g.punkte, 0);
   const anteil = punkte / PRUEFUNG.punkte;
-  const stufe: ReifeStufe = beantwortet < MIN_FUER_REIFE ? 'leer'
-    : anteil >= REIFE_GRENZEN.bereit ? 'bereit'
-    : anteil >= REIFE_GRENZEN.gutAufDemWeg ? 'gutAufDemWeg' : 'nichtBereit';
+  const abdeckung = gebiete.reduce((a, g) => a + g.geuebt * g.sg.punkteInPruefung, 0) / PRUEFUNG.punkte;
+  const quote = mSumme ? pSumme / mSumme : 0;
+  const stufe = reifeStufe(beantwortet, quote, abdeckung, premium);
   // Größte Lücke = Sachgebiet, in dem die meisten Prüfungspunkte noch fehlen
   const luecke = [...gebiete].sort((a, b) => b.offenePunkte - a.offenePunkte)[0];
-  return { punkte, anteil, stufe, beantwortet, gebiete, luecke: luecke && luecke.offenePunkte >= 1 ? luecke : null };
+  return { punkte, anteil, abdeckung, quote, stufe, beantwortet, gebiete, luecke: luecke && luecke.offenePunkte >= 1 ? luecke : null };
 }
+
+// Premium-Hinweis erst, wenn der Gratis-Nutzer den Großteil seiner Gratis-Fragen geübt hat
+export const PREMIUM_HINWEIS_AB = 0.8;
 
 // Auswahl für „Heute lernen“: erst offene Fehler, dann neue Fragen, dann lange nicht gesehene
 export function waehleTagesFragen(pool: Frage[], stand: Record<string, FrageStand>, anzahl: number): Frage[] {

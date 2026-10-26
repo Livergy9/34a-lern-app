@@ -2,8 +2,10 @@ import React, { useRef, useState } from 'react';
 import { Animated, Pressable, ScrollView, Text, View } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-import { Frage } from '../data/types';
-import { sachgebietById } from '../data/sachgebiete';
+import { Frage, SachgebietId } from '../data/types';
+import { SACHGEBIETE, sachgebietById } from '../data/sachgebiete';
+import { fragenFuer } from '../data/fragen';
+import { frageFrei } from '../premium';
 import { useNav } from '../nav';
 import { bewerte, Ergebnis, useApp } from '../state';
 import { vibriere } from '../feedback';
@@ -162,7 +164,7 @@ export function LesezeichenKnopf({ frageId }: { frageId: string }) {
 type Antwort = { frage: Frage; ergebnis: Ergebnis };
 
 export default function QuizScreen({ fragen, titel }: { fragen: Frage[]; titel?: string }) {
-  const { beantworte, vibration } = useApp();
+  const { beantworte, vibration, fragen: stand, premium } = useApp();
   const nav = useNav();
   const insets = useSafeAreaInsets();
   const scrollRef = useRef<ScrollView>(null);
@@ -176,8 +178,17 @@ export default function QuizScreen({ fragen, titel }: { fragen: Frage[]; titel?:
   const leiste = useRef(new Animated.Value(0)).current;
   const symbol = useRef(new Animated.Value(1)).current;
   const wackeln = useRef(new Animated.Value(0)).current;
+  // Gratis: Sachgebiete, in denen vor der Runde noch Gratis-Fragen offen waren (für den Hinweis am Ende)
+  const [offenVorher] = useState<SachgebietId[]>(() => premium ? [] : SACHGEBIETE.map((sg) => sg.id).filter((id) =>
+    fragenFuer(id).some((f) => frageFrei(f, false) && !stand[f.id])));
 
-  if (fertig) return <QuizAuswertung antworten={antworten} titel={titel} />;
+  if (fertig) {
+    // Hinweis nur, wenn in DIESER Runde die letzte offene Gratis-Frage eines Sachgebiets geschafft wurde
+    const geschafft = premium ? undefined : offenVorher.find((id) =>
+      fragen.some((f) => f.sachgebiet === id) &&
+      fragenFuer(id).every((f) => !frageFrei(f, false) || stand[f.id]));
+    return <QuizAuswertung antworten={antworten} titel={titel} gratisGeschafft={geschafft} />;
+  }
 
   const frage = fragen[index];
   const aufgedeckt = ergebnis !== null;
@@ -295,7 +306,7 @@ export default function QuizScreen({ fragen, titel }: { fragen: Frage[]; titel?:
   );
 }
 
-function QuizAuswertung({ antworten, titel }: { antworten: Antwort[]; titel?: string }) {
+function QuizAuswertung({ antworten, titel, gratisGeschafft }: { antworten: Antwort[]; titel?: string; gratisGeschafft?: SachgebietId }) {
   const nav = useNav();
   const punkte = antworten.reduce((n, a) => n + a.ergebnis.punkte, 0);
   const max = antworten.reduce((n, a) => n + a.ergebnis.max, 0);
@@ -321,6 +332,16 @@ function QuizAuswertung({ antworten, titel }: { antworten: Antwort[]; titel?: st
             </Text>
           ) : null}
         </Card>
+        {gratisGeschafft ? (
+          <Card style={{ marginTop: 12, backgroundColor: C.goldSoft }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+              <Ionicons name="star" size={20} color={C.gold} />
+              <Text style={[s.h3, { flex: 1, marginLeft: 8 }]}>Alle Gratis-Fragen in {sachgebietById(gratisGeschafft).kurz} geschafft</Text>
+            </View>
+            <Text style={[s.muted, { marginTop: 6 }]}>Mit Premium übst du alle {fragenFuer(gratisGeschafft).length} Fragen dieses Sachgebiets.</Text>
+            <Button title="Alle Fragen freischalten" icon="star" farbe={C.gold} onPress={() => nav.push({ name: 'premium' })} style={{ marginTop: 12 }} />
+          </Card>
+        ) : null}
       </ScrollView>
       <View style={{ padding: 20, gap: 10 }}>
         {falsche.length ? (
