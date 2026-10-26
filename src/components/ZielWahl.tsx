@@ -16,7 +16,7 @@ export default function ZielWahl() {
             <Card style={{ flexDirection: 'row', alignItems: 'center', borderWidth: 2, borderColor: aktiv ? C.primary : 'transparent' }}>
               <View style={{ flex: 1 }}>
                 <Text style={s.h3}>{z.titel}{z.wert === 20 ? ' (empfohlen)' : ''}</Text>
-                <Text style={s.muted}>{z.wert} Aufgaben am Tag · {z.dauer}</Text>
+                <Text style={s.muted}>{z.wert} Aufgaben am Tag</Text>
               </View>
               <Ionicons name={aktiv ? 'radio-button-on' : 'radio-button-off'} size={24} color={aktiv ? C.primary : C.faint} />
             </Card>

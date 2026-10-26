@@ -3,7 +3,7 @@ import { Image, Pressable, ScrollView, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { FRAGEN, fragenFuer } from '../data/fragen';
 import { PRUEFUNG } from '../data/sachgebiete';
-import { pruefungsreife, ReifeStufe, useLernstand, waehleTagesFragen } from '../lernstand';
+import { MIN_FUER_REIFE, pruefungsreife, ReifeStufe, useLernstand, waehleTagesFragen } from '../lernstand';
 import { useNav } from '../nav';
 import { frageFrei } from '../premium';
 import { useApp } from '../state';
@@ -28,6 +28,10 @@ export default function StartScreen() {
   const zielErreicht = ls.heuteErledigt >= ls.ziel;
   const anteilHeute = Math.min(1, ls.heuteErledigt / ls.ziel);
   const grenze = PRUEFUNG.bestehenProzent / 100;
+  const fehlenBisReife = Math.max(0, MIN_FUER_REIFE - reife.beantwortet);
+  const reifeLabel = reife.stufe === 'leer'
+    ? `Prüfungsreife: noch keine Einschätzung. Noch ${fehlenBisReife} Fragen beantworten. Statistik öffnen`
+    : `Prüfungsreife: ${stufe.text}. Geschätzt etwa ${Math.round(reife.punkte)} von ${PRUEFUNG.punkte} Punkten. Statistik öffnen`;
 
   const heuteLernen = () => {
     const anzahl = zielErreicht ? 10 : Math.min(ls.ziel, Math.max(5, ls.ziel - ls.heuteErledigt));
@@ -73,28 +77,39 @@ export default function StartScreen() {
       <Card style={{ padding: 0 }}>
         <Pressable
           onPress={() => nav.push({ name: 'statistik' })}
-          accessibilityLabel={`Prüfungsreife: etwa ${Math.round(reife.punkte)} von ${PRUEFUNG.punkte} Punkten. ${stufe.text}`}
+          accessibilityLabel={reifeLabel}
           style={({ pressed }) => [{ padding: 16 }, pressed && { opacity: 0.85 }]}
         >
-          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-            <View style={{ flex: 1, flexDirection: 'row', alignItems: 'baseline' }}>
-              <Text style={{ fontSize: 36, fontWeight: '800', color: C.text, letterSpacing: -1 }}>{Math.round(reife.punkte)}</Text>
-              <Text style={{ fontSize: 15, color: C.muted, marginLeft: 4 }}>/ {PRUEFUNG.punkte} Punkte</Text>
-            </View>
-            <Chip label={stufe.text} color={stufe.farbe} bg={stufe.bg} />
-          </View>
-          <View style={{ marginTop: 12 }}>
-            <ProgressBar value={reife.anteil} height={12} />
-            {/* Markierung Bestehensgrenze */}
-            <View style={{ position: 'absolute', left: `${grenze * 100}%`, top: -4, width: 2, height: 20, marginLeft: -1, borderRadius: 1, backgroundColor: C.text }} />
-          </View>
-          <View style={{ flexDirection: 'row', marginTop: 6 }}>
-            <View style={{ width: `${grenze * 100}%` }} />
-            <Text style={{ fontSize: 12, color: C.muted, marginLeft: -12 }}>{Math.round(PRUEFUNG.punkte * grenze)} = bestanden</Text>
-          </View>
           {reife.stufe === 'leer' ? (
-            <Text style={[s.muted, { fontSize: 13, marginTop: 10 }]}>Beantworte Fragen, dann siehst du hier, wie viele Punkte du schaffen würdest.</Text>
-          ) : null}
+            <>
+              <Text style={{ fontSize: 22, fontWeight: '800', color: C.text, letterSpacing: -0.5 }}>Noch keine Einschätzung</Text>
+              <View style={{ marginTop: 12 }}>
+                <ProgressBar value={reife.beantwortet / MIN_FUER_REIFE} height={10} />
+              </View>
+              <Text style={[s.muted, { fontSize: 13, marginTop: 8 }]}>
+                Noch {fehlenBisReife} {fehlenBisReife === 1 ? 'Frage' : 'Fragen'} beantworten, dann siehst du hier, wie gut du vorbereitet bist.
+              </Text>
+            </>
+          ) : (
+            <>
+              <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <Text style={{ flex: 1, fontSize: 24, fontWeight: '800', color: stufe.farbe, letterSpacing: -0.5 }}>{stufe.text}</Text>
+                <Ionicons name="chevron-forward" size={18} color={C.faint} />
+              </View>
+              <View style={{ marginTop: 12 }}>
+                <ProgressBar value={reife.anteil} color={stufe.farbe} bg={stufe.bg} height={12} />
+                {/* Markierung Bestehensgrenze */}
+                <View style={{ position: 'absolute', left: `${grenze * 100}%`, top: -4, width: 2, height: 20, marginLeft: -1, borderRadius: 1, backgroundColor: C.text }} />
+              </View>
+              <View style={{ flexDirection: 'row', marginTop: 4 }}>
+                <View style={{ width: `${grenze * 100}%` }} />
+                <Text style={{ fontSize: 11, color: C.muted, marginLeft: -28 }}>Bestehensgrenze</Text>
+              </View>
+              <Text style={[s.muted, { fontSize: 13, marginTop: 8 }]}>
+                Geschätzt ca. {Math.round(reife.punkte)} von {PRUEFUNG.punkte} Punkten{!app.premium ? ' · gerechnet mit allen Fragen' : ''}
+              </Text>
+            </>
+          )}
         </Pressable>
         {reife.luecke && reife.stufe !== 'leer' ? (
           <Pressable
@@ -114,11 +129,17 @@ export default function StartScreen() {
       {/* Heute */}
       <Text style={stil.label}>Heute</Text>
       <Card style={{ backgroundColor: C.primary }}>
-        <Pressable onPress={() => nav.push({ name: 'lernplan' })} hitSlop={6} accessibilityLabel={`Tagesziel ${ls.heuteErledigt} von ${ls.ziel} Aufgaben. Lernplan öffnen`} style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <Pressable onPress={() => nav.push({ name: 'lernplan' })} hitSlop={6} accessibilityLabel={zielErreicht
+            ? `Tagesziel geschafft. ${ls.heuteErledigt} Aufgaben heute. Lernplan öffnen`
+            : `Tagesziel ${ls.heuteErledigt} von ${ls.ziel} Aufgaben. Lernplan öffnen`} style={{ flexDirection: 'row', alignItems: 'center' }}>
+          {zielErreicht ? <Ionicons name="checkmark-circle" size={20} color="#fff" style={{ marginRight: 6 }} /> : null}
           <Text style={{ color: '#fff', fontSize: 17, fontWeight: '600', flex: 1 }}>
-            {zielErreicht ? 'Tagesziel geschafft!' : 'Tagesziel'}
+            {zielErreicht ? 'Tagesziel geschafft' : 'Tagesziel'}
           </Text>
-          <Text style={{ color: '#fff', fontSize: 17, fontWeight: '700' }}>{ls.heuteErledigt} / {ls.ziel}</Text>
+          {/* Nach dem Ziel nicht „72 / 20“ zeigen, sondern einfach die Anzahl von heute */}
+          <Text style={{ color: '#fff', fontSize: 17, fontWeight: '700' }}>
+            {zielErreicht ? `${ls.heuteErledigt} heute` : `${ls.heuteErledigt} / ${ls.ziel}`}
+          </Text>
           <Ionicons name="chevron-forward" size={16} color="#fff" style={{ marginLeft: 4, opacity: 0.8 }} />
         </Pressable>
         <View style={{ marginTop: 10 }}>
@@ -130,7 +151,7 @@ export default function StartScreen() {
           </Text>
         ) : null}
         <Button
-          title={zielErreicht ? 'Weiter üben' : ls.heuteErledigt ? 'Weiterlernen' : 'Jetzt lernen'}
+          title={ls.heuteErledigt ? 'Weiterlernen' : 'Jetzt lernen'}
           icon="arrow-forward"
           variant="weiss"
           onPress={heuteLernen}

@@ -99,11 +99,11 @@ type AppState = Daten & {
 
 const Ctx = createContext<AppState | null>(null);
 
-// Tagesziel zur Auswahl: Aufgaben pro Tag und ungefähre Dauer
+// Tagesziel zur Auswahl: Aufgaben pro Tag (keine Minutenangabe – die Dauer hängt stark vom Lesetempo ab)
 export const ZIEL_STUFEN = [
-  { wert: 10, titel: 'Locker', dauer: 'ca. 5 Min.' },
-  { wert: 20, titel: 'Normal', dauer: 'ca. 10 Min.' },
-  { wert: 30, titel: 'Intensiv', dauer: 'ca. 15 Min.' },
+  { wert: 10, titel: 'Locker' },
+  { wert: 20, titel: 'Normal' },
+  { wert: 30, titel: 'Intensiv' },
 ] as const;
 
 // Eine Aufgabe erledigt: Tageszähler erhöhen und merken, wenn das Tagesziel erreicht ist

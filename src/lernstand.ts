@@ -62,6 +62,8 @@ export function quote(liste: Frage[], stand: Record<string, FrageStand>, minBean
 // (auch gesperrten), damit Gratis-Nutzer nach 30 % der Fragen nicht fälschlich „bereit“ angezeigt bekommen.
 export type ReifeStufe = 'leer' | 'nichtBereit' | 'gutAufDemWeg' | 'bereit';
 export const REIFE_GRENZEN = { gutAufDemWeg: 0.5, bereit: 0.75 };
+// Erst ab so vielen beantworteten Fragen eine Einschätzung zeigen (sonst wirkt „5 von 120“ am ersten Tag entmutigend)
+export const MIN_FUER_REIFE = 20;
 
 export function pruefungsreife(alle: Frage[], stand: Record<string, FrageStand>) {
   let beantwortet = 0;
@@ -77,12 +79,12 @@ export function pruefungsreife(alle: Frage[], stand: Record<string, FrageStand>)
   });
   const punkte = gebiete.reduce((a, g) => a + g.punkte, 0);
   const anteil = punkte / PRUEFUNG.punkte;
-  const stufe: ReifeStufe = beantwortet === 0 ? 'leer'
+  const stufe: ReifeStufe = beantwortet < MIN_FUER_REIFE ? 'leer'
     : anteil >= REIFE_GRENZEN.bereit ? 'bereit'
     : anteil >= REIFE_GRENZEN.gutAufDemWeg ? 'gutAufDemWeg' : 'nichtBereit';
   // Größte Lücke = Sachgebiet, in dem die meisten Prüfungspunkte noch fehlen
   const luecke = [...gebiete].sort((a, b) => b.offenePunkte - a.offenePunkte)[0];
-  return { punkte, anteil, stufe, gebiete, luecke: luecke && luecke.offenePunkte >= 1 ? luecke : null };
+  return { punkte, anteil, stufe, beantwortet, gebiete, luecke: luecke && luecke.offenePunkte >= 1 ? luecke : null };
 }
 
 // Auswahl für „Heute lernen“: erst offene Fehler, dann neue Fragen, dann lange nicht gesehene
