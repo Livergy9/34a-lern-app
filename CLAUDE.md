@@ -73,6 +73,12 @@ QR-Code mit iPhone-Kamera scannen (Expo Go). Das blaue Zahnrad gehört zu Expo G
 Grundfunktionen: Quiz, Glossar, Fortschritt, Meine Fehler, Lesezeichen, Statistik, Lernplan, Karteikarten (Leitner), Prüfung (echt 82/120 Min. oder Kurztest), Einführung, 24 Kapitel, Premium-Sperre (Kauf noch nicht echt, Schalter „Premium im Testmodus“ in „Mehr“).
 Fragen: 325, davon 143 MC. Pro Sachgebiet MC/Gesamt: Gewerberecht 26/45, Datenschutz 11/18, BGB 31/50, Strafrecht 41/67, UVV 19/30, Technik 15/26, Menschen 0/89. Prüfungssimulation (`stelleZusammen`) 200× getestet: immer 82 Fragen / 120 Punkte. Als ⚠️ unsicher: oe-031.
 
+## Stoffabgleich mit offiziellem Rahmenplan (12.11.2026)
+- **Maßgeblich: [docs/stoffabgleich.md](docs/stoffabgleich.md)** – DIHK-Rahmenplan (Stand 09/2019, laut IHK Gera 05/2025 unverändert gültig) Punkt für Punkt gegen die 325 Fragen, mit Lücken pro Sachgebiet und Zielzahlen (Summe 600: Strafrecht 140, BGB 85, Gewerberecht 90, Menschen 105, UVV 65, Technik 70, Datenschutz 45).
+- Echter IHK-Fragenkatalog ist nicht öffentlich (bundeseinheitlich erstellt, Prüfer zur Verschwiegenheit verpflichtet). Offizielle Verteilung pro Sachgebiet nicht veröffentlicht.
+- Rahmenplan ist urheberrechtlich geschützt (DIHK): nur als Themenliste, kein Text in die App.
+- Die Liste unten (aus Savios Skript) ist darin aufgegangen; § 316 StGB ist nicht im Rahmenplan → gestrichen.
+
 ## Lücken füllen (Abgleich mit Savios Lernskript von 2023)
 - Savios Skript („Vorbereitung auf die Sachkundeprüfung § 34a GewO“, 164 S., Teile A–H) dient nur als Themenliste. Auf dem Ausdruck „… Rhein-Neckar“-Logo → Savio prüft, ob frei verwendbar. Punkteverteilung daraus NICHT übernehmen (Stand 2023).
 - **Erledigt (7e12d60):** Umgang mit Menschen um-073–um-089 + Kapitel um-k5, um-k6, EN/RO. Inhalt noch nicht von ChatGPT/Savio geprüft (`geprueft: false`). In der App noch nicht angesehen.
@@ -116,7 +122,7 @@ Reihenfolge: Datenschutz → Technik → UVV → Gewerberecht → BGB → Strafr
 
 ## Nächste Schritte
 1. Savio testet auf dem iPhone (Liste oben) und bestätigt die Stufen-Schwellen.
-2. Fragen auffüllen Richtung ~600: zuerst Strafrecht, dann Gewerberecht, dann „Mittel“ – bei „mach“.
+2. Fragen auffüllen Richtung ~600 nach [docs/stoffabgleich.md](docs/stoffabgleich.md): Strafrecht → Datenschutz → Gewerberecht → Technik → UVV → BGB → Menschen, je Runde 25–40 Fragen – bei „mach“.
 3. Datenschutz-Korrekturen bei „mach“, dann Technik prüfen lassen.
 4. Premium aufräumen (Punkte 1, 3, 4 + `kauf.ts` Platzhalter) – bei „mach“.
 5. Savio fragt bei der IHK: Verteilung Fragen/Punkte pro Sachgebiet, Single Choice bei „Umgang mit Menschen“.
