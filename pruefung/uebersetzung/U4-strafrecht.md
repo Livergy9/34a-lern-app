@@ -1,6 +1,6 @@
 # Übersetzung prüfen 4: Straf- und Strafverfahrensrecht, Waffenrecht
 
-67 Fragen. Zu jeder Frage: deutscher Text, dann Englisch (EN) und Rumänisch (RO). Die Antworten bleiben in der App Deutsch und werden nicht übersetzt.
+106 Fragen. Zu jeder Frage: deutscher Text, dann Englisch (EN) und Rumänisch (RO). Die Antworten bleiben in der App Deutsch und werden nicht übersetzt.
 
 ## 1. [st-001]
 
@@ -805,3 +805,471 @@
 
 - EN: Intention of appropriation means: the offender wants to permanently push the owner out and give the item to himself or someone else.
 - RO: Intenția de însușire înseamnă: făptașul vrea să-l înlăture definitiv pe proprietar și să ia lucrul pentru sine sau pentru altcineva.
+
+## 68. [st-068]
+
+**Frage DE:** Wer ist nach § 11 StGB ein Amtsträger?
+
+- EN: Who is a public official under section 11 of the Criminal Code?
+- RO: Cine este funcționar public (Amtsträger) conform § 11 StGB?
+
+**Erklärung DE:** Amtsträger sind vor allem Beamte und Richter. Private Sicherheitskräfte sind keine Amtsträger. Sie haben nur die Rechte, die jeder hat (Jedermannrecht), und die Rechte, die ihnen der Auftraggeber überträgt (z. B. das Hausrecht).
+
+- EN: Public officials are above all civil servants and judges. Private security staff are not public officials. They only have the rights everyone has (citizen's rights) and the rights the client transfers to them (e.g. the right to decide who may enter the premises).
+- RO: Funcționari publici sunt în primul rând funcționarii de stat și judecătorii. Agenții de pază privați nu sunt funcționari publici. Ei au doar drepturile pe care le are oricine și drepturile transferate de client (de ex. dreptul de a decide cine intră în clădire).
+
+## 69. [st-069]
+
+**Frage DE:** Was ist nach § 11 StGB eine „rechtswidrige Tat“?
+
+- EN: What is an "unlawful act" under section 11 of the Criminal Code?
+- RO: Ce este o „faptă ilegală” (rechtswidrige Tat) conform § 11 StGB?
+
+**Erklärung DE:** Eine rechtswidrige Tat erfüllt den Tatbestand eines Strafgesetzes und ist nicht gerechtfertigt (z. B. durch Notwehr). Ob der Täter schuldhaft handelt, spielt keine Rolle. Darum kann auch der Angriff eines Kindes oder eines stark Betrunkenen rechtswidrig sein.
+
+- EN: An unlawful act fulfils the elements of a criminal law and is not justified (e.g. by self-defence). Whether the offender acts culpably does not matter. That is why an attack by a child or a very drunk person can also be unlawful.
+- RO: O faptă ilegală îndeplinește elementele unei legi penale și nu este justificată (de ex. prin legitimă apărare). Nu contează dacă făptașul este vinovat. De aceea și atacul unui copil sau al unei persoane foarte beate poate fi ilegal.
+
+## 70. [st-070]
+
+**Frage DE:** Was ist ein Offizialdelikt?
+
+- EN: What is an offence prosecuted ex officio (Offizialdelikt)?
+- RO: Ce este o infracțiune urmărită din oficiu (Offizialdelikt)?
+
+**Erklärung DE:** Offizialdelikte (z. B. Raub oder gefährliche Körperverletzung) müssen Polizei und Staatsanwaltschaft verfolgen, sobald sie davon erfahren – auch wenn das Opfer das nicht will (Legalitätsprinzip). Das Gegenteil ist das Antragsdelikt.
+
+- EN: Police and public prosecutors must prosecute these offences (e.g. robbery or dangerous bodily harm) as soon as they learn about them – even if the victim does not want it (principle of mandatory prosecution). The opposite is an offence prosecuted only on complaint.
+- RO: Poliția și parchetul trebuie să urmărească aceste infracțiuni (de ex. tâlhăria sau vătămarea corporală periculoasă) imediat ce află de ele – chiar dacă victima nu dorește (principiul legalității). Opusul este infracțiunea urmărită doar la plângere.
+
+## 71. [st-071]
+
+**Frage DE:** Welche Straftaten sind Privatklagedelikte?
+
+- EN: Which offences are private prosecution offences (Privatklagedelikte)?
+- RO: Care infracțiuni sunt infracțiuni cu acțiune penală privată (Privatklagedelikte)?
+
+**Erklärung DE:** Bei Privatklagedelikten kann das Opfer selbst vor Gericht klagen. Die Staatsanwaltschaft erhebt nur Anklage, wenn ein öffentliches Interesse besteht. Beispiele: Hausfriedensbruch, Beleidigung, einfache und fahrlässige Körperverletzung, Bedrohung, Sachbeschädigung.
+
+- EN: For these offences the victim can take the case to court himself. The public prosecutor only brings charges if there is a public interest. Examples: trespass, insult, simple and negligent bodily harm, threat, damage to property.
+- RO: La aceste infracțiuni victima poate da singură în judecată. Parchetul formulează acuzare doar dacă există un interes public. Exemple: violarea de domiciliu, insulta, vătămarea corporală simplă și din culpă, amenințarea, distrugerea.
+
+## 72. [st-072]
+
+**Frage DE:** Eine Wachperson trägt im Dienst eine Uniform, die einer Polizeiuniform zum Verwechseln ähnlich sieht. Welche Straftat kommt in Betracht?
+
+- EN: On duty, a security guard wears a uniform that can easily be mistaken for a police uniform. Which criminal offence may apply?
+- RO: În timpul serviciului, un agent de pază poartă o uniformă care poate fi ușor confundată cu o uniformă de poliție. Ce infracțiune poate intra în discuție?
+
+**Erklärung DE:** Wer unbefugt eine Uniform oder ein Amtsabzeichen trägt – auch eine, die zum Verwechseln ähnlich ist –, macht sich nach § 132a StGB strafbar. Auch die Bewachungsverordnung verlangt Dienstkleidung, die man nicht mit Uniformen der Polizei oder der Bundeswehr verwechseln kann.
+
+- EN: Anyone who wears a uniform or official badge without authorisation – including one that can easily be mistaken for it – commits an offence under section 132a. The Security Services Ordinance also requires work clothing that cannot be confused with police or army uniforms.
+- RO: Cine poartă fără drept o uniformă sau o insignă oficială – inclusiv una care poate fi confundată cu ea – comite infracțiunea din § 132a StGB. Și Regulamentul privind activitatea de pază cere o îmbrăcăminte de serviciu care să nu poată fi confundată cu uniformele poliției sau ale armatei.
+
+## 73. [st-073]
+
+**Frage DE:** Was ist richtig über Amtsanmaßung (§ 132 StGB) und Missbrauch von Uniformen (§ 132a StGB)?
+
+- EN: What is true about impersonating a public official (section 132) and misuse of uniforms (section 132a)?
+- RO: Ce este adevărat despre uzurparea de calități oficiale (§ 132) și folosirea abuzivă a uniformelor (§ 132a)?
+
+**Erklärung DE:** Amtsanmaßung (§ 132): Man gibt sich als Amtsträger aus oder handelt so, wie nur ein Amtsträger handeln darf. Missbrauch von Uniformen (§ 132a): Schon das unbefugte Tragen von Uniformen oder Amtsabzeichen ist strafbar.
+
+- EN: Impersonating an official (section 132): pretending to be an official or acting in a way only an official may act. Misuse of uniforms (section 132a): just wearing uniforms or official badges without authorisation is already a criminal offence.
+- RO: Uzurparea de calități oficiale (§ 132): te dai drept funcționar public sau acționezi cum doar un funcționar are voie. Folosirea abuzivă a uniformelor (§ 132a): simplul fapt de a purta fără drept uniforme sau insigne oficiale este deja infracțiune.
+
+## 74. [st-074]
+
+**Frage DE:** Was ist richtig über die falsche uneidliche Aussage (§ 153 StGB)?
+
+- EN: What is true about false unsworn testimony (section 153 of the Criminal Code)?
+- RO: Ce este adevărat despre mărturia mincinoasă fără jurământ (§ 153 StGB)?
+
+**Erklärung DE:** Wer als Zeuge oder Sachverständiger vor Gericht (oder einer anderen Stelle, die Eide abnehmen darf) uneidlich falsch aussagt, wird bestraft – mit Freiheitsstrafe von drei Monaten bis zu fünf Jahren. Wird die falsche Aussage beschworen, ist es Meineid (§ 154 StGB).
+
+- EN: Anyone who, as a witness or expert, gives false unsworn testimony in court (or before another body allowed to take oaths) is punished – with imprisonment from three months to five years. If the false statement is made under oath, it is perjury (section 154).
+- RO: Cine, ca martor sau expert, declară mincinos fără jurământ în instanță (sau în fața altei autorități care poate lua jurăminte) este pedepsit – cu închisoare de la trei luni la cinci ani. Dacă declarația falsă este făcută sub jurământ, este jurământ fals (§ 154).
+
+## 75. [st-075]
+
+**Frage DE:** Ein Zeuge schwört vor Gericht, dass seine Aussage wahr ist. Er weiß aber, dass sie falsch ist. Was ist richtig?
+
+- EN: A witness swears in court that his statement is true. But he knows it is false. What is true?
+- RO: Un martor jură în instanță că declarația lui este adevărată. Dar el știe că este falsă. Ce este adevărat?
+
+**Erklärung DE:** Wer vor Gericht falsch schwört, begeht einen Meineid (§ 154 StGB). Die Mindeststrafe ist ein Jahr Freiheitsstrafe. Deshalb ist der Meineid ein Verbrechen (§ 12 Abs. 1 StGB).
+
+- EN: Anyone who swears falsely in court commits perjury (section 154). The minimum penalty is one year in prison. Therefore perjury is a felony (section 12 (1)).
+- RO: Cine jură fals în instanță comite jurământ fals (§ 154 StGB). Pedeapsa minimă este de un an închisoare. De aceea jurământul fals este o crimă (Verbrechen) (§ 12 alin. 1 StGB).
+
+## 76. [st-076]
+
+**Frage DE:** Eine Wachperson zeigt einen Kollegen bei der Polizei wegen Diebstahls an, obwohl sie weiß, dass er unschuldig ist. Was ist richtig?
+
+- EN: A security guard reports a colleague to the police for theft, although she knows he is innocent. What is true?
+- RO: O agentă de pază își denunță un coleg la poliție pentru furt, deși știe că el este nevinovat. Ce este adevărat?
+
+**Erklärung DE:** Falsche Verdächtigung: Man verdächtigt einen anderen bei einer Behörde wider besseres Wissen einer rechtswidrigen Tat, damit gegen ihn ermittelt wird. Wer sich nur irrt und ehrlich glaubt, was er sagt, macht sich nicht strafbar.
+
+- EN: False accusation: you knowingly accuse someone else of an unlawful act before an authority so that an investigation is started against him. Anyone who is merely mistaken and honestly believes what he says does not commit an offence.
+- RO: Denunțarea calomnioasă: acuzi cu bună știință pe altcineva în fața unei autorități de o faptă ilegală, pentru ca împotriva lui să se înceapă o anchetă. Cine doar se înșală și crede sincer ce spune nu comite infracțiune.
+
+## 77. [st-077]
+
+**Frage DE:** Ein Zeuge macht bei der Polizei absichtlich eine falsche Aussage. Ist das eine falsche uneidliche Aussage nach § 153 StGB?
+
+- EN: A witness deliberately makes a false statement to the police. Is that false unsworn testimony under section 153?
+- RO: Un martor face intenționat o declarație falsă la poliție. Este aceasta mărturie mincinoasă fără jurământ conform § 153 StGB?
+
+**Erklärung DE:** Die Polizei darf keine Eide abnehmen. Deshalb gilt § 153 StGB dort nicht. Eine falsche Aussage bei der Polizei kann aber andere Straftaten erfüllen, z. B. falsche Verdächtigung (§ 164) oder Strafvereitelung (§ 258).
+
+- EN: The police may not take oaths. Therefore section 153 does not apply there. However, a false statement to the police can fulfil other offences, e.g. false accusation (section 164) or obstruction of punishment (section 258).
+- RO: Poliția nu are voie să ia jurăminte. De aceea § 153 nu se aplică acolo. O declarație falsă la poliție poate însă îndeplini alte infracțiuni, de ex. denunțarea calomnioasă (§ 164) sau zădărnicirea pedepsei (§ 258).
+
+## 78. [st-078]
+
+**Frage DE:** Ein Gast nennt eine Sicherheitskraft am Einlass „Idiot“. Welche Straftat kommt in Betracht?
+
+- EN: At the entrance, a guest calls a security guard an "idiot". Which criminal offence may apply?
+- RO: La intrare, un oaspete îi spune unui agent de pază „idiotule”. Ce infracțiune poate intra în discuție?
+
+**Erklärung DE:** Eine Beleidigung ist eine Äußerung, mit der man einen anderen herabsetzt oder missachtet, z. B. ein Schimpfwort. Sie ist ein Antragsdelikt. Professionell bleiben: ruhig reagieren und den Vorfall dokumentieren.
+
+- EN: An insult is a statement by which you belittle or show contempt for another person, e.g. a swear word. It is only prosecuted on complaint. Stay professional: react calmly and document the incident.
+- RO: Insulta este o afirmație prin care îl umilești sau îl disprețuiești pe altul, de ex. o înjurătură. Se urmărește doar la plângere. Rămâi profesionist: reacționează calm și documentează incidentul.
+
+## 79. [st-079]
+
+**Frage DE:** Was ist richtig über die Beleidigung nach § 185 StGB?
+
+- EN: What is true about insult under section 185 of the Criminal Code?
+- RO: Ce este adevărat despre insultă conform § 185 StGB?
+
+**Erklärung DE:** Beleidigen kann man mit Worten, Gesten oder Bildern. Die Beleidigung ist ein Antragsdelikt (§ 194 StGB): Der Beleidigte muss in der Regel einen Strafantrag stellen.
+
+- EN: You can insult with words, gestures or pictures. Insult is only prosecuted on complaint (section 194): the insulted person usually has to file a criminal complaint.
+- RO: Poți insulta prin cuvinte, gesturi sau imagini. Insulta se urmărește doar la plângere (§ 194 StGB): persoana insultată trebuie de regulă să depună plângere penală.
+
+## 80. [st-080]
+
+**Frage DE:** Worin unterscheidet sich die Beleidigung (§ 185) von der üblen Nachrede (§ 186)?
+
+- EN: What is the difference between insult (section 185) and defamation (section 186)?
+- RO: Care este diferența dintre insultă (§ 185) și defăimare (üble Nachrede, § 186)?
+
+**Erklärung DE:** Beleidigung: abwertendes Urteil, z. B. „Du bist ein Idiot“. Üble Nachrede: Man erzählt anderen eine ehrverletzende Tatsache, die nicht bewiesen werden kann, z. B. „Der klaut in der Firma“. Weiß man, dass sie falsch ist, ist es Verleumdung (§ 187).
+
+- EN: Insult: a degrading judgement, e.g. "You are an idiot". Defamation: you tell others a fact that harms someone's reputation and cannot be proven, e.g. "He steals at work". If you know it is false, it is slander (section 187).
+- RO: Insulta: o judecată de valoare înjositoare, de ex. „Ești un idiot”. Defăimarea: le spui altora un fapt care strică reputația cuiva și care nu poate fi dovedit, de ex. „Fură la firmă”. Dacă știi că este fals, este calomnie (§ 187).
+
+## 81. [st-081]
+
+**Frage DE:** Welche Folgen machen eine Körperverletzung zur schweren Körperverletzung nach § 226 StGB?
+
+- EN: Which consequences make bodily harm grievous bodily harm under section 226?
+- RO: Ce urmări transformă vătămarea corporală în vătămare corporală gravă conform § 226 StGB?
+
+**Erklärung DE:** Schwere Körperverletzung heißt: schwere Dauerfolgen, z. B. Verlust des Sehvermögens, des Gehörs, der Sprache oder eines wichtigen Körperglieds, dauerhafte starke Entstellung, Lähmung oder geistige Behinderung. Sie ist ein Verbrechen.
+
+- EN: Grievous bodily harm means serious permanent consequences, e.g. loss of sight, hearing, speech or an important limb, permanent serious disfigurement, paralysis or mental disability. It is a felony.
+- RO: Vătămarea corporală gravă înseamnă urmări grave permanente, de ex. pierderea vederii, a auzului, a vorbirii sau a unui membru important, desfigurare gravă permanentă, paralizie sau dizabilitate mintală. Este o crimă (Verbrechen).
+
+## 82. [st-082]
+
+**Frage DE:** Ist die schwere Körperverletzung nach § 226 StGB ein Verbrechen oder ein Vergehen?
+
+- EN: Is grievous bodily harm under section 226 a felony or a misdemeanour?
+- RO: Vătămarea corporală gravă conform § 226 StGB este o crimă (Verbrechen) sau un delict (Vergehen)?
+
+**Erklärung DE:** Verbrechen sind Taten mit einer Mindeststrafe von einem Jahr Freiheitsstrafe (§ 12 Abs. 1 StGB). Die schwere Körperverletzung wird mit einem bis zehn Jahren bestraft – sie ist also ein Verbrechen.
+
+- EN: Felonies are offences with a minimum penalty of one year in prison (section 12 (1)). Grievous bodily harm is punished with one to ten years – so it is a felony.
+- RO: Crimele sunt infracțiuni cu o pedeapsă minimă de un an închisoare (§ 12 alin. 1 StGB). Vătămarea corporală gravă se pedepsește cu unu până la zece ani – deci este o crimă.
+
+## 83. [st-083]
+
+**Frage DE:** In welchen Fällen liegt ein besonders schwerer Diebstahl nach § 244 StGB vor (mit Waffen, als Bande oder als Wohnungseinbruch)?
+
+- EN: In which cases is there an aggravated theft under section 244 (with weapons, as a gang or as a burglary of a home)?
+- RO: În ce cazuri există un furt calificat conform § 244 StGB (cu arme, în bandă sau prin spargerea unei locuințe)?
+
+**Erklärung DE:** § 244 StGB: Diebstahl mit einer Waffe oder einem gefährlichen Werkzeug, Bandendiebstahl und Wohnungseinbruchdiebstahl. Der Einbruch in eine dauerhaft genutzte Privatwohnung ist sogar ein Verbrechen. Wer eine Geldbörse findet und behält, begeht Unterschlagung, keinen Diebstahl.
+
+- EN: Section 244: theft with a weapon or a dangerous tool, gang theft and burglary of a home. Breaking into a permanently used private home is even a felony. Anyone who finds a wallet and keeps it commits embezzlement, not theft.
+- RO: § 244: furtul cu o armă sau un instrument periculos, furtul în bandă și furtul prin spargerea unei locuințe. Spargerea unei locuințe private folosite permanent este chiar o crimă (Verbrechen). Cine găsește un portofel și îl păstrează comite însușire (Unterschlagung), nu furt.
+
+## 84. [st-084]
+
+**Frage DE:** Ab wie vielen Personen spricht man beim Bandendiebstahl von einer „Bande“?
+
+- EN: From how many people is a group called a "gang" in gang theft?
+- RO: De la câte persoane se vorbește de „bandă” la furtul în bandă?
+
+**Erklärung DE:** Nach der Rechtsprechung (Bundesgerichtshof) ist eine Bande ein Zusammenschluss von mindestens drei Personen, die künftig mehrere Taten gemeinsam begehen wollen.
+
+- EN: According to case law (Federal Court of Justice), a gang is a group of at least three people who want to commit several offences together in the future.
+- RO: Conform jurisprudenței (Curtea Federală de Justiție), o bandă este o grupare de cel puțin trei persoane care vor să comită în viitor mai multe infracțiuni împreună.
+
+## 85. [st-085]
+
+**Frage DE:** Ein Ladendieb steckt einen Schokoriegel für 1 Euro ein. Was ist richtig?
+
+- EN: A shoplifter pockets a chocolate bar worth 1 euro. What is true?
+- RO: Un hoț din magazin își bagă în buzunar un baton de ciocolată de 1 euro. Ce este adevărat?
+
+**Erklärung DE:** Auch der Diebstahl einer geringwertigen Sache ist eine Straftat. Nach § 248a StGB wird er aber nur auf Strafantrag verfolgt oder wenn die Staatsanwaltschaft ein besonderes öffentliches Interesse bejaht. Die vorläufige Festnahme nach § 127 StPO ist trotzdem möglich.
+
+- EN: Theft of an item of little value is also a criminal offence. Under section 248a, however, it is only prosecuted on complaint or if the public prosecutor sees a special public interest. A provisional arrest under section 127 of the Code of Criminal Procedure is still possible.
+- RO: Și furtul unui lucru de valoare mică este infracțiune. Conform § 248a StGB, el se urmărește însă doar la plângere sau dacă parchetul vede un interes public deosebit. Reținerea provizorie conform § 127 StPO este totuși posibilă.
+
+## 86. [st-086]
+
+**Frage DE:** Ein Mann sagt zu einer Kassiererin: „Gib mir 200 Euro, sonst stelle ich peinliche Fotos von dir ins Internet.“ Welche Straftat kommt in Betracht?
+
+- EN: A man says to a cashier: "Give me 200 euros, or I will put embarrassing photos of you on the internet." Which criminal offence may apply?
+- RO: Un bărbat îi spune unei casiere: „Dă-mi 200 de euro, altfel pun poze jenante cu tine pe internet.” Ce infracțiune poate intra în discuție?
+
+**Erklärung DE:** Erpressung: Der Täter droht mit einem empfindlichen Übel (hier: Fotos veröffentlichen) oder wendet Gewalt an, damit das Opfer etwas tut, z. B. Geld gibt. Dadurch entsteht dem Opfer ein Vermögensnachteil, und der Täter will sich bereichern.
+
+- EN: Extortion: the offender threatens a serious harm (here: publishing photos) or uses force so that the victim does something, e.g. hands over money. This causes the victim a financial loss, and the offender wants to enrich himself.
+- RO: Șantajul (Erpressung): făptașul amenință cu un rău grav (aici: publicarea pozelor) sau folosește violență ca victima să facă ceva, de ex. să dea bani. Prin aceasta victima suferă o pagubă materială, iar făptașul vrea să se îmbogățească.
+
+## 87. [st-087]
+
+**Frage DE:** Was ist richtig über die Erpressung nach § 253 StGB?
+
+- EN: What is true about extortion under section 253 of the Criminal Code?
+- RO: Ce este adevărat despre șantaj (Erpressung) conform § 253 StGB?
+
+**Erklärung DE:** Bei der Erpressung bringt der Täter das Opfer durch Gewalt oder Drohung dazu, selbst etwas zu tun, zu dulden oder zu unterlassen – das schadet dem Vermögen des Opfers. Auch der Versuch ist strafbar (§ 253 Abs. 3 StGB).
+
+- EN: In extortion, the offender uses force or threats to make the victim do, tolerate or refrain from something – which harms the victim's assets. The attempt is also punishable (section 253 (3)).
+- RO: La șantaj, făptașul o face pe victimă, prin violență sau amenințare, să facă, să tolereze sau să nu facă ceva – ceea ce îi afectează averea. Și tentativa este pedepsită (§ 253 alin. 3 StGB).
+
+## 88. [st-088]
+
+**Frage DE:** Was unterscheidet typischerweise den Raub von der Erpressung?
+
+- EN: What typically distinguishes robbery from extortion?
+- RO: Ce deosebește de obicei tâlhăria de șantaj?
+
+**Erklärung DE:** Raub (§ 249): Wegnahme mit Gewalt gegen eine Person oder Drohung mit Gefahr für Leib oder Leben. Erpressung (§ 253): Das Opfer gibt selbst etwas heraus. Droht der Erpresser mit Gefahr für Leib oder Leben, ist es räuberische Erpressung (§ 255) – sie wird wie Raub bestraft.
+
+- EN: Robbery (section 249): taking away with violence against a person or threats of danger to life or limb. Extortion (section 253): the victim hands something over himself. If the extortioner threatens danger to life or limb, it is robbery-like extortion (section 255) – it is punished like robbery.
+- RO: Tâlhăria (§ 249): luarea lucrului cu violență împotriva unei persoane sau cu amenințare cu pericol pentru viață sau integritate. Șantajul (§ 253): victima dă ea însăși ceva. Dacă șantajistul amenință cu pericol pentru viață sau integritate, este șantaj tâlhăresc (§ 255) – se pedepsește ca tâlhăria.
+
+## 89. [st-089]
+
+**Frage DE:** Ein Freund des Diebes versteckt nach der Tat die Beute in seinem Keller, damit der Dieb sie behalten kann. Welche Straftat kommt beim Freund in Betracht?
+
+- EN: After the crime, a friend of the thief hides the loot in his cellar so that the thief can keep it. Which offence may apply to the friend?
+- RO: După faptă, un prieten al hoțului ascunde prada în pivnița lui, ca hoțul să o poată păstra. Ce infracțiune poate intra în discuție pentru prieten?
+
+**Erklärung DE:** Begünstigung: Man hilft jemandem nach einer rechtswidrigen Tat, damit er die Vorteile der Tat (z. B. die Beute) behalten kann.
+
+- EN: Aiding after the fact (Begünstigung): you help someone after an unlawful act so that he can keep the benefits of the act (e.g. the loot).
+- RO: Favorizarea (Begünstigung): ajuți pe cineva după o faptă ilegală ca să poată păstra avantajele faptei (de ex. prada).
+
+## 90. [st-090]
+
+**Frage DE:** Was ist richtig über Begünstigung (§ 257), Strafvereitelung (§ 258) und Hehlerei (§ 259)?
+
+- EN: What is true about aiding after the fact (section 257), obstruction of punishment (section 258) and handling stolen goods (section 259)?
+- RO: Ce este adevărat despre favorizare (§ 257), zădărnicirea pedepsei (§ 258) și tăinuire (§ 259)?
+
+**Erklärung DE:** Begünstigung: Vorteile der Tat sichern. Strafvereitelung: Bestrafung des Täters verhindern (Angehörige bleiben dabei straffrei, § 258 Abs. 6). Hehlerei: gestohlene Sachen ankaufen oder verkaufen, um sich oder einen anderen zu bereichern.
+
+- EN: Aiding after the fact: securing the benefits of the act. Obstruction of punishment: preventing the offender from being punished (relatives remain unpunished, section 258 (6)). Handling stolen goods: buying or selling stolen items to enrich yourself or someone else.
+- RO: Favorizarea: asiguri avantajele faptei. Zădărnicirea pedepsei: împiedici pedepsirea făptașului (rudele rămân nepedepsite, § 258 alin. 6). Tăinuirea: cumperi sau vinzi lucruri furate ca să te îmbogățești tu sau altcineva.
+
+## 91. [st-091]
+
+**Frage DE:** Eine Person fährt mit der S-Bahn, ohne eine Fahrkarte zu kaufen, und will auch nicht bezahlen. Welche Straftat kommt in Betracht?
+
+- EN: A person rides the S-Bahn without buying a ticket and does not intend to pay. Which criminal offence may apply?
+- RO: O persoană merge cu trenul S-Bahn fără să cumpere bilet și nici nu vrea să plătească. Ce infracțiune poate intra în discuție?
+
+**Erklärung DE:** Wer ein Verkehrsmittel benutzt, ohne zu bezahlen, und das auch nicht will („Schwarzfahren“), kann sich wegen Erschleichens von Leistungen strafbar machen. Hinweis für die Prüfung: Stand der Gesetzeslage vor Release prüfen (Reformdiskussion).
+
+- EN: Anyone who uses a means of transport without paying and does not intend to pay ("fare dodging") can commit the offence of obtaining services by deception. Note: check the current legal situation before release (reform discussion).
+- RO: Cine folosește un mijloc de transport fără să plătească și nici nu vrea („mersul fără bilet”) poate comite infracțiunea de obținere frauduloasă de servicii. Notă: verificați situația legală actuală înainte de lansare (discuție privind reforma).
+
+## 92. [st-092]
+
+**Frage DE:** Welche Handlungen können ein Erschleichen von Leistungen nach § 265a StGB sein?
+
+- EN: Which actions can be obtaining services by deception under section 265a?
+- RO: Ce acțiuni pot fi obținere frauduloasă de servicii conform § 265a StGB?
+
+**Erklärung DE:** § 265a StGB erfasst u. a. das Erschleichen der Beförderung durch ein Verkehrsmittel und des Zutritts zu einer Veranstaltung oder Einrichtung – jeweils in der Absicht, nicht zu bezahlen.
+
+- EN: Section 265a covers, among other things, obtaining transport by a means of transport and obtaining access to an event or facility – each with the intention of not paying.
+- RO: § 265a cuprinde, printre altele, obținerea transportului cu un mijloc de transport și obținerea accesului la un eveniment sau o instituție – de fiecare dată cu intenția de a nu plăti.
+
+## 93. [st-093]
+
+**Frage DE:** Was ist Untreue nach § 266 StGB?
+
+- EN: What is breach of trust (Untreue) under section 266 of the Criminal Code?
+- RO: Ce este abuzul de încredere (Untreue) conform § 266 StGB?
+
+**Erklärung DE:** Untreue begeht, wer die Pflicht hat, sich um fremdes Vermögen zu kümmern, und diese Pflicht missbraucht oder verletzt. Dem Vermögen, das er betreuen soll, entsteht dadurch ein Nachteil.
+
+- EN: Breach of trust is committed by someone who has a duty to look after another person's assets and abuses or violates this duty. This causes a loss to the assets he is supposed to look after.
+- RO: Abuz de încredere comite cine are obligația de a avea grijă de averea altcuiva și abuzează de această obligație sau o încalcă. Prin aceasta, averea pe care trebuia să o administreze suferă o pagubă.
+
+## 94. [st-094]
+
+**Frage DE:** Ein 17-Jähriger zeigt am Einlass einer Diskothek den echten Personalausweis seines 19-jährigen Bruders vor. Welche Straftat kommt in Betracht?
+
+- EN: At the entrance of a club, a 17-year-old shows the genuine ID card of his 19-year-old brother. Which criminal offence may apply?
+- RO: La intrarea unui club, un tânăr de 17 ani arată buletinul adevărat al fratelui său de 19 ani. Ce infracțiune poate intra în discuție?
+
+**Erklärung DE:** Der Ausweis ist echt, also keine Urkundenfälschung. Wer aber einen echten Ausweis benutzt, der für einen anderen ausgestellt ist, um über seine Person zu täuschen, begeht Missbrauch von Ausweispapieren.
+
+- EN: The ID card is genuine, so it is not forgery. But anyone who uses a genuine ID card issued to someone else in order to deceive about his identity commits misuse of identity documents.
+- RO: Buletinul este autentic, deci nu este fals în înscrisuri. Dar cine folosește un act de identitate autentic emis pentru altă persoană, ca să înșele asupra identității sale, comite folosirea abuzivă a actelor de identitate.
+
+## 95. [st-095]
+
+**Frage DE:** Was ist richtig über den Missbrauch von Ausweispapieren (§ 281 StGB)?
+
+- EN: What is true about misuse of identity documents (section 281 of the Criminal Code)?
+- RO: Ce este adevărat despre folosirea abuzivă a actelor de identitate (§ 281 StGB)?
+
+**Erklärung DE:** Strafbar ist der Gebrauch eines fremden Ausweises zur Täuschung – und auch das Überlassen des eigenen Ausweises an einen anderen zu diesem Zweck. Den Ausweis darf die Sicherheitskraft nicht vernichten; im Zweifel die Polizei verständigen.
+
+- EN: It is punishable to use someone else's ID document to deceive – and also to give your own ID document to someone else for this purpose. The security guard may not destroy the document; if in doubt, call the police.
+- RO: Este pedepsită folosirea actului de identitate al altcuiva pentru a înșela – și, de asemenea, predarea propriului act altei persoane în acest scop. Agentul de pază nu are voie să distrugă actul; în caz de îndoială, anunță poliția.
+
+## 96. [st-096]
+
+**Frage DE:** Jemand zündet nachts absichtlich ein fremdes Lagerhaus an. Was ist richtig?
+
+- EN: At night, someone deliberately sets fire to someone else's warehouse. What is true?
+- RO: Noaptea, cineva dă foc intenționat unui depozit care aparține altcuiva. Ce este adevărat?
+
+**Erklärung DE:** Wer fremde Gebäude, Lager, Betriebsstätten oder Fahrzeuge in Brand setzt, begeht Brandstiftung (§ 306 StGB). Die Mindeststrafe ist ein Jahr – also ein Verbrechen. Sind Menschen in Gefahr (z. B. bei Wohngebäuden), gelten noch strengere Vorschriften (§§ 306a ff.).
+
+- EN: Anyone who sets fire to other people's buildings, warehouses, business premises or vehicles commits arson (section 306). The minimum penalty is one year – so it is a felony. If people are in danger (e.g. residential buildings), even stricter rules apply (sections 306a ff.).
+- RO: Cine dă foc clădirilor, depozitelor, spațiilor de lucru sau vehiculelor altora comite incendiere (§ 306 StGB). Pedeapsa minimă este de un an – deci este o crimă (Verbrechen). Dacă oamenii sunt în pericol (de ex. clădiri de locuit), se aplică reguli și mai stricte (§§ 306a și urm.).
+
+## 97. [st-097]
+
+**Frage DE:** Eine Wachperson wirft beim Kontrollgang eine brennende Zigarette achtlos in einen Container mit Verpackungsmaterial. Das Lager brennt ab. Was ist richtig?
+
+- EN: During a patrol, a security guard carelessly throws a burning cigarette into a container with packaging material. The warehouse burns down. What is true?
+- RO: În timpul unei ronduri, un agent de pază aruncă neatent o țigară aprinsă într-un container cu material de ambalare. Depozitul arde complet. Ce este adevărat?
+
+**Erklärung DE:** Wer aus Unachtsamkeit (Fahrlässigkeit) einen Brand verursacht, kann sich wegen fahrlässiger Brandstiftung strafbar machen. Rauchen ist in vielen Objekten verboten – die Dienstanweisung beachten.
+
+- EN: Anyone who causes a fire through carelessness (negligence) can commit negligent arson. Smoking is forbidden in many sites – follow the service instructions.
+- RO: Cine provoacă un incendiu din neatenție (din culpă) poate comite incendiere din culpă. Fumatul este interzis în multe obiective – respectați instrucțiunile de serviciu.
+
+## 98. [st-098]
+
+**Frage DE:** Was ist nach § 29 Betäubungsmittelgesetz (BtMG) ohne Erlaubnis strafbar?
+
+- EN: What is punishable without a permit under section 29 of the Narcotics Act (BtMG)?
+- RO: Ce este pedepsit fără autorizație conform § 29 din Legea stupefiantelor (BtMG)?
+
+**Erklärung DE:** Strafbar sind u. a. Anbau, Herstellung, Handel, Erwerb, Abgabe und Besitz von Betäubungsmitteln ohne Erlaubnis. Wer einen Fund sofort der Polizei übergibt, macht sich nicht strafbar. Hinweis: Cannabis ist seit 1. April 2024 nicht mehr im BtMG, sondern im Konsumcannabisgesetz (KCanG) geregelt.
+
+- EN: Punishable are, among other things, growing, producing, dealing in, acquiring, supplying and possessing narcotics without a permit. Anyone who hands a find over to the police immediately does not commit an offence. Note: since 1 April 2024, cannabis is no longer covered by the Narcotics Act but by the Consumer Cannabis Act (KCanG).
+- RO: Sunt pedepsite, printre altele, cultivarea, producerea, traficul, cumpărarea, cedarea și deținerea de stupefiante fără autorizație. Cine predă imediat poliției ceva găsit nu comite infracțiune. Notă: din 1 aprilie 2024, canabisul nu mai este reglementat de BtMG, ci de Legea privind canabisul de consum (KCanG).
+
+## 99. [st-099]
+
+**Frage DE:** Sie finden beim Kontrollgang ein Tütchen mit weißem Pulver, vermutlich Drogen. Was ist richtig?
+
+- EN: During a patrol you find a small bag with white powder, probably drugs. What is true?
+- RO: În timpul unei ronduri găsiți o pungă mică cu pulbere albă, probabil droguri. Ce este adevărat?
+
+**Erklärung DE:** Drogen wie verbotene Waffen behandeln: nicht behalten, nicht probieren, nicht vernichten. Polizei verständigen, Fundort sichern (Spuren!), Fund dokumentieren. Wer Drogen behält, kann sich wegen Besitzes strafbar machen.
+
+- EN: Treat drugs like prohibited weapons: do not keep them, do not try them, do not destroy them. Call the police, secure the place where you found them (traces!) and document the find. Anyone who keeps drugs can be punished for possession.
+- RO: Tratați drogurile ca pe armele interzise: nu le păstrați, nu le gustați, nu le distrugeți. Anunțați poliția, asigurați locul unde le-ați găsit (urme!) și documentați. Cine păstrează droguri poate fi pedepsit pentru deținere.
+
+## 100. [st-100]
+
+**Frage DE:** Was gilt für schwere Fälle nach § 30 BtMG, z. B. Handel mit Betäubungsmitteln als Mitglied einer Bande?
+
+- EN: What applies to serious cases under section 30 of the Narcotics Act, e.g. dealing in narcotics as a member of a gang?
+- RO: Ce se aplică în cazurile grave conform § 30 BtMG, de ex. traficul de stupefiante ca membru al unei bande?
+
+**Erklärung DE:** § 30 BtMG regelt besonders schwere Fälle, z. B. Bandenhandel oder die Einfuhr großer Mengen. Die Mindeststrafe beträgt zwei Jahre – es sind Verbrechen.
+
+- EN: Section 30 of the Narcotics Act covers particularly serious cases, e.g. gang dealing or importing large quantities. The minimum penalty is two years – they are felonies.
+- RO: § 30 BtMG reglementează cazuri deosebit de grave, de ex. traficul în bandă sau importul de cantități mari. Pedeapsa minimă este de doi ani – sunt crime (Verbrechen).
+
+## 101. [st-101]
+
+**Frage DE:** Eine Person bietet auf dem bewachten Gelände anderen Personen Kokain zum Kauf an. Was ist richtig?
+
+- EN: On the guarded premises, a person offers cocaine for sale to other people. What is true?
+- RO: Pe terenul păzit, o persoană oferă altor persoane cocaină de vânzare. Ce este adevărat?
+
+**Erklärung DE:** Handel mit Drogen ist eine Straftat. Sicherheitskräfte dürfen nicht durchsuchen und keine Drogen kaufen oder behalten. Richtig: Eigensicherung, beobachten, Polizei rufen, Personenbeschreibung und Bericht.
+
+- EN: Dealing in drugs is a criminal offence. Security staff may not search people and may not buy or keep drugs. Correct: self-protection, observe, call the police, a description of the person and a report.
+- RO: Traficul de droguri este infracțiune. Agenții de pază nu au voie să percheziționeze și nu au voie să cumpere sau să păstreze droguri. Corect: autoprotecție, observare, chemarea poliției, descrierea persoanei și un raport.
+
+## 102. [st-102]
+
+**Frage DE:** Sie werden als Zeuge zu einer Gerichtsverhandlung geladen. Was gilt?
+
+- EN: You are summoned as a witness to a court hearing. What applies?
+- RO: Sunteți citat ca martor la o ședință de judecată. Ce se aplică?
+
+**Erklärung DE:** Zeugen müssen vor Gericht erscheinen und wahrheitsgemäß aussagen. Wer ohne Entschuldigung fehlt, muss mit Ordnungsgeld und den Kosten rechnen. Das Gericht belehrt Zeugen über die Wahrheitspflicht (§ 57 StPO).
+
+- EN: Witnesses must appear in court and testify truthfully. Anyone who stays away without an excuse must expect a coercive fine and the costs. The court instructs witnesses about the duty to tell the truth (section 57 of the Code of Criminal Procedure).
+- RO: Martorii trebuie să se prezinte în instanță și să declare adevărul. Cine lipsește fără motiv trebuie să se aștepte la o amendă judiciară și la plata costurilor. Instanța îi informează pe martori despre obligația de a spune adevărul (§ 57 StPO).
+
+## 103. [st-103]
+
+**Frage DE:** Wann darf ein Zeuge die Aussage ganz verweigern (Zeugnisverweigerungsrecht nach § 52 StPO)?
+
+- EN: When may a witness refuse to testify completely (right to refuse testimony under section 52 of the Code of Criminal Procedure)?
+- RO: Când are voie un martor să refuze complet declarația (dreptul de a refuza mărturia conform § 52 StPO)?
+
+**Erklärung DE:** Angehörige des Beschuldigten – z. B. Verlobte, Ehepartner, Eltern, Kinder, Geschwister – dürfen die Aussage verweigern. Sicherheitskräfte haben als Berufsgruppe kein Zeugnisverweigerungsrecht.
+
+- EN: Relatives of the accused – e.g. fiancés, spouses, parents, children, siblings – may refuse to testify. Security staff as a professional group have no right to refuse testimony.
+- RO: Rudele inculpatului – de ex. logodnici, soți, părinți, copii, frați – au voie să refuze declarația. Agenții de pază, ca grup profesional, nu au dreptul de a refuza mărturia.
+
+## 104. [st-104]
+
+**Frage DE:** Was regelt das Auskunftsverweigerungsrecht nach § 55 StPO?
+
+- EN: What does the right to refuse to answer under section 55 of the Code of Criminal Procedure regulate?
+- RO: Ce reglementează dreptul de a refuza răspunsul conform § 55 StPO?
+
+**Erklärung DE:** Niemand muss sich selbst belasten. Deshalb darf ein Zeuge einzelne Fragen nicht beantworten, wenn er sich oder einen Angehörigen sonst einer Strafverfolgung aussetzen würde. Lügen darf er aber nicht.
+
+- EN: Nobody has to incriminate himself. Therefore a witness may refuse to answer individual questions if he would otherwise expose himself or a relative to criminal prosecution. But he may not lie.
+- RO: Nimeni nu trebuie să se autoincrimineze. De aceea un martor poate refuza să răspundă la anumite întrebări dacă altfel s-ar expune pe sine sau pe o rudă unei urmăriri penale. Dar nu are voie să mintă.
+
+## 105. [st-105]
+
+**Frage DE:** Wie bereiten Sie sich als Wachperson am besten auf eine Zeugenaussage vor Gericht vor?
+
+- EN: As a security guard, how do you best prepare for testifying in court?
+- RO: Ca agent de pază, cum vă pregătiți cel mai bine pentru o declarație ca martor în instanță?
+
+**Erklärung DE:** Ein guter, zeitnah geschriebener Bericht hilft vor Gericht. Wer sich nicht erinnert, sagt das offen. Erfinden oder Übertreiben kann eine Straftat sein (§ 153 StGB).
+
+- EN: A good report written soon after the incident helps in court. If you do not remember something, say so openly. Inventing or exaggerating can be a criminal offence (section 153 of the Criminal Code).
+- RO: Un raport bun, scris la scurt timp după incident, ajută în instanță. Dacă nu vă mai amintiți ceva, spuneți deschis. A inventa sau a exagera poate fi infracțiune (§ 153 StGB).
+
+## 106. [st-106]
+
+**Frage DE:** Was ist richtig über Straftaten und Ordnungswidrigkeiten?
+
+- EN: What is true about criminal offences and administrative offences?
+- RO: Ce este adevărat despre infracțiuni și contravenții?
+
+**Erklärung DE:** Ordnungswidrigkeiten sind leichtere Verstöße (z. B. Müll wegwerfen, Falschparken) und werden mit Geldbuße geahndet, meist von einer Verwaltungsbehörde. Straftaten werden von Gerichten mit Geld- oder Freiheitsstrafe bestraft. Die vorläufige Festnahme nach § 127 StPO gilt nur bei Straftaten.
+
+- EN: Administrative offences are minor violations (e.g. dropping litter, wrong parking) and are punished with a fine, usually by an administrative authority. Criminal offences are punished by courts with a fine or imprisonment. Provisional arrest under section 127 of the Code of Criminal Procedure only applies to criminal offences.
+- RO: Contravențiile sunt încălcări mai ușoare (de ex. aruncarea gunoiului, parcarea greșită) și se sancționează cu amendă, de obicei de o autoritate administrativă. Infracțiunile sunt pedepsite de instanțe cu amendă penală sau închisoare. Reținerea provizorie conform § 127 StPO se aplică doar la infracțiuni.

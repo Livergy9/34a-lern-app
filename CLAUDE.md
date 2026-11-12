@@ -71,7 +71,9 @@ QR-Code mit iPhone-Kamera scannen (Expo Go). Das blaue Zahnrad gehört zu Expo G
 
 ## Stand
 Grundfunktionen: Quiz, Glossar, Fortschritt, Meine Fehler, Lesezeichen, Statistik, Lernplan, Karteikarten (Leitner), Prüfung (echt 82/120 Min. oder Kurztest), Einführung, 24 Kapitel, Premium-Sperre (Kauf noch nicht echt, Schalter „Premium im Testmodus“ in „Mehr“).
-Fragen: 325, davon 143 MC. Pro Sachgebiet MC/Gesamt: Gewerberecht 26/45, Datenschutz 11/18, BGB 31/50, Strafrecht 41/67, UVV 19/30, Technik 15/26, Menschen 0/89. Prüfungssimulation (`stelleZusammen`) 200× getestet: immer 82 Fragen / 120 Punkte. Als ⚠️ unsicher: oe-031.
+Fragen: 364, davon 165 MC. Pro Sachgebiet MC/Gesamt: Gewerberecht 26/45, Datenschutz 11/18, BGB 31/50, Strafrecht 63/106, UVV 19/30, Technik 15/26, Menschen 0/89.
+**Strafrecht Runde 1 (12.11.2026):** st-068–st-106 (39 Fragen, 22 MC) zu §§ 11, 132a, 153, 154, 164, 185, 226, 244, 248a, 253, 257, 258, 265a, 266, 281, 306, 306d StGB, §§ 29, 30 BtMG, Zeugenrechte (§§ 48, 52, 55, 57 StPO), Privat-/Offizialdelikte, Abgrenzung OWi. EN/RO dabei. `geprueft: false`, ⚠️ st-091 (§ 265a Schwarzfahren: Reformstand prüfen). In der App noch nicht angesehen. Nächste Strafrecht-Runde: Waffenrecht-Lücken + Fallfragen (siehe docs/stoffabgleich.md, 4b).
+**Typprüfung (`npx tsc --noEmit`) hat 4 alte Fehler** (nicht aus den Daten): `QuizScreen.tsx` ScrollView-Ref (Z. 227, 245, 267) und `scripts/pruefliste.ts` (fehlende `@types/node`). App läuft trotzdem; bei Gelegenheit beheben. Prüfungssimulation (`stelleZusammen`) 200× getestet: immer 82 Fragen / 120 Punkte. Als ⚠️ unsicher: oe-031.
 
 ## Stoffabgleich mit offiziellem Rahmenplan (12.11.2026)
 - **Maßgeblich: [docs/stoffabgleich.md](docs/stoffabgleich.md)** – DIHK-Rahmenplan (Stand 09/2019, laut IHK Gera 05/2025 unverändert gültig) Punkt für Punkt gegen die 325 Fragen, mit Lücken pro Sachgebiet und Zielzahlen (Summe 600: Strafrecht 140, BGB 85, Gewerberecht 90, Menschen 105, UVV 65, Technik 70, Datenschutz 45).
